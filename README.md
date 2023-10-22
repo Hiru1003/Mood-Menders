@@ -1,2 +1,3 @@
 # Mood-Menders
-We are Software Engineering undergraduates from NSBM Green University who are focusing on developing an innovative app specially for university undergraduates. For this project we mainly focusing on Fluuter and Firebase to make alive our app. 
+A mental health tracking app
+We are software engineering undergraduates from NSBM Green University who are focusing on developing an innovative app. This is especially for university undergraduates who are struggling with mental issues. For this project, we are mainly focusing on Flutter and Firebase to make our app alive.
