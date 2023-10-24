@@ -1,18 +1,48 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/components/my_button.dart';
 import 'package:myapp/components/my_textfeild.dart';
+import 'package:myapp/helper/helper_fucntions.dart';
 
 // ignore: must_be_immutable
-class LoginPage extends StatelessWidget {
+class RegisterPage extends StatefulWidget {
   final void Function()? onTap;
-  LoginPage({super.key, required this.onTap});
-
   // text controllers
+
+  const RegisterPage({super.key, required this.onTap});
+
+  @override
+  State<RegisterPage> createState() => _RegisterPageState();
+}
+
+class _RegisterPageState extends State<RegisterPage> {
+  final TextEditingController usernameController = TextEditingController();
+
   final TextEditingController emailController = TextEditingController();
+
   final TextEditingController passwordController = TextEditingController();
 
-  // login method
-  void login() {}
+  final TextEditingController confirmpwController = TextEditingController();
+
+  // register method
+  void registerUser() {
+    // show loading circle
+    showDialog(
+        context: context,
+        builder: (context) => const Center(
+              child: CircularProgressIndicator(),
+            ));
+
+    //make sure that the password match
+    if (passwordController.text != confirmpwController.text) {
+      // pop loadinf circle
+      Navigator.pop(context);
+
+      //show error message to user
+      displayMessageToUser("Passwords don't match!", context);
+    }
+
+    //try creating the user
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -39,6 +69,15 @@ class LoginPage extends StatelessWidget {
 
               const SizedBox(height: 50),
 
+              // username textfeild
+              MyTextField(
+                hintText: "Username",
+                obscureText: false,
+                controller: usernameController,
+              ),
+
+              const SizedBox(height: 10),
+
               // email textfeild
               MyTextField(
                 hintText: "Email",
@@ -53,6 +92,14 @@ class LoginPage extends StatelessWidget {
                 hintText: "Password",
                 obscureText: true,
                 controller: passwordController,
+              ),
+
+              const SizedBox(height: 10),
+              //confirm password textfeild
+              MyTextField(
+                hintText: "Confirm Password",
+                obscureText: true,
+                controller: confirmpwController,
               ),
 
               const SizedBox(height: 10),
@@ -71,22 +118,22 @@ class LoginPage extends StatelessWidget {
 
               const SizedBox(height: 25),
 
-              // sign in button
-              Mybutton(text: "Login", onTap: login),
+              // register button
+              Mybutton(text: " Register", onTap: registerUser),
 
               const SizedBox(height: 25),
               // don't have an account Register here
               Row(
                 children: [
                   Text(
-                    "Don't have an account?",
+                    "Already have an account?",
                     style: TextStyle(
                         color: Theme.of(context).colorScheme.inversePrimary),
                   ),
                   GestureDetector(
-                    onTap: onTap,
+                    onTap: widget.onTap,
                     child: const Text(
-                      " Register Here",
+                      " Login Here",
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                   ),
