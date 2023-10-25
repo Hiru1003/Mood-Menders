@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:myapp/components/my_button.dart';
 import 'package:myapp/components/my_textfeild.dart';
@@ -24,7 +26,7 @@ class _RegisterPageState extends State<RegisterPage> {
   final TextEditingController confirmpwController = TextEditingController();
 
   // register method
-  void registerUser() {
+  void registerUser() async {
     // show loading circle
     showDialog(
         context: context,
@@ -42,6 +44,24 @@ class _RegisterPageState extends State<RegisterPage> {
     }
 
     //try creating the user
+
+    try {
+      // create the user
+      CredentialUserData? userCredential =
+          await FirebaseAuth.instance.createUserWithEmailAndPassword(
+        email: emailController.text,
+        password: passwordController.text,
+      );
+
+      //pop loading circle
+      Navigator.pop(context);
+    } on FirebaseAuthException catch (e) {
+      //pop loading circle
+      Navigator.pop(context);
+
+      //show eeror message to user
+      displayMessageToUser(e.code, context);
+    }
   }
 
   @override
