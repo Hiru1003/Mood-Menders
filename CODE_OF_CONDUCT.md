@@ -1,6 +1,6 @@
 # MoodMenders, mood tracking app for NSBM students | Code of Conduct
 
-![Logo - White (With Partner)]([https://github.com/Risini-33/Mood-Menders/blob/main/logo/dark-bg-logo.png])
+![Logo - White (With Partner)](https://github.com/Risini-33/Mood-Menders/blob/main/logo/dark-bg-logo.png)
 
 ## Welcome to Dialectic
 
