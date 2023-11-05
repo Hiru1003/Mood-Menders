@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:line_icons/line_icons.dart';
-import 'package:moodmenders/pages/chat.dart';
-import 'package:moodmenders/pages/diaryfristpage.dart';
-import 'package:moodmenders/pages/homepage.dart';
-import 'package:moodmenders/pages/profile.dart';
-import 'package:moodmenders/pages/report.dart';
+import 'package:myapp/pages/chat.dart';
+import 'package:myapp/pages/dairy.dart';
+import 'package:myapp/pages/home.dart';
+import 'package:myapp/pages/profile.dart';
+import 'package:myapp/pages/report.dart';
 
 class navpage extends StatefulWidget{
   const navpage ({Key? key}) : super(key: key);
@@ -16,14 +16,12 @@ class navpage extends StatefulWidget{
 
 class _navpageState extends State<navpage>{
  
-
-  @override
   int _selectedindex = 0;
   
   static final List<Widget> _NavScreens = <Widget> [
 
     home_page(),
-    diaryfirst_page(),
+    diary_page(),
     chat_page(),
     report_page(),
     profile_page()
