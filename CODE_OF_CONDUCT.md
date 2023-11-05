@@ -1,8 +1,8 @@
 # MoodMenders, mood tracking app for NSBM students | Code of Conduct
 
-![Logo - White (With Partner)](https://github.com/fossnsbm/dialectic-web/assets/91784445/e5ab9dde-0014-45f2-94b7-3ba0dd8f85ef)
+![Logo - White (With Partner)](https://github.com/Risini-33/Mood-Menders/blob/main/logo/dark-bg-logo.png)
 
-## Welcome to Dialectic
+## Welcome to Mood Menders
 
 The importance of mental fortitude cannot be overstated in our world's ever-accelerating cadence. Countless people struggle with the tremendous weight of psychological stress and emotional traumas, casting formidable shadows on their daily lives. "Mood Menders" is a Flutter app built with the Dart programming language that serves as a guide for persons dealing with mental health issues, seeking guidance, or simply looking for ways to relieve stress.
 
