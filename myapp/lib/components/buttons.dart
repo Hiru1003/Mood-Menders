@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class MyButton extends StatelessWidget {
   final String buttontext;
   final void Function()? onTap;
@@ -8,8 +7,6 @@ class MyButton extends StatelessWidget {
   required  this.buttontext, 
   required this.onTap
   });
-
-
 
  @override
   Widget build(BuildContext context) {
