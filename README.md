@@ -12,4 +12,5 @@ secondary color : #CCF8F5
 ternary colors ;
     green : #9AED9E
     red : #EC9C9D
+    
 
