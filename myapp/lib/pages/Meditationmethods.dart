@@ -383,7 +383,3 @@ class _meditaionmethods_pageState extends State<meditaionmethods_page>{
 );
 }
 }
-
-class breathawarenessmed_page {
-  const breathawarenessmed_page();
-}
