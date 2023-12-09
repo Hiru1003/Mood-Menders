@@ -52,7 +52,7 @@ class _meditaionmethods_pageState extends State<meditaionmethods_page>{
         color: Colors.black, //change your color here
         ),
         elevation: 0.00,
-        backgroundColor: Color.fromARGB(255, 134, 208, 203),
+        backgroundColor: const Color.fromARGB(255, 134, 208, 203),
       ),
 
 
