@@ -39,7 +39,7 @@ If you witness a violation of this code of conduct, please report it to the proj
 If you have concerns or need to report a violation, you can contact the leader(Olitha) at:
 
 - WhatsApp - +94 77 224 6354
-- Email - personal[olibala246@gmail.com], student []
+- Email - personal[olibala246@gmail.com], student [olibala246@gmail.com]
 
 ## Enforcement
 
