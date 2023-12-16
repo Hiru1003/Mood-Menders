@@ -17,8 +17,8 @@ final nameController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
-  return const Scaffold( 
-    backgroundColor: Color.fromARGB(251, 237, 251, 223),
+  return Scaffold( 
+    backgroundColor: const Color.fromARGB(251, 237, 251, 223),
       body: SingleChildScrollView(
       )
 );
