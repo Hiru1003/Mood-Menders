@@ -19,6 +19,7 @@ class _breathawarenessmed_pageState extends State<breathawarenessmed_page>{
   return Scaffold( 
     appBar: AppBar(
       title: Padding(
+        
         padding: const EdgeInsets.only(left: 10,),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -28,6 +29,7 @@ class _breathawarenessmed_pageState extends State<breathawarenessmed_page>{
           textStyle: Theme.of(context).textTheme.displayLarge,
           color: const Color.fromARGB(255, 70, 66, 68),
           fontSize: 18,
+          
           fontWeight: FontWeight.w400
           ), ),
           Image.asset('lib/images/bg.png',
