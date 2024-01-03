@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:moodmenders/Components/button.dart';
-import 'package:moodmenders/pages/breathawarenessstep1.dart';
 
 class breathawarenessmed_page extends StatefulWidget {
   const breathawarenessmed_page({
