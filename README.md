@@ -1,10 +1,11 @@
 # Mood-Menders
 
 <div align="center">
-  <img src="https://github.com/Risini-33/Mood-Menders/assets/137677342/6d69d317-d6ae-491e-ae0c-b6681b4cc8e2" align="center" style="width: 75%; height: 75%" />
-</div>  
+  <img src="https://github.com/Risini-33/Mood-Menders/assets/137677342/6d69d317-d6ae-491e-ae0c-b6681b4cc8e2" align="center" style="width: 75%; height: 25%" />
+</div>
 
-**Mood-Menders: A Mental Health Tracking App**
+
+## Mood-Menders: A Mental Health Tracking App
 
 *Mood-Menders, a mental health tracking app, is the result of a collaborative initiative by software engineering undergraduates from NSBM Green University. The app is uniquely designed to provide support for university undergraduates who may be facing mental health challenges. The collective effort of these undergraduates demonstrates their commitment to addressing the growing need for mental health resources within academic communities.*
 
