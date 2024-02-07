@@ -14,7 +14,9 @@ pluginManagement {
         id "dev.flutter.flutter-gradle-plugin" version "1.0.0" apply false
     }
     
-    
+    repositories {
+        google()
+    }
 }
 
 include ":app"
