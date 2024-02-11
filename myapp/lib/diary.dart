@@ -34,7 +34,7 @@ class Diary extends StatelessWidget {
           ),
         ),
         titleSpacing: 4.0,
-        toolbarHeight: 65,
+        toolbarHeight: 75,
         toolbarOpacity: 0.9,
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.only(
