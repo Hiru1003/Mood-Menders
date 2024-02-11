@@ -1,18 +1,15 @@
+import 'package:app/loading_page.dart';
 import 'package:flutter/material.dart';
-import 'package:myapp/breathawarenessmed.dart';
-
-Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  runApp(const MyApp());
-}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  @override
+ @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: breathawarenessmed_page(),
-    );
-  }
+      debugShowCheckedModeBanner: false,
+      home: loading_page(),
+    );
+  }
 }
+
