@@ -1,6 +1,6 @@
+import 'package:app/breathawarenessmed.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:moodmenders/pages/auth_page.dart';
 
 class loading_page2 extends StatelessWidget{
   const loading_page2({
@@ -12,7 +12,7 @@ class loading_page2 extends StatelessWidget{
   return  GestureDetector(
     onTap: () {
           Navigator.push(  
-          context,MaterialPageRoute(builder: (context) =>   const AuthPage() ),  
+          context,MaterialPageRoute(builder: (context) =>   const breathawarenessmed_page() ),  
           ); 
         },
     child: Scaffold( 
@@ -70,7 +70,7 @@ class loading_page2 extends StatelessWidget{
       ('lib/images/leaf.png',),
       onTap: () {
         Navigator.push(  
-        context,MaterialPageRoute(builder: (context) =>   const AuthPage()),  
+        context,MaterialPageRoute(builder: (context) =>   const breathawarenessmed_page()),  
         ); 
       },
       )
