@@ -105,7 +105,7 @@ class Diary extends StatelessWidget {
             ),
             Text(
               'Today',
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.bold,
               ),
