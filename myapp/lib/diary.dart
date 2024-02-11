@@ -4,8 +4,6 @@ import 'package:google_fonts/google_fonts.dart';
 class Diary extends StatelessWidget {
   const Diary({super.key});
 
-  // Removed the constructor that was throwing the UnimplementedError
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,12 +27,19 @@ class Diary extends StatelessWidget {
               Image.asset(
                 'lib/images/diary1.png',
                 height: 72,
-              )
+              ),
+              IconButton(
+                icon: Icon(Icons.add),
+                onPressed: () {
+                  // Open popup page here
+                },
+                color: Colors.green,
+              ),
             ],
           ),
         ),
         titleSpacing: 4.0,
-        toolbarHeight: 65,
+        toolbarHeight: 75,
         toolbarOpacity: 0.9,
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.only(
@@ -42,11 +47,11 @@ class Diary extends StatelessWidget {
               bottomLeft: Radius.circular(18)),
         ),
         iconTheme: const IconThemeData(
-          color: Colors.black, //change your color here
+          color: Colors.black,
         ),
         elevation: 0.00,
         backgroundColor: Color.fromARGB(255, 134, 208, 203),
       ),
-    ); // Added closing parenthesis here
+    );
   }
 }
