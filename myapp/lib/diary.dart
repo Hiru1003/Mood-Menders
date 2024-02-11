@@ -31,7 +31,23 @@ class Diary extends StatelessWidget {
               IconButton(
                 icon: Icon(Icons.add),
                 onPressed: () {
-                  // Open popup page here
+                  showDialog(
+                    context: context,
+                    builder: (BuildContext context) {
+                      return AlertDialog(
+                        title: Text('Popup Page'),
+                        content: Text('This is a popup page.'),
+                        actions: <Widget>[
+                          TextButton(
+                            child: Text('Close'),
+                            onPressed: () {
+                              Navigator.of(context).pop();
+                            },
+                          ),
+                        ],
+                      );
+                    },
+                  );
                 },
                 color: Colors.green,
               ),
