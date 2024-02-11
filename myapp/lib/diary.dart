@@ -4,6 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 class Diary extends StatelessWidget {
   const Diary({super.key});
 
+  get bottomNavigationBar => null;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,17 +31,17 @@ class Diary extends StatelessWidget {
                 height: 72,
               ),
               IconButton(
-                icon: Icon(Icons.add),
+                icon: const Icon(Icons.add),
                 onPressed: () {
                   showDialog(
                     context: context,
                     builder: (BuildContext context) {
                       return AlertDialog(
-                        title: Text('Popup Page'),
-                        content: Text('This is a popup page.'),
+                        title: const Text('Popup Page'),
+                        content: const Text('This is a popup page.'),
                         actions: <Widget>[
                           TextButton(
-                            child: Text('Close'),
+                            child: const Text('Close'),
                             onPressed: () {
                               Navigator.of(context).pop();
                             },
@@ -66,7 +68,57 @@ class Diary extends StatelessWidget {
           color: Colors.black,
         ),
         elevation: 0.00,
-        backgroundColor: Color.fromARGB(255, 134, 208, 203),
+        backgroundColor: const Color.fromARGB(255, 134, 208, 203),
+      ),
+      backgroundColor: const Color.fromARGB(251, 241, 255, 252),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            BottomNavigationBar(
+              items: const <BottomNavigationBarItem>[
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.home),
+                  label: 'Home',
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.business),
+                  label: 'Business',
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.school),
+                  label: 'School',
+                ),
+              ],
+            ),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            ),
+            Container(color: Colors.white),
+            Row(
+              children: <Widget>[],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            ),
+            Row(
+              children: <Widget>[],
+            ),
+            Text(
+              'Today',
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
+              '16 October 2023',
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
