@@ -27,7 +27,14 @@ class Diary extends StatelessWidget {
               Image.asset(
                 'lib/images/diary1.png',
                 height: 72,
-              )
+              ),
+              IconButton(
+                icon: Icon(Icons.add),
+                onPressed: () {
+                  // Open popup page here
+                },
+                color: Colors.green,
+              ),
             ],
           ),
         ),
