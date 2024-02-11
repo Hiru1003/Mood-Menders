@@ -19,7 +19,7 @@ class Diary extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Text(
-                'SECRET \nDIARY',
+                'SECRET  \nDIARY',
                 style: GoogleFonts.poppins(
                     textStyle: Theme.of(context).textTheme.displayLarge,
                     color: const Color.fromARGB(255, 70, 66, 68),
