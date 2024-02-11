@@ -37,11 +37,11 @@ class Diary extends StatelessWidget {
                     context: context,
                     builder: (BuildContext context) {
                       return AlertDialog(
-                        title: const Text('Popup Page'),
-                        content: const Text('This is a popup page.'),
+                        title: const Text(''),
+                        content: const Text(''),
                         actions: <Widget>[
                           TextButton(
-                            child: const Text('Close'),
+                            child: const Text(''),
                             onPressed: () {
                               Navigator.of(context).pop();
                             },
