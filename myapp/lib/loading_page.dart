@@ -1,5 +1,5 @@
+import 'package:app/loading_page2.dart';
 import 'package:flutter/material.dart';
-import 'package:moodmenders/pages/loading_page2.dart';
 
 class loading_page extends StatelessWidget{
   const loading_page({
@@ -41,4 +41,4 @@ class loading_page extends StatelessWidget{
       ),
   ); 
     
-  }
+  }}
