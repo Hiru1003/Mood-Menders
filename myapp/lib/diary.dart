@@ -28,7 +28,7 @@ class Diary extends StatelessWidget {
               ),
               Image.asset(
                 'lib/images/diary1.png',
-                height: 72,
+                height: 71,
               ),
               IconButton(
                 icon: const Icon(Icons.add),
@@ -37,11 +37,11 @@ class Diary extends StatelessWidget {
                     context: context,
                     builder: (BuildContext context) {
                       return AlertDialog(
-                        title: const Text(''),
-                        content: const Text(''),
+                        title: const Text(' Page'),
+                        content: const Text('This is a popup page.'),
                         actions: <Widget>[
                           TextButton(
-                            child: const Text(''),
+                            child: const Text('Close'),
                             onPressed: () {
                               Navigator.of(context).pop();
                             },
@@ -105,7 +105,7 @@ class Diary extends StatelessWidget {
             ),
             Text(
               'Today',
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.bold,
               ),
