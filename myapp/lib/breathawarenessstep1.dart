@@ -35,7 +35,7 @@ class _breathawarenessstep1_pageState extends State<breathawarenessstep1_page> {
                     fontWeight: FontWeight.w400),
               ),
               Image.asset(
-                'lib/images/bg.png',
+                'lib/images/leaf.png',
                 height: 72,
               )
             ],
@@ -107,7 +107,7 @@ class _breathawarenessstep1_pageState extends State<breathawarenessstep1_page> {
             ),
 
             const SizedBox(
-              height: 20,
+              height: 15,
             ),
             //para
             Padding(
@@ -126,6 +126,8 @@ class _breathawarenessstep1_pageState extends State<breathawarenessstep1_page> {
                             textStyle: Theme.of(context).textTheme.displayLarge,
                             color: const Color.fromARGB(255, 70, 66, 68),
                             fontSize: 13,
+                            wordSpacing: 1.6,
+                            height: 1.3,
                             fontWeight: FontWeight.w400),
                       ),
                     ],

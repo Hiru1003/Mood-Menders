@@ -1,39 +1,36 @@
-import 'package:app/breathawarenessstep1.dart';
 import 'package:app/button.dart';
+import 'package:app/meditaionmethods.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class breathawarenessmed_page extends StatefulWidget{
+class walkingmed_page extends StatefulWidget{
   
-    const breathawarenessmed_page({
+    const walkingmed_page({
     super.key,});
 
   @override
-  State<breathawarenessmed_page> createState()  => _breathawarenessmed_pageState();
+  State<walkingmed_page> createState()  => _walkingmed_pageState();
 }
 
-class _breathawarenessmed_pageState extends State<breathawarenessmed_page>{
+class _walkingmed_pageState extends State<walkingmed_page>{
 
   @override
   Widget build(BuildContext context) {
-
   return Scaffold( 
-    
     appBar: AppBar(
       title: Padding(
-        
         padding: const EdgeInsets.only(left: 10,),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-        Text('BREATH AWARENESS \nMEDITATION',style: GoogleFonts.poppins(
+        Text('WALKING MEDITATION',style: GoogleFonts.poppins(
           textStyle: Theme.of(context).textTheme.displayLarge,
           color: const Color.fromARGB(255, 70, 66, 68),
           fontSize: 18,
-          fontWeight: FontWeight.w500
+          fontWeight: FontWeight.w400
           ), ),
-          Image.asset('lib/images/leaf.png',
+          Image.asset('lib/images/newbg.png',
           height: 72,)
           ],
           ),
@@ -62,12 +59,12 @@ class _breathawarenessmed_pageState extends State<breathawarenessmed_page>{
               children: [
 
               //description
-              const SizedBox(height: 30,),
+              const SizedBox(height: 20,),
               Padding(
                 padding: const EdgeInsets.only(left: 10, right: 10),
                 child: Container(
                   decoration: const BoxDecoration(
-                    color:   Color.fromARGB(255, 204, 248, 245),
+                    color:  Color.fromARGB(255, 204, 248, 245),
                     borderRadius: BorderRadius.only(topLeft: Radius.circular(16), topRight: Radius.circular(16))
                     ),
                   child: Padding(
@@ -91,13 +88,12 @@ class _breathawarenessmed_pageState extends State<breathawarenessmed_page>{
                   ),
                 ),
               ),
-              
-            
+
                Padding(
                 padding: const EdgeInsets.only(left: 10, right: 10),
                 child: Container(
                   decoration: const BoxDecoration(
-                    color:   Color.fromARGB(255, 204, 248, 245),
+                    color:  Color.fromARGB(255, 204, 248, 245),
                     ),
                   child: Padding(
                     padding: const EdgeInsets.all(1.0),
@@ -106,15 +102,13 @@ class _breathawarenessmed_pageState extends State<breathawarenessmed_page>{
                       children: [
                       //message
                       Text(
-                        'Breath awareness meditation is a powerful \nmindfulness practice that centers your \nattention on the natural rhythm of your \nbreath. This simple yet transformative \ntechnique can help cultivate a sense of \ncalm, presence, and self-awareness. ',
+                        'Walking meditation is a mindfulness practice \nthat involves bringing your attention to \nthe act of walking. It can be a calming and \ngrounding way to cultivate mindfulness in motion.',
                         textAlign: TextAlign.center,
                         style: GoogleFonts.poppins(
                         textStyle: Theme.of(context).textTheme.displayLarge,
                         color: const Color.fromARGB(255, 70, 66, 68),
                         fontSize: 12,
-                        fontWeight: FontWeight.w400,
-                        wordSpacing: 2.0,
-                        height: 1.3,
+                        fontWeight: FontWeight.w400
                         ),
                       ),
                       ],
@@ -128,7 +122,7 @@ class _breathawarenessmed_pageState extends State<breathawarenessmed_page>{
                 padding: const EdgeInsets.only(left: 10, right: 10),
                 child: Container(
                   decoration: const BoxDecoration(
-                    color:  const Color.fromARGB(255, 204, 248, 245),
+                    color:  Color.fromARGB(255, 204, 248, 245),
                     borderRadius: BorderRadius.only(bottomLeft: Radius.circular(16), bottomRight: Radius.circular(16)),
                     boxShadow: [
                     BoxShadow(
@@ -160,7 +154,7 @@ class _breathawarenessmed_pageState extends State<breathawarenessmed_page>{
                 ),
 
                 //preconsiderations
-            const SizedBox(height: 10,),
+            const SizedBox(height: 5,),
 
             Padding(
               padding: const EdgeInsets.all(12.0),
@@ -207,13 +201,13 @@ class _breathawarenessmed_pageState extends State<breathawarenessmed_page>{
                           children: [
                           //message
                           Text(
-                            'Comfortable \nPosition',
+                            'Comfortable \n quite Space',
                             textAlign: TextAlign.center,
                             style: GoogleFonts.poppins(
                             textStyle: Theme.of(context).textTheme.displayLarge,
                             color: const Color.fromARGB(255, 70, 66, 68),
                             fontSize: 12,
-                            fontWeight: FontWeight.w400
+                            fontWeight: FontWeight.w300
                             ),
                           ),
                           
@@ -239,17 +233,17 @@ class _breathawarenessmed_pageState extends State<breathawarenessmed_page>{
                           child: Padding(
                             padding: const EdgeInsets.all(14.0),
                             child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
+                              mainAxisAlignment: MainAxisAlignment.start,
                               children: [
                               //message
                               Text(
-                                'Quiet \nEnvironment',
+                                'Time \nCommitment',
                                 textAlign: TextAlign.center,
                                 style: GoogleFonts.poppins(
                                 textStyle: Theme.of(context).textTheme.displayLarge,
                                 color: const Color.fromARGB(255, 70, 66, 68),
                                 fontSize: 12,
-                                fontWeight: FontWeight.w400
+                                fontWeight: FontWeight.w300
                                 ),
                               ),
                               
@@ -265,15 +259,13 @@ class _breathawarenessmed_pageState extends State<breathawarenessmed_page>{
               ),
 
               //another two containers
-              const SizedBox(height: 5,),
-
-              //two containers
+               const SizedBox(height: 10,),
               Padding(
                 padding: const EdgeInsets.only(left: 10, right: 10),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [Container(
-                      width: 120,
+                    width: 120,
                       decoration: BoxDecoration(
                       color: const Color.fromARGB(251, 241, 255, 252),
                       border: Border.all(
@@ -285,17 +277,17 @@ class _breathawarenessmed_pageState extends State<breathawarenessmed_page>{
                       child: Padding(
                         padding: const EdgeInsets.all(14.0),
                         child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                           //message
                           Text(
-                            'Minimize \nDistrations',
+                            'Minimize \nDistractions',
                             textAlign: TextAlign.center,
                             style: GoogleFonts.poppins(
                             textStyle: Theme.of(context).textTheme.displayLarge,
                             color: const Color.fromARGB(255, 70, 66, 68),
                             fontSize: 12,
-                            fontWeight: FontWeight.w400
+                            fontWeight: FontWeight.w300
                             ),
                           ),
                           
@@ -303,7 +295,6 @@ class _breathawarenessmed_pageState extends State<breathawarenessmed_page>{
                         ),
                       ),
                     ),
-                    
                     
 
                     const SizedBox(width: 15,),
@@ -327,13 +318,13 @@ class _breathawarenessmed_pageState extends State<breathawarenessmed_page>{
                               children: [
                               //message
                               Text(
-                                'Physical \nComfort',
+                                'Comfortable \nClothing',
                                 textAlign: TextAlign.center,
                                 style: GoogleFonts.poppins(
                                 textStyle: Theme.of(context).textTheme.displayLarge,
                                 color: const Color.fromARGB(255, 70, 66, 68),
                                 fontSize: 12,
-                                fontWeight: FontWeight.w400
+                                fontWeight: FontWeight.w300
                                 ),
                               ),
                               
@@ -357,7 +348,7 @@ class _breathawarenessmed_pageState extends State<breathawarenessmed_page>{
                 padding: const EdgeInsets.only(left: 10, right: 10),
                 child: MyButton(buttontext: 'Start Meditation Now', onTap:(){{
                     Navigator.push(  
-                    context,MaterialPageRoute(builder: (context) =>    (const breathawarenessstep1_page())),  
+                    context,MaterialPageRoute(builder: (context) =>    (const meditaionmethods_page())),  
                   ); 
                 }
               },)
