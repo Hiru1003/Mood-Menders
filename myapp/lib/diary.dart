@@ -123,7 +123,7 @@ class Diary extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: CustomNavigationBar(),
+      //bottomNavigationBar: CustomNavigationBar(),
     );
 
   }
