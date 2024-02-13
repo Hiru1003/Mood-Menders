@@ -108,10 +108,10 @@ class Diary extends StatelessWidget {
                     ),
                   ),
                 ),
+            DatesWidget(),
               ],
             ),
-            // Add DatesWidget here
-            DatesWidget(),
+            
           ],
         ),
       ),
