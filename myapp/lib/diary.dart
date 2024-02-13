@@ -128,31 +128,44 @@ class Diary extends StatelessWidget {
     color: const Color.fromARGB(255, 204, 248, 245),
     borderRadius: BorderRadius.circular(10),
   ),
-  child: Row(
-    crossAxisAlignment: CrossAxisAlignment.start, 
+  child: Stack(
     children: <Widget>[
-      Image.asset(
-        'lib/images/loveearth (1).png',
-        width: 60,
-        height: 60,
+      Row(
+        crossAxisAlignment: CrossAxisAlignment.start, 
+        children: <Widget>[
+          Image.asset(
+            'lib/images/loveearth (1).png',
+            width: 60,
+            height: 60,
+          ),
+          SizedBox(width: 10), 
+          Padding(
+            padding: EdgeInsets.only(top: 10), 
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  'Happy',
+                  style: TextStyle(fontSize: 16),
+                ),
+                Text(
+                  '${DateFormat('d MMMM yyyy, h:mm a').format(DateTime.now())}',
+                  style: TextStyle(fontSize: 13),
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
-      SizedBox(width: 10), 
-       Padding(
-    padding: EdgeInsets.only(top: 10), 
-    child: Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
-        Text(
-          'Happy',
-          style: TextStyle(fontSize: 16),
+      Positioned(
+        top: 0,
+        right: 0,
+        child: Image.asset(
+          'lib/images/love 1.png', // Replace with your image path
+          width: 30,
+          height: 30,
         ),
-        Text(
-          '${DateFormat('d MMMM yyyy, h:mm a').format(DateTime.now())}',
-          style: TextStyle(fontSize: 13),
-        ),
-      ],
-    ),
-  ),
+      ),
     ],
   ),
 ),
