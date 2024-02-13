@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:app/myButton.dart';
 import 'package:app/dates.dart';
 import 'package:app/navigationBar.dart';
+import 'package:intl/intl.dart';
 
 class Diary extends StatelessWidget {
   const Diary({super.key});
@@ -115,35 +116,43 @@ class Diary extends StatelessWidget {
             Container(
               margin: EdgeInsets.symmetric(vertical: 10),
               width: 300,
-                height: 0.5, // replace AutocompleteOptions.maxHeight with a specific value
+                height: 0.5, 
               color: const Color.fromARGB(255, 70, 66, 68),
             ),
-            Container(
+          Container(
   width: 370,
   height: 200,
   padding: EdgeInsets.all(15),
   margin: EdgeInsets.all(15),
   decoration: BoxDecoration(
     color: const Color.fromARGB(255, 204, 248, 245),
-    border: Border.all(color: Colors.grey),
     borderRadius: BorderRadius.circular(10),
   ),
   child: Row(
+    crossAxisAlignment: CrossAxisAlignment.start, 
     children: <Widget>[
-      Expanded(
-        child: Image.asset(
-          'lib/images/diary1.png',
-          width: 10,
-          height: 10,
-        ),
+      Image.asset(
+        'lib/images/loveearth (1).png',
+        width: 60,
+        height: 60,
       ),
-      SizedBox(width: 10), // Add some space between the image and the text
-      Expanded(
-        child: Text(
-          'This is some text inside a box.',
+      SizedBox(width: 10), 
+       Padding(
+    padding: EdgeInsets.only(top: 10), 
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        Text(
+          'Happy',
           style: TextStyle(fontSize: 16),
         ),
-      ),
+        Text(
+          '${DateFormat('d MMMM yyyy, h:mm a').format(DateTime.now())}',
+          style: TextStyle(fontSize: 13),
+        ),
+      ],
+    ),
+  ),
     ],
   ),
 ),
