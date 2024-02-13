@@ -33,7 +33,7 @@ class _breathawarenessmed_pageState extends State<breathawarenessmed_page>{
           fontSize: 18,
           fontWeight: FontWeight.w500
           ), ),
-          Image.asset('lib/images/bg.png',
+          Image.asset('lib/images/leaf.png',
           height: 72,)
           ],
           ),
@@ -62,7 +62,7 @@ class _breathawarenessmed_pageState extends State<breathawarenessmed_page>{
               children: [
 
               //description
-              const SizedBox(height: 20,),
+              const SizedBox(height: 30,),
               Padding(
                 padding: const EdgeInsets.only(left: 10, right: 10),
                 child: Container(
@@ -112,7 +112,9 @@ class _breathawarenessmed_pageState extends State<breathawarenessmed_page>{
                         textStyle: Theme.of(context).textTheme.displayLarge,
                         color: const Color.fromARGB(255, 70, 66, 68),
                         fontSize: 12,
-                        fontWeight: FontWeight.w400
+                        fontWeight: FontWeight.w400,
+                        wordSpacing: 2.0,
+                        height: 1.3,
                         ),
                       ),
                       ],
@@ -158,7 +160,7 @@ class _breathawarenessmed_pageState extends State<breathawarenessmed_page>{
                 ),
 
                 //preconsiderations
-            const SizedBox(height: 5,),
+            const SizedBox(height: 10,),
 
             Padding(
               padding: const EdgeInsets.all(12.0),
@@ -211,7 +213,7 @@ class _breathawarenessmed_pageState extends State<breathawarenessmed_page>{
                             textStyle: Theme.of(context).textTheme.displayLarge,
                             color: const Color.fromARGB(255, 70, 66, 68),
                             fontSize: 12,
-                            fontWeight: FontWeight.w300
+                            fontWeight: FontWeight.w400
                             ),
                           ),
                           
@@ -247,7 +249,7 @@ class _breathawarenessmed_pageState extends State<breathawarenessmed_page>{
                                 textStyle: Theme.of(context).textTheme.displayLarge,
                                 color: const Color.fromARGB(255, 70, 66, 68),
                                 fontSize: 12,
-                                fontWeight: FontWeight.w300
+                                fontWeight: FontWeight.w400
                                 ),
                               ),
                               
@@ -293,7 +295,7 @@ class _breathawarenessmed_pageState extends State<breathawarenessmed_page>{
                             textStyle: Theme.of(context).textTheme.displayLarge,
                             color: const Color.fromARGB(255, 70, 66, 68),
                             fontSize: 12,
-                            fontWeight: FontWeight.w300
+                            fontWeight: FontWeight.w400
                             ),
                           ),
                           
@@ -331,7 +333,7 @@ class _breathawarenessmed_pageState extends State<breathawarenessmed_page>{
                                 textStyle: Theme.of(context).textTheme.displayLarge,
                                 color: const Color.fromARGB(255, 70, 66, 68),
                                 fontSize: 12,
-                                fontWeight: FontWeight.w300
+                                fontWeight: FontWeight.w400
                                 ),
                               ),
                               
@@ -349,7 +351,7 @@ class _breathawarenessmed_pageState extends State<breathawarenessmed_page>{
                 ),
               ),
 
-              const SizedBox(height: 15,),
+              const SizedBox(height: 25,),
               //continue button
               Padding(
                 padding: const EdgeInsets.only(left: 10, right: 10),

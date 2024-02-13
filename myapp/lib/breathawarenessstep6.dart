@@ -30,7 +30,7 @@ class _breathawarenessstep6_pageState extends State<breathawarenessstep6_page>{
           fontSize: 18,
           fontWeight: FontWeight.w400
           ), ),
-          Image.asset('lib/images/bg.png',
+          Image.asset('lib/images/leaf.png',
           height: 72,)
           ],
           ),
@@ -93,6 +93,8 @@ class _breathawarenessstep6_pageState extends State<breathawarenessstep6_page>{
                         textStyle: Theme.of(context).textTheme.displayLarge,
                         color: const Color.fromARGB(255, 70, 66, 68),
                         fontSize: 18,
+                        wordSpacing: 1.6,
+                            height: 1.3,
                         fontWeight: FontWeight.w600
                         ),
                       ),
@@ -123,6 +125,8 @@ class _breathawarenessstep6_pageState extends State<breathawarenessstep6_page>{
                         textStyle: Theme.of(context).textTheme.displayLarge,
                         color: const Color.fromARGB(255, 70, 66, 68),
                         fontSize: 13,
+                        wordSpacing: 1.6,
+                        height: 1.3,
                         fontWeight: FontWeight.w400
                         ),
                       ),
