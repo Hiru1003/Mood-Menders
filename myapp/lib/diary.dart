@@ -36,7 +36,7 @@ class Diary extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 10, right: 10),
+                    padding: const EdgeInsets.only(right: 36, top: 16),
                     child: SButton(
                       // onTap: () {
                       //   {
@@ -109,6 +109,7 @@ class Diary extends StatelessWidget {
                   ),
                 ),
             DatesWidget(),
+            SizedBox(height: 20),
               ],
             ),
             

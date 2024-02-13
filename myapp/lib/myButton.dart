@@ -22,51 +22,45 @@ class _SButtonState extends State<SButton> {
         });
       },
       child: Container(
+        width: 120, // Adjust the width as needed
+        height: 50, // Adjust the height as needed
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: const Color.fromARGB(255, 204, 248, 245),
+          borderRadius: BorderRadius.circular(25), // Add this line to make the edges curved
           boxShadow: _isClicked
               ? []
               : [
                   BoxShadow(
                     color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 5,
-                    blurRadius: 7,
-                    offset: Offset(0, 3),
+                    spreadRadius: 2,
+                    blurRadius: 5,
+                    offset: Offset(0, 3), // changes position of shadow
                   ),
                 ],
         ),
-        child: Row(
-          children: <Widget>[
-            Icon(Icons.add, color: const Color.fromARGB(255, 70, 66, 68),),
-            MouseRegion(
-              cursor: SystemMouseCursors.click,
-              onHover: (event) {
-                // Change the color or do something when hovered
-              },
-              child: Text.rich(
-                TextSpan(
-                  text: 'New',
+        child: Padding(
+          padding: const EdgeInsets.all(8.0), // Add padding
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center, // Center the children
+            children: <Widget>[
+              Icon(Icons.add, color: const Color.fromARGB(255, 70, 66, 68),),
+              SizedBox(width: 8), // Add some space between the icon and the text
+              MouseRegion(
+                cursor: SystemMouseCursors.click,
+                onHover: (event) {
+                  // Change the color or do something when hovered
+                },
+                child: Text(
+                  'New',
                   style: TextStyle(
+                    color: const Color.fromARGB(255, 70, 66, 68),
                     fontSize: 16,
-                    foreground: Paint()
-                      ..style = PaintingStyle.stroke
-                      ..strokeWidth = 2
-                      ..color = const Color.fromARGB(255, 70, 66, 68),
+                    fontWeight: FontWeight.bold,
                   ),
-                  children: <TextSpan>[
-                    TextSpan(
-                      text: 'New',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ],
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
