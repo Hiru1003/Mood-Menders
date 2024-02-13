@@ -29,12 +29,12 @@ class _breathawarenessstep6_pageState extends State<breathawarenessstep6_page> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Text(
-                'MINDFULLNESS \nMEDITATION',
+                'BREATH AWARENESS \nMEDITATION',
                 style: GoogleFonts.poppins(
                     textStyle: Theme.of(context).textTheme.displayLarge,
                     color: const Color.fromARGB(255, 70, 66, 68),
                     fontSize: 18,
-                    fontWeight: FontWeight.w400),
+                    fontWeight: FontWeight.w500),
               ),
               Image.asset(
                 'lib/images/leaf.png',
