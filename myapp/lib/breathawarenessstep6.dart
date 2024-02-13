@@ -1,5 +1,6 @@
 import 'package:app/breathawarenessmed.dart';
 import 'package:app/button.dart';
+import 'package:app/meditaionmethods.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -153,7 +154,7 @@ class _breathawarenessstep6_pageState extends State<breathawarenessstep6_page> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => (breathawarenessmed_page())),
+                          builder: (context) => (meditaionmethods_page())),
                     );
                   }
                 },

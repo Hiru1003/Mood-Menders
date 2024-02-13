@@ -36,7 +36,7 @@ class _meditaionmethods_pageState extends State<meditaionmethods_page> {
                     fontWeight: FontWeight.w400),
               ),
               Image.asset(
-                'lib/images/newbg.png',
+                'lib/images/leaf.png',
                 height: 72,
               )
             ],
@@ -54,7 +54,7 @@ class _meditaionmethods_pageState extends State<meditaionmethods_page> {
           color: Colors.black, //change your color here
         ),
         elevation: 0.00,
-        backgroundColor: Color.fromARGB(255, 134, 208, 203),
+        backgroundColor: const Color.fromARGB(255, 134, 208, 203),
       ),
       backgroundColor: const Color.fromARGB(251, 241, 255, 252),
       body: SingleChildScrollView(
@@ -77,9 +77,9 @@ class _meditaionmethods_pageState extends State<meditaionmethods_page> {
                     height: 175,
                     width: 150,
                     decoration: BoxDecoration(
-                        color: const Color.fromARGB(251, 215, 225, 238),
+                        color: Color.fromARGB(255, 175, 213, 210),
                         border: Border.all(
-                          color: const Color.fromARGB(255, 215, 225, 238),
+                          color: const Color.fromARGB(255, 175, 213, 210),
                           width: 5,
                         ),
                         borderRadius: BorderRadius.circular(12)),
@@ -105,7 +105,7 @@ class _meditaionmethods_pageState extends State<meditaionmethods_page> {
                                   Theme.of(context).textTheme.displayLarge,
                               color: const Color.fromARGB(255, 70, 66, 68),
                               fontSize: 13,
-                              fontWeight: FontWeight.w300,
+                              fontWeight: FontWeight.w400,
                             ),
                           ),
                         ],
@@ -129,9 +129,9 @@ class _meditaionmethods_pageState extends State<meditaionmethods_page> {
                     height: 175,
                     width: 150,
                     decoration: BoxDecoration(
-                        color: const Color.fromARGB(251, 215, 225, 238),
+                        color: Color.fromARGB(255, 175, 213, 210),
                         border: Border.all(
-                          color: const Color.fromARGB(255, 215, 225, 238),
+                          color: const Color.fromARGB(255, 175, 213, 210),
                           width: 5,
                         ),
                         borderRadius: BorderRadius.circular(12)),
@@ -143,7 +143,7 @@ class _meditaionmethods_pageState extends State<meditaionmethods_page> {
                         children: [
                           //image
                           Image.asset(
-                            'lib/images/med2.png',
+                            'lib/images/m2.png',
                             height: 90,
                           ),
                           const SizedBox(
@@ -158,7 +158,7 @@ class _meditaionmethods_pageState extends State<meditaionmethods_page> {
                                   Theme.of(context).textTheme.displayLarge,
                               color: const Color.fromARGB(255, 70, 66, 68),
                               fontSize: 13,
-                              fontWeight: FontWeight.w300,
+                              fontWeight: FontWeight.w400,
                             ),
                           ),
                         ],
@@ -187,9 +187,9 @@ class _meditaionmethods_pageState extends State<meditaionmethods_page> {
                     height: 175,
                     width: 150,
                     decoration: BoxDecoration(
-                        color: const Color.fromARGB(251, 215, 225, 238),
+                        color: Color.fromARGB(255, 175, 213, 210),
                         border: Border.all(
-                          color: const Color.fromARGB(255, 215, 225, 238),
+                          color: const Color.fromARGB(255, 175, 213, 210),
                           width: 5,
                         ),
                         borderRadius: BorderRadius.circular(12)),
@@ -215,7 +215,7 @@ class _meditaionmethods_pageState extends State<meditaionmethods_page> {
                                   Theme.of(context).textTheme.displayLarge,
                               color: const Color.fromARGB(255, 70, 66, 68),
                               fontSize: 13,
-                              fontWeight: FontWeight.w300,
+                              fontWeight: FontWeight.w400,
                             ),
                           ),
                         ],
@@ -238,9 +238,9 @@ class _meditaionmethods_pageState extends State<meditaionmethods_page> {
                     height: 175,
                     width: 150,
                     decoration: BoxDecoration(
-                        color: const Color.fromARGB(251, 215, 225, 238),
+                        color: Color.fromARGB(255, 175, 213, 210),
                         border: Border.all(
-                          color: const Color.fromARGB(255, 215, 225, 238),
+                          color: const Color.fromARGB(255, 175, 213, 210),
                           width: 5,
                         ),
                         borderRadius: BorderRadius.circular(12)),
@@ -267,7 +267,7 @@ class _meditaionmethods_pageState extends State<meditaionmethods_page> {
                                   Theme.of(context).textTheme.displayLarge,
                               color: const Color.fromARGB(255, 70, 66, 68),
                               fontSize: 13,
-                              fontWeight: FontWeight.w300,
+                              fontWeight: FontWeight.w400,
                             ),
                           ),
                         ],
@@ -280,7 +280,8 @@ class _meditaionmethods_pageState extends State<meditaionmethods_page> {
           ),
 
           Padding(
-            padding: const EdgeInsets.only(left: 10, right: 10, top: 20),
+            padding:
+                const EdgeInsets.only(left: 10, right: 10, top: 20, bottom: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -296,9 +297,9 @@ class _meditaionmethods_pageState extends State<meditaionmethods_page> {
                     height: 175,
                     width: 150,
                     decoration: BoxDecoration(
-                        color: const Color.fromARGB(251, 215, 225, 238),
+                        color: Color.fromARGB(255, 175, 213, 210),
                         border: Border.all(
-                          color: const Color.fromARGB(255, 215, 225, 238),
+                          color: const Color.fromARGB(255, 175, 213, 210),
                           width: 5,
                         ),
                         borderRadius: BorderRadius.circular(12)),
@@ -309,7 +310,7 @@ class _meditaionmethods_pageState extends State<meditaionmethods_page> {
                         children: [
                           //image
                           Image.asset(
-                            'lib/images/med5.png',
+                            'lib/images/med3.png',
                             height: 90,
                           ),
                           const SizedBox(
@@ -324,7 +325,7 @@ class _meditaionmethods_pageState extends State<meditaionmethods_page> {
                                   Theme.of(context).textTheme.displayLarge,
                               color: const Color.fromARGB(255, 70, 66, 68),
                               fontSize: 13,
-                              fontWeight: FontWeight.w300,
+                              fontWeight: FontWeight.w400,
                             ),
                           ),
                         ],
@@ -347,9 +348,9 @@ class _meditaionmethods_pageState extends State<meditaionmethods_page> {
                     height: 175,
                     width: 150,
                     decoration: BoxDecoration(
-                        color: const Color.fromARGB(251, 215, 225, 238),
+                        color: Color.fromARGB(255, 175, 213, 210),
                         border: Border.all(
-                          color: const Color.fromARGB(255, 215, 225, 238),
+                          color: const Color.fromARGB(255, 175, 213, 210),
                           width: 5,
                         ),
                         borderRadius: BorderRadius.circular(12)),
@@ -376,7 +377,7 @@ class _meditaionmethods_pageState extends State<meditaionmethods_page> {
                                   Theme.of(context).textTheme.displayLarge,
                               color: const Color.fromARGB(255, 70, 66, 68),
                               fontSize: 13,
-                              fontWeight: FontWeight.w300,
+                              fontWeight: FontWeight.w400,
                             ),
                           ),
                         ],
