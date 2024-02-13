@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-// import 'home.dart'; 
-// import 'save.dart'; 
-// import 'message.dart'; 
+import 'home.dart'; 
 import 'diary.dart'; 
-// import 'profile.dart'; 
+import 'Chat.dart'; 
+import 'stat.dart'; 
+import 'profile.dart'; 
 
 class CustomNavigationBar extends StatefulWidget {
   @override
@@ -14,11 +14,11 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
   int _currentIndex = 0;
 
   final List<Widget> _pages = [
+    Home(),
     Diary(),
-    Diary(),
-    Diary(),
-    Diary(),
-    Diary(),
+    Chat(),
+    Stat(),
+    Profile(),
   ];
 
   @override
