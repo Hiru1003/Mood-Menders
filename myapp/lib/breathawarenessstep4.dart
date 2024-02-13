@@ -1,8 +1,7 @@
-import 'package:app/breathawarenessstep3.dart';
+import 'package:app/breathawarenessstep5.dart';
 import 'package:app/button.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 
 class breathawarenessstep4_page extends StatefulWidget {
   const breathawarenessstep4_page({
@@ -36,7 +35,7 @@ class _breathawarenessstep4_pageState extends State<breathawarenessstep4_page> {
                     fontWeight: FontWeight.w400),
               ),
               Image.asset(
-                'lib/images/bg.png',
+                'lib/images/leaf.png',
                 height: 72,
               )
             ],
@@ -127,6 +126,8 @@ class _breathawarenessstep4_pageState extends State<breathawarenessstep4_page> {
                             textStyle: Theme.of(context).textTheme.displayLarge,
                             color: const Color.fromARGB(255, 70, 66, 68),
                             fontSize: 13,
+                            wordSpacing: 1.6,
+                            height: 1.3,
                             fontWeight: FontWeight.w400),
                       ),
                     ],
@@ -149,7 +150,7 @@ class _breathawarenessstep4_pageState extends State<breathawarenessstep4_page> {
                       context,
                       MaterialPageRoute(
                           builder: (context) =>
-                              (const breathawarenessstep3_page())),
+                              (const breathawarenessstep5_page())),
                     );
                   }
                 },

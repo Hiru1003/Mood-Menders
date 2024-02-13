@@ -3,7 +3,6 @@ import 'package:app/button.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-
 class breathawarenessstep3_page extends StatefulWidget {
   const breathawarenessstep3_page({
     super.key,
@@ -36,7 +35,7 @@ class _breathawarenessstep3_pageState extends State<breathawarenessstep3_page> {
                     fontWeight: FontWeight.w400),
               ),
               Image.asset(
-                'lib/images/bg.png',
+                'lib/images/leaf.png',
                 height: 72,
               )
             ],
@@ -127,6 +126,8 @@ class _breathawarenessstep3_pageState extends State<breathawarenessstep3_page> {
                             textStyle: Theme.of(context).textTheme.displayLarge,
                             color: const Color.fromARGB(255, 70, 66, 68),
                             fontSize: 13,
+                            wordSpacing: 1.6,
+                            height: 1.3,
                             fontWeight: FontWeight.w400),
                       ),
                     ],
