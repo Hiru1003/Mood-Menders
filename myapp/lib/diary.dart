@@ -99,7 +99,7 @@ class Diary extends StatelessWidget {
                   child: TodayDateWidget(),
                 ),
                 const Padding(
-                  padding: EdgeInsets.only(left: 196.0),
+                  padding: EdgeInsets.only(left: 150.0),
                   child: Text(
                     'Today',
                     style: TextStyle(
