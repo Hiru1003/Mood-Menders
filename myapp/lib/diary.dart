@@ -115,23 +115,41 @@ class Diary extends StatelessWidget {
             Container(
               margin: EdgeInsets.symmetric(vertical: 10),
               width: 300,
-              height: 0.5,
+                height: 0.5, // replace AutocompleteOptions.maxHeight with a specific value
               color: const Color.fromARGB(255, 70, 66, 68),
             ),
             Container(
-              padding: EdgeInsets.all(10),
-              margin: EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                color: const Color.fromARGB(255, 204, 248, 245),
-                border: Border.all(color: Colors.grey),
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Text(
-                'This is some text inside a box.',
-                style: TextStyle(fontSize: 16),
-              ),
-            ),
+  width: 370,
+  height: 200,
+  padding: EdgeInsets.all(15),
+  margin: EdgeInsets.all(15),
+  decoration: BoxDecoration(
+    color: const Color.fromARGB(255, 204, 248, 245),
+    border: Border.all(color: Colors.grey),
+    borderRadius: BorderRadius.circular(10),
+  ),
+  child: Row(
+    children: <Widget>[
+      Expanded(
+        child: Image.asset(
+          'lib/images/diary1.png',
+          width: 10,
+          height: 10,
+        ),
+      ),
+      SizedBox(width: 10), // Add some space between the image and the text
+      Expanded(
+        child: Text(
+          'This is some text inside a box.',
+          style: TextStyle(fontSize: 16),
+        ),
+      ),
+    ],
+  ),
+),
       //bottomNavigationBar: CustomNavigationBar(),
+    ],),
+    ),
     );
   }
 }
