@@ -21,7 +21,7 @@ class Diary extends StatelessWidget {
               Column(
                 children: [
                   Padding(
-  padding: EdgeInsets.all(20.0), 
+  padding: EdgeInsets.only(left: 10.0, top:20.0), 
   child: Text(
     'SECRET DIARY',
     style: GoogleFonts.poppins(
@@ -33,7 +33,7 @@ class Diary extends StatelessWidget {
   ),
 ),
                   Padding(
-  padding: EdgeInsets.only(right:60.0), 
+  padding: EdgeInsets.only(right:48.0, top: 16.0), 
   child: ElevatedButton(
     onPressed: () {
       // button functionality 
@@ -41,7 +41,7 @@ class Diary extends StatelessWidget {
     child: const Row(
   mainAxisAlignment: MainAxisAlignment.start,
   children: <Widget>[
-    Icon(Icons.add), 
+    Icon(Icons.add, color: const Color.fromARGB(255, 70, 66, 68),), 
     Text(
       'New',
       style: TextStyle(
@@ -80,6 +80,7 @@ class Diary extends StatelessWidget {
       backgroundColor: const Color.fromARGB(251, 241, 255, 252),
       body: SingleChildScrollView(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             
             const Padding(
@@ -95,23 +96,33 @@ class Diary extends StatelessWidget {
             Row(
               children: <Widget>[],
             ),
-            Align(
-  alignment: Alignment.centerLeft,
-  child: Text(
-    'Today',
-    style: TextStyle(
-      fontSize: 16,
-      fontWeight: FontWeight.bold,
+            
+  Row(
+  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+  children: [
+     Padding(
+      padding: EdgeInsets.only(left: 20.0), // Adjust the padding as needed
+      child: Text(
+        '16 October 2023',
+        style: TextStyle(
+          fontSize: 16,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
     ),
-  ),
+    Padding(
+      padding: EdgeInsets.only(right: 24.0),
+      child: Text(
+        'Today',
+        style: TextStyle(
+          fontSize: 16,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+    ),
+   
+  ],
 ),
-            Text(
-              '16 October 2023',
-              style: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
           ],
         ),
       ),
