@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:app/myButton.dart';
 import 'package:app/dates.dart';
+import 'package:app/navigationBar.dart';
 
 class Diary extends StatelessWidget {
   const Diary({super.key});
@@ -122,6 +123,8 @@ class Diary extends StatelessWidget {
           ],
         ),
       ),
+      bottomNavigationBar: CustomNavigationBar(),
     );
+
   }
 }
