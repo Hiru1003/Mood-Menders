@@ -99,7 +99,7 @@ class Diary extends StatelessWidget {
                   child: TodayDateWidget(),
                 ),
                 const Padding(
-                  padding: EdgeInsets.only(left: 150.0),
+                  padding: EdgeInsets.only(right: 20.0),
                   child: Text(
                     'Today',
                     style: TextStyle(
@@ -109,11 +109,16 @@ class Diary extends StatelessWidget {
                   ),
                 ),
             
-            SizedBox(height: 20),
+            
               ],
             ),
             DatesWidget(),
-            
+            Container(
+          margin: EdgeInsets.symmetric(vertical: 10), // Add some vertical margin
+          width: 300, // Adjust the width as needed
+          height: 0.5, // Adjust the thickness as needed
+          color: const Color.fromARGB(255, 70, 66, 68), // Adjust the color as needed
+        ),
           ],
         ),
       ),
