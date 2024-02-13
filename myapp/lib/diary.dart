@@ -21,7 +21,7 @@ class Diary extends StatelessWidget {
               Column(
                 children: [
                   Padding(
-  padding: EdgeInsets.only(left: 10.0, top:20.0), 
+  padding: EdgeInsets.only(left: 5.0, top:20.0), 
   child: Text(
     'SECRET DIARY',
     style: GoogleFonts.poppins(
