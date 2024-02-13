@@ -21,7 +21,7 @@ class Diary extends StatelessWidget {
               Column(
                 children: [
                   Padding(
-  padding: EdgeInsets.all(20.0), // Adjust the value as needed
+  padding: EdgeInsets.all(20.0), 
   child: Text(
     'SECRET DIARY',
     style: GoogleFonts.poppins(
@@ -33,21 +33,20 @@ class Diary extends StatelessWidget {
   ),
 ),
                   Padding(
-  padding: EdgeInsets.only(right:60.0), // Adjust the padding as needed
+  padding: EdgeInsets.only(right:60.0), 
   child: ElevatedButton(
     onPressed: () {
-      // Add your button functionality here
+      // button functionality 
     },
     child: const Row(
   mainAxisAlignment: MainAxisAlignment.start,
   children: <Widget>[
-    Icon(Icons.add), // This is the new icon
+    Icon(Icons.add), 
     Text(
       'New',
       style: TextStyle(
-        fontSize: 16, // Adjust as needed
-        fontWeight: FontWeight.bold, // Adjust as needed
-        color: const Color.fromARGB(255, 70, 66, 68), // Adjust as needed
+        fontSize: 16,  
+        color: const Color.fromARGB(255, 70, 66, 68), 
       ),
     ),
   ],
@@ -58,7 +57,7 @@ class Diary extends StatelessWidget {
               ),
               Image.asset(
                 'lib/images/diary1.png',
-                fit: BoxFit.cover, // Changed from 8 to BoxFit.cover
+                fit: BoxFit.cover,
               ),
               
             ],
