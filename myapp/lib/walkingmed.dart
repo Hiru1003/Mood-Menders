@@ -34,7 +34,7 @@ class _walkingmed_pageState extends State<walkingmed_page> {
                       fontWeight: FontWeight.w400),
                 ),
                 Image.asset(
-                  'lib/images/newbg.png',
+                  'lib/images/leaf.png',
                   height: 72,
                 )
               ],
