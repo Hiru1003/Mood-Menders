@@ -1,5 +1,8 @@
+import 'package:app/todaysdate.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:app/myButton.dart';
+import 'package:app/dates.dart';
 
 class Diary extends StatelessWidget {
   const Diary({super.key});
@@ -21,45 +24,38 @@ class Diary extends StatelessWidget {
               Column(
                 children: [
                   Padding(
-  padding: EdgeInsets.all(20.0), 
-  child: Text(
-    'SECRET DIARY',
-    style: GoogleFonts.poppins(
-      textStyle: Theme.of(context).textTheme.displayLarge,
-      color: const Color.fromARGB(255, 70, 66, 68),
-      fontSize: 24,
-      fontWeight: FontWeight.w600,
-    ),
-  ),
-),
+                    padding: const EdgeInsets.only(left: 5.0, top:20.0), 
+                    child: Text(
+                      'SECRET DIARY',
+                      style: GoogleFonts.poppins(
+                        textStyle: Theme.of(context).textTheme.displayLarge,
+                        color: const Color.fromARGB(255, 70, 66, 68),
+                        fontSize: 24,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
                   Padding(
-  padding: EdgeInsets.only(right:60.0), 
-  child: ElevatedButton(
-    onPressed: () {
-      // button functionality 
-    },
-    child: const Row(
-  mainAxisAlignment: MainAxisAlignment.start,
-  children: <Widget>[
-    Icon(Icons.add), 
-    Text(
-      'New',
-      style: TextStyle(
-        fontSize: 16,  
-        color: const Color.fromARGB(255, 70, 66, 68), 
-      ),
-    ),
-  ],
-),
-  ),
-)
+                    padding: const EdgeInsets.only(left: 10, right: 10),
+                    child: SButton(
+                      // onTap: () {
+                      //   {
+                      //     Navigator.push(
+                      //       context,
+                      //       MaterialPageRoute(
+                      //           builder: (context) =>
+                      //               (const page())),
+                      //     );
+                      //   }
+                      // },
+                    ),
+                  ),
                 ],
               ),
               Image.asset(
                 'lib/images/diary1.png',
                 fit: BoxFit.cover,
               ),
-              
             ],
           ),
         ),
@@ -80,38 +76,42 @@ class Diary extends StatelessWidget {
       backgroundColor: const Color.fromARGB(251, 241, 255, 252),
       body: SingleChildScrollView(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             ),
             Container(color: Colors.white),
-            Row(
+            const Row(
+              children: <Widget>[],
+            ),
+            const Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            ),
+            const Row(
               children: <Widget>[],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(left: 20.0), // Adjust the padding as needed
+                  child: TodayDateWidget(),
+                ),
+                const Padding(
+                  padding: EdgeInsets.only(right: 24.0),
+                  child: Text(
+                    'Today',
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+            DatesWidget(),
+              ],
             ),
-            Row(
-              children: <Widget>[],
-            ),
-            Align(
-  alignment: Alignment.centerLeft,
-  child: Text(
-    'Today',
-    style: TextStyle(
-      fontSize: 16,
-      fontWeight: FontWeight.bold,
-    ),
-  ),
-),
-            Text(
-              '16 October 2023',
-              style: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
+            
           ],
         ),
       ),
