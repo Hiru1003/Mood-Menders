@@ -1,5 +1,9 @@
 import 'package:app/breathawarenessmed.dart';
+import 'package:app/guidedvisualization.dart';
+import 'package:app/loving-kindnessmed.dart';
 import 'package:app/mindfulnessmed.dart';
+import 'package:app/movementmed.dart';
+import 'package:app/walkingmed.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
