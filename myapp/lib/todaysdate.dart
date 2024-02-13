@@ -7,11 +7,11 @@ class TodayDateWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     DateTime now = DateTime.now();
-    String formattedDate = DateFormat('yyyy-MM-dd').format(now);
+    String formattedDate = DateFormat('dd-mm-yyyy').format(now);
 
     return Text(
-      'Today\'s date: $formattedDate',
-      style: TextStyle(fontSize: 20),
+      '$formattedDate',
+      style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
     );
   }
 }
