@@ -38,18 +38,39 @@ class Diary extends StatelessWidget {
     onPressed: () {
       // button functionality 
     },
-    child: const Row(
+    child: Row(
   mainAxisAlignment: MainAxisAlignment.start,
   children: <Widget>[
-    Icon(Icons.add, color: const Color.fromARGB(255, 70, 66, 68),), 
-    Text(
-      'New',
-      style: TextStyle(
-        fontSize: 16,  
-        color: const Color.fromARGB(255, 70, 66, 68), 
+  Icon(Icons.add, color: const Color.fromARGB(255, 70, 66, 68),), 
+  MouseRegion(
+    cursor: SystemMouseCursors.click,
+    onHover: (event) {
+      // Change the color or do something when hovered
+    },
+    child: Text.rich(
+      TextSpan(
+        text: 'New',
+        style: TextStyle(
+          fontSize: 16,
+          foreground: Paint()
+            ..style = PaintingStyle.stroke
+            ..strokeWidth = 2
+            ..color = const Color.fromARGB(255, 70, 66, 68),
+        ),
+        children: <TextSpan>[
+          TextSpan(
+            text: 'New',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 16,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ],
       ),
     ),
-  ],
+  ),
+],
 ),
   ),
 )
