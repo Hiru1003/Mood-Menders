@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:app/myButton.dart';
 import 'package:app/dates.dart';
+import 'package:intl/intl.dart';
 
 class Diary extends StatelessWidget {
   const Diary({super.key});
@@ -98,7 +99,14 @@ class Diary extends StatelessWidget {
      Padding(
       padding: EdgeInsets.only(left: 20.0), // Adjust the padding as needed
       child: Text(
-        '16 October 2023',
+        
+
+        // ...
+
+        DateTime now = DateTime.now();
+        String formattedDate = DateFormat('dd MMMM yyyy').format(now);
+
+        print(formattedDate); // Output: 16 October 2023
         style: TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.bold,
