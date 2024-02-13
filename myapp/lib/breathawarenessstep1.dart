@@ -72,7 +72,7 @@ class _breathawarenessstep1_pageState extends State<breathawarenessstep1_page> {
                   children: [
                     //image
                     Image.asset(
-                      'lib/images/step10 .png',
+                      'lib/images/step4.png',
                       height: 240,
                     )
                   ],
