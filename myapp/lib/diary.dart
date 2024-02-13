@@ -35,18 +35,17 @@ class Diary extends StatelessWidget {
 ),
                   Padding(
               padding: const EdgeInsets.only(left: 10, right: 10),
-              child: MyButton(
-                buttontext: 'Start Meditation Now',
-                onTap: () {
-                  {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) =>
-                              (const breathawarenessstep1_page())),
-                    );
-                  }
-                },
+              child: SButton(
+                // onTap: () {
+                //   {
+                //     Navigator.push(
+                //       context,
+                //       MaterialPageRoute(
+                //           builder: (context) =>
+                //               (const breathawarenessstep1_page())),
+                //     );
+                //   }
+                // },
               )),
                 ],
               ),
