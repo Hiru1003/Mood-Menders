@@ -113,27 +113,24 @@ class Diary extends StatelessWidget {
             ),
             DatesWidget(),
             Container(
-              margin: EdgeInsets.symmetric(vertical: 10), // Add some vertical margin
-              width: 300, // Adjust the width as needed
-              height: 0.5, // Adjust the thickness as needed
-              color: const Color.fromARGB(255, 70, 66, 68), // Adjust the color as needed
+              margin: EdgeInsets.symmetric(vertical: 10),
+              width: 300,
+              height: 0.5,
+              color: const Color.fromARGB(255, 70, 66, 68),
             ),
             Container(
-              padding: EdgeInsets.all(10), // Add some padding
-              margin: EdgeInsets.all(10), // Add some margin
+              padding: EdgeInsets.all(10),
+              margin: EdgeInsets.all(10),
               decoration: BoxDecoration(
-                color: const Color.fromARGB(255, 204, 248, 245), // Set the color of the box
-                border: Border.all(color: Colors.grey), // Set the border color
-                borderRadius: BorderRadius.circular(10), // Set the border radius
+                color: const Color.fromARGB(255, 204, 248, 245),
+                border: Border.all(color: Colors.grey),
+                borderRadius: BorderRadius.circular(10),
               ),
               child: Text(
                 'This is some text inside a box.',
                 style: TextStyle(fontSize: 16),
               ),
             ),
-          ],
-        ),
-      ),
       //bottomNavigationBar: CustomNavigationBar(),
     );
   }
