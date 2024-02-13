@@ -16,48 +16,55 @@ class Diary extends StatelessWidget {
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Text(
-                'SECRET  \nDIARY',
-                style: GoogleFonts.poppins(
-                    textStyle: Theme.of(context).textTheme.displayLarge,
-                    color: const Color.fromARGB(255, 70, 66, 68),
-                    fontSize: 18,
-                    fontWeight: FontWeight.w400),
+              Column(
+                children: [
+                  Padding(
+  padding: EdgeInsets.all(20.0), 
+  child: Text(
+    'SECRET DIARY',
+    style: GoogleFonts.poppins(
+      textStyle: Theme.of(context).textTheme.displayLarge,
+      color: const Color.fromARGB(255, 70, 66, 68),
+      fontSize: 24,
+      fontWeight: FontWeight.w600,
+    ),
+  ),
+),
+                  Padding(
+  padding: EdgeInsets.only(right:60.0), 
+  child: ElevatedButton(
+    onPressed: () {
+      // button functionality 
+    },
+    child: const Row(
+  mainAxisAlignment: MainAxisAlignment.start,
+  children: <Widget>[
+    Icon(Icons.add), 
+    Text(
+      'New',
+      style: TextStyle(
+        fontSize: 16,  
+        color: const Color.fromARGB(255, 70, 66, 68), 
+      ),
+    ),
+  ],
+),
+  ),
+)
+                ],
               ),
               Image.asset(
                 'lib/images/diary1.png',
-                height: 71,
+                fit: BoxFit.cover,
               ),
-              IconButton(
-                icon: const Icon(Icons.add),
-                onPressed: () {
-                  showDialog(
-                    context: context,
-                    builder: (BuildContext context) {
-                      return AlertDialog(
-                        title: const Text(' Page'),
-                        content: const Text('This is a popup page.'),
-                        actions: <Widget>[
-                          TextButton(
-                            child: const Text('Close'),
-                            onPressed: () {
-                              Navigator.of(context).pop();
-                            },
-                          ),
-                        ],
-                      );
-                    },
-                  );
-                },
-                color: Colors.green,
-              ),
+              
             ],
           ),
         ),
         titleSpacing: 4.0,
-        toolbarHeight: 75,
+        toolbarHeight: 130,
         toolbarOpacity: 0.9,
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.only(
@@ -74,22 +81,7 @@ class Diary extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            BottomNavigationBar(
-              items: const <BottomNavigationBarItem>[
-                BottomNavigationBarItem(
-                  icon: Icon(Icons.home),
-                  label: 'Home',
-                ),
-                BottomNavigationBarItem(
-                  icon: Icon(Icons.business),
-                  label: 'Business',
-                ),
-                BottomNavigationBarItem(
-                  icon: Icon(Icons.school),
-                  label: 'School',
-                ),
-              ],
-            ),
+            
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             ),
@@ -103,13 +95,16 @@ class Diary extends StatelessWidget {
             Row(
               children: <Widget>[],
             ),
-            Text(
-              'Today',
-              style: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
+            Align(
+  alignment: Alignment.centerLeft,
+  child: Text(
+    'Today',
+    style: TextStyle(
+      fontSize: 16,
+      fontWeight: FontWeight.bold,
+    ),
+  ),
+),
             Text(
               '16 October 2023',
               style: TextStyle(
