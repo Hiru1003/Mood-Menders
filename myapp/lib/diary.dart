@@ -119,156 +119,156 @@ class Diary extends StatelessWidget {
                 height: 0.5, 
               color: const Color.fromARGB(255, 70, 66, 68),
             ),
-          Container(
-  width: 370,
-  height: 172.0, // replace with your desired height
-  padding: EdgeInsets.all(15),
-  margin: EdgeInsets.all(15),
-  decoration: BoxDecoration(
-    color: const Color.fromARGB(255, 204, 248, 245),
-    borderRadius: BorderRadius.circular(10),
-  ),
-  child: Column(
-  children: <Widget>[
-    Stack(
-      children: <Widget>[
-        Row(
-          crossAxisAlignment: CrossAxisAlignment.start, 
-          children: <Widget>[
-            Image.asset(
-              'lib/images/loveearth (1).png',
-              width: 60,
-              height: 60,
-            ),
-            SizedBox(width: 10), 
-            Padding(
-              padding: EdgeInsets.only(top: 10), 
+            Container(
+              width: 370,
+              height: 172.0, // replace with your desired height
+              padding: EdgeInsets.all(15),
+              margin: EdgeInsets.all(15),
+              decoration: BoxDecoration(
+                color: const Color.fromARGB(255, 204, 248, 245),
+                borderRadius: BorderRadius.circular(10),
+              ),
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Text(
-                    'Happy',
-                    style: TextStyle(fontSize: 16),
+                  Stack(
+                    children: <Widget>[
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start, 
+                        children: <Widget>[
+                          Image.asset(
+                            'lib/images/loveearth (1).png',
+                            width: 60,
+                            height: 60,
+                          ),
+                          SizedBox(width: 10), 
+                          Padding(
+                            padding: EdgeInsets.only(top: 10), 
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text(
+                                  'Happy',
+                                  style: TextStyle(fontSize: 16),
+                                ),
+                                Text(
+                                  '${DateFormat('d MMMM yyyy, h:mm a').format(DateTime.now())}',
+                                  style: TextStyle(fontSize: 13),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                      Positioned(
+                        top: 0,
+                        right: 0,
+                        child: Image.asset(
+                          'lib/images/love 1.png', // Replace with your image path
+                          width: 30,
+                          height: 30,
+                        ),
+                      ),
+                    ],
                   ),
-                  Text(
-                    '${DateFormat('d MMMM yyyy, h:mm a').format(DateTime.now())}',
-                    style: TextStyle(fontSize: 13),
+                  Padding(
+                    padding: EdgeInsets.only(top: 10), // Set your desired padding value
+                    child: Align(
+                      alignment: Alignment.topLeft,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Text(
+                            'I got stickers from FOSS',
+                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                          ),
+                          Text(
+                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.',
+                            style: TextStyle(fontSize: 16),
+                          ),
+                        ],
+                      ),
+                    ),
                   ),
                 ],
               ),
             ),
-          ],
-        ),
-        Positioned(
-          top: 0,
-          right: 0,
-          child: Image.asset(
-            'lib/images/love 1.png', // Replace with your image path
-            width: 30,
-            height: 30,
-          ),
-        ),
-      ],
-    ),
-    Padding(
-  padding: EdgeInsets.only(top: 10), // Set your desired padding value
-  child: Align(
-    alignment: Alignment.topLeft,
-    child: Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
-        Text(
-          'I got stickers from FOSS',
-          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-        ),
-        Text(
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.',
-          style: TextStyle(fontSize: 16),
-        ),
-      ],
-    ),
-  ),
-),
-  ],
-),
-),
-
-Container(
-  width: 370,
-  height: 172.0, // replace with your desired height
-  padding: EdgeInsets.all(15),
-  margin: EdgeInsets.all(15),
-  decoration: BoxDecoration(
-    color: const Color.fromARGB(255, 204, 248, 245),
-    borderRadius: BorderRadius.circular(10),
-  ),
-  child: Column(
-  children: <Widget>[
-    Stack(
-      children: <Widget>[
-        Row(
-          crossAxisAlignment: CrossAxisAlignment.start, 
-          children: <Widget>[
-            Image.asset(
-              'lib/images/loveearth (1).png',
-              width: 60,
-              height: 60,
-            ),
-            SizedBox(width: 10), 
-            Padding(
-              padding: EdgeInsets.only(top: 10), 
+            Container(
+              width: 370,
+              height: 172.0, // replace with your desired height
+              padding: EdgeInsets.all(15),
+              margin: EdgeInsets.all(15),
+              decoration: BoxDecoration(
+                color: const Color.fromARGB(255, 204, 248, 245),
+                borderRadius: BorderRadius.circular(10),
+              ),
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Text(
-                    'Happy',
-                    style: TextStyle(fontSize: 16),
+                  Stack(
+                    children: <Widget>[
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start, 
+                        children: <Widget>[
+                          Image.asset(
+                            'lib/images/loveearth (1).png',
+                            width: 60,
+                            height: 60,
+                          ),
+                          SizedBox(width: 10), 
+                          Padding(
+                            padding: EdgeInsets.only(top: 10), 
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text(
+                                  'Happy',
+                                  style: TextStyle(fontSize: 16),
+                                ),
+                                Text(
+                                  '${DateFormat('d MMMM yyyy, h:mm a').format(DateTime.now())}',
+                                  style: TextStyle(fontSize: 13),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                      Positioned(
+                        top: 0,
+                        right: 0,
+                        child: Image.asset(
+                          'lib/images/love 1.png', // Replace with your image path
+                          width: 30,
+                          height: 30,
+                        ),
+                      ),
+                    ],
                   ),
-                  Text(
-                    '${DateFormat('d MMMM yyyy, h:mm a').format(DateTime.now())}',
-                    style: TextStyle(fontSize: 13),
+                  Padding(
+                    padding: EdgeInsets.only(top: 10), // Set your desired padding value
+                    child: Align(
+                      alignment: Alignment.topLeft,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Text(
+                            'I got stickers from FOSS',
+                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                          ),
+                          Text(
+                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.',
+                            style: TextStyle(fontSize: 16),
+                          ),
+                        ],
+                      ),
+                    ),
                   ),
                 ],
               ),
             ),
+            //bottomNavigationBar: CustomNavigationBar(),
           ],
         ),
-        Positioned(
-          top: 0,
-          right: 0,
-          child: Image.asset(
-            'lib/images/love 1.png', // Replace with your image path
-            width: 30,
-            height: 30,
-          ),
-        ),
-      ],
-    ),
-    Padding(
-  padding: EdgeInsets.only(top: 10), // Set your desired padding value
-  child: Align(
-    alignment: Alignment.topLeft,
-    child: Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
-        Text(
-          'I got stickers from FOSS',
-          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-        ),
-        Text(
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.',
-          style: TextStyle(fontSize: 16),
-        ),
-      ],
-    ),
-  ),
-),
-  ],
-),
-),
-      //bottomNavigationBar: CustomNavigationBar(),
-    ],),
-    ),
+      ),
     );
   }
 }
