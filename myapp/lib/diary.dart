@@ -33,47 +33,20 @@ class Diary extends StatelessWidget {
   ),
 ),
                   Padding(
-  padding: EdgeInsets.only(right:48.0, top: 16.0), 
-  child: ElevatedButton(
-    onPressed: () {
-      // button functionality 
-    },
-    child: Row(
-  mainAxisAlignment: MainAxisAlignment.start,
-  children: <Widget>[
-  Icon(Icons.add, color: const Color.fromARGB(255, 70, 66, 68),), 
-  MouseRegion(
-    cursor: SystemMouseCursors.click,
-    onHover: (event) {
-      // Change the color or do something when hovered
-    },
-    child: Text.rich(
-      TextSpan(
-        text: 'New',
-        style: TextStyle(
-          fontSize: 16,
-          foreground: Paint()
-            ..style = PaintingStyle.stroke
-            ..strokeWidth = 2
-            ..color = const Color.fromARGB(255, 70, 66, 68),
-        ),
-        children: <TextSpan>[
-          TextSpan(
-            text: 'New',
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 16,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        ],
-      ),
-    ),
-  ),
-],
-),
-  ),
-)
+              padding: const EdgeInsets.only(left: 10, right: 10),
+              child: MyButton(
+                buttontext: 'Start Meditation Now',
+                onTap: () {
+                  {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              (const breathawarenessstep1_page())),
+                    );
+                  }
+                },
+              )),
                 ],
               ),
               Image.asset(

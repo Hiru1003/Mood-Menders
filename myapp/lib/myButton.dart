@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class MyButton extends StatefulWidget {
+class SButton extends StatefulWidget {
   @override
-  _MyButtonState createState() => _MyButtonState();
+  _SButtonState createState() => _SButtonState();
 }
 
-class _MyButtonState extends State<MyButton> {
+class _SButtonState extends State<SButton> {
   bool _isClicked = false;
 
   @override
