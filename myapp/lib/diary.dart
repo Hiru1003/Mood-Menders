@@ -25,38 +25,38 @@ class Diary extends StatelessWidget {
               Column(
                 children: [
                   Padding(
-  padding: EdgeInsets.only(left: 5.0, top:20.0), 
-  child: Text(
-    'SECRET DIARY',
-    style: GoogleFonts.poppins(
-      textStyle: Theme.of(context).textTheme.displayLarge,
-      color: const Color.fromARGB(255, 70, 66, 68),
-      fontSize: 24,
-      fontWeight: FontWeight.w600,
-    ),
-  ),
-),
+                    padding: EdgeInsets.only(left: 5.0, top:20.0), 
+                    child: Text(
+                      'SECRET DIARY',
+                      style: GoogleFonts.poppins(
+                        textStyle: Theme.of(context).textTheme.displayLarge,
+                        color: const Color.fromARGB(255, 70, 66, 68),
+                        fontSize: 24,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
                   Padding(
-              padding: const EdgeInsets.only(left: 10, right: 10),
-              child: SButton(
-                // onTap: () {
-                //   {
-                //     Navigator.push(
-                //       context,
-                //       MaterialPageRoute(
-                //           builder: (context) =>
-                //               (const page())),
-                //     );
-                //   }
-                // },
-              )),
+                    padding: const EdgeInsets.only(left: 10, right: 10),
+                    child: SButton(
+                      // onTap: () {
+                      //   {
+                      //     Navigator.push(
+                      //       context,
+                      //       MaterialPageRoute(
+                      //           builder: (context) =>
+                      //               (const page())),
+                      //     );
+                      //   }
+                      // },
+                    ),
+                  ),
                 ],
               ),
               Image.asset(
                 'lib/images/diary1.png',
                 fit: BoxFit.cover,
               ),
-              
             ],
           ),
         ),
@@ -79,7 +79,6 @@ class Diary extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             ),
@@ -93,30 +92,27 @@ class Diary extends StatelessWidget {
             Row(
               children: <Widget>[],
             ),
-            
-  Row(
-  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-  children: [
-     Padding(
-      padding: EdgeInsets.only(left: 20.0), // Adjust the padding as needed
-      child: TodayDateWidget(),
-    ),
-    Padding(
-      padding: EdgeInsets.only(right: 24.0),
-      child: Text(
-        'Today',
-        style: TextStyle(
-          fontSize: 16,
-          fontWeight: FontWeight.bold,
-        ),
-      ),
-    ),
-   
-  ],
-),
-          Container(
-            child: DatesWidget(),
-          )
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(left: 20.0), // Adjust the padding as needed
+                  child: TodayDateWidget(),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(right: 24.0),
+                  child: Text(
+                    'Today',
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            // Add DatesWidget here
+            DatesWidget(),
           ],
         ),
       ),
