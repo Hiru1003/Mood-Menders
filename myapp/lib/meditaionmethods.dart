@@ -28,7 +28,7 @@ class _meditaionmethods_pageState extends State<meditaionmethods_page> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Text(
-                'MEDITATION METHODS',
+                'MEDITATION METHODS ',
                 style: GoogleFonts.poppins(
                     textStyle: Theme.of(context).textTheme.displayLarge,
                     color: const Color.fromARGB(255, 70, 66, 68),
