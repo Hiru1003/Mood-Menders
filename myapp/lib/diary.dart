@@ -1,9 +1,10 @@
-import 'package:app/button.dart';
-import 'package:app/newDiary.dart';
+
+import 'package:app/newDiary.dart' as newDiary;
 import 'package:app/todaysdate.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:app/myButton.dart';
+import 'package:app/myButton.dart' as myButton;
 import 'package:app/dates.dart';
 import 'package:app/navigationBar.dart';
 import 'package:intl/intl.dart';
@@ -13,8 +14,7 @@ class Diary extends StatelessWidget {
 
   get bottomNavigationBar => null;
   
-  get MyButton => null;
-  
+ 
   // get myButton => null;
 
   @override
@@ -41,19 +41,16 @@ class Diary extends StatelessWidget {
                         fontSize: 24,
                         fontWeight: FontWeight.w600,
                       ),
-                    )
+                    ),
                   ),
                 Padding(
   padding: const EdgeInsets.only(right: 36, top: 16),
   child: myButton.SButton(
-    onTap: () {
-      Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => NewDiary()),
-      );
+    onTap: (){
+      Get.to(newDiary.NewDiary());
     },
   ),
-)  
+) , 
 
                 ],
               ),
