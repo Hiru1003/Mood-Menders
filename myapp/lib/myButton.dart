@@ -25,25 +25,24 @@ class _SButtonState extends State<SButton> {
         }
       },
      onTapUp: (TapUpDetails details) {
-  if (!_isButtonDisabled) {
-    setState(() {
-      _isClicked = false;
-      _isButtonDisabled = true;
-    });
+        if (!_isButtonDisabled) {
+          setState(() {
+            _isClicked = false;
+            _isButtonDisabled = true;
+          });
 
-    // Navigate to the new screen
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => NewDiary()),
-    );
-  }
-},
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => NewDiary()),
+          );
+        }
+      },
       child: Container(
-        width: 120, // Adjust the width as needed
-        height: 50, // Adjust the height as needed
+        width: 120,
+        height: 50,
         decoration: BoxDecoration(
           color: const Color.fromARGB(255, 204, 248, 245),
-          borderRadius: BorderRadius.circular(25), // Add this line to make the edges curved
+          borderRadius: BorderRadius.circular(25),
           boxShadow: _isClicked
               ? []
               : [
@@ -51,22 +50,20 @@ class _SButtonState extends State<SButton> {
                     color: Colors.grey.withOpacity(0.5),
                     spreadRadius: 2,
                     blurRadius: 5,
-                    offset: Offset(0, 3), // changes position of shadow
+                    offset: Offset(0, 3),
                   ),
                 ],
         ),
         child: Padding(
-          padding: const EdgeInsets.all(8.0), // Add padding
+          padding: const EdgeInsets.all(8.0),
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.center, // Center the children
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Icon(Icons.add, color: const Color.fromARGB(255, 70, 66, 68),),
-              SizedBox(width: 8), // Add some space between the icon and the text
+              Icon(Icons.add, color: const Color.fromARGB(255, 70, 66, 68)),
+              SizedBox(width: 8),
               MouseRegion(
                 cursor: SystemMouseCursors.click,
-                onHover: (event) {
-                  // Change the color or do something when hovered
-                },
+                onHover: (event) {},
                 child: Text(
                   'New',
                   style: TextStyle(
