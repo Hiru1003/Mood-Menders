@@ -1,25 +1,35 @@
 import 'package:flutter/material.dart';
 
 class SButton extends StatefulWidget {
+  final VoidCallback onTap;
+
+  SButton({required this.onTap});
+
   @override
   _SButtonState createState() => _SButtonState();
 }
 
 class _SButtonState extends State<SButton> {
   bool _isClicked = false;
+  bool _isButtonDisabled = false;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTapDown: (TapDownDetails details) {
-        setState(() {
-          _isClicked = true;
-        });
+        if (!_isButtonDisabled) {
+          setState(() {
+            _isClicked = true;
+          });
+        }
       },
       onTapUp: (TapUpDetails details) {
-        setState(() {
-          _isClicked = false;
-        });
+        if (!_isButtonDisabled) {
+          setState(() {
+            _isClicked = false;
+            _isButtonDisabled = true;
+          });
+        }
       },
       child: Container(
         width: 120, // Adjust the width as needed
