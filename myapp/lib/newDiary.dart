@@ -1,6 +1,39 @@
-import 'package:app/myButton.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+class SButton extends StatefulWidget {
+  final VoidCallback onPressed;
+  final bool enabled;
+
+  SButton({required this.onPressed, this.enabled = true});
+
+  @override
+  _SButtonState createState() => _SButtonState();
+}
+
+class _SButtonState extends State<SButton> {
+  bool _isClicked = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTapDown: (TapDownDetails details) {
+        if (!widget.enabled) return;
+        setState(() {
+          _isClicked = true;
+        });
+      },
+      onTapUp: (TapUpDetails details) {
+        if (!widget.enabled) return;
+        setState(() {
+          _isClicked = false;
+        });
+        widget.onPressed();
+      },
+      // Rest of the code...
+    );
+  }
+}
 
 class NewDiary extends StatelessWidget {
   const NewDiary({Key? key}) : super(key: key);
@@ -32,17 +65,18 @@ class NewDiary extends StatelessWidget {
                     ),
                   ),
                   Padding(
-  padding: const EdgeInsets.only(right: 36, top: 16),
-  child: SButton(
-    onPressed: () {
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => NewDiary()),
-    );
-  },
-),
-                ),  ],
-                
+                    padding: const EdgeInsets.only(right: 36, top: 16),
+                    child: SButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => NewDiary()),
+                        );
+                      },
+                      enabled: false,
+                    ),
+                  ),
+                ],
               ),
               Image.asset(
                 'lib/images/diary1.png',
