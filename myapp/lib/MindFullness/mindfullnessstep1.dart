@@ -1,3 +1,4 @@
+import 'package:app/button.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -127,6 +128,26 @@ class _mindfulnessstep1_pageState extends State<mindfulnessstep1_page> {
                   ],
                 ),
               ),
+            ),
+          ),
+
+          const SizedBox(
+            height: 40,
+          ),
+          //continue button
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: MyButton(
+              buttontext: 'Next Step',
+              onTap: () {
+                {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => (const mindfulnessstep2_page())),
+                  );
+                }
+              },
             ),
           ),
         ])));
