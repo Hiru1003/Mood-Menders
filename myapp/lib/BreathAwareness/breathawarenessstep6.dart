@@ -1,4 +1,3 @@
-import 'package:app/breathawarenessmed.dart';
 import 'package:app/button.dart';
 import 'package:app/meditaionmethods.dart';
 import 'package:flutter/material.dart';
