@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class SButton extends StatefulWidget {
-  SButton(Null Function() param0);
+  final VoidCallback onPressed;
+  SButton({required this.onPressed});
 
   @override
   _SButtonState createState() => _SButtonState();
@@ -22,6 +23,7 @@ class _SButtonState extends State<SButton> {
         setState(() {
           _isClicked = false;
         });
+        widget.onPressed();
       },
       child: Container(
         width: 120, // Adjust the width as needed
