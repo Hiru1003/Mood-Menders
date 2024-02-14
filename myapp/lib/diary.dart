@@ -38,20 +38,16 @@ class Diary extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(right: 36, top: 16),
-                    child: SButton(
-                      onTap: () {
-                        {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) =>
-                                    (const page())),
-                          );
-                        }
-                      },
-                    ),
-                  ),
+  padding: const EdgeInsets.only(right: 36, top: 16),
+  child: SButton(
+    onTap: () {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => SecondPage()),
+      );
+    },
+  ),
+),
                 ],
               ),
               Image.asset(
