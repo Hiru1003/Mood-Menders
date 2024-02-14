@@ -33,7 +33,7 @@ class _SButtonState extends State<SButton> {
 
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => NewDiary()),
+            MaterialPageRoute(builder: (context) => const NewDiary()),
           );
         }
       },
@@ -50,7 +50,7 @@ class _SButtonState extends State<SButton> {
                     color: Colors.grey.withOpacity(0.5),
                     spreadRadius: 2,
                     blurRadius: 5,
-                    offset: Offset(0, 3),
+                    offset: const Offset(0, 3),
                   ),
                 ],
         ),
@@ -59,15 +59,15 @@ class _SButtonState extends State<SButton> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Icon(Icons.add, color: const Color.fromARGB(255, 70, 66, 68)),
-              SizedBox(width: 8),
+              const Icon(Icons.add, color: Color.fromARGB(255, 70, 66, 68)),
+              const SizedBox(width: 8),
               MouseRegion(
                 cursor: SystemMouseCursors.click,
                 onHover: (event) {},
-                child: Text(
+                child: const Text(
                   'New',
                   style: TextStyle(
-                    color: const Color.fromARGB(255, 70, 66, 68),
+                    color: Color.fromARGB(255, 70, 66, 68),
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
                   ),
