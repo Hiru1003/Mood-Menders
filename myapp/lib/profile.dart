@@ -5,9 +5,9 @@ class Profile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Profile'),
+        title: const Text('Profile'),
       ),
-      body: Center(
+      body: const Center(
         child: Text('Profile Page'),
       ),
     );
