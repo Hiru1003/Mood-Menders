@@ -30,7 +30,6 @@ class _SButtonState extends State<SButton> {
         });
         widget.onPressed();
       },
-      // Rest of the code...
     );
   }
 }
@@ -101,10 +100,10 @@ class NewDiary extends StatelessWidget {
       ),
       body: Expanded(
         child: Container(
-          margin: EdgeInsets.all(10.0), // Add some margin
-          padding: EdgeInsets.all(10.0), // Add some padding
+          margin: EdgeInsets.all(10.0),
+          padding: EdgeInsets.all(10.0),
           decoration: BoxDecoration(
-            color: Colors.blue, // Set the background color
+            color: Colors.blue,
             border: Border.all(color: Colors.grey),
             borderRadius: BorderRadius.circular(10.0),
           ),
