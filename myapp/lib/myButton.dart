@@ -1,3 +1,4 @@
+import 'package:app/newDiary.dart';
 import 'package:flutter/material.dart';
 
 class SButton extends StatefulWidget {
@@ -23,14 +24,20 @@ class _SButtonState extends State<SButton> {
           });
         }
       },
-      onTapUp: (TapUpDetails details) {
-        if (!_isButtonDisabled) {
-          setState(() {
-            _isClicked = false;
-            _isButtonDisabled = true;
-          });
-        }
-      },
+     onTapUp: (TapUpDetails details) {
+  if (!_isButtonDisabled) {
+    setState(() {
+      _isClicked = false;
+      _isButtonDisabled = true;
+    });
+
+    // Navigate to the new screen
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => NewDiary()),
+    );
+  }
+},
       child: Container(
         width: 120, // Adjust the width as needed
         height: 50, // Adjust the height as needed
