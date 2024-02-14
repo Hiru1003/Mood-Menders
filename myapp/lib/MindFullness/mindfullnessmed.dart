@@ -1,3 +1,4 @@
+import 'package:app/MindFullness/mindfullnessstep1.dart';
 import 'package:app/button.dart';
 import 'package:app/meditaionmethods.dart';
 import 'package:flutter/material.dart';
@@ -339,7 +340,7 @@ class _mindfulnessmed_pageState extends State<mindfulnessmed_page> {
                       context,
                       MaterialPageRoute(
                           builder: (context) =>
-                              (const meditaionmethods_page())),
+                              (const mindfulnessstep1_page())),
                     );
                   }
                 },
