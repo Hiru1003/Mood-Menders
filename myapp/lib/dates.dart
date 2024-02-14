@@ -13,11 +13,11 @@ class DatesWidget extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: CircleAvatar(
             radius: i == 0 ? 25 : 20, 
-            backgroundColor: Color.fromARGB(255, 154, 191, 188),
+            backgroundColor: const Color.fromARGB(255, 154, 191, 188),
             child: Text(
               date.day.toString(),
               style: TextStyle(
-                color: Color.fromARGB(255, 14, 3, 3),
+                color: const Color.fromARGB(255, 14, 3, 3),
                 fontWeight: i == 0 ? FontWeight.bold : FontWeight.normal, 
                 fontSize: i == 0 ? 18 : 14, 
               ),
