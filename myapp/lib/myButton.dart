@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class SButton extends StatefulWidget {
+  SButton(Null Function() param0);
+
   @override
   _SButtonState createState() => _SButtonState();
 }
