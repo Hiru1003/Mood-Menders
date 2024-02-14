@@ -101,6 +101,34 @@ class _mindfulnessstep2_pageState extends State<mindfulnessstep2_page> {
               ),
             ),
           ),
+
+          const SizedBox(
+            height: 20,
+          ),
+          //para
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Container(
+              child: Padding(
+                padding: const EdgeInsets.all(1.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    //message
+                    Text(
+                      'Direct your attention to the sensations of your \nbreath. Notice the rising and falling of your \nchest or the sensation of air passing through \nyour nostrils.',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 13,
+                          fontWeight: FontWeight.w400),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
         ])));
   }
 }
