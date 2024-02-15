@@ -102,6 +102,34 @@ class _breathawarenessstep3_pageState extends State<breathawarenessstep3_page> {
               ),
             ),
           ),
+
+          const SizedBox(
+            height: 20,
+          ),
+          //para
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Container(
+              child: Padding(
+                padding: const EdgeInsets.all(1.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    //message
+                    Text(
+                      'Allow your breath to return to its natural rhythm. \nBegin to focus your attention on the sensation \nof your breath. Notice the rise and fall of your \nchest or the gentle movement of your abdomen.',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 13,
+                          fontWeight: FontWeight.w400),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
         ])));
   }
 }
