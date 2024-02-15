@@ -45,6 +45,7 @@ class Diary extends StatelessWidget {
                   //   ),
                   // ),
                 ],
+                
               ),
               Image.asset(
                 'lib/images/diary1.png',
