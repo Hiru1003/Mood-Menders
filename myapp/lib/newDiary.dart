@@ -228,8 +228,8 @@ Padding(
     ),
     Expanded(
       child: Padding(
-        padding: EdgeInsets.all(8.0),
-        child: Image.asset('lib/images/loveearth (3).png', fit: BoxFit.scaleDown),
+        padding: EdgeInsets.all(26.0),
+        child: Image.asset('lib/images/famliy.png', fit: BoxFit.scaleDown),
       ),
     ),
     Expanded( 
