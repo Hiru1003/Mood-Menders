@@ -102,7 +102,7 @@ class NewDiary extends StatelessWidget {
   padding: EdgeInsets.only(top: 20.0), // Adjust the value as needed
   child: Container(
     margin: EdgeInsets.all(0.0),
-    padding: EdgeInsets.all(10.0),
+    padding: EdgeInsets.all(140.0),
     decoration: BoxDecoration(
       color: Colors.blue,
       border: Border.all(color: Colors.grey),
