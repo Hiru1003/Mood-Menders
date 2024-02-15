@@ -1,4 +1,7 @@
 import 'package:app/breathawarenessmed.dart';
+import 'package:app/breathawarenessstep1.dart';
+import 'package:app/breathawarenessstep2.dart';
+import 'package:app/breathawarenessstep4.dart';
 import 'package:app/button.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -147,7 +150,7 @@ class _breathawarenessstep3_pageState extends State<breathawarenessstep3_page> {
                     context,
                     MaterialPageRoute(
                         builder: (context) =>
-                            (const breathawarenessmed_page())),
+                            (const breathawarenessstep4_page())),
                   );
                 }
               },
