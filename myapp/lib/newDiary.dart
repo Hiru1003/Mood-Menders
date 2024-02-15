@@ -264,7 +264,7 @@ Row(
     Expanded( 
       child: Padding(
         padding: EdgeInsets.all(26.0),
-        child: Image.asset('lib/images/health.png', fit: BoxFit.scaleDown),
+        child: Image.asset('lib/images/leisure.png', fit: BoxFit.scaleDown),
       ),
     ),
   ],
