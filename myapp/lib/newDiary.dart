@@ -179,21 +179,21 @@ Row(
   mainAxisAlignment: MainAxisAlignment.center,
   children: <Widget>[
     Padding(
-      padding: const EdgeInsets.all(1),
+      padding: const EdgeInsets.all(3),
       child: ElevatedButton(
         onPressed: () {},
         child: const Text('Happy'),
       ),
     ),
     Padding(
-      padding: const EdgeInsets.all(1),
+      padding: const EdgeInsets.all(3),
       child: ElevatedButton(
         onPressed: () {},
         child: const Text('Angry'),
       ),
     ),
     Padding(
-      padding: const EdgeInsets.all(1),
+      padding: const EdgeInsets.all(3),
       child: ElevatedButton(
         onPressed: () {},
         child: const Text('Joyful'),
