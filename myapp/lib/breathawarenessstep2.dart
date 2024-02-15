@@ -1,4 +1,5 @@
 import 'package:app/breathawarenessstep1.dart';
+import 'package:app/breathawarenessstep3.dart';
 import 'package:app/button.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -127,7 +128,7 @@ class _breathawarenessstep2_pageState extends State<breathawarenessstep2_page> {
                           color: const Color.fromARGB(255, 70, 66, 68),
                           fontSize: 13,
                           fontWeight: FontWeight.w400,
-                          height: 1.3,
+                          height: 1.2,
                           wordSpacing: 1.8,
                         ),
                       ),
@@ -151,7 +152,7 @@ class _breathawarenessstep2_pageState extends State<breathawarenessstep2_page> {
                       context,
                       MaterialPageRoute(
                           builder: (context) =>
-                              (const breathawarenessstep1_page())),
+                              (const breathawarenessstep3_page())),
                     );
                   }
                 },
