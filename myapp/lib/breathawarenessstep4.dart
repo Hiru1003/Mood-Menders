@@ -129,6 +129,27 @@ class _breathawarenessstep4_pageState extends State<breathawarenessstep4_page> {
               ),
             ),
           ),
+
+          const SizedBox(
+            height: 25,
+          ),
+          //continue button
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: MyButton(
+              buttontext: 'Next Step',
+              onTap: () {
+                {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            (const breathawarenessstep5_page())),
+                  );
+                }
+              },
+            ),
+          ),
         ])));
   }
 }
