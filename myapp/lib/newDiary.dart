@@ -79,11 +79,11 @@ class NewDiary extends StatelessWidget {
           Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: <Widget>[
-        Image.asset('lib/images/pic1.png'),
-        Image.asset('lib/images/pic2.png'),
-        Image.asset('lib/images/pic3.png'),
-        Image.asset('lib/images/pic4.png'),
-        Image.asset('lib/images/pic5.png'),
+        Image.asset('lib/images/loveearth (1).png'),
+        Image.asset('lib/images/loveearth (1).png'),
+        Image.asset('lib/images/loveearth (1).png'),
+        Image.asset('lib/images/loveearth (1).png'),
+        Image.asset('lib/images/loveearth (1).png'),
       ],
     ),
         ],
