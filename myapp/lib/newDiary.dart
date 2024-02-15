@@ -62,6 +62,7 @@ class NewDiary extends StatelessWidget {
         color: const Color.fromARGB(255, 204, 248, 245),
         borderRadius: BorderRadius.circular(10),
       ),
+      child: SingleChildScrollView(
       child: Column(
         children: <Widget>[
           Padding(
@@ -270,6 +271,7 @@ Row(
 ),
         ],
       ),
+    ),
     )
     );
   }
