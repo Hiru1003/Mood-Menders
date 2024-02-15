@@ -66,20 +66,13 @@ class NewDiary extends StatelessWidget {
         children: <Widget>[
           Padding(
             padding: EdgeInsets.only(top: 10),
-            child: Align(
-              alignment: Alignment.topLeft,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  Text(
-                    'I got stickers from FOSS',
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                  ),
-                  Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.',
-                    style: TextStyle(fontSize: 16),
-                  ),
-                ],
+            child: Text(
+              'What is your mood today?',
+              style: GoogleFonts.poppins(
+                textStyle: Theme.of(context).textTheme.headline4,
+                color: const Color.fromARGB(255, 70, 66, 68),
+                fontSize: 24,
+                fontWeight: FontWeight.w600,
               ),
             ),
           ),
