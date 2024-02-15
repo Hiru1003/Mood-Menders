@@ -111,7 +111,7 @@ class NewDiary extends StatelessWidget {
   ],
 ),
 Padding(
-            padding: EdgeInsets.only(top: 12, bottom: 15),
+            padding: EdgeInsets.only(top: 12, bottom: 8),
             child: Text(
               'Emotions',
               style: GoogleFonts.poppins(
@@ -200,6 +200,18 @@ Row(
     ),
   ],
 ),
+Padding(
+            padding: EdgeInsets.only(top: 12, bottom: 15),
+            child: Text(
+              'Emotions',
+              style: GoogleFonts.poppins(
+                textStyle: Theme.of(context).textTheme.headlineMedium,
+                color: const Color.fromARGB(255, 70, 66, 68),
+                fontSize: 24,
+                fontWeight: FontWeight.w400,
+              ),
+            ),
+          ),
         ],
       ),
     )
