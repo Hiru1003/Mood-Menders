@@ -33,7 +33,7 @@ class _breathawarenessstep4_pageState extends State<breathawarenessstep4_page> {
                       fontWeight: FontWeight.w400),
                 ),
                 Image.asset(
-                  'lib/images/bg.png',
+                  'lib/images/leaf.png',
                   height: 72,
                 )
               ],
