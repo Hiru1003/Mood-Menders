@@ -1,19 +1,19 @@
-import 'package:app/breathawarenessstep4.dart';
 import 'package:app/button.dart';
+import 'package:app/meditaionmethods.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class breathawarenessstep3_page extends StatefulWidget {
-  const breathawarenessstep3_page({
+class breathawarenessstep4_page extends StatefulWidget {
+  const breathawarenessstep4_page({
     super.key,
   });
 
   @override
-  State<breathawarenessstep3_page> createState() =>
-      _breathawarenessstep3_pageState();
+  State<breathawarenessstep4_page> createState() =>
+      _breathawarenessstep4_pageState();
 }
 
-class _breathawarenessstep3_pageState extends State<breathawarenessstep3_page> {
+class _breathawarenessstep4_pageState extends State<breathawarenessstep4_page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -71,7 +71,7 @@ class _breathawarenessstep3_pageState extends State<breathawarenessstep3_page> {
                 children: [
                   //image
                   Image.asset(
-                    'lib/images/step5.png',
+                    'lib/images/step3.png',
                     height: 240,
                   )
                 ],
@@ -92,7 +92,7 @@ class _breathawarenessstep3_pageState extends State<breathawarenessstep3_page> {
                   children: [
                     //message
                     Text(
-                      'Step 03',
+                      'Step 04',
                       style: GoogleFonts.poppins(
                           textStyle: Theme.of(context).textTheme.displayLarge,
                           color: const Color.fromARGB(255, 70, 66, 68),
@@ -104,7 +104,6 @@ class _breathawarenessstep3_pageState extends State<breathawarenessstep3_page> {
               ),
             ),
           ),
-
           const SizedBox(
             height: 20,
           ),
@@ -119,7 +118,7 @@ class _breathawarenessstep3_pageState extends State<breathawarenessstep3_page> {
                   children: [
                     //message
                     Text(
-                      'Allow your breath to return to its natural rhythm. \nBegin to focus your attention on the sensation \nof your breath. Notice the rise and fall of your \nchest or the gentle movement of your abdomen.',
+                      'Simply observe your breath without trying \nto change it. Be present with each inhale and \nexhale. If your mind starts to wander, gently \nbring it back to your breath.',
                       textAlign: TextAlign.center,
                       style: GoogleFonts.poppins(
                         textStyle: Theme.of(context).textTheme.displayLarge,
@@ -139,7 +138,7 @@ class _breathawarenessstep3_pageState extends State<breathawarenessstep3_page> {
           const SizedBox(
             height: 25,
           ),
-
+          //continue button
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
             child: MyButton(
@@ -149,8 +148,7 @@ class _breathawarenessstep3_pageState extends State<breathawarenessstep3_page> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) =>
-                            (const breathawarenessstep4_page())),
+                        builder: (context) => (const meditaionmethods_page())),
                   );
                 }
               },
