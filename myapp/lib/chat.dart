@@ -5,9 +5,9 @@ class Chat extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Chat'),
+        title: const Text('Chat'),
       ),
-      body: Center(
+      body: const Center(
         child: Text('Chat Page'),
       ),
     );

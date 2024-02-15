@@ -5,9 +5,9 @@ class Stat extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Stat'),
+        title: const Text('Stat'),
       ),
-      body: Center(
+      body: const Center(
         child: Text('Stat Page'),
       ),
     );

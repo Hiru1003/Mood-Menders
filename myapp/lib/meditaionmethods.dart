@@ -1,7 +1,7 @@
-//import 'package:app/BreathAwareness/breathawarenessmed.dart';
+import 'package:app/breathawarenessmed.dart';
 import 'package:app/guidedvisualization.dart';
 import 'package:app/loving-kindnessmed.dart';
-//import 'package:app/MindFullness/mindfullnessmed.dart';
+import 'package:app/mindfulnessmed.dart';
 import 'package:app/movementmed.dart';
 import 'package:app/walkingmed.dart';
 import 'package:flutter/material.dart';
@@ -28,7 +28,7 @@ class _meditaionmethods_pageState extends State<meditaionmethods_page> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Text(
-                'MEDITATION METHODS',
+                'MEDITATION METHODS ',
                 style: GoogleFonts.poppins(
                     textStyle: Theme.of(context).textTheme.displayLarge,
                     color: const Color.fromARGB(255, 70, 66, 68),
@@ -66,13 +66,13 @@ class _meditaionmethods_pageState extends State<meditaionmethods_page> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 GestureDetector(
-                  // onTap: () {
-                  //   Navigator.push(
-                  //     context,
-                  //     MaterialPageRoute(
-                  //         builder: (context) => const mindfulnessmed_page()),
-                  //   );
-                  // },
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const mindfulnessmed_page()),
+                    );
+                  },
                   child: Container(
                     height: 175,
                     width: 150,
@@ -117,14 +117,14 @@ class _meditaionmethods_pageState extends State<meditaionmethods_page> {
                   width: 20,
                 ),
                 GestureDetector(
-                  // onTap: () {
-                  //   Navigator.push(
-                  //     context,
-                  //     MaterialPageRoute(
-                  //         builder: (context) =>
-                  //             const breathawarenessmed_page()),
-                  //   );
-                  // },
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              const breathawarenessmed_page()),
+                    );
+                  },
                   child: Container(
                     height: 175,
                     width: 150,
