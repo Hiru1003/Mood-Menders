@@ -102,9 +102,9 @@ class NewDiary extends StatelessWidget {
   mainAxisAlignment: MainAxisAlignment.center,
   children: [
     Padding(
-      padding: EdgeInsets.only(bottom: 400.0), // Adjust the value as needed
+      padding: EdgeInsets.only(bottom: 400.0), 
       child: Container(
-        width: double.infinity, // Makes the container take up all available width
+        width: double.infinity, 
         decoration: BoxDecoration(
           color: const Color.fromARGB(255, 204, 248, 245),
           borderRadius: BorderRadius.circular(10.0),
