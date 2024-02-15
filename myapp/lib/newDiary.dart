@@ -113,7 +113,7 @@ class NewDiary extends StatelessWidget {
 Padding(
             padding: EdgeInsets.only(top: 12, bottom: 15),
             child: Text(
-              'What is your mood today?',
+              'Emotions',
               style: GoogleFonts.poppins(
                 textStyle: Theme.of(context).textTheme.headlineMedium,
                 color: const Color.fromARGB(255, 70, 66, 68),
