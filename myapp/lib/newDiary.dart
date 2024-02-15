@@ -105,8 +105,7 @@ class NewDiary extends StatelessWidget {
       margin: EdgeInsets.all(0.0),
       padding: EdgeInsets.all(100.0),
       decoration: BoxDecoration(
-        color: Colors.blue,
-        border: Border.all(color: Colors.grey),
+        color: const Color.fromARGB(255, 204, 248, 245),
         borderRadius: BorderRadius.circular(10.0),
       ),
       child: Text(
