@@ -174,6 +174,32 @@ Row(
     ),
   ],
 ),
+Row(
+  mainAxisAlignment: MainAxisAlignment.center,
+  children: <Widget>[
+    Padding(
+      padding: EdgeInsets.all(1),
+      child: ElevatedButton(
+        onPressed: () {},
+        child: Text('Happy'),
+      ),
+    ),
+    Padding(
+      padding: EdgeInsets.all(1),
+      child: ElevatedButton(
+        onPressed: () {},
+        child: Text('Angry'),
+      ),
+    ),
+    Padding(
+      padding: EdgeInsets.all(1),
+      child: ElevatedButton(
+        onPressed: () {},
+        child: Text('Joyful'),
+      ),
+    ),
+  ],
+),
         ],
       ),
     )
