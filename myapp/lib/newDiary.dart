@@ -201,7 +201,7 @@ Row(
   ],
 ),
 Padding(
-            padding: EdgeInsets.only(top: 12, bottom: 15),
+            padding: EdgeInsets.only(top: 12, bottom: 8),
             child: Text(
               'Emotions',
               style: GoogleFonts.poppins(
