@@ -127,7 +127,7 @@ class _breathawarenessstep2_pageState extends State<breathawarenessstep2_page> {
                           color: const Color.fromARGB(255, 70, 66, 68),
                           fontSize: 13,
                           fontWeight: FontWeight.w400,
-                          height: 1.3,
+                          height: 1.2,
                           wordSpacing: 1.8,
                         ),
                       ),
