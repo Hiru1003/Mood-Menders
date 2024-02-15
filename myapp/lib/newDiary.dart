@@ -77,15 +77,14 @@ class NewDiary extends StatelessWidget {
             ),
           ),
           Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: <Widget>[
-        Image.asset('lib/images/loveearth (1).png'),
-        Image.asset('lib/images/loveearth (1).png'),
-        Image.asset('lib/images/loveearth (1).png'),
-        Image.asset('lib/images/loveearth (1).png'),
-        Image.asset('lib/images/loveearth (1).png'),
-      ],
-    ),
+  children: <Widget>[
+    Expanded(child: Image.asset('lib/images/loveearth (1).png', fit: BoxFit.cover)),
+    Expanded(child: Image.asset('lib/images/loveearth (1).png', fit: BoxFit.cover)),
+    Expanded(child: Image.asset('lib/images/loveearth (1).png', fit: BoxFit.cover)),
+    Expanded(child: Image.asset('lib/images/loveearth (1).png', fit: BoxFit.cover)),
+    Expanded(child: Image.asset('lib/images/loveearth (1).png', fit: BoxFit.cover)),
+  ],
+),
         ],
       ),
     )
