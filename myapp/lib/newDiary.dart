@@ -65,7 +65,7 @@ class NewDiary extends StatelessWidget {
       child: Column(
         children: <Widget>[
           Padding(
-            padding: EdgeInsets.only(top: 10, bottom: 15),
+            padding: EdgeInsets.only(top: 12, bottom: 8),
             child: Text(
               'What is your mood today?',
               style: GoogleFonts.poppins(
@@ -110,6 +110,18 @@ class NewDiary extends StatelessWidget {
     ),
   ],
 ),
+Padding(
+            padding: EdgeInsets.only(top: 12, bottom: 15),
+            child: Text(
+              'What is your mood today?',
+              style: GoogleFonts.poppins(
+                textStyle: Theme.of(context).textTheme.headlineMedium,
+                color: const Color.fromARGB(255, 70, 66, 68),
+                fontSize: 24,
+                fontWeight: FontWeight.w400,
+              ),
+            ),
+          ),
         ],
       ),
     )
