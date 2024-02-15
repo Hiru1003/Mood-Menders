@@ -1,6 +1,3 @@
-import 'package:app/breathawarenessmed.dart';
-import 'package:app/breathawarenessstep1.dart';
-import 'package:app/breathawarenessstep2.dart';
 import 'package:app/breathawarenessstep4.dart';
 import 'package:app/button.dart';
 import 'package:flutter/material.dart';
