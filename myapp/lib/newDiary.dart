@@ -98,21 +98,22 @@ class NewDiary extends StatelessWidget {
         elevation: 0.00,
         backgroundColor: const Color.fromARGB(255, 134, 208, 203),
       ),
-      body: Expanded(
-        child: Container(
-          margin: EdgeInsets.all(0.0),
-          padding: EdgeInsets.all(10.0),
-          decoration: BoxDecoration(
-            color: Colors.blue,
-            border: Border.all(color: Colors.grey),
-            borderRadius: BorderRadius.circular(10.0),
-          ),
-          child: Text(
-            '',
-            style: TextStyle(fontSize: 16.0),
-          ),
-        ),
-      ),
+      body: Padding(
+  padding: EdgeInsets.only(top: 20.0), // Adjust the value as needed
+  child: Container(
+    margin: EdgeInsets.all(0.0),
+    padding: EdgeInsets.all(10.0),
+    decoration: BoxDecoration(
+      color: Colors.blue,
+      border: Border.all(color: Colors.grey),
+      borderRadius: BorderRadius.circular(10.0),
+    ),
+    child: Text(
+      'Your text here',
+      style: TextStyle(fontSize: 16.0),
+    ),
+  ),
+),
     );
   }
 }
