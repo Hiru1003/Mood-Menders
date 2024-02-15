@@ -1,3 +1,4 @@
+import 'package:app/breathawarenessmed.dart';
 import 'package:app/button.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -34,7 +35,7 @@ class _breathawarenessstep3_pageState extends State<breathawarenessstep3_page> {
                       fontWeight: FontWeight.w400),
                 ),
                 Image.asset(
-                  'lib/images/bg.png',
+                  'lib/images/leaf.png',
                   height: 72,
                 )
               ],
@@ -146,7 +147,7 @@ class _breathawarenessstep3_pageState extends State<breathawarenessstep3_page> {
                     context,
                     MaterialPageRoute(
                         builder: (context) =>
-                            (const breathawarenessstep4_page())),
+                            (const breathawarenessmed_page())),
                   );
                 }
               },
