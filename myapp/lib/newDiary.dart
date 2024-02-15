@@ -126,21 +126,21 @@ Padding(
   mainAxisAlignment: MainAxisAlignment.center,
   children: <Widget>[
     Padding(
-      padding: EdgeInsets.all(8.0),
+      padding: EdgeInsets.all(3.0),
       child: ElevatedButton(
         onPressed: () {},
         child: Text('Button 1'),
       ),
     ),
     Padding(
-      padding: EdgeInsets.all(8.0),
+      padding: EdgeInsets.all(3.0),
       child: ElevatedButton(
         onPressed: () {},
         child: Text('Button 2'),
       ),
     ),
     Padding(
-      padding: EdgeInsets.all(8.0),
+      padding: EdgeInsets.all(3.0),
       child: ElevatedButton(
         onPressed: () {},
         child: Text('Button 3'),
