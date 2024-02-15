@@ -72,7 +72,7 @@ class NewDiary extends StatelessWidget {
                 textStyle: Theme.of(context).textTheme.headlineMedium,
                 color: const Color.fromARGB(255, 70, 66, 68),
                 fontSize: 24,
-                fontWeight: FontWeight.w600,
+                fontWeight: FontWeight.w400,
               ),
             ),
           ),
