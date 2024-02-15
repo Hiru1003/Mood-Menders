@@ -1,19 +1,19 @@
-import 'package:app/breathawarenessstep2.dart';
+import 'package:app/breathawarenessstep1.dart';
 import 'package:app/button.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class breathawarenessstep1_page extends StatefulWidget {
-  const breathawarenessstep1_page({
+class breathawarenessstep2_page extends StatefulWidget {
+  const breathawarenessstep2_page({
     super.key,
   });
 
   @override
-  State<breathawarenessstep1_page> createState() =>
-      _breathawarenessstep1_pageState();
+  State<breathawarenessstep2_page> createState() =>
+      _breathawarenessstep2_pageState();
 }
 
-class _breathawarenessstep1_pageState extends State<breathawarenessstep1_page> {
+class _breathawarenessstep2_pageState extends State<breathawarenessstep2_page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -72,7 +72,7 @@ class _breathawarenessstep1_pageState extends State<breathawarenessstep1_page> {
                   children: [
                     //image
                     Image.asset(
-                      'lib/images/step4.png',
+                      'lib/images/step13.png',
                       height: 240,
                     )
                   ],
@@ -93,7 +93,7 @@ class _breathawarenessstep1_pageState extends State<breathawarenessstep1_page> {
                     children: [
                       //message
                       Text(
-                        'Step 01',
+                        'Step 02',
                         style: GoogleFonts.poppins(
                             textStyle: Theme.of(context).textTheme.displayLarge,
                             color: const Color.fromARGB(255, 70, 66, 68),
@@ -107,7 +107,7 @@ class _breathawarenessstep1_pageState extends State<breathawarenessstep1_page> {
             ),
 
             const SizedBox(
-              height: 15,
+              height: 20,
             ),
             //para
             Padding(
@@ -120,15 +120,16 @@ class _breathawarenessstep1_pageState extends State<breathawarenessstep1_page> {
                     children: [
                       //message
                       Text(
-                        'Gently close your eyes to reduce external \ndistractions. If you prefer, you can \nleave them open with a soft gaze directed\n downward.',
+                        'Start by taking a few slow, deep breaths. Inhale \ndeeply through your nose, allowing your lungs \nto fill with air. Exhale slowly through your \nmouth, releasing any tension.',
                         textAlign: TextAlign.center,
                         style: GoogleFonts.poppins(
-                            textStyle: Theme.of(context).textTheme.displayLarge,
-                            color: const Color.fromARGB(255, 70, 66, 68),
-                            fontSize: 13,
-                            wordSpacing: 1.6,
-                            height: 1.3,
-                            fontWeight: FontWeight.w400),
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 13,
+                          fontWeight: FontWeight.w400,
+                          height: 1.3,
+                          wordSpacing: 1.8,
+                        ),
                       ),
                     ],
                   ),
@@ -150,7 +151,7 @@ class _breathawarenessstep1_pageState extends State<breathawarenessstep1_page> {
                       context,
                       MaterialPageRoute(
                           builder: (context) =>
-                              (const breathawarenessstep2_page())),
+                              (const breathawarenessstep1_page())),
                     );
                   }
                 },
