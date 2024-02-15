@@ -240,6 +240,34 @@ Padding(
     ),
   ],
 ),
+Row(
+  children: <Widget>[
+    Expanded(
+      child: Padding(
+        padding: EdgeInsets.all(26.0),
+        child: Image.asset('lib/images/edu.png', fit: BoxFit.scaleDown),
+      ),
+    ),
+    Expanded(
+      child: Padding(
+        padding: EdgeInsets.all(26.0),
+        child: Image.asset('lib/images/love.png', fit: BoxFit.scaleDown),
+      ),
+    ),
+    Expanded(
+      child: Padding(
+        padding: EdgeInsets.all(26.0),
+        child: Image.asset('lib/images/famliy.png', fit: BoxFit.scaleDown),
+      ),
+    ),
+    Expanded( 
+      child: Padding(
+        padding: EdgeInsets.all(26.0),
+        child: Image.asset('lib/images/health.png', fit: BoxFit.scaleDown),
+      ),
+    ),
+  ],
+),
         ],
       ),
     )
