@@ -36,15 +36,16 @@ class Diary extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(right: 36, top: 16),
-                    child: myButton.SButton(
-                      onTap: () {
-                        Get.to(newDiary.NewDiary());
-                      },
-                    ),
-                  ),
+                  // Padding(
+                  //   padding: const EdgeInsets.only(right: 36, top: 16),
+                  //   child: myButton.SButton(
+                  //     onTap: () {
+                  //       Get.to(newDiary.NewDiary());
+                  //     },
+                  //   ),
+                  // ),
                 ],
+                
               ),
               Image.asset(
                 'lib/images/diary1.png',
