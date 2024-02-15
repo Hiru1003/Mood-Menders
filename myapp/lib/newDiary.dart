@@ -78,11 +78,36 @@ class NewDiary extends StatelessWidget {
           ),
           Row(
   children: <Widget>[
-    Expanded(child: Image.asset('lib/images/loveearth (1).png', fit: BoxFit.cover)),
-    Expanded(child: Image.asset('lib/images/loveearth (1).png', fit: BoxFit.cover)),
-    Expanded(child: Image.asset('lib/images/loveearth (1).png', fit: BoxFit.cover)),
-    Expanded(child: Image.asset('lib/images/loveearth (1).png', fit: BoxFit.cover)),
-    Expanded(child: Image.asset('lib/images/loveearth (1).png', fit: BoxFit.cover)),
+    Expanded(
+      child: Padding(
+        padding: EdgeInsets.all(8.0),
+        child: Image.asset('lib/images/loveearth (1).png', fit: BoxFit.scaleDown),
+      ),
+    ),
+    Expanded(
+      child: Padding(
+        padding: EdgeInsets.all(8.0),
+        child: Image.asset('lib/images/loveearth (1).png', fit: BoxFit.scaleDown),
+      ),
+    ),
+    Expanded(
+      child: Padding(
+        padding: EdgeInsets.all(8.0),
+        child: Image.asset('lib/images/loveearth (1).png', fit: BoxFit.scaleDown),
+      ),
+    ),
+    Expanded(
+      child: Padding(
+        padding: EdgeInsets.all(8.0),
+        child: Image.asset('lib/images/loveearth (1).png', fit: BoxFit.scaleDown),
+      ),
+    ),
+    Expanded(
+      child: Padding(
+        padding: EdgeInsets.all(8.0),
+        child: Image.asset('lib/images/loveearth (1).png', fit: BoxFit.scaleDown),
+      ),
+    ),
   ],
 ),
         ],
