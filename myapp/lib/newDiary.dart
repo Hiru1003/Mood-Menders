@@ -86,7 +86,7 @@ class NewDiary extends StatelessWidget {
     ),
     Expanded(
       child: Padding(
-        padding: EdgeInsets.all(8.0),
+        padding: EdgeInsets.all(5.0),
         child: Image.asset('lib/images/loveearth (2).png', fit: BoxFit.scaleDown),
       ),
     ),
