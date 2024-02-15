@@ -109,7 +109,7 @@ class NewDiary extends StatelessWidget {
       borderRadius: BorderRadius.circular(10.0),
     ),
     child: Text(
-      'Your text here',
+      'What is your mood today?',
       style: TextStyle(fontSize: 16.0),
     ),
   ),
