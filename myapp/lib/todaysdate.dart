@@ -10,8 +10,8 @@ class TodayDateWidget extends StatelessWidget {
     String formattedDate = DateFormat('dd MMMM yyyy').format(now);
 
     return Text(
-      '$formattedDate',
-      style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+      formattedDate,
+      style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
     );
   }
 }
