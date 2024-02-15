@@ -175,6 +175,78 @@ class _breathawarenessmed_pageState extends State<breathawarenessmed_page> {
               ],
             ),
           ),
+
+          const SizedBox(
+            height: 5,
+          ),
+
+          //two containers
+          Padding(
+              padding: const EdgeInsets.only(left: 10, right: 10),
+              child:
+                  Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+                Container(
+                  width: 120,
+                  decoration: BoxDecoration(
+                      color: const Color.fromARGB(251, 241, 255, 252),
+                      border: Border.all(
+                        color: const Color.fromARGB(255, 204, 248, 245),
+                        width: 5,
+                      ),
+                      borderRadius: BorderRadius.circular(12)),
+                  child: Padding(
+                    padding: const EdgeInsets.all(14.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        //message
+                        Text(
+                          'Comfortable \nSpace',
+                          textAlign: TextAlign.center,
+                          style: GoogleFonts.poppins(
+                              textStyle:
+                                  Theme.of(context).textTheme.displayLarge,
+                              color: const Color.fromARGB(255, 70, 66, 68),
+                              fontSize: 12,
+                              fontWeight: FontWeight.w300),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  width: 15,
+                ),
+                Container(
+                  width: 120,
+                  decoration: BoxDecoration(
+                      color: const Color.fromARGB(251, 241, 255, 252),
+                      border: Border.all(
+                        color: const Color.fromARGB(255, 204, 248, 245),
+                        width: 5,
+                      ),
+                      borderRadius: BorderRadius.circular(12)),
+                  child: Padding(
+                    padding: const EdgeInsets.all(14.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        //message
+                        Text(
+                          'Time \nCommitment',
+                          textAlign: TextAlign.center,
+                          style: GoogleFonts.poppins(
+                              textStyle:
+                                  Theme.of(context).textTheme.displayLarge,
+                              color: const Color.fromARGB(255, 70, 66, 68),
+                              fontSize: 12,
+                              fontWeight: FontWeight.w300),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ]))
         ])));
   }
 }
