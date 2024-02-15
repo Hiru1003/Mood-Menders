@@ -216,8 +216,8 @@ Padding(
   children: <Widget>[
     Expanded(
       child: Padding(
-        padding: EdgeInsets.all(8.0),
-        child: Image.asset('lib/images/loveearth (1).png', fit: BoxFit.scaleDown),
+        padding: EdgeInsets.all(26.0),
+        child: Image.asset('lib/images/edu.png', fit: BoxFit.scaleDown),
       ),
     ),
     Expanded(
@@ -232,7 +232,7 @@ Padding(
         child: Image.asset('lib/images/loveearth (3).png', fit: BoxFit.scaleDown),
       ),
     ),
-    Expanded(
+    Expanded( 
       child: Padding(
         padding: EdgeInsets.all(8.0),
         child: Image.asset('lib/images/loveearth (4).png', fit: BoxFit.scaleDown),
