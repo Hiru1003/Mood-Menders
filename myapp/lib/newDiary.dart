@@ -1,39 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-// class SButton extends StatefulWidget {
-//   final VoidCallback onPressed;
-//   final bool enabled;
-
-//   SButton({required this.onPressed, this.enabled = true});
-
-//   @override
-//   _SButtonState createState() => _SButtonState();
-// }
-
-// class _SButtonState extends State<SButton> {
-//   bool _isClicked = false;
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return GestureDetector(
-//       onTapDown: (TapDownDetails details) {
-//         if (!widget.enabled) return;
-//         setState(() {
-//           _isClicked = true;
-//         });
-//       },
-//       onTapUp: (TapUpDetails details) {
-//         if (!widget.enabled) return;
-//         setState(() {
-//           _isClicked = false;
-//         });
-//         widget.onPressed();
-//       },
-//     );
-//   }
-// }
-
 class NewDiary extends StatelessWidget {
   const NewDiary({Key? key}) : super(key: key);
 
@@ -56,25 +23,13 @@ class NewDiary extends StatelessWidget {
                     child: Text(
                       'SECRET DIARY',
                       style: GoogleFonts.poppins(
-                        textStyle: Theme.of(context).textTheme.displayLarge,
+                        textStyle: Theme.of(context).textTheme.headline4,
                         color: const Color.fromARGB(255, 70, 66, 68),
                         fontSize: 24,
                         fontWeight: FontWeight.w600,
                       ),
                     ),
                   ),
-                  // Padding(
-                  //   padding: const EdgeInsets.only(right: 36, top: 16),
-                  //   child: SButton(
-                  //     onPressed: () {
-                  //       Navigator.push(
-                  //         context,
-                  //         MaterialPageRoute(builder: (context) => NewDiary()),
-                  //       );
-                  //     },
-                  //     enabled: false,
-                  //   ),
-                  // ),
                 ],
               ),
               Image.asset(
@@ -98,58 +53,39 @@ class NewDiary extends StatelessWidget {
         elevation: 0.00,
         backgroundColor: const Color.fromARGB(255, 134, 208, 203),
       ),
-    body: Column(
-  mainAxisAlignment: MainAxisAlignment.center,
-  children: [
-    Padding(
-      padding: EdgeInsets.only(bottom: 400.0), 
-      child: Container(
-        width: double.infinity, 
-        decoration: BoxDecoration(
-          color: const Color.fromARGB(255, 204, 248, 245),
-          borderRadius: BorderRadius.circular(10.0),
-        ),
-        child: Column(
+    body: Container(
+      width: double.infinity,
+      height: double.infinity,
+      padding: EdgeInsets.all(15),
+      margin: EdgeInsets.all(15),
+      decoration: BoxDecoration(
+        color: const Color.fromARGB(255, 204, 248, 245),
+        borderRadius: BorderRadius.circular(10),
+      ),
+      child: Column(
         children: <Widget>[
-          Stack(
-            children: <Widget>[
-              Row(
+          Padding(
+            padding: EdgeInsets.only(top: 10),
+            child: Align(
+              alignment: Alignment.topLeft,
+              child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  SizedBox(width: 10),
-                  Padding(
-                    padding: EdgeInsets.only(top: 10),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Text(
-                          'Happy',
-                          style: TextStyle(fontSize: 16),
-                        ),
-                      ],
-                    ),
+                  Text(
+                    'I got stickers from FOSS',
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  ),
+                  Text(
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.',
+                    style: TextStyle(fontSize: 16),
                   ),
                 ],
               ),
-            ],
-          ),
-          Row(
-            children: <Widget>[
-              Padding(
-                padding: EdgeInsets.only(left: 10, top: 10),
-                child: Text(
-                  'Today is a good day',
-                  style: TextStyle(fontSize: 16),
-                ),
-              ),
-            ],
+            ),
           ),
         ],
       ),
-      ),
-    ),
-  ],
-),
+    )
     );
   }
 }
