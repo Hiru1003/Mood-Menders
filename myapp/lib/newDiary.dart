@@ -1,38 +1,38 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class SButton extends StatefulWidget {
-  final VoidCallback onPressed;
-  final bool enabled;
+// class SButton extends StatefulWidget {
+//   final VoidCallback onPressed;
+//   final bool enabled;
 
-  SButton({required this.onPressed, this.enabled = true});
+//   SButton({required this.onPressed, this.enabled = true});
 
-  @override
-  _SButtonState createState() => _SButtonState();
-}
+//   @override
+//   _SButtonState createState() => _SButtonState();
+// }
 
-class _SButtonState extends State<SButton> {
-  bool _isClicked = false;
+// class _SButtonState extends State<SButton> {
+//   bool _isClicked = false;
 
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTapDown: (TapDownDetails details) {
-        if (!widget.enabled) return;
-        setState(() {
-          _isClicked = true;
-        });
-      },
-      onTapUp: (TapUpDetails details) {
-        if (!widget.enabled) return;
-        setState(() {
-          _isClicked = false;
-        });
-        widget.onPressed();
-      },
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return GestureDetector(
+//       onTapDown: (TapDownDetails details) {
+//         if (!widget.enabled) return;
+//         setState(() {
+//           _isClicked = true;
+//         });
+//       },
+//       onTapUp: (TapUpDetails details) {
+//         if (!widget.enabled) return;
+//         setState(() {
+//           _isClicked = false;
+//         });
+//         widget.onPressed();
+//       },
+//     );
+//   }
+// }
 
 class NewDiary extends StatelessWidget {
   const NewDiary({Key? key}) : super(key: key);
@@ -63,18 +63,18 @@ class NewDiary extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(right: 36, top: 16),
-                    child: SButton(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => NewDiary()),
-                        );
-                      },
-                      enabled: false,
-                    ),
-                  ),
+                  // Padding(
+                  //   padding: const EdgeInsets.only(right: 36, top: 16),
+                  //   child: SButton(
+                  //     onPressed: () {
+                  //       Navigator.push(
+                  //         context,
+                  //         MaterialPageRoute(builder: (context) => NewDiary()),
+                  //       );
+                  //     },
+                  //     enabled: false,
+                  //   ),
+                  // ),
                 ],
               ),
               Image.asset(
@@ -98,21 +98,58 @@ class NewDiary extends StatelessWidget {
         elevation: 0.00,
         backgroundColor: const Color.fromARGB(255, 134, 208, 203),
       ),
-      body: Expanded(
-        child: Container(
-          margin: EdgeInsets.all(10.0),
-          padding: EdgeInsets.all(10.0),
-          decoration: BoxDecoration(
-            color: Colors.blue,
-            border: Border.all(color: Colors.grey),
-            borderRadius: BorderRadius.circular(10.0),
-          ),
-          child: Text(
-            'Your text here',
-            style: TextStyle(fontSize: 16.0),
-          ),
+    body: Column(
+  mainAxisAlignment: MainAxisAlignment.center,
+  children: [
+    Padding(
+      padding: EdgeInsets.only(bottom: 400.0), 
+      child: Container(
+        width: double.infinity, 
+        decoration: BoxDecoration(
+          color: const Color.fromARGB(255, 204, 248, 245),
+          borderRadius: BorderRadius.circular(10.0),
         ),
+        child: Column(
+        children: <Widget>[
+          Stack(
+            children: <Widget>[
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  SizedBox(width: 10),
+                  Padding(
+                    padding: EdgeInsets.only(top: 10),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Text(
+                          'Happy',
+                          style: TextStyle(fontSize: 16),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+          Row(
+            children: <Widget>[
+              Padding(
+                padding: EdgeInsets.only(left: 10, top: 10),
+                child: Text(
+                  'Today is a good day',
+                  style: TextStyle(fontSize: 16),
+                ),
+              ),
+            ],
+          ),
+        ],
       ),
+      ),
+    ),
+  ],
+),
     );
   }
 }
