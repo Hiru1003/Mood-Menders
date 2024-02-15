@@ -1,3 +1,5 @@
+import 'package:app/breathawarenessstep1.dart';
+import 'package:app/button.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -182,9 +184,79 @@ class _breathawarenessmed_pageState extends State<breathawarenessmed_page> {
 
           //two containers
           Padding(
-              padding: const EdgeInsets.only(left: 10, right: 10),
-              child:
-                  Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+              Container(
+                width: 120,
+                decoration: BoxDecoration(
+                    color: const Color.fromARGB(251, 241, 255, 252),
+                    border: Border.all(
+                      color: const Color.fromARGB(255, 204, 248, 245),
+                      width: 5,
+                    ),
+                    borderRadius: BorderRadius.circular(12)),
+                child: Padding(
+                  padding: const EdgeInsets.all(14.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      //message
+                      Text(
+                        'Comfortable \nSpace',
+                        textAlign: TextAlign.center,
+                        style: GoogleFonts.poppins(
+                            textStyle: Theme.of(context).textTheme.displayLarge,
+                            color: const Color.fromARGB(255, 70, 66, 68),
+                            fontSize: 12,
+                            fontWeight: FontWeight.w300),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              const SizedBox(
+                width: 15,
+              ),
+              Container(
+                width: 120,
+                decoration: BoxDecoration(
+                    color: const Color.fromARGB(251, 241, 255, 252),
+                    border: Border.all(
+                      color: const Color.fromARGB(255, 204, 248, 245),
+                      width: 5,
+                    ),
+                    borderRadius: BorderRadius.circular(12)),
+                child: Padding(
+                  padding: const EdgeInsets.all(14.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      //message
+                      Text(
+                        'Time \nCommitment',
+                        textAlign: TextAlign.center,
+                        style: GoogleFonts.poppins(
+                            textStyle: Theme.of(context).textTheme.displayLarge,
+                            color: const Color.fromARGB(255, 70, 66, 68),
+                            fontSize: 12,
+                            fontWeight: FontWeight.w300),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ]),
+          ),
+
+          //another two containers
+          const SizedBox(
+            height: 10,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
                 Container(
                   width: 120,
                   decoration: BoxDecoration(
@@ -201,7 +273,7 @@ class _breathawarenessmed_pageState extends State<breathawarenessmed_page> {
                       children: [
                         //message
                         Text(
-                          'Comfortable \nSpace',
+                          'Minimize \nDistractions',
                           textAlign: TextAlign.center,
                           style: GoogleFonts.poppins(
                               textStyle:
@@ -229,11 +301,12 @@ class _breathawarenessmed_pageState extends State<breathawarenessmed_page> {
                   child: Padding(
                     padding: const EdgeInsets.all(14.0),
                     child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         //message
                         Text(
-                          'Time \nCommitment',
+                          'Comfortable \nClothing',
                           textAlign: TextAlign.center,
                           style: GoogleFonts.poppins(
                               textStyle:
@@ -246,7 +319,29 @@ class _breathawarenessmed_pageState extends State<breathawarenessmed_page> {
                     ),
                   ),
                 ),
-              ]))
+              ],
+            ),
+          ),
+
+          const SizedBox(
+            height: 25,
+          ),
+          //continue button
+          Padding(
+              padding: const EdgeInsets.only(left: 10, right: 10),
+              child: MyButton(
+                buttontext: 'Start Meditation Now',
+                onTap: () {
+                  {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              (const breathawarenessstep1_page())),
+                    );
+                  }
+                },
+              )),
         ])));
   }
 }
