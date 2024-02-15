@@ -65,7 +65,7 @@ class NewDiary extends StatelessWidget {
       child: Column(
         children: <Widget>[
           Padding(
-            padding: EdgeInsets.only(top: 10),
+            padding: EdgeInsets.only(top: 10, bottom: 25),
             child: Text(
               'What is your mood today?',
               style: GoogleFonts.poppins(
