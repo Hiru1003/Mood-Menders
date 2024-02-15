@@ -129,21 +129,21 @@ Padding(
       padding: EdgeInsets.all(3.0),
       child: ElevatedButton(
         onPressed: () {},
-        child: Text('Button 1'),
+        child: Text('Excited'),
       ),
     ),
     Padding(
       padding: EdgeInsets.all(3.0),
       child: ElevatedButton(
         onPressed: () {},
-        child: Text('Button 2'),
+        child: Text('Proud'),
       ),
     ),
     Padding(
       padding: EdgeInsets.all(3.0),
       child: ElevatedButton(
         onPressed: () {},
-        child: Text('Button 3'),
+        child: Text('Lonely'),
       ),
     ),
   ],
