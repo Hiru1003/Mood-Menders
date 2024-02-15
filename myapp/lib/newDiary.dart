@@ -100,7 +100,7 @@ class NewDiary extends StatelessWidget {
       ),
       body: Expanded(
         child: Container(
-          margin: EdgeInsets.all(10.0),
+          margin: EdgeInsets.all(0.0),
           padding: EdgeInsets.all(10.0),
           decoration: BoxDecoration(
             color: Colors.blue,
