@@ -58,6 +58,25 @@ class _mindfulnessstep2_pageState extends State<mindfulnessstep2_page> {
           const SizedBox(
             height: 20,
           ),
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Container(
+              decoration: const BoxDecoration(
+                  color: Color.fromARGB(255, 204, 248, 245),
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(16),
+                      topRight: Radius.circular(16))),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    //message
+                  ],
+                ),
+              ),
+            ),
+          ),
         ])));
   }
 }
