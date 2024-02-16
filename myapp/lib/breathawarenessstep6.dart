@@ -1,3 +1,5 @@
+import 'package:app/button.dart';
+import 'package:app/meditaionmethods.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -130,6 +132,25 @@ class _breathawarenessstep6_pageState extends State<breathawarenessstep6_page> {
                   ],
                 ),
               ),
+            ),
+          ),
+          const SizedBox(
+            height: 25,
+          ),
+          //continue button
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: MyButton(
+              buttontext: 'Back to home page',
+              onTap: () {
+                {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => (meditaionmethods_page())),
+                  );
+                }
+              },
             ),
           ),
         ])));
