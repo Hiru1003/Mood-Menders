@@ -5,9 +5,9 @@ import 'package:intl/intl.dart';
 
 import 'newDiary.dart' as newDiary;
 import 'myButton.dart' as myButton;
-import 'todaysdate.dart'; // You need to import these files if they contain necessary widgets.
-import 'dates.dart'; // You need to import these files if they contain necessary widgets.
-import 'navigationBar.dart'; // You need to import these files if they contain necessary widgets.
+import 'todaysdate.dart'; 
+import 'dates.dart'; 
+import 'navigationBar.dart'; 
 
 class Diary extends StatelessWidget {
   const Diary({Key? key});
