@@ -116,6 +116,19 @@ class _mindfulnessstep2_pageState extends State<mindfulnessstep2_page> {
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
             child: Container(
+              decoration: const BoxDecoration(
+                color: Color.fromARGB(255, 204, 248, 245),
+                borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(16),
+                    bottomRight: Radius.circular(16)),
+                boxShadow: [
+                  BoxShadow(
+                    color: Color.fromARGB(255, 194, 207, 190),
+                    blurRadius: 4,
+                    offset: Offset(0, 6), // Shadow position
+                  ),
+                ],
+              ),
               child: Padding(
                 padding: const EdgeInsets.all(1.0),
                 child: Row(
