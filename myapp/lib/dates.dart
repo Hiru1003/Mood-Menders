@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
 class DatesWidget extends StatelessWidget {
-  const DatesWidget({super.key});
-
   @override
   Widget build(BuildContext context) {
     DateTime today = DateTime.now();
