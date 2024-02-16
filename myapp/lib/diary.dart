@@ -16,7 +16,7 @@ class Diary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(),
+      appBar: const CustomAppBar(),
       backgroundColor: const Color.fromARGB(251, 241, 255, 252),
       body: SingleChildScrollView(
         child: Column(
