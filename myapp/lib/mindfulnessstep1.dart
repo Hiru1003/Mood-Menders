@@ -60,6 +60,8 @@ class _mindfulnessstep1_pageState extends State<mindfulnessstep1_page> {
           const SizedBox(
             height: 20,
           ),
+
+          //image
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
             child: Container(
