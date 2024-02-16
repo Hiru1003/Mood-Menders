@@ -332,9 +332,7 @@ class _mindfulnessmed_pageState extends State<mindfulnessmed_page> {
                   {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(
-                          builder: (context) =>
-                              (const meditaionmethods_page())),
+                      MaterialPageRoute(builder: (context) => (const ())),
                     );
                   }
                 },
