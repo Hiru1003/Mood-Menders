@@ -59,6 +59,30 @@ class NewDiary2 extends StatelessWidget {
                   ),
                 ),
               ),
+              Container(
+                alignment: Alignment.centerLeft, // Aligns the text to the left
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 8, top: 15), // Add padding to the left
+                  child: Text(
+                    'Description',
+                    style: GoogleFonts.poppins(
+                      color: const Color.fromARGB(255, 70, 66, 68),
+                      fontSize: 14,
+                      fontWeight: FontWeight.w400,
+                    ),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 8, top: 15), // Add padding to the left
+                child: TextField(
+                  decoration: InputDecoration(
+                    border: InputBorder.none,
+                    filled: true,
+                    fillColor: Colors.white,
+                  ),
+                ),
+              ),
               GradientButton(buttonText: 'Save', enableIcon: false,)
             ],
           ),
