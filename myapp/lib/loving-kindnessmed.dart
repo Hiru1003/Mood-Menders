@@ -273,10 +273,13 @@ class _lovekindmed_pageState extends State<lovekindmed_page> {
                     Text(
                       '',
                       style: GoogleFonts.poppins(
-                          textStyle: Theme.of(context).textTheme.displayLarge,
-                          color: const Color.fromARGB(255, 70, 66, 68),
-                          fontSize: 14,
-                          fontWeight: FontWeight.w400),
+                        textStyle: Theme.of(context).textTheme.displayLarge,
+                        color: const Color.fromARGB(255, 70, 66, 68),
+                        fontSize: 14,
+                        fontWeight: FontWeight.w400,
+                        height: 1.2,
+                        wordSpacing: 1.8,
+                      ),
                     ),
                   ],
                 ),
@@ -305,10 +308,13 @@ class _lovekindmed_pageState extends State<lovekindmed_page> {
                     Text(
                       'Relax and Focus:',
                       style: GoogleFonts.poppins(
-                          textStyle: Theme.of(context).textTheme.displayLarge,
-                          color: const Color.fromARGB(255, 70, 66, 68),
-                          fontSize: 14,
-                          fontWeight: FontWeight.w600),
+                        textStyle: Theme.of(context).textTheme.displayLarge,
+                        color: const Color.fromARGB(255, 70, 66, 68),
+                        fontSize: 14,
+                        fontWeight: FontWeight.w600,
+                        height: 1.2,
+                        wordSpacing: 1.8,
+                      ),
                     ),
                     Expanded(
                       child: Column(
