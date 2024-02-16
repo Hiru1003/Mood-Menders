@@ -148,6 +148,28 @@ class _mindfulnessmed_pageState extends State<mindfulnessmed_page> {
               ),
             ),
           ),
+          //preconsiderations
+          const SizedBox(
+            height: 5,
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                //message
+                Text(
+                  'Pre-Considerations',
+                  style: GoogleFonts.poppins(
+                      textStyle: Theme.of(context).textTheme.displayLarge,
+                      color: const Color.fromARGB(255, 70, 66, 68),
+                      fontSize: 18,
+                      fontWeight: FontWeight.w400),
+                ),
+              ],
+            ),
+          ),
         ])));
   }
 }
