@@ -25,7 +25,7 @@ class GradientButton extends StatelessWidget {
             ),
             borderRadius: BorderRadius.circular(8),
           ),
-          child: const SizedBox(
+          child: SizedBox(
             height: 50,
             width: 200,
             child: Center(
