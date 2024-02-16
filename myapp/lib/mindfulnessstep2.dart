@@ -53,6 +53,11 @@ class _mindfulnessstep2_pageState extends State<mindfulnessstep2_page> {
           backgroundColor: Color.fromARGB(255, 134, 208, 203),
         ),
         backgroundColor: const Color.fromARGB(251, 241, 255, 252),
-        body: SingleChildScrollView(child: Column(children: [])));
+        body: SingleChildScrollView(
+            child: Column(children: [
+          const SizedBox(
+            height: 20,
+          ),
+        ])));
   }
 }
