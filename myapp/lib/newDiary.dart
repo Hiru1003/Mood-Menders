@@ -73,12 +73,18 @@ class NewDiary extends StatelessWidget {
         ),
       ),
     ),
-                  Expanded(
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Image.asset('lib/images/loveearth (4).png', fit: BoxFit.scaleDown),
-                    ),
-                  ),
+                 Expanded(
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: GestureDetector(
+          onTap: () {
+            // Record the event in the database
+            recordEvent('lib/images/loveearth (4).png');
+          },
+          child: Image.asset('lib/images/loveearth (4).png', fit: BoxFit.scaleDown),
+        ),
+      ),
+    ),
                   Expanded(
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
