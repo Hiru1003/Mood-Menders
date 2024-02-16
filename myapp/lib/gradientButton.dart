@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 
 class GradientButton extends StatelessWidget {
   final String buttonText;
+  final bool enableIcon;
 
-  GradientButton({required this.buttonText});
+  GradientButton({required this.buttonText, this.enableIcon = true});
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +34,7 @@ class GradientButton extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Text(buttonText, style: TextStyle(color: Colors.black, fontSize: 16, fontWeight: FontWeight.w500)),
-                  Icon(Icons.arrow_forward, color: Colors.black),
+                  if (enableIcon) Icon(Icons.arrow_forward, color: Colors.black),
                 ],
               ),
             ),
