@@ -108,6 +108,8 @@ class _movementmed_pageState extends State<movementmed_page> {
                           textStyle: Theme.of(context).textTheme.displayLarge,
                           color: const Color.fromARGB(255, 70, 66, 68),
                           fontSize: 12,
+                          wordSpacing: 1.6,
+                          height: 1.3,
                           fontWeight: FontWeight.w400),
                     ),
                   ],
