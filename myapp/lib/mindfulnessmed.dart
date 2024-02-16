@@ -318,6 +318,25 @@ class _mindfulnessmed_pageState extends State<mindfulnessmed_page> {
               ],
             ),
           ),
+          const SizedBox(
+            height: 15,
+          ),
+          //continue button
+          Padding(
+              padding: const EdgeInsets.only(left: 10, right: 10),
+              child: MyButton(
+                buttontext: 'Start Meditation Now',
+                onTap: () {
+                  {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              (const mindfulnessstep1_page())),
+                    );
+                  }
+                },
+              )),
         ])));
   }
 }
