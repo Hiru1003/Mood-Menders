@@ -31,7 +31,7 @@ class Diary extends StatelessWidget {
               children: [
                 Padding(
                   padding: EdgeInsets.only(left: 20.0),
-                  child: TodayDateWidget(), // Make sure TodayDateWidget is defined
+                  child: TodayDateWidget(), 
                 ),
                 Padding(
                   padding: EdgeInsets.only(right: 20.0),
@@ -45,7 +45,7 @@ class Diary extends StatelessWidget {
                 ),
               ],
             ),
-            DatesWidget(), // Make sure DatesWidget is defined
+            DatesWidget(),
             Container(
               margin: const EdgeInsets.symmetric(vertical: 10),
               width: 300,
