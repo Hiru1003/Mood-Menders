@@ -125,7 +125,7 @@ class DiaryEntry extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text(
-                    'I got stickers from FOSS',
+                    'I got stickers from FOSS ',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                   Text(
