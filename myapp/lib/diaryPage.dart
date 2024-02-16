@@ -62,7 +62,7 @@ class DiaryPage extends StatelessWidget {
                 ],
               ),
               const Padding(
-                padding: EdgeInsets.only(top: 10),
+                padding: EdgeInsets.only(top: 10, bottom:10),
                 child: Align(
                   alignment: Alignment.topLeft,
                   child: Column(
