@@ -170,6 +170,9 @@ class _mindfulnessmed_pageState extends State<mindfulnessmed_page> {
               ],
             ),
           ),
+          const SizedBox(
+            height: 5,
+          ),
         ])));
   }
 }
