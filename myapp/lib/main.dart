@@ -11,10 +11,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        debugShowCheckedModeBanner: false, 
-        //home: loading_page()
-        home: NewDiary(),
+    return MaterialApp(debugShowCheckedModeBanner: false, home: loading_page()
+        //home: NewDiary(),
         );
   }
 }
