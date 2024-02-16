@@ -49,6 +49,14 @@ class NewDiary2 extends StatelessWidget {
                   ),
                 ),
               ),
+              Padding(
+                padding: const EdgeInsets.only(left: 8, top: 15), // Add padding to the left
+                child: TextField(
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                  ),
+                ),
+              ),
               GradientButton(buttonText: 'Save', enableIcon: false,)
             ],
           ),
