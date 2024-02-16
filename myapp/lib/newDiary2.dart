@@ -21,8 +21,18 @@ class NewDiary2 extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              // Add your widgets here
-              // You can copy the widgets from the NewDiary class or create new ones
+              Padding(
+                padding: const EdgeInsets.only(top: 12, bottom: 8),
+                child: Text(
+                  'Add a note',
+                  style: GoogleFonts.poppins(
+                    textStyle: Theme.of(context).textTheme.headlineMedium,
+                    color: const Color.fromARGB(255, 70, 66, 68),
+                    fontSize: 24,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ),
               GradientButton(buttonText: 'Save', enableIcon: false,)
             ],
           ),
