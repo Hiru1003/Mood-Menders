@@ -104,6 +104,36 @@ class _mindfulnessstep1_pageState extends State<mindfulnessstep1_page> {
               ),
             ),
           ),
+
+          const SizedBox(
+            height: 20,
+          ),
+          //para
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Container(
+              child: Padding(
+                padding: const EdgeInsets.all(1.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    //message
+                    Text(
+                      'Close your eyes gently. Take a few deep breaths to \ncenter yourself. Then, allow your breath to return to \nits natural rhythm.',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 13,
+                          height: 1.2,
+                          wordSpacing: 1.8,
+                          fontWeight: FontWeight.w400),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
         ])));
   }
 }
