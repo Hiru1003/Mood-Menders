@@ -1,5 +1,6 @@
 import 'package:app/appBarD.dart';
 import 'package:app/gradientButton.dart';
+import 'package:app/recordevent.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -37,11 +38,17 @@ class NewDiary extends StatelessWidget {
               Row(
                 children: <Widget>[
                   Expanded(
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Image.asset('lib/images/loveearth (1).png', fit: BoxFit.scaleDown),
-                    ),
-                  ),
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: GestureDetector(
+          onTap: () {
+            // Record the event in the database
+            recordEvent('lib/images/loveearth (1).png');
+          },
+          child: Image.asset('lib/images/loveearth (1).png', fit: BoxFit.scaleDown),
+        ),
+      ),
+    ),
                   Expanded(
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
