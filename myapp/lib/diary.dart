@@ -126,7 +126,7 @@ class DiaryEntry extends StatelessWidget {
                 children: <Widget>[
                   Text(
                     'I got stickers from FOSS',
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                   Text(
                     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.',
