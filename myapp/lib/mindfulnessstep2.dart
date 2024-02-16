@@ -72,6 +72,14 @@ class _mindfulnessstep2_pageState extends State<mindfulnessstep2_page> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     //message
+                    Text(
+                      'Breif Description',
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 18,
+                          fontWeight: FontWeight.w600),
+                    ),
                   ],
                 ),
               ),
