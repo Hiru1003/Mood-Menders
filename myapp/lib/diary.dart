@@ -63,7 +63,7 @@ class DiaryEntry extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 370,
-      height: 172.0,
+      height: 176.0,
       padding: const EdgeInsets.all(15),
       margin: const EdgeInsets.all(15),
       decoration: BoxDecoration(
@@ -124,7 +124,7 @@ class DiaryEntry extends StatelessWidget {
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                   Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. nhuytdrrdctijoko ihiyui ihiy8y',
                     style: TextStyle(fontSize: 16),
                   ),
                 ],
