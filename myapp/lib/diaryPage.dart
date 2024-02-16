@@ -11,7 +11,7 @@ class DiaryPage extends StatelessWidget {
       appBar: CustomAppBar(),
       body: Container(
         width: 370,
-        height: 172.0,
+        height: double.infinity,
         padding: const EdgeInsets.all(15),
         margin: const EdgeInsets.all(15),
         decoration: BoxDecoration(
