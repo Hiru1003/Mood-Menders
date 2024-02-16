@@ -97,6 +97,15 @@ class _mindfulnessstep2_pageState extends State<mindfulnessstep2_page> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     //message
+                    Text(
+                      'Mindfulness meditation is a practice that involves \nintentionally focusing on the present moment, \nwithout judgment or attachment to specific \noutcomes. It cultivates a state of heightened \nawareness and acceptance of one is thoughts, \nfeelings, bodily sensations, and surroundings.',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 12,
+                          fontWeight: FontWeight.w400),
+                    ),
                   ],
                 ),
               ),
