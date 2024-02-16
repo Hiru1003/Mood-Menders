@@ -134,6 +134,7 @@ class _breathawarenessstep6_pageState extends State<breathawarenessstep6_page> {
               ),
             ),
           ),
+
           const SizedBox(
             height: 25,
           ),
