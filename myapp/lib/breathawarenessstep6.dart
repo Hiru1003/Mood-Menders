@@ -142,7 +142,7 @@ class _breathawarenessstep6_pageState extends State<breathawarenessstep6_page> {
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
             child: MyButton(
-              buttontext: 'Back to home page',
+              buttontext: 'Back to meditation page',
               onTap: () {
                 {
                   Navigator.push(
