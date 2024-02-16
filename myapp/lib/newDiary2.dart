@@ -1,3 +1,5 @@
+import 'package:app/appBarD.dart';
+import 'package:app/gradientButton.dart';
 import 'package:flutter/material.dart';
 
 class NewDiary2 extends StatelessWidget {
