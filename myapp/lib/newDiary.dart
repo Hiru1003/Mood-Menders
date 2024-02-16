@@ -1,3 +1,5 @@
+import 'package:app/appBarD.dart';
+import 'package:app/gradientButton.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -7,52 +9,8 @@ class NewDiary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Padding(
-          padding: const EdgeInsets.only(
-            left: 10,
-          ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Column(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(left: 5.0, top:20.0), 
-                    child: Text(
-                      'SECRET DIARY',
-                      style: GoogleFonts.poppins(
-                        textStyle: Theme.of(context).textTheme.headline4,
-                        color: const Color.fromARGB(255, 70, 66, 68),
-                        fontSize: 24,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              Image.asset(
-                'lib/images/diary1.png',
-                fit: BoxFit.cover,
-              ),
-            ],
-          ),
-        ),
-        titleSpacing: 4.0,
-        toolbarHeight: 130,
-        toolbarOpacity: 0.9,
-        shape: const RoundedRectangleBorder(
-          borderRadius: BorderRadius.only(
-              bottomRight: Radius.circular(18),
-              bottomLeft: Radius.circular(18)),
-        ),
-        iconTheme: const IconThemeData(
-          color: Colors.black,
-        ),
-        elevation: 0.00,
-        backgroundColor: const Color.fromARGB(255, 134, 208, 203),
-      ),
+      appBar: 
+        CustomAppBar(),
     body: Container(
       width: double.infinity,
       height: double.infinity,
@@ -269,37 +227,7 @@ Row(
     ),
   ],
 ),
-Padding(
-  padding: const EdgeInsets.only(top: 20), // Add your desired padding here
-  child: GestureDetector(
-    onTap: () {
-      print('Button pressed');
-    },
-    child: DecoratedBox(
-      decoration: BoxDecoration(
-        gradient: const LinearGradient(
-          colors: [Color.fromARGB(255, 64, 205, 205),Color.fromARGB(255, 134, 208, 203)], // Define your gradient colors
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
-        borderRadius: BorderRadius.circular(8),
-      ),
-      child: const SizedBox(
-        height: 50,
-        width: 200,
-        child: Center(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Text('Continue    ', style: TextStyle(color: Colors.black, fontSize: 16, fontWeight: FontWeight.w500)),
-              Icon(Icons.arrow_forward, color: Colors.black), // Add your icon here
-            ],
-          ),
-        ),
-      ),
-    ),
-  ),
-)
+GradientButton(),
         ],
       ),
     ),
