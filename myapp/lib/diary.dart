@@ -149,7 +149,7 @@ class DiaryEntry extends StatelessWidget {
                           style: TextStyle(fontSize: 16),
                         ),
                         Text(
-                          '${DateFormat('d MMMM yyyy, h:mm a').format(DateTime.now())}',
+                          DateFormat('d MMMM yyyy, h:mm a').format(DateTime.now()),
                           style: const TextStyle(fontSize: 13),
                         ),
                       ],
