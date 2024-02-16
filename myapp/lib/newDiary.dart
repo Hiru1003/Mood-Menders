@@ -43,7 +43,7 @@ class NewDiary extends StatelessWidget {
         child: GestureDetector(
           onTap: () {
             // Record the event in the database
-            recordEvent('lib/images/loveearth (1).png');
+           // recordEvent('lib/images/loveearth (1).png');
           },
           child: Image.asset('lib/images/loveearth (1).png', fit: BoxFit.scaleDown),
         ),
@@ -55,7 +55,7 @@ class NewDiary extends StatelessWidget {
         child: GestureDetector(
           onTap: () {
             // Record the event in the database
-            recordEvent('lib/images/loveearth (2).png');
+           // recordEvent('lib/images/loveearth (2).png');
           },
           child: Image.asset('lib/images/loveearth (2).png', fit: BoxFit.scaleDown),
         ),
@@ -67,7 +67,7 @@ class NewDiary extends StatelessWidget {
         child: GestureDetector(
           onTap: () {
             // Record the event in the database
-            recordEvent('lib/images/loveearth (3).png');
+          //  recordEvent('lib/images/loveearth (3).png');
           },
           child: Image.asset('lib/images/loveearth (3).png', fit: BoxFit.scaleDown),
         ),
@@ -79,7 +79,7 @@ class NewDiary extends StatelessWidget {
         child: GestureDetector(
           onTap: () {
             // Record the event in the database
-            recordEvent('lib/images/loveearth (4).png');
+           // recordEvent('lib/images/loveearth (4).png');
           },
           child: Image.asset('lib/images/loveearth (4).png', fit: BoxFit.scaleDown),
         ),
@@ -91,7 +91,7 @@ class NewDiary extends StatelessWidget {
         child: GestureDetector(
           onTap: () {
             // Record the event in the database
-            recordEvent('lib/images/loveearth (1).png');
+            //recordEvent('lib/images/loveearth (1).png');
           },
           child: Image.asset('lib/images/loveearth (1).png', fit: BoxFit.scaleDown),
         ),
