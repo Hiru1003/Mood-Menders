@@ -152,7 +152,7 @@ class _mindfulnessmed_pageState extends State<mindfulnessmed_page> {
           ),
           //preconsiderations
           const SizedBox(
-            height: 5,
+            height: 15,
           ),
 
           Padding(
