@@ -8,7 +8,7 @@ class DiaryPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(),
+      appBar: const CustomAppBar(),
       body: Container(
         width: 370,
         height: double.infinity,
