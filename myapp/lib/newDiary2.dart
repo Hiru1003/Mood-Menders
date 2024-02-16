@@ -53,7 +53,9 @@ class NewDiary2 extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 8, top: 15), // Add padding to the left
                 child: TextField(
                   decoration: InputDecoration(
-                    border: OutlineInputBorder(),
+                    border: InputBorder.none,
+                    filled: true,
+                    fillColor: Colors.white,
                   ),
                 ),
               ),
