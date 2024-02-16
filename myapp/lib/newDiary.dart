@@ -57,7 +57,7 @@ class NewDiary extends StatelessWidget {
             // Record the event in the database
             recordEvent('lib/images/loveearth (2).png');
           },
-          child: Image.asset('lib/images/loveearth (3).png', fit: BoxFit.scaleDown),
+          child: Image.asset('lib/images/loveearth (2).png', fit: BoxFit.scaleDown),
         ),
       ),
     ),
