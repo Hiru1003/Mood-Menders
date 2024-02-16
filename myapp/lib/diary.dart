@@ -26,14 +26,14 @@ class Diary extends StatelessWidget {
               padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             ),
             const SizedBox(height: 20),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(left: 20.0),
+                  padding: EdgeInsets.only(left: 20.0),
                   child: TodayDateWidget(), // Make sure TodayDateWidget is defined
                 ),
-                const Padding(
+                Padding(
                   padding: EdgeInsets.only(right: 20.0),
                   child: Text(
                     'Today',
