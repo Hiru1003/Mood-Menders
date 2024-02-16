@@ -85,6 +85,32 @@ class _mindfulnessmed_pageState extends State<mindfulnessmed_page> {
               ),
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Container(
+              decoration: const BoxDecoration(
+                color: Color.fromARGB(255, 204, 248, 245),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(1.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    //message
+                    Text(
+                      'Mindfulness meditation is a practice that involves \nintentionally focusing on the present moment, \nwithout judgment or attachment to specific \noutcomes. It cultivates a state of heightened \nawareness and acceptance of one is thoughts, \nfeelings, bodily sensations, and surroundings.',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 12,
+                          fontWeight: FontWeight.w400),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
         ])));
   }
 }
