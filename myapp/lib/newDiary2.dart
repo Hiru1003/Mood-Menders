@@ -22,8 +22,9 @@ class NewDiary2 extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              Padding(
+              Container(
                 padding: const EdgeInsets.only(top: 12, bottom: 8),
+                alignment: Alignment.center, // Aligns the text to the center
                 child: Text(
                   'Add a note',
                   style: GoogleFonts.poppins(
@@ -31,6 +32,20 @@ class NewDiary2 extends StatelessWidget {
                     color: const Color.fromARGB(255, 70, 66, 68),
                     fontSize: 24,
                     fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ),
+              Container(
+                alignment: Alignment.centerLeft, // Aligns the text to the left
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 8, top: 15), // Add padding to the left
+                  child: Text(
+                    'Your small text',
+                    style: GoogleFonts.poppins(
+                      color: const Color.fromARGB(255, 70, 66, 68),
+                      fontSize: 14,
+                      fontWeight: FontWeight.w400,
+                    ),
                   ),
                 ),
               ),
