@@ -74,12 +74,17 @@ class NewDiary2 extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 8, top: 15), // Add padding to the left
-                child: TextField(
-                  decoration: InputDecoration(
-                    border: InputBorder.none,
-                    filled: true,
-                    fillColor: Colors.white,
+                padding: const EdgeInsets.only(left: 8, top: 15),
+                child: Container(
+                  color: Colors.white,
+                  height: 100, // Set the height of the TextField
+                  child: const TextField(
+                    maxLines: null, // Allows the TextField to grow vertically as the user types
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                      filled: true,
+                      fillColor: Colors.white,
+                    ),
                   ),
                 ),
               ),
