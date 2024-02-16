@@ -69,12 +69,12 @@ class DiaryPage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Padding(
-  padding: EdgeInsets.only(bottom: 10.0),
-  child: Text(
-    'I got stickers from FOSS',
-    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-  ),
-),
+                        padding: EdgeInsets.only(bottom: 10.0),
+                        child: Text(
+                          'I got stickers from FOSS',
+                          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                        ),
+                      ),
                       Text(
                         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.',
                         style: TextStyle(fontSize: 16),
