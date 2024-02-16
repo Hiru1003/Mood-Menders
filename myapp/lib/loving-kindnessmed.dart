@@ -31,7 +31,7 @@ class _lovekindmed_pageState extends State<lovekindmed_page> {
                       textStyle: Theme.of(context).textTheme.displayLarge,
                       color: const Color.fromARGB(255, 70, 66, 68),
                       fontSize: 18,
-                      fontWeight: FontWeight.w400),
+                      fontWeight: FontWeight.w500),
                 ),
                 Image.asset(
                   'lib/images/leaf.png',
@@ -59,7 +59,7 @@ class _lovekindmed_pageState extends State<lovekindmed_page> {
             child: Column(children: [
           //description
           const SizedBox(
-            height: 10,
+            height: 15,
           ),
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
@@ -105,10 +105,13 @@ class _lovekindmed_pageState extends State<lovekindmed_page> {
                       'Loving-kindness meditation, also known as Metta \nmeditation, is a practice that cultivates feelings \nof compassion, love, and goodwill towards \noneself and others.  ',
                       textAlign: TextAlign.center,
                       style: GoogleFonts.poppins(
-                          textStyle: Theme.of(context).textTheme.displayLarge,
-                          color: const Color.fromARGB(255, 70, 66, 68),
-                          fontSize: 12,
-                          fontWeight: FontWeight.w400),
+                        textStyle: Theme.of(context).textTheme.displayLarge,
+                        color: const Color.fromARGB(255, 70, 66, 68),
+                        fontSize: 12,
+                        fontWeight: FontWeight.w400,
+                        height: 1.2,
+                        wordSpacing: 1.8,
+                      ),
                     ),
                   ],
                 ),
@@ -190,10 +193,13 @@ class _lovekindmed_pageState extends State<lovekindmed_page> {
                     Text(
                       'Find a Quiet Space: ',
                       style: GoogleFonts.poppins(
-                          textStyle: Theme.of(context).textTheme.displayLarge,
-                          color: const Color.fromARGB(255, 70, 66, 68),
-                          fontSize: 14,
-                          fontWeight: FontWeight.w600),
+                        textStyle: Theme.of(context).textTheme.displayLarge,
+                        color: const Color.fromARGB(255, 70, 66, 68),
+                        fontSize: 14,
+                        fontWeight: FontWeight.w600,
+                        height: 1.2,
+                        wordSpacing: 1.8,
+                      ),
                     ),
                     Expanded(
                       child: Column(
@@ -228,10 +234,13 @@ class _lovekindmed_pageState extends State<lovekindmed_page> {
                       'Begin by finding a quiet and comfortable place to \nsit or lie down. This could be a meditation cushion, \na chair, or any location where you feel at ease.',
                       textAlign: TextAlign.justify,
                       style: GoogleFonts.poppins(
-                          textStyle: Theme.of(context).textTheme.displayLarge,
-                          color: const Color.fromARGB(255, 70, 66, 68),
-                          fontSize: 12,
-                          fontWeight: FontWeight.w400),
+                        textStyle: Theme.of(context).textTheme.displayLarge,
+                        color: const Color.fromARGB(255, 70, 66, 68),
+                        fontSize: 12,
+                        fontWeight: FontWeight.w400,
+                        height: 1.2,
+                        wordSpacing: 1.5,
+                      ),
                     ),
                   ],
                 ),
@@ -264,10 +273,13 @@ class _lovekindmed_pageState extends State<lovekindmed_page> {
                     Text(
                       '',
                       style: GoogleFonts.poppins(
-                          textStyle: Theme.of(context).textTheme.displayLarge,
-                          color: const Color.fromARGB(255, 70, 66, 68),
-                          fontSize: 14,
-                          fontWeight: FontWeight.w400),
+                        textStyle: Theme.of(context).textTheme.displayLarge,
+                        color: const Color.fromARGB(255, 70, 66, 68),
+                        fontSize: 14,
+                        fontWeight: FontWeight.w400,
+                        height: 1.2,
+                        wordSpacing: 1.8,
+                      ),
                     ),
                   ],
                 ),
@@ -296,10 +308,13 @@ class _lovekindmed_pageState extends State<lovekindmed_page> {
                     Text(
                       'Relax and Focus:',
                       style: GoogleFonts.poppins(
-                          textStyle: Theme.of(context).textTheme.displayLarge,
-                          color: const Color.fromARGB(255, 70, 66, 68),
-                          fontSize: 14,
-                          fontWeight: FontWeight.w600),
+                        textStyle: Theme.of(context).textTheme.displayLarge,
+                        color: const Color.fromARGB(255, 70, 66, 68),
+                        fontSize: 14,
+                        fontWeight: FontWeight.w600,
+                        height: 1.2,
+                        wordSpacing: 1.8,
+                      ),
                     ),
                     Expanded(
                       child: Column(
@@ -334,10 +349,13 @@ class _lovekindmed_pageState extends State<lovekindmed_page> {
                       'Close your eyes and take a few deep breaths to \nrelax your body and clear your mind. Allow any \ntension or stress to dissolve.',
                       textAlign: TextAlign.justify,
                       style: GoogleFonts.poppins(
-                          textStyle: Theme.of(context).textTheme.displayLarge,
-                          color: const Color.fromARGB(255, 70, 66, 68),
-                          fontSize: 12,
-                          fontWeight: FontWeight.w400),
+                        textStyle: Theme.of(context).textTheme.displayLarge,
+                        color: const Color.fromARGB(255, 70, 66, 68),
+                        fontSize: 12,
+                        fontWeight: FontWeight.w400,
+                        height: 1.2,
+                        wordSpacing: 1.5,
+                      ),
                     ),
                   ],
                 ),
@@ -382,7 +400,7 @@ class _lovekindmed_pageState extends State<lovekindmed_page> {
           ),
 
           const SizedBox(
-            height: 15,
+            height: 25,
           ),
           //continue button
           Padding(

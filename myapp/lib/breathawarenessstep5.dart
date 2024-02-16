@@ -1,19 +1,19 @@
-import 'package:app/breathawarenessstep5.dart';
+import 'package:app/breathawarenessstep6.dart';
 import 'package:app/button.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class breathawarenessstep4_page extends StatefulWidget {
-  const breathawarenessstep4_page({
+class breathawarenessstep5_page extends StatefulWidget {
+  const breathawarenessstep5_page({
     super.key,
   });
 
   @override
-  State<breathawarenessstep4_page> createState() =>
-      _breathawarenessstep4_pageState();
+  State<breathawarenessstep5_page> createState() =>
+      _breathawarenessstep5_pageState();
 }
 
-class _breathawarenessstep4_pageState extends State<breathawarenessstep4_page> {
+class _breathawarenessstep5_pageState extends State<breathawarenessstep5_page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -71,14 +71,13 @@ class _breathawarenessstep4_pageState extends State<breathawarenessstep4_page> {
                 children: [
                   //image
                   Image.asset(
-                    'lib/images/step3.png',
+                    'lib/images/step1.png',
                     height: 240,
                   )
                 ],
               ),
             ),
           ),
-
           const SizedBox(
             height: 20,
           ),
@@ -92,7 +91,7 @@ class _breathawarenessstep4_pageState extends State<breathawarenessstep4_page> {
                   children: [
                     //message
                     Text(
-                      'Step 04',
+                      'Step 05',
                       style: GoogleFonts.poppins(
                           textStyle: Theme.of(context).textTheme.displayLarge,
                           color: const Color.fromARGB(255, 70, 66, 68),
@@ -118,23 +117,21 @@ class _breathawarenessstep4_pageState extends State<breathawarenessstep4_page> {
                   children: [
                     //message
                     Text(
-                      'Simply observe your breath without trying \nto change it. Be present with each inhale and \nexhale. If your mind starts to wander, gently \nbring it back to your breath.',
+                      'Pay attention to the temperature of the \nair, its texture, and any sensations it creates \nas it enters and leaves your body.Let go of \nany thoughts about the past or future',
                       textAlign: TextAlign.center,
                       style: GoogleFonts.poppins(
-                        textStyle: Theme.of(context).textTheme.displayLarge,
-                        color: const Color.fromARGB(255, 70, 66, 68),
-                        fontSize: 13,
-                        fontWeight: FontWeight.w400,
-                        height: 1.2,
-                        wordSpacing: 1.8,
-                      ),
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 13,
+                          height: 1.2,
+                          wordSpacing: 1.8,
+                          fontWeight: FontWeight.w400),
                     ),
                   ],
                 ),
               ),
             ),
           ),
-
           const SizedBox(
             height: 25,
           ),
@@ -142,14 +139,14 @@ class _breathawarenessstep4_pageState extends State<breathawarenessstep4_page> {
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
             child: MyButton(
-              buttontext: 'Next Step',
+              buttontext: 'Next',
               onTap: () {
                 {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
                         builder: (context) =>
-                            (const breathawarenessstep5_page())),
+                            (const breathawarenessstep6_page())),
                   );
                 }
               },
