@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class GradientButton extends StatelessWidget {
@@ -7,7 +8,9 @@ class GradientButton extends StatelessWidget {
       padding: const EdgeInsets.only(top: 20),
       child: GestureDetector(
         onTap: () {
-          print('Button pressed');
+          if (kDebugMode) {
+            print('Button pressed');
+          }
         },
         child: DecoratedBox(
           decoration: BoxDecoration(
