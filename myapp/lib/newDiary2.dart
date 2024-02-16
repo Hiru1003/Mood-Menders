@@ -40,7 +40,7 @@ class NewDiary2 extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.only(left: 8, top: 15), // Add padding to the left
                   child: Text(
-                    'Your small text',
+                    'Title',
                     style: GoogleFonts.poppins(
                       color: const Color.fromARGB(255, 70, 66, 68),
                       fontSize: 14,
