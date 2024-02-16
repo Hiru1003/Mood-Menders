@@ -1,3 +1,4 @@
+import 'package:app/appBarD.dart';
 import 'package:flutter/material.dart';
 
 class DiaryPage extends StatelessWidget {
@@ -6,15 +7,8 @@ class DiaryPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Diary Page'),
-      ),
-      body: Center(
-        child: Text(
-          'This is the Diary Page',
-          style: TextStyle(fontSize: 24),
-        ),
-      ),
+      appBar: 
+        CustomAppBar(),
     );
   }
 }
