@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class GradientButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return (Padding(
+    return Padding(
       padding: const EdgeInsets.only(top: 20),
       child: GestureDetector(
         onTap: () {
