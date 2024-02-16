@@ -1,6 +1,7 @@
 import 'package:app/appBarD.dart';
 import 'package:app/gradientButton.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class NewDiary2 extends StatelessWidget {
   const NewDiary2({Key? key}) : super(key: key);
