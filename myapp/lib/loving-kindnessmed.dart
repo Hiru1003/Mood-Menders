@@ -31,7 +31,7 @@ class _lovekindmed_pageState extends State<lovekindmed_page> {
                       textStyle: Theme.of(context).textTheme.displayLarge,
                       color: const Color.fromARGB(255, 70, 66, 68),
                       fontSize: 18,
-                      fontWeight: FontWeight.w400),
+                      fontWeight: FontWeight.w500),
                 ),
                 Image.asset(
                   'lib/images/leaf.png',
@@ -59,7 +59,7 @@ class _lovekindmed_pageState extends State<lovekindmed_page> {
             child: Column(children: [
           //description
           const SizedBox(
-            height: 10,
+            height: 15,
           ),
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
