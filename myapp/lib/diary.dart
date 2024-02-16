@@ -1,14 +1,9 @@
 import 'package:app/appBarD.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 
-import 'newDiary.dart' as newDiary;
-import 'myButton.dart' as myButton;
+import 'dates.dart';
 import 'todaysdate.dart'; 
-import 'dates.dart'; 
-import 'navigationBar.dart'; 
 
 class Diary extends StatelessWidget {
   const Diary({Key? key});
@@ -129,7 +124,7 @@ class DiaryEntry extends StatelessWidget {
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                   Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.',
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
                     style: TextStyle(fontSize: 16),
                   ),
                 ],
