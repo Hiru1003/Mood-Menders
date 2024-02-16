@@ -9,6 +9,8 @@ class DiaryPage extends StatelessWidget {
     return Scaffold(
       appBar: 
         CustomAppBar(),
+    body: Container( 
+    ),
     );
   }
 }
