@@ -1,3 +1,4 @@
+import 'package:app/appBarD.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -15,7 +16,7 @@ class Diary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:
+      appBar: CustomAppBar(),
       backgroundColor: const Color.fromARGB(251, 241, 255, 252),
       body: SingleChildScrollView(
         child: Column(
