@@ -10,7 +10,7 @@ class NewDiary extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        CustomAppBar(),
+        CustomAppBar();
       ),
     body: Container(
       width: double.infinity,

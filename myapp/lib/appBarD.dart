@@ -20,7 +20,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                   child: Text(
                     'SECRET DIARY',
                     style: GoogleFonts.poppins(
-                      textStyle: Theme.of(context).textTheme.headline4,
+                      textStyle: Theme.of(context).textTheme.headlineMedium,
                       color: const Color.fromARGB(255, 70, 66, 68),
                       fontSize: 24,
                       fontWeight: FontWeight.w600,
