@@ -72,7 +72,7 @@ class DiaryPage extends StatelessWidget {
                       style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                     ),
                     Text(
-                      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.',
+                      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.',
                       style: TextStyle(fontSize: 16),
                     ),
                   ],
