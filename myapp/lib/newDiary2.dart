@@ -23,7 +23,7 @@ class NewDiary2 extends StatelessWidget {
             children: <Widget>[
               // Add your widgets here
               // You can copy the widgets from the NewDiary class or create new ones
-              GradientButton(buttonText: 'Save')
+              GradientButton(buttonText: 'Save', enableIcon: false,)
             ],
           ),
         ),
