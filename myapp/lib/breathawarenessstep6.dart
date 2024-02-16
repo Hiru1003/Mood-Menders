@@ -126,7 +126,7 @@ class _breathawarenessstep6_pageState extends State<breathawarenessstep6_page> {
                           color: const Color.fromARGB(255, 70, 66, 68),
                           fontSize: 13,
                           height: 1.2,
-                          wordSpacing: 1.8,
+                          wordSpacing: 1.9,
                           fontWeight: FontWeight.w400),
                     ),
                   ],
@@ -134,6 +134,7 @@ class _breathawarenessstep6_pageState extends State<breathawarenessstep6_page> {
               ),
             ),
           ),
+
           const SizedBox(
             height: 25,
           ),
