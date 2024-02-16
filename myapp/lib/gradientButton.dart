@@ -2,6 +2,10 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class GradientButton extends StatelessWidget {
+  final String buttonText;
+
+  GradientButton({required this.buttonText});
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -28,7 +32,7 @@ class GradientButton extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  Text('Continue    ', style: TextStyle(color: Colors.black, fontSize: 16, fontWeight: FontWeight.w500)),
+                  Text(buttonText, style: TextStyle(color: Colors.black, fontSize: 16, fontWeight: FontWeight.w500)),
                   Icon(Icons.arrow_forward, color: Colors.black),
                 ],
               ),
