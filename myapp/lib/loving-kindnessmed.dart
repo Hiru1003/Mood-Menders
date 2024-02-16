@@ -400,7 +400,7 @@ class _lovekindmed_pageState extends State<lovekindmed_page> {
           ),
 
           const SizedBox(
-            height: 15,
+            height: 25,
           ),
           //continue button
           Padding(
