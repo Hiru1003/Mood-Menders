@@ -98,13 +98,13 @@ class Diary extends StatelessWidget {
             ),
             DatesWidget(), // Make sure DatesWidget is defined
             Container(
-              margin: EdgeInsets.symmetric(vertical: 10),
+              margin: const EdgeInsets.symmetric(vertical: 10),
               width: 300,
               height: 0.5,
               color: const Color.fromARGB(255, 70, 66, 68),
             ),
-            DiaryEntry(),
-            DiaryEntry(),
+            const DiaryEntry(),
+            const DiaryEntry(),
           ],
         ),
       ),
@@ -120,8 +120,8 @@ class DiaryEntry extends StatelessWidget {
     return Container(
       width: 370,
       height: 172.0,
-      padding: EdgeInsets.all(15),
-      margin: EdgeInsets.all(15),
+      padding: const EdgeInsets.all(15),
+      margin: const EdgeInsets.all(15),
       decoration: BoxDecoration(
         color: const Color.fromARGB(255, 204, 248, 245),
         borderRadius: BorderRadius.circular(10),
@@ -138,19 +138,19 @@ class DiaryEntry extends StatelessWidget {
                     width: 60,
                     height: 60,
                   ),
-                  SizedBox(width: 10),
+                  const SizedBox(width: 10),
                   Padding(
-                    padding: EdgeInsets.only(top: 10),
+                    padding: const EdgeInsets.only(top: 10),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
-                        Text(
+                        const Text(
                           'Happy',
                           style: TextStyle(fontSize: 16),
                         ),
                         Text(
                           '${DateFormat('d MMMM yyyy, h:mm a').format(DateTime.now())}',
-                          style: TextStyle(fontSize: 13),
+                          style: const TextStyle(fontSize: 13),
                         ),
                       ],
                     ),
@@ -168,7 +168,7 @@ class DiaryEntry extends StatelessWidget {
               ),
             ],
           ),
-          Padding(
+          const Padding(
             padding: EdgeInsets.only(top: 10),
             child: Align(
               alignment: Alignment.topLeft,
