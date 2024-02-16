@@ -121,6 +121,13 @@ class _mindfulnessmed_pageState extends State<mindfulnessmed_page> {
                 borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(16),
                     bottomRight: Radius.circular(16)),
+                boxShadow: [
+                  BoxShadow(
+                    color: Color.fromARGB(255, 194, 207, 190),
+                    blurRadius: 4,
+                    offset: Offset(0, 6), // Shadow position
+                  ),
+                ],
               ),
               child: Padding(
                 padding: const EdgeInsets.all(1.0),
