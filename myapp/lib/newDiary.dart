@@ -265,6 +265,7 @@ class NewDiary extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => NewDiary2()),
               );
             },
+              
           ),
           
             ],
