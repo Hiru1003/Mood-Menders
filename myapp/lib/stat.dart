@@ -56,7 +56,7 @@ class Stat extends StatelessWidget {
       backgroundColor: const Color.fromARGB(251, 241, 255, 252),
       body: Container(
             width: double.infinity,
-            height: double.infinity,
+            height: 250,
             padding: const EdgeInsets.all(15),
             margin: const EdgeInsets.all(15),
             decoration: BoxDecoration(
