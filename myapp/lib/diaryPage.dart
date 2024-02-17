@@ -11,7 +11,10 @@ class DiaryPage extends StatelessWidget {
       appBar: AppBar(
       leading: IconButton(
         icon: Icon(Icons.arrow_back, color: Colors.black),
-        onPressed: () => Navigator.of(context).pop(),
+        onPressed: () => Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => DiaryPage()),
+        ),
       ),
       title: Padding(
         padding: const EdgeInsets.only(left: 10),
