@@ -50,6 +50,7 @@ class _mindfulnessstep5_pageState extends State<mindfulnessstep5_page> {
           color: Colors.black, //change your color here
         ),
         elevation: 0.00,
+        backgroundColor: Color.fromARGB(255, 134, 208, 203),
       ),
     );
   }
