@@ -112,6 +112,15 @@ class _mindfulnessstep6_pageState extends State<mindfulnessstep6_page> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     //message
+                    Text(
+                      'If desired, take a moment to reflect on something \nyou are grateful for. This can be a person, a \nmoment, or even the opportunity to meditate.',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 13,
+                          fontWeight: FontWeight.w400),
+                    ),
                   ],
                 ),
               ),
