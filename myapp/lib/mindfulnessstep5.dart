@@ -110,7 +110,18 @@ class _mindfulnessstep5_pageState extends State<mindfulnessstep5_page> {
                 padding: const EdgeInsets.all(1.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [],
+                  children: [
+                    //message
+                    Text(
+                      'After a few minutes, start to expand your \nawareness beyond your breath. Notice the \nsounds around you, the sensation of your \nbody against the chair or floor, and any \nother sensory experiences.',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 13,
+                          fontWeight: FontWeight.w400),
+                    ),
+                  ],
                 ),
               ),
             ),
