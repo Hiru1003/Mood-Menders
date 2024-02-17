@@ -64,7 +64,7 @@ class Stat extends StatelessWidget {
               borderRadius: BorderRadius.circular(10),
             ),
             child: Text(
-              'Your text here',
+              'Weekly',
               style: TextStyle(
                 fontSize: 16,
                 color: Colors.black,
