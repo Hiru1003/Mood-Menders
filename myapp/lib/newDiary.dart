@@ -2,7 +2,6 @@ import 'package:app/appBarD.dart';
 import 'package:app/diary.dart';
 import 'package:app/gradientButton.dart';
 import 'package:app/newDiary2.dart';
-import 'package:app/recordevent.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -44,7 +43,7 @@ class NewDiary extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         child: GestureDetector(
           onTap: () {
-           recordEvent('lib/images/loveearth (1).png');
+           //recordEvent('lib/images/loveearth (1).png');
           },
           child: Image.asset('lib/images/loveearth (1).png', fit: BoxFit.scaleDown),
         ),
