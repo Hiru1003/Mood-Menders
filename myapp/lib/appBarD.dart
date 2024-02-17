@@ -29,18 +29,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                     ),
                   ),
                 ),
-                FlatButton(
-                  onPressed: () {
-                    // Handle button action here
-                  },
-                  child: Text(
-                    'Button',
-                    style: TextStyle(
-                      color: Colors.white,
-                    ),
-                  ),
-                  color: Colors.blue,
-                ),
+                SButton(),
               ],
             ),
             Image.asset(
