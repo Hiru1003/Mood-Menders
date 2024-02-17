@@ -1,4 +1,5 @@
 import 'package:app/appBarD.dart';
+import 'package:app/diary.dart';
 import 'package:app/gradientButton.dart';
 import 'package:app/newDiary2.dart';
 import 'package:flutter/material.dart';
@@ -266,6 +267,19 @@ class NewDiary extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => NewDiary2()),
               );
             },
+          ),
+          Positioned(
+            top: 10,
+            right: 10,
+            child: IconButton(
+              icon: const Icon(Icons.close),
+              onPressed: () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => Diary()),
+                );
+              },
+            ),
           ),
             ],
           ),
