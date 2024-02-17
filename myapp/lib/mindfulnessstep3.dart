@@ -100,6 +100,9 @@ class _mindfulnessstep3_pageState extends State<mindfulnessstep3_page> {
               ),
             ),
           ),
+          const SizedBox(
+            height: 20,
+          ),
         ])));
   }
 }
