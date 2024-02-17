@@ -24,22 +24,18 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                     style: GoogleFonts.poppins(
                       textStyle: Theme.of(context).textTheme.headlineMedium,
                       color: const Color.fromARGB(255, 70, 66, 68),
-                      fontSize: 24,
+                      fontSize: 20,
                       fontWeight: FontWeight.w600,
                     ),
                   ),
                 ),
               ],
             ),
-            Image.asset(
-              'lib/images/diary1.png',
-              fit: BoxFit.cover,
-            ),
           ],
         ),
       ),
       titleSpacing: 4.0,
-      toolbarHeight: 130,
+      toolbarHeight: 35,
       toolbarOpacity: 0.9,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.only(
