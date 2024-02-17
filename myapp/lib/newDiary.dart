@@ -1,5 +1,6 @@
 import 'package:app/appBarD.dart';
 import 'package:app/gradientButton.dart';
+import 'package:app/newDiary2.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
