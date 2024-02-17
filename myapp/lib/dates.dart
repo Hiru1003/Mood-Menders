@@ -28,7 +28,7 @@ class DatesWidget extends StatelessWidget {
     }
 
     return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
+      scrollDirection: Axis.vertical,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: dateWidgets,
