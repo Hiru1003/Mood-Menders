@@ -30,7 +30,10 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                     ),
                   ),
                 ),
-                SButton(onTap: () {  },),
+                Padding(
+                  padding: const EdgeInsets.only(right: 40.0, top: 20.0),
+                  child: SButton(onTap: () {  },),
+                ),
               ],
             ),
             Image.asset(
