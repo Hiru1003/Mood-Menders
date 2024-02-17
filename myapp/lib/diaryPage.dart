@@ -1,4 +1,3 @@
-import 'package:app/appBarD.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
@@ -39,7 +38,7 @@ class DiaryPage extends StatelessWidget {
       ),
       elevation: 0.00,
       backgroundColor: const Color.fromARGB(255, 134, 208, 203),
-    );,
+    ),
       body: Container(
         width: 370,
         height: double.infinity,
