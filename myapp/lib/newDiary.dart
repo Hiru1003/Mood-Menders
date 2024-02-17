@@ -267,6 +267,19 @@ class NewDiary extends StatelessWidget {
               );
             },
           ),
+          Positioned(
+            top: 10,
+            right: 10,
+            child: IconButton(
+              icon: const Icon(Icons.close),
+              onPressed: () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => Diary()),
+                );
+              },
+            ),
+          ),
             ],
           ),
         ),
