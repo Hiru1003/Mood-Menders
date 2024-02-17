@@ -1,7 +1,5 @@
-// Filename: today_date_widget.dart
-
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart'; // you need to add intl package in your pubspec.yaml file
+import 'package:intl/intl.dart';
 
 class TodayDateWidget extends StatelessWidget {
   const TodayDateWidget({super.key});
