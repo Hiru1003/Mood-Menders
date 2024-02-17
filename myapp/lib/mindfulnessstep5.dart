@@ -128,6 +128,17 @@ class _mindfulnessstep5_pageState extends State<mindfulnessstep5_page> {
               ),
             ),
           ),
+          const SizedBox(
+            height: 15,
+          ),
+          //continue button
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: MyButton(
+              buttontext: 'Next Step',
+              onTap: () {},
+            ),
+          ),
         ])));
   }
 }
