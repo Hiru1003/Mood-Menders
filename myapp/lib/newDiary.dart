@@ -8,6 +8,11 @@ import 'package:google_fonts/google_fonts.dart';
 class NewDiary extends StatelessWidget {
   const NewDiary({Key? key}) : super(key: key);
 
+  void recordEvent(String imagePath) {
+    print('Image at $imagePath was tapped');
+    // Add your logic for recording the event here
+  }
+
   @override
   Widget build(BuildContext context) {
     return Stack(
