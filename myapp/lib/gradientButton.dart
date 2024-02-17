@@ -1,13 +1,21 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class GradientButton extends StatelessWidget {
+  final String buttonText;
+  final bool enableIcon;
+
+  GradientButton({required this.buttonText, this.enableIcon = true});
+
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(top: 20),
       child: GestureDetector(
         onTap: () {
-          print('Button pressed');
+          if (kDebugMode) {
+            print('Button pressed');
+          }
         },
         child: DecoratedBox(
           decoration: BoxDecoration(
@@ -18,15 +26,15 @@ class GradientButton extends StatelessWidget {
             ),
             borderRadius: BorderRadius.circular(8),
           ),
-          child: const SizedBox(
+          child: SizedBox(
             height: 50,
             width: 200,
             child: Center(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  Text('Continue    ', style: TextStyle(color: Colors.black, fontSize: 16, fontWeight: FontWeight.w500)),
-                  Icon(Icons.arrow_forward, color: Colors.black),
+                  Text(buttonText, style: TextStyle(color: Colors.black, fontSize: 16, fontWeight: FontWeight.w500)),
+                  if (enableIcon) Icon(Icons.arrow_forward, color: Colors.black),
                 ],
               ),
             ),

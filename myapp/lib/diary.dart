@@ -1,14 +1,9 @@
 import 'package:app/appBarD.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 
-import 'newDiary.dart' as newDiary;
-import 'myButton.dart' as myButton;
+import 'dates.dart';
 import 'todaysdate.dart'; 
-import 'dates.dart'; 
-import 'navigationBar.dart'; 
 
 class Diary extends StatelessWidget {
   const Diary({Key? key});
@@ -16,7 +11,7 @@ class Diary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(),
+      appBar: const CustomAppBar(),
       backgroundColor: const Color.fromARGB(251, 241, 255, 252),
       body: SingleChildScrollView(
         child: Column(
@@ -26,14 +21,14 @@ class Diary extends StatelessWidget {
               padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             ),
             const SizedBox(height: 20),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(left: 20.0),
-                  child: TodayDateWidget(), // Make sure TodayDateWidget is defined
+                  padding: EdgeInsets.only(left: 20.0),
+                  child: TodayDateWidget(), 
                 ),
-                const Padding(
+                Padding(
                   padding: EdgeInsets.only(right: 20.0),
                   child: Text(
                     'Today',
@@ -45,7 +40,7 @@ class Diary extends StatelessWidget {
                 ),
               ],
             ),
-            DatesWidget(), // Make sure DatesWidget is defined
+            DatesWidget(),
             Container(
               margin: const EdgeInsets.symmetric(vertical: 10),
               width: 300,
@@ -68,7 +63,7 @@ class DiaryEntry extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 370,
-      height: 172.0,
+      height: 176.0,
       padding: const EdgeInsets.all(15),
       margin: const EdgeInsets.all(15),
       decoration: BoxDecoration(
@@ -125,11 +120,11 @@ class DiaryEntry extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text(
-                    'I got stickers from FOSS',
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    'I got stickers from FOSS ',
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                   Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et est leo.',
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. nhuytdrrdctijoko ihiyui ihiy8y',
                     style: TextStyle(fontSize: 16),
                   ),
                 ],
