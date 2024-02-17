@@ -129,7 +129,7 @@ class _mindfulnessstep6_pageState extends State<mindfulnessstep6_page> {
             ),
           ),
           const SizedBox(
-            height: 25,
+            height: 24,
           ),
           //continue button
           Padding(
