@@ -126,7 +126,7 @@ class _mindfulnessstep1_pageState extends State<mindfulnessstep1_page> {
                           color: const Color.fromARGB(255, 70, 66, 68),
                           fontSize: 13,
                           height: 1.2,
-                          wordSpacing: 1.8,
+                          wordSpacing: 1.7,
                           fontWeight: FontWeight.w400),
                     ),
                   ],
