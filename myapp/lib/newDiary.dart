@@ -1,5 +1,4 @@
 import 'package:app/appBarD.dart';
-import 'package:app/diary.dart';
 import 'package:app/gradientButton.dart';
 import 'package:app/newDiary2.dart';
 import 'package:flutter/material.dart';
@@ -36,19 +35,6 @@ class NewDiary extends StatelessWidget {
             child: SingleChildScrollView(
               child: Column(
                 children: <Widget>[
-                  Positioned(
-          top: 10,
-          right: 10,
-          child: IconButton(
-            icon: const Icon(Icons.close),
-            onPressed: () {
-              Navigator.pushReplacement(
-                context,
-                MaterialPageRoute(builder: (context) => Diary()),
-              );
-            },
-          ),
-        ),
                   Padding(
                 padding: const EdgeInsets.only(top: 12, bottom: 8),
                 child: Text(
@@ -61,7 +47,6 @@ class NewDiary extends StatelessWidget {
                   ),
                 ),
               ),
-              
               Row(
                 children: <Widget>[
                   Expanded(
@@ -292,7 +277,9 @@ class NewDiary extends StatelessWidget {
                   
                 ],
               ),
+              
             ),
+            
           ),
         ),
         
