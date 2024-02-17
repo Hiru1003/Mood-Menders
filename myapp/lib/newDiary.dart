@@ -100,7 +100,7 @@ class NewDiary extends StatelessWidget {
                 ],
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 12, bottom: 8),
+                padding: const EdgeInsets.only(top: 12, bottom: 15),
                 child: Text(
                   'Emotions',
                   style: GoogleFonts.poppins(
@@ -190,7 +190,7 @@ class NewDiary extends StatelessWidget {
                 ],
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 12, bottom: 8),
+                padding: const EdgeInsets.only(top: 15,),
                 child: Text(
                   'Sphere of life',
                   style: GoogleFonts.poppins(
@@ -205,7 +205,7 @@ class NewDiary extends StatelessWidget {
                 children: <Widget>[
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(26.0),
+                      padding: const EdgeInsets.only(right: 26.0, left: 26.0),
                       child: Image.asset('lib/images/edu.png', fit: BoxFit.scaleDown),
                     ),
                   ),
