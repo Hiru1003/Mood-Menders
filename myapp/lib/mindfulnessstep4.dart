@@ -1,19 +1,18 @@
 import 'package:app/button.dart';
-import 'package:app/meditaionmethods.dart';
+import 'package:app/mindfulnessstep5.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class breathawarenessstep6_page extends StatefulWidget {
-  const breathawarenessstep6_page({
+class mindfulnessstep4_page extends StatefulWidget {
+  const mindfulnessstep4_page({
     super.key,
   });
 
   @override
-  State<breathawarenessstep6_page> createState() =>
-      _breathawarenessstep6_pageState();
+  State<mindfulnessstep4_page> createState() => _mindfulnessstep4_pageState();
 }
 
-class _breathawarenessstep6_pageState extends State<breathawarenessstep6_page> {
+class _mindfulnessstep4_pageState extends State<mindfulnessstep4_page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,7 +26,7 @@ class _breathawarenessstep6_pageState extends State<breathawarenessstep6_page> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 Text(
-                  'BREATH AWARENESS \nMEDITATION',
+                  'MINDFULLNESS \nMEDITATION',
                   style: GoogleFonts.poppins(
                       textStyle: Theme.of(context).textTheme.displayLarge,
                       color: const Color.fromARGB(255, 70, 66, 68),
@@ -71,16 +70,15 @@ class _breathawarenessstep6_pageState extends State<breathawarenessstep6_page> {
                 children: [
                   //image
                   Image.asset(
-                    'lib/images/step17.png',
-                    height: 210,
+                    'lib/images/step14.png',
+                    height: 240,
                   )
                 ],
               ),
             ),
           ),
-
           const SizedBox(
-            height: 5,
+            height: 20,
           ),
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
@@ -92,12 +90,11 @@ class _breathawarenessstep6_pageState extends State<breathawarenessstep6_page> {
                   children: [
                     //message
                     Text(
-                      'You  are successfully completed \nbreath awareness meditation',
-                      textAlign: TextAlign.center,
+                      'Step 04',
                       style: GoogleFonts.poppins(
                           textStyle: Theme.of(context).textTheme.displayLarge,
                           color: const Color.fromARGB(255, 70, 66, 68),
-                          fontSize: 16,
+                          fontSize: 18,
                           fontWeight: FontWeight.w600),
                     ),
                   ],
@@ -106,7 +103,7 @@ class _breathawarenessstep6_pageState extends State<breathawarenessstep6_page> {
             ),
           ),
           const SizedBox(
-            height: 5,
+            height: 20,
           ),
           //para
           Padding(
@@ -119,14 +116,14 @@ class _breathawarenessstep6_pageState extends State<breathawarenessstep6_page> {
                   children: [
                     //message
                     Text(
-                      'Remember, breathawareness meditation is a \nskill thattakes time to develop. Encourage users to \nbe patient with themselves and to approach the \npractice with an open and non-judgmental \nattitude. Regular practice can lead to increased \nmindfulness and a greater sense of well-being.',
+                      'Practice observing your thoughts and feelings \nwithout judgment. Allow them to come and go \nlike passing clouds.',
                       textAlign: TextAlign.center,
                       style: GoogleFonts.poppins(
                           textStyle: Theme.of(context).textTheme.displayLarge,
                           color: const Color.fromARGB(255, 70, 66, 68),
                           fontSize: 13,
                           height: 1.2,
-                          wordSpacing: 1.9,
+                          wordSpacing: 1.8,
                           fontWeight: FontWeight.w400),
                     ),
                   ],
@@ -134,7 +131,6 @@ class _breathawarenessstep6_pageState extends State<breathawarenessstep6_page> {
               ),
             ),
           ),
-
           const SizedBox(
             height: 25,
           ),
@@ -142,13 +138,13 @@ class _breathawarenessstep6_pageState extends State<breathawarenessstep6_page> {
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
             child: MyButton(
-              buttontext: 'Back to meditation page',
+              buttontext: 'Next Step',
               onTap: () {
                 {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => (meditaionmethods_page())),
+                        builder: (context) => (const mindfulnessstep5_page())),
                   );
                 }
               },
