@@ -32,7 +32,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             bottomLeft: Radius.circular(18)),
       ),
       iconTheme: const IconThemeData(
-        color: Colors.black,
+        color: Color.fromARGB(255, 70, 66, 68),
       ),
       elevation: 0.00,
       backgroundColor: const Color.fromARGB(255, 134, 208, 203),
