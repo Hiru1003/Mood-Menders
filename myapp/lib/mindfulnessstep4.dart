@@ -56,6 +56,9 @@ class _mindfulnessstep4_pageState extends State<mindfulnessstep4_page> {
         body: SingleChildScrollView(
             child: Column(children: [
           //image
+          const SizedBox(
+            height: 20,
+          ),
         ])));
   }
 }
