@@ -12,30 +12,24 @@ class SButton extends StatefulWidget {
 
 class _SButtonState extends State<SButton> {
   bool _isClicked = false;
-  bool _isButtonDisabled = false;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTapDown: (TapDownDetails details) {
-        if (!_isButtonDisabled) {
-          setState(() {
-            _isClicked = true;
-          });
-        }
+        setState(() {
+          _isClicked = true;
+        });
       },
-     onTapUp: (TapUpDetails details) {
-        if (!_isButtonDisabled) {
-          setState(() {
-            _isClicked = false;
-            _isButtonDisabled = true;
-          });
+      onTapUp: (TapUpDetails details) {
+        setState(() {
+          _isClicked = false;
+        });
 
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => const NewDiary()),
-          );
-        }
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => const NewDiary()),
+        );
       },
       child: Container(
         width: 120,
