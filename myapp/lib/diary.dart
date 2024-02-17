@@ -1,3 +1,4 @@
+import 'package:app/diaryPage.dart';
 import 'package:app/myButton.dart';
 import 'package:app/newDiary.dart';
 import 'package:flutter/material.dart';
