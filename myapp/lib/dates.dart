@@ -7,9 +7,9 @@ class DatesWidget extends StatelessWidget {
 
     return ListView.builder(
       scrollDirection: Axis.horizontal,
-      itemCount: 1000, // Adjust this to control how many dates in the future to show
+      itemCount: 1000,
       itemBuilder: (context, index) {
-        DateTime date = today.add(Duration(days: index - 500)); // Adjust this to control how many dates in the past to show
+        DateTime date = today.add(Duration(days: index - 500)); 
         bool isToday = date.day == today.day && date.month == today.month && date.year == today.year;
 
         return Padding(
