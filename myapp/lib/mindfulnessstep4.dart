@@ -75,6 +75,9 @@ class _mindfulnessstep4_pageState extends State<mindfulnessstep4_page> {
               ),
             ),
           ),
+          const SizedBox(
+            height: 20,
+          ),
         ])));
   }
 }
