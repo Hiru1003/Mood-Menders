@@ -256,7 +256,16 @@ class NewDiary extends StatelessWidget {
                   ),
                 ],
               ),
-              GradientButton(buttonText: 'Continue   ', enableIcon: true,)
+              GradientButton(
+            buttonText: 'Continue',
+            enableIcon: true,
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => NewDiary2()),
+              );
+            },
+          ),
             ],
           ),
         ),

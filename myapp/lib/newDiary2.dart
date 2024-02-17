@@ -91,7 +91,16 @@ class NewDiary2 extends StatelessWidget {
                       ),
                     ),
                   ),
-                  GradientButton(buttonText: 'Save', enableIcon: false,)
+                  GradientButton(
+                    buttonText: 'Save',
+                    enableIcon: false,
+                    onPressed: () {
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(builder: (context) => Diary()),
+                      );
+                    },
+                  ),
                 ],
               ),
             ),
