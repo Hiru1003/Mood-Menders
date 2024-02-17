@@ -1,5 +1,3 @@
-import 'package:app/myButton.dart';
-import 'package:app/newDiary.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -30,17 +28,6 @@ class Stat extends StatelessWidget {
                         fontSize: 24,
                         fontWeight: FontWeight.w600,
                       ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(right: 40.0, top: 20.0),
-                    child: SButton(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => NewDiary()),
-                        );
-                      },
                     ),
                   ),
                 ],
