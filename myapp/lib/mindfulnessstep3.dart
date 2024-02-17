@@ -111,7 +111,18 @@ class _mindfulnessstep3_pageState extends State<mindfulnessstep3_page> {
                 padding: const EdgeInsets.all(1.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [],
+                  children: [
+                    //message
+                    Text(
+                      'Whenever your mind starts to wander (and it \nwill), gently acknowledge the thought \nand then bring your focus back to your breath. \nBe patient with yourself.',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 13,
+                          fontWeight: FontWeight.w400),
+                    ),
+                  ],
                 ),
               ),
             ),
