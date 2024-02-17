@@ -24,7 +24,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         ),
       ),
       titleSpacing: 4.0,
-      toolbarHeight: 70, // Adjust this value to reduce the height of the AppBar
+      toolbarHeight: 70, 
       toolbarOpacity: 0.9,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.only(
