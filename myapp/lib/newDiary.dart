@@ -54,11 +54,11 @@ class NewDiary extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: GestureDetector(
-          onTap: () {
-           //recordEvent('lib/images/loveearth (1).png');
-          },
-          child: Image.asset('lib/images/loveearth (1).png', fit: BoxFit.scaleDown),
-        ),
+                    onTap: () {
+                      recordEvent('lib/images/loveearth (1).png');
+                    },
+                    child: Image.asset('lib/images/loveearth (1).png', fit: BoxFit.scaleDown),
+                  ),
       ),
     ),
                  Expanded(
