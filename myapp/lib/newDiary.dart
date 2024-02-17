@@ -13,6 +13,11 @@ class NewDiary extends StatelessWidget {
     // Add your logic for recording the event here
   }
 
+   void handleButtonPress(String buttonText) {
+    print('Button $buttonText was pressed');
+    // Add your logic for handling button presses here
+  }
+
   @override
   Widget build(BuildContext context) {
     return Stack(
