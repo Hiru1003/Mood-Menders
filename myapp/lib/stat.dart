@@ -33,7 +33,7 @@ class Stat extends StatelessWidget {
                 ],
               ),
               Image.asset(
-                'lib/images/diary1.png',
+                'lib/images/statMainpic.png',
                 fit: BoxFit.cover,
               ),
             ],
