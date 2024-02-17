@@ -8,7 +8,37 @@ class DiaryPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppBar(),
+      appBar: AppBar(
+      leading: IconButton(
+        icon: Icon(Icons.arrow_back, color: Colors.black),
+        onPressed: () => Navigator.of(context).pop(),
+      ),
+      title: Padding(
+        padding: const EdgeInsets.only(left: 10),
+        child: Text(
+          'SECRET DIARY',
+          style: GoogleFonts.poppins(
+            textStyle: Theme.of(context).textTheme.headlineMedium,
+            color: const Color.fromARGB(255, 70, 66, 68),
+            fontSize: 20,
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+      ),
+      titleSpacing: 4.0,
+      toolbarHeight: 70, // Adjust this value to reduce the height of the AppBar
+      toolbarOpacity: 0.9,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.only(
+            bottomRight: Radius.circular(18),
+            bottomLeft: Radius.circular(18)),
+      ),
+      iconTheme: const IconThemeData(
+        color: Color.fromARGB(255, 70, 66, 68),
+      ),
+      elevation: 0.00,
+      backgroundColor: const Color.fromARGB(255, 134, 208, 203),
+    );,
       body: Container(
         width: 370,
         height: double.infinity,
