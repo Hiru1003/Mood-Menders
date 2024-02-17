@@ -13,7 +13,7 @@ class DiaryPage extends StatelessWidget {
         icon: Icon(Icons.arrow_back, color: Colors.black),
         onPressed: () => Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => DiaryPage()),
+          MaterialPageRoute(builder: (context) => Diary()),
         ),
       ),
       title: Padding(
