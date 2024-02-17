@@ -1,5 +1,6 @@
 import 'package:app/appBarD.dart';
 import 'package:app/diary.dart';
+import 'package:app/gradientButton.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -90,7 +91,7 @@ class NewDiary2 extends StatelessWidget {
                       ),
                     ),
                   ),
-                  //GradientButton(buttonText: 'Save', enableIcon: false,)
+                  GradientButton(buttonText: 'Save', enableIcon: false,)
                 ],
               ),
             ),
