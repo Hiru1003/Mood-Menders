@@ -1,5 +1,6 @@
 import 'package:app/button.dart';
 import 'package:app/meditaionmethods.dart';
+import 'package:app/mindfulnessstep1.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -58,7 +59,7 @@ class _mindfulnessmed_pageState extends State<mindfulnessmed_page> {
         body: SingleChildScrollView(
             child: Column(children: [
           const SizedBox(
-            height: 20,
+            height: 25,
           ),
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
@@ -107,7 +108,7 @@ class _mindfulnessmed_pageState extends State<mindfulnessmed_page> {
                           color: const Color.fromARGB(255, 70, 66, 68),
                           fontSize: 12,
                           height: 1.2,
-                          wordSpacing: 1.8,
+                          wordSpacing: 2.5,
                           fontWeight: FontWeight.w400),
                     ),
                   ],
@@ -152,7 +153,7 @@ class _mindfulnessmed_pageState extends State<mindfulnessmed_page> {
           ),
           //preconsiderations
           const SizedBox(
-            height: 5,
+            height: 15,
           ),
 
           Padding(
@@ -248,7 +249,7 @@ class _mindfulnessmed_pageState extends State<mindfulnessmed_page> {
 
           //another two containers
           const SizedBox(
-            height: 10,
+            height: 15,
           ),
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
@@ -321,7 +322,7 @@ class _mindfulnessmed_pageState extends State<mindfulnessmed_page> {
             ),
           ),
           const SizedBox(
-            height: 15,
+            height: 30,
           ),
           //continue button
           Padding(
@@ -334,7 +335,7 @@ class _mindfulnessmed_pageState extends State<mindfulnessmed_page> {
                       context,
                       MaterialPageRoute(
                           builder: (context) =>
-                              (const meditaionmethods_page())),
+                              (const mindfulnessstep1_page())),
                     );
                   }
                 },
