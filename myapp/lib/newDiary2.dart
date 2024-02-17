@@ -1,6 +1,5 @@
 import 'package:app/appBarD.dart';
 import 'package:app/diary.dart';
-import 'package:app/diaryPage.dart';
 import 'package:app/gradientButton.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -98,7 +97,7 @@ class NewDiary2 extends StatelessWidget {
                     onPressed: () {
                       Navigator.pushReplacement(
                         context,
-                        MaterialPageRoute(builder: (context) => DiaryPage()),
+                        MaterialPageRoute(builder: (context) => Diary()),
                       );
                     },
                   ),
