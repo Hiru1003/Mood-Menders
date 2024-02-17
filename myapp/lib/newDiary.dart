@@ -275,12 +275,7 @@ class NewDiary extends StatelessWidget {
                       );
                     },
                   ),
-                ],
-              ),
-            ),
-          ),
-        ),
-        Positioned(
+                  Positioned(
           top: 10,
           right: 10,
           child: IconButton(
@@ -293,6 +288,12 @@ class NewDiary extends StatelessWidget {
             },
           ),
         ),
+                ],
+              ),
+            ),
+          ),
+        ),
+        
       ],
     );
   }
