@@ -23,7 +23,7 @@ class Stat extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(left: 5.0, top:20.0), 
                     child: Text(
-                      'SECRET DIARY',
+                      'TRACK YOUR MOODS',
                       style: GoogleFonts.poppins(
                         textStyle: Theme.of(context).textTheme.headlineMedium,
                         color: const Color.fromARGB(255, 70, 66, 68),
