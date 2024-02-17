@@ -1,4 +1,3 @@
-import 'package:app/diary.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
@@ -12,10 +11,7 @@ class DiaryPage extends StatelessWidget {
       appBar: AppBar(
       leading: IconButton(
         icon: Icon(Icons.arrow_back, color: Colors.black),
-        onPressed: () => Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => Diary()),
-        ),
+        onPressed: () => Navigator.of(context).pop(),
       ),
       title: Padding(
         padding: const EdgeInsets.only(left: 10),
