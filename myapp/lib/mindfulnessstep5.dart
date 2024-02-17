@@ -13,6 +13,15 @@ class mindfulnessstep5_page extends StatefulWidget {
 class _mindfulnessstep5_pageState extends State<mindfulnessstep5_page> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+      title: Padding(
+        padding: const EdgeInsets.only(left: 10,),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.center,
+        children: <Widget>[
+        ]))
+    );
   }
 }
