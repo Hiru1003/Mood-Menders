@@ -3,8 +3,8 @@ import 'package:app/newDiary.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Diary extends StatelessWidget {
-  const Diary({Key? key});
+class Stat extends StatelessWidget {
+  const Stat({Key? key});
 
   @override
   Widget build(BuildContext context) {
