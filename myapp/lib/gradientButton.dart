@@ -1,22 +1,22 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class GradientButton extends StatelessWidget {
   final String buttonText;
   final bool enableIcon;
+  final VoidCallback onPressed;
 
-  GradientButton({required this.buttonText, this.enableIcon = true});
+  GradientButton({
+    required this.buttonText, 
+    this.enableIcon = true, 
+    required this.onPressed,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(top: 20),
       child: GestureDetector(
-        onTap: () {
-          if (kDebugMode) {
-            print('Button pressed');
-          }
-        },
+        onTap: onPressed,
         child: DecoratedBox(
           decoration: BoxDecoration(
             gradient: const LinearGradient(
