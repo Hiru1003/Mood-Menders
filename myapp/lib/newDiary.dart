@@ -1,5 +1,6 @@
 import 'package:app/appBarD.dart';
 import 'package:app/gradientButton.dart';
+import 'package:app/newDiary2.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -99,7 +100,7 @@ class NewDiary extends StatelessWidget {
                 ],
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 12, bottom: 8),
+                padding: const EdgeInsets.only(top: 12, bottom: 15),
                 child: Text(
                   'Emotions',
                   style: GoogleFonts.poppins(
@@ -189,9 +190,9 @@ class NewDiary extends StatelessWidget {
                 ],
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 12, bottom: 8),
+                padding: const EdgeInsets.only(top: 15,),
                 child: Text(
-                  'Emotions',
+                  'Sphere of life',
                   style: GoogleFonts.poppins(
                     textStyle: Theme.of(context).textTheme.headlineMedium,
                     color: const Color.fromARGB(255, 70, 66, 68),
@@ -204,7 +205,7 @@ class NewDiary extends StatelessWidget {
                 children: <Widget>[
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(26.0),
+                      padding: const EdgeInsets.only(right: 26.0, left: 26.0),
                       child: Image.asset('lib/images/edu.png', fit: BoxFit.scaleDown),
                     ),
                   ),
@@ -256,7 +257,16 @@ class NewDiary extends StatelessWidget {
                   ),
                 ],
               ),
-              GradientButton(buttonText: 'Continue   ', enableIcon: true,)
+              GradientButton(
+            buttonText: 'Continue',
+            enableIcon: true,
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => NewDiary2()),
+              );
+            },
+          ),
             ],
           ),
         ),
