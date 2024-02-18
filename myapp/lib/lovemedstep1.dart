@@ -38,6 +38,19 @@ class _lovemedstep1_pageState extends State<lovemedstep1_page> {
             ],
           ),
         ),
+        titleSpacing: 4.0,
+        toolbarHeight: 65,
+        toolbarOpacity: 0.9,
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.only(
+              bottomRight: Radius.circular(18),
+              bottomLeft: Radius.circular(18)),
+        ),
+        iconTheme: const IconThemeData(
+          color: Colors.black, //change your color here
+        ),
+        elevation: 0.00,
+        backgroundColor: Color.fromARGB(255, 134, 208, 203),
       ),
     );
   }
