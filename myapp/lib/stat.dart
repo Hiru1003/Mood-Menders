@@ -141,11 +141,37 @@ class _StatState extends State<Stat> {
                   ),
                 ),
                 Expanded(
-                  child: charts.LineChart(
-                    seriesList as List<charts.Series<dynamic, num>>,
-                    defaultRenderer: new charts.LineRendererConfig(includeArea: true, stacked: true),
-                  ),
-                ),
+  child: charts.LineChart(
+    seriesList as List<charts.Series<dynamic, num>>,
+    defaultRenderer: new charts.LineRendererConfig(includeArea: true, stacked: true),
+    primaryMeasureAxis: new charts.NumericAxisSpec(
+      renderSpec: new charts.NoneRenderSpec(), // this will hide Y axis values
+    ),
+    domainAxis: new charts.NumericAxisSpec(
+      tickProviderSpec: new charts.StaticNumericTickProviderSpec(
+        List.generate(7, (index) {
+          return new charts.TickSpec(
+            index,
+            label: String.fromCharCode(65 + index), // ASCII value of 'A' + index
+            style: new charts.TextStyleSpec(
+              fontSize: 18, // size of text
+              color: charts.MaterialPalette.black, // color of text
+            ),
+          );
+        }),
+      ),
+      renderSpec: charts.GridlineRendererSpec(
+        labelStyle: charts.TextStyleSpec(
+          fontSize: 0, // size of text
+          color: charts.MaterialPalette.transparent, // color of text
+        ),
+        lineStyle: charts.LineStyleSpec(
+          color: charts.MaterialPalette.transparent, // color of line
+        ),
+      ),
+    ),
+  ),
+),
               ],
             ),
       ),
