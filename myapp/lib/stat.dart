@@ -208,7 +208,10 @@ Align(
         'lib/images/loveearth (1).png',
         width: 50,
       ),
-      
+      Text(
+        'Your text here', // replace with your text
+        style: TextStyle(fontSize: 16),
+      ),
     ],
   ),
 ),
