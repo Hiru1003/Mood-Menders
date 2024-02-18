@@ -195,7 +195,10 @@ class _StatState extends State<Stat> {
     focusedDay: DateTime.now(),
   ),
 ),
-PercentageBar(percentage: 0.3)
+Padding(
+  padding: EdgeInsets.all(8.0),
+  child: PercentageBar(percentage: 0.3),
+)
         ],),
 
     ],),
