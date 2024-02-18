@@ -1,3 +1,4 @@
+import 'package:charts_flutter/flutter.dart' as charts;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
@@ -12,6 +13,29 @@ class Stat extends StatefulWidget {
 class _StatState extends State<Stat> {
   DateTime now = DateTime.now();
   late DateTime startOfWeek;
+
+  final List<charts.Series> seriesList = _createSampleData();
+
+  static List<charts.Series<LinearSales, int>> _createSampleData() {
+    final data = [
+      new LinearSales(0, 5),
+      new LinearSales(1, 25),
+      new LinearSales(2, 100),
+      new LinearSales(3, 75),
+    ];
+
+    return [
+      new charts.Series<LinearSales, int>(
+        id: 'Sales',
+        colorFn: (_, __) => charts.MaterialPalette.blue.shadeDefault,
+        areaColorFn: (_, __) =>
+            charts.MaterialPalette.blue.shadeDefault.lighter,
+        domainFn: (LinearSales sales, _) => sales.year,
+        measureFn: (LinearSales sales, _) => sales.sales,
+        data: data,
+      )
+    ];
+  }
 
   @override
   void initState() {
@@ -81,40 +105,57 @@ class _StatState extends State<Stat> {
               color: const Color.fromARGB(255, 204, 248, 245),
               borderRadius: BorderRadius.circular(10),
             ),
-            child: Align(
-              alignment: Alignment.topCenter,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        now = now.subtract(Duration(days: 7));
-                        startOfWeek = startOfWeek.subtract(Duration(days: 7));
-                      });
-                    },
-                    child: Icon(Icons.arrow_left),
+            child: Column(
+              children: <Widget>[
+                Align(
+                  alignment: Alignment.topCenter,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            now = now.subtract(Duration(days: 7));
+                            startOfWeek = startOfWeek.subtract(Duration(days: 7));
+                          });
+                        },
+                        child: Icon(Icons.arrow_left),
+                      ),
+                      Text(
+                        '$formattedStartOfWeek - $formattedToday',
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.black,
+                        ),
+                      ),
+                      GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            now = now.add(Duration(days: 7));
+                            startOfWeek = startOfWeek.add(Duration(days: 7));
+                          });
+                        },
+                        child: Icon(Icons.arrow_right),
+                      ),
+                    ],
                   ),
-                  Text(
-                    '$formattedStartOfWeek - $formattedToday',
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.black,
-                    ),
+                ),
+                Expanded(
+                  child: new charts.LineChart(
+                    seriesList,
+                    defaultRenderer: new charts.LineRendererConfig(includeArea: true, stacked: true),
                   ),
-                  GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        now = now.add(Duration(days: 7));
-                        startOfWeek = startOfWeek.add(Duration(days: 7));
-                      });
-                    },
-                    child: Icon(Icons.arrow_right),
-                  ),
-                ],
-              ),
+                ),
+              ],
             ),
       ),
     );
   }
+}
+
+class LinearSales {
+  final int year;
+  final int sales;
+
+  LinearSales(this.year, this.sales);
 }
