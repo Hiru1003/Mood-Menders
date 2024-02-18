@@ -98,7 +98,7 @@ class _StatState extends State<Stat> {
       backgroundColor: const Color.fromARGB(251, 241, 255, 252),
       body: Container(
             width: double.infinity,
-            height: 250,
+            height: 260,
             padding: const EdgeInsets.all(15),
             margin: const EdgeInsets.all(15),
             decoration: BoxDecoration(
