@@ -318,7 +318,7 @@ class ImageSymbolRenderer extends charts.CircleSymbolRenderer {
         strokeWidthPx: strokeWidthPx);
     canvas.drawRect(
       Rectangle(bounds.left - image.width / 2, bounds.top - image.height / 2, image.width, image.height),
-      charts.FillPatternType.solid,
+      // Removed the extra argument
       fillColor: charts.Color.fromHex(code: '#FFFFFF'),
     );
   }
