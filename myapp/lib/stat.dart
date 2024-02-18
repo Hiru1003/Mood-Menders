@@ -39,7 +39,7 @@ class _StatState extends State<Stat> {
       )
     ];
   }
-  
+
   @override
   void initState() {
     super.initState();
@@ -178,6 +178,7 @@ class _StatState extends State<Stat> {
               ],
             ),
       ),
+      
     );
   }
 }
