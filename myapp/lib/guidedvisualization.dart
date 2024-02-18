@@ -346,6 +346,8 @@ class _guidedvis_pageState extends State<guidedvis_page> {
                           textStyle: Theme.of(context).textTheme.displayLarge,
                           color: const Color.fromARGB(255, 70, 66, 68),
                           fontSize: 12,
+                          height: 1.2,
+                          wordSpacing: 1.8,
                           fontWeight: FontWeight.w400),
                     ),
                   ],
