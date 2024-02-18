@@ -53,6 +53,6 @@ class _mindfulnessstep8_pageState extends State<mindfulnessstep8_page> {
           backgroundColor: Color.fromARGB(255, 134, 208, 203),
         ),
         backgroundColor: const Color.fromARGB(251, 241, 255, 252),
-        body: SingleChildScrollView());
+        body: SingleChildScrollView(child: Column()));
   }
 }
