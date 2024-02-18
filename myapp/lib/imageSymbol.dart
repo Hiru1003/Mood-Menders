@@ -1,3 +1,5 @@
+import 'package:charts_flutter/flutter.dart';
+
 class ImageSymbolRenderer extends charts.CircleSymbolRenderer {
   final ui.Image image;
 
