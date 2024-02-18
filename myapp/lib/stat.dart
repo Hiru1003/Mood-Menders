@@ -63,9 +63,10 @@ class Stat extends StatelessWidget {
               color: const Color.fromARGB(255, 204, 248, 245),
               borderRadius: BorderRadius.circular(10),
             ),
-            child: const Center(
+            child: Align(
+              alignment: Alignment.topCenter,
               child: Text(
-                'Weekly',
+                'Your text here',
                 style: TextStyle(
                   fontSize: 16,
                   color: Colors.black,
