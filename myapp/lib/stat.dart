@@ -250,7 +250,7 @@ Padding(
   child: Row(
     children: [
       Image.asset(
-        'lib/images/loveearth (1).png',
+        'lib/images/loveearth (5).png',
         width: 50,
       ),
       Text(
