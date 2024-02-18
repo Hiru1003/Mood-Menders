@@ -52,6 +52,7 @@ class _lovemedstep1_pageState extends State<lovemedstep1_page> {
         elevation: 0.00,
         backgroundColor: Color.fromARGB(255, 134, 208, 203),
       ),
+      backgroundColor: const Color.fromARGB(251, 241, 255, 252),
     );
   }
 }
