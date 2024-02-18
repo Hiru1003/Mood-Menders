@@ -1,3 +1,5 @@
+import 'package:app/button.dart';
+import 'package:app/loving-kindnessmed.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -122,6 +124,8 @@ class _lovemedstep1_pageState extends State<lovemedstep1_page> {
                             textStyle: Theme.of(context).textTheme.displayLarge,
                             color: const Color.fromARGB(255, 70, 66, 68),
                             fontSize: 13,
+                            height: 1.2,
+                            wordSpacing: 1.8,
                             fontWeight: FontWeight.w400),
                       ),
                     ],
@@ -142,7 +146,7 @@ class _lovemedstep1_pageState extends State<lovemedstep1_page> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => (const lovemedstep2_page())),
+                          builder: (context) => (const lovekindmed_page())),
                     );
                   }
                 },
