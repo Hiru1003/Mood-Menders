@@ -82,7 +82,21 @@ class _mindfulnessstep9_pageState extends State<mindfulnessstep9_page> {
             child: Container(
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Row(),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    //message
+                    Text(
+                      'You  are successfully completed \nmindfullness meditation',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 18,
+                          fontWeight: FontWeight.w600),
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
