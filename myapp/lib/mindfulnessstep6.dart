@@ -1,18 +1,18 @@
 import 'package:app/button.dart';
-import 'package:app/mindfulnessstep6.dart';
+import 'package:app/mindfulnessstep7.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class mindfulnessstep5_page extends StatefulWidget {
-  const mindfulnessstep5_page({
+class mindfulnessstep6_page extends StatefulWidget {
+  const mindfulnessstep6_page({
     super.key,
   });
 
   @override
-  State<mindfulnessstep5_page> createState() => _mindfulnessstep5_pageState();
+  State<mindfulnessstep6_page> createState() => _mindfulnessstep6_pageState();
 }
 
-class _mindfulnessstep5_pageState extends State<mindfulnessstep5_page> {
+class _mindfulnessstep6_pageState extends State<mindfulnessstep6_page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -69,7 +69,7 @@ class _mindfulnessstep5_pageState extends State<mindfulnessstep5_page> {
                 children: [
                   //image
                   Image.asset(
-                    'lib/images/step5.png',
+                    'lib/images/step2.png',
                     height: 240,
                   )
                 ],
@@ -89,7 +89,7 @@ class _mindfulnessstep5_pageState extends State<mindfulnessstep5_page> {
                   children: [
                     //message
                     Text(
-                      'Step 05',
+                      'Step 06',
                       style: GoogleFonts.poppins(
                           textStyle: Theme.of(context).textTheme.displayLarge,
                           color: const Color.fromARGB(255, 70, 66, 68),
@@ -115,14 +115,12 @@ class _mindfulnessstep5_pageState extends State<mindfulnessstep5_page> {
                   children: [
                     //message
                     Text(
-                      'After a few minutes, start to expand your \nawareness beyond your breath. Notice the \nsounds around you, the sensation of your \nbody against the chair or floor, and any \nother sensory experiences.',
+                      'If desired, take a moment to reflect on something \nyou are grateful for. This can be a person, a \nmoment, or even the opportunity to meditate.',
                       textAlign: TextAlign.center,
                       style: GoogleFonts.poppins(
                           textStyle: Theme.of(context).textTheme.displayLarge,
                           color: const Color.fromARGB(255, 70, 66, 68),
                           fontSize: 13,
-                          height: 1.2,
-                          wordSpacing: 1.8,
                           fontWeight: FontWeight.w400),
                     ),
                   ],
@@ -131,7 +129,7 @@ class _mindfulnessstep5_pageState extends State<mindfulnessstep5_page> {
             ),
           ),
           const SizedBox(
-            height: 15,
+            height: 24,
           ),
           //continue button
           Padding(
@@ -143,7 +141,7 @@ class _mindfulnessstep5_pageState extends State<mindfulnessstep5_page> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => (const mindfulnessstep6_page())),
+                        builder: (context) => (const mindfulnessstep7_page())),
                   );
                 }
               },
