@@ -184,11 +184,14 @@ class _StatState extends State<Stat> {
               
             ),
       ),
-TableCalendar(
-  firstDay: DateTime.utc(2010, 10, 16),
-  lastDay: DateTime.utc(2030, 3, 14),
-  focusedDay: DateTime.now(),
-),
+      Padding(
+  padding: EdgeInsets.all(8.0), // adjust the padding as needed
+  child: TableCalendar(
+    firstDay: DateTime.utc(2010, 10, 16),
+    lastDay: DateTime.utc(2030, 3, 14),
+    focusedDay: DateTime.now(),
+  ),
+)
     ],),
         ),
     );
