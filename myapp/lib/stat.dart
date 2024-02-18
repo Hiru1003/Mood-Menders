@@ -201,7 +201,7 @@ class _StatState extends State<Stat> {
       startOfWeek = DateTime(now.year, now.month, 1);
     });
   },
-)
+),
 TableCalendar(
   firstDay: DateTime.utc(2010, 10, 16),
   lastDay: DateTime.utc(2030, 3, 14),
