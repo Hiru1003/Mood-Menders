@@ -154,7 +154,7 @@ class _StatState extends State<Stat> {
             index,
             label: String.fromCharCode(65 + index), // ASCII value of 'A' + index
             style: new charts.TextStyleSpec(
-              fontSize: 18, // size of text
+              fontSize: 13, // size of text
               color: charts.MaterialPalette.black, // color of text
             ),
           );
