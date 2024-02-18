@@ -325,7 +325,7 @@ class ImageSymbolRenderer extends charts.CircleSymbolRenderer {
   }
 }
 
-ui.Image image;
+ui.Image? image;
 void initState() {
   super.initState();
   startOfWeek = now.subtract(Duration(days: now.weekday - 1));
