@@ -184,25 +184,6 @@ class _StatState extends State<Stat> {
               
             ),
       ),
-      DropdownButton<String>(
-  value: DateFormat('MMMM').format(now),
-  icon: Icon(Icons.calendar_today, size: 18.0),
-  items: <String>[
-    'January', 'February', 'March', 'April', 'May', 'June', 'July',
-    'August', 'September', 'October', 'November', 'December'
-  ].map<DropdownMenuItem<String>>((String value) {
-    return DropdownMenuItem<String>(
-      value: value,
-      child: Text(value),
-    );
-  }).toList(),
-  onChanged: (String? newValue) {
-    setState(() {
-      now = DateTime(now.year, DateFormat('MMMM').parse(newValue!).month);
-      startOfWeek = DateTime(now.year, now.month, 1);
-    });
-  },
-),
 TableCalendar(
   firstDay: DateTime.utc(2010, 10, 16),
   lastDay: DateTime.utc(2030, 3, 14),
