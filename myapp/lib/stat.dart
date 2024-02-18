@@ -21,10 +21,10 @@ class _StatState extends State<Stat> {
       new LinearMood(0, 5),
       new LinearMood(1, 25),
       new LinearMood(2, 100),
+      new LinearMood(3, 75),
       new LinearMood(4, 50),
       new LinearMood(5, 85),
       new LinearMood(6, 40),
-      new LinearMood(3, 75),
     ];
 
     return [
@@ -39,7 +39,7 @@ class _StatState extends State<Stat> {
       )
     ];
   }
-
+  
   @override
   void initState() {
     super.initState();
