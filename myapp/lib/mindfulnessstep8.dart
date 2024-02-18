@@ -99,11 +99,22 @@ class _mindfulnessstep8_pageState extends State<mindfulnessstep8_page> {
               ),
             ),
           ),
-          const SizedBox(
-            height: 20,
-          ),
-          //para
-          Padding(),
+          const SizedBox(height: 20,),
+              //para
+               Padding(
+                padding: const EdgeInsets.only(left: 10, right: 10),
+                child: Container(
+                  child: Padding(
+                    padding: const EdgeInsets.all(1.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                      /
+                      ],
+                    ),
+                  ),
+                ),
+              ),
         ])));
   }
 }
