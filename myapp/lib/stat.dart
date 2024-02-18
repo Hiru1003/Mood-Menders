@@ -153,7 +153,12 @@ class _StatState extends State<Stat> {
                   Expanded(
     child: charts.LineChart(
       seriesList as List<charts.Series<dynamic, num>>,
-      defaultRenderer: charts.LineRendererConfig(includeArea: true, stacked: true),
+       defaultRenderer: charts.LineRendererConfig(
+    includeArea: true,
+    stacked: true,
+    radiusPixel: 15,
+    symbolRenderer: ImageSymbolRenderer(image),
+  ),
       primaryMeasureAxis: charts.NumericAxisSpec(
         renderSpec: charts.NoneRenderSpec(),
       ),
