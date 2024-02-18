@@ -2,13 +2,25 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 
-class Stat extends StatelessWidget {
-  const Stat({Key? key});
+class Stat extends StatefulWidget {
+  const Stat({Key? key}) : super(key: key);
+
+  @override
+  _StatState createState() => _StatState();
+}
+
+class _StatState extends State<Stat> {
+  DateTime now = DateTime.now();
+  DateTime startOfWeek;
+
+  @override
+  void initState() {
+    super.initState();
+    startOfWeek = now.subtract(Duration(days: now.weekday - 1));
+  }
 
   @override
   Widget build(BuildContext context) {
-    DateTime now = DateTime.now();
-    DateTime startOfWeek = now.subtract(Duration(days: now.weekday - 1));
     String formattedStartOfWeek = DateFormat('MMM d').format(startOfWeek);
     String formattedToday = DateFormat('MMM d').format(now);
 
@@ -74,7 +86,15 @@ class Stat extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  Icon(Icons.arrow_left),
+                  GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        now = now.subtract(Duration(days: 7));
+                        startOfWeek = startOfWeek.subtract(Duration(days: 7));
+                      });
+                    },
+                    child: Icon(Icons.arrow_left),
+                  ),
                   Text(
                     '$formattedStartOfWeek - $formattedToday',
                     style: TextStyle(
