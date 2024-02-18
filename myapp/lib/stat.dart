@@ -202,6 +202,10 @@ Align(
       'lib/images/loveearth (1).png',
       width: 50,
     ),
+    child: Image.asset(
+      'lib/images/loveearth (1).png',
+      width: 50,
+    ),
   ),
 ),
      ],),
