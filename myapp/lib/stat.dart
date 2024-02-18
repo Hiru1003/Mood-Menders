@@ -188,14 +188,14 @@ class _StatState extends State<Stat> {
       Column(
         children:<Widget>[
       Padding(
-  padding: EdgeInsets.only(left: 8.0, right: 8.0, top: 15, bottom: 15), // adjust the padding as needed
+  padding: const EdgeInsets.only(left: 8.0, right: 8.0, top: 15, bottom: 15), // adjust the padding as needed
   child: TableCalendar(
     firstDay: DateTime.utc(2010, 10, 16),
     lastDay: DateTime.utc(2030, 3, 14),
     focusedDay: DateTime.now(),
   ),
 ),
-Padding(
+const Padding(
   padding: EdgeInsets.all(8.0),
   child: PercentageBar(percentage: 0.3),
 )
