@@ -132,7 +132,21 @@ class _mindfulnessstep7_pageState extends State<mindfulnessstep7_page> {
             height: 25,
           ),
           //continue button
-          Padding(),
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: MyButton(
+              buttontext: 'Next Step',
+              onTap: () {
+                {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => (const mindfulnessstep8_page())),
+                  );
+                }
+              },
+            ),
+          ),
         ])));
   }
 }
