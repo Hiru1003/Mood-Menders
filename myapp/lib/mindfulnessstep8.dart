@@ -131,6 +131,10 @@ class _mindfulnessstep8_pageState extends State<mindfulnessstep8_page> {
           const SizedBox(
             height: 25,
           ),
+          //continue button
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+          ),
         ])));
   }
 }
