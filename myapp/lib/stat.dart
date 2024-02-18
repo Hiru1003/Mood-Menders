@@ -102,7 +102,15 @@ class _StatState extends State<Stat> {
                       color: Colors.black,
                     ),
                   ),
-                  Icon(Icons.arrow_right),
+                  GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        now = now.add(Duration(days: 7));
+                        startOfWeek = startOfWeek.add(Duration(days: 7));
+                      });
+                    },
+                    child: Icon(Icons.arrow_right),
+                  ),
                 ],
               ),
             ),
