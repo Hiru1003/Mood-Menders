@@ -69,12 +69,19 @@ class _lovemedstep1_pageState extends State<lovemedstep1_page> {
                   children: [
                     //image
                     Image.asset(
-                      'lib/images/step14.png',
+                      'lib/images/step15.png',
                       height: 240,
                     )
                   ],
                 ),
               ),
+            ),
+            const SizedBox(
+              height: 5,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 10, right: 10),
+              child: Container(),
             ),
           ],
         )));
