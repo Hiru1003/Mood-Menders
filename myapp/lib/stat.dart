@@ -184,6 +184,8 @@ class _StatState extends State<Stat> {
               
             ),
       ),
+      Column(
+        children:<Widget>[
       Padding(
   padding: EdgeInsets.only(left: 8.0, right: 8.0, top: 15, bottom: 15), // adjust the padding as needed
   child: TableCalendar(
@@ -193,7 +195,7 @@ class _StatState extends State<Stat> {
   ),
   
 )
-
+        ],),
 
     ],),
         ),
