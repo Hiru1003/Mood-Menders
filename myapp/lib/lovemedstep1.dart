@@ -113,7 +113,18 @@ class _lovemedstep1_pageState extends State<lovemedstep1_page> {
                   padding: const EdgeInsets.all(1.0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [],
+                    children: [
+                      //message
+                      Text(
+                        'Start by directing these feelings towards yourself. \nRepeat a series of phrases or affirmations that \nexpress your desire for your own well-being \nand happiness. As an example ,\nMay I be happy.\nMay I be healthy.',
+                        textAlign: TextAlign.center,
+                        style: GoogleFonts.poppins(
+                            textStyle: Theme.of(context).textTheme.displayLarge,
+                            color: const Color.fromARGB(255, 70, 66, 68),
+                            fontSize: 13,
+                            fontWeight: FontWeight.w400),
+                      ),
+                    ],
                   ),
                 ),
               ),
