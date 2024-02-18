@@ -194,6 +194,13 @@ class _StatState extends State<Stat> {
     focusedDay: DateTime.now(),
   ),
 ),
+Padding(
+      padding: EdgeInsets.all(8.0),
+      child: Text(
+        'Your text here',
+        style: TextStyle(fontSize: 16),
+      ),
+    ),
      ],),
 
     ],),
