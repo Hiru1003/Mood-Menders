@@ -31,7 +31,14 @@ class _mindfulnessstep9_pageState extends State<mindfulnessstep9_page> {
           height: 72,)
           ],
           ),
-     
+      ),
+        titleSpacing: 4.0,
+        toolbarHeight: 65,
+        toolbarOpacity: 0.9,
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.only(
+          bottomRight: Radius.circular(18),
+           bottomLeft: Radius.circular(18)),
       ),
     );
   }
