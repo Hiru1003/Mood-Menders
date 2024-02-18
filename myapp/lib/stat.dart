@@ -1,10 +1,5 @@
-import 'dart:math';
-import 'dart:ui';
-
 import 'package:charts_flutter/flutter.dart' as charts;
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import 'package:table_calendar/table_calendar.dart';
@@ -298,32 +293,4 @@ class LinearMood {
   final int Mood;
 
   LinearMood(this.year, this.Mood);
-}
-
-class ImageSymbolRenderer extends charts.CircleSymbolRenderer {
-
-
-  final ui.Image image;
-
-  ImageSymbolRenderer(this.image);
-
-  @override
-  void paint(charts.ChartCanvas canvas, Rectangle<num> bounds,
-      {List<int>? dashPattern,
-      charts.Color? fillColor,
-      charts.FillPatternType? fillPattern,
-      charts.Color? strokeColor,
-      double? strokeWidthPx}) {
-    super.paint(canvas, bounds,
-        dashPattern: dashPattern,
-        fillColor: fillColor,
-        fillPattern: fillPattern,
-        strokeColor: strokeColor,
-        strokeWidthPx: strokeWidthPx);
-    canvas.drawRect(
-      Rectangle(bounds.left - image.width / 2, bounds.top - image.height / 2, image.width, image.height),
-      // Removed the extra argument
-      fillColor: charts.Color.fromHex(code: '#FFFFFF'),
-    );
-  }
 }
