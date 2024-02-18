@@ -198,13 +198,17 @@ Align(
   alignment: Alignment.centerLeft,
   child: Padding(
     padding: EdgeInsets.only(left: 15.0, top: 15.0),
-    child: Image.asset(
-      'lib/images/loveearth (1).png',
-      width: 50,
-    ),
-    child: Image.asset(
-      'lib/images/loveearth (1).png',
-      width: 50,
+    child: Column(
+      children: [
+        Image.asset(
+          'lib/images/loveearth (1).png',
+          width: 50,
+        ),
+        Image.asset(
+          'lib/images/loveearth (1).png',
+          width: 50,
+        ),
+      ],
     ),
   ),
 ),
