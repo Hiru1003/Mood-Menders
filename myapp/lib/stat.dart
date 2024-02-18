@@ -30,7 +30,7 @@ class _StatState extends State<Stat> {
     return [
       new charts.Series<LinearMood, int>(
         id: 'Mood',
-        colorFn: (_, __) => charts.MaterialPalette.blue.shadeDefault,
+        colorFn: (_, __) => charts.ColorUtil.fromDartColor(Color.fromARGB(255, 134, 208, 203)),
         areaColorFn: (_, __) =>
             charts.MaterialPalette.blue.shadeDefault.lighter,
         domainFn: (LinearMood Mood, _) => Mood.year,
