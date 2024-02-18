@@ -92,7 +92,7 @@ class _mindfulnessstep9_pageState extends State<mindfulnessstep9_page> {
                       style: GoogleFonts.poppins(
                           textStyle: Theme.of(context).textTheme.displayLarge,
                           color: const Color.fromARGB(255, 70, 66, 68),
-                          fontSize: 18,
+                          fontSize: 16,
                           fontWeight: FontWeight.w600),
                     ),
                   ],
