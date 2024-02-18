@@ -153,12 +153,7 @@ class _StatState extends State<Stat> {
                   Expanded(
     child: charts.LineChart(
       seriesList as List<charts.Series<dynamic, num>>,
-       defaultRenderer: charts.LineRendererConfig(
-    includeArea: true,
-    stacked: true,
-    radiusPxFn: (_, __) => 15,
-    symbolRenderer: ImageSymbolRenderer(image),
-  ),
+      defaultRenderer: charts.LineRendererConfig(includeArea: true, stacked: true),
       primaryMeasureAxis: charts.NumericAxisSpec(
         renderSpec: charts.NoneRenderSpec(),
       ),
@@ -324,4 +319,3 @@ class ImageSymbolRenderer extends charts.CircleSymbolRenderer {
     canvas.drawImage(image, Point(bounds.left - image.width / 2, bounds.top - image.height / 2));
   }
 }
-
