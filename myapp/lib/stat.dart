@@ -197,7 +197,7 @@ class _StatState extends State<Stat> {
 Align(
   alignment: Alignment.centerLeft,
   child: Padding(
-    padding: EdgeInsets.only(left: 15.0, top: 15.0, bottom: 15.0),
+    padding: EdgeInsets.only(left: 30.0, top: 15.0, bottom: 15.0),
     child: Column(
       children: [
         Padding(
