@@ -184,6 +184,7 @@ class _StatState extends State<Stat> {
       ),
       DropdownButton<String>(
   value: DateFormat('MMMM').format(now),
+  icon: Icon(Icons.calendar_today),
   items: <String>[
     'January', 'February', 'March', 'April', 'May', 'June', 'July',
     'August', 'September', 'October', 'November', 'December'
