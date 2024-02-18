@@ -193,8 +193,11 @@ class _StatState extends State<Stat> {
     lastDay: DateTime.utc(2030, 3, 14),
     focusedDay: DateTime.now(),
   ),
-  
-)
+),
+Text(
+      'Your text here',
+      style: TextStyle(fontSize: 16), // adjust the style as needed
+    ),
         ],),
 
     ],),
