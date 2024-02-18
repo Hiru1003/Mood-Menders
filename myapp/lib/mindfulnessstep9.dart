@@ -1,4 +1,5 @@
 import 'package:app/button.dart';
+import 'package:app/meditaionmethods.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -142,7 +143,8 @@ class _mindfulnessstep9_pageState extends State<mindfulnessstep9_page> {
                 {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => (navpage())),
+                    MaterialPageRoute(
+                        builder: (context) => (meditaionmethods_page())),
                   );
                 }
               },
