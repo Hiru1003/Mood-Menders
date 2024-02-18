@@ -40,6 +40,7 @@ void main() {
         body: Center(
           child: Container(
             width: 200, // adjust the width as needed
+            height: 50, // adjust the height as needed
             child: PercentageBar(percentage: 0.5), // 50% of the total width
           ),
         ),
