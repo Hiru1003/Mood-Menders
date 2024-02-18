@@ -79,6 +79,12 @@ class _mindfulnessstep9_pageState extends State<mindfulnessstep9_page> {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Container(
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(),
+              ),
+            ),
           ),
         ])));
   }
