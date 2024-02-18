@@ -18,14 +18,14 @@ class PercentageBar extends StatelessWidget {
       height: 2,
       decoration: BoxDecoration(
         color: backgroundColor,
-        borderRadius: BorderRadius.circular(10),
+        borderRadius: BorderRadius.circular(16),
       ),
       child: FractionallySizedBox(
         widthFactor: percentage,
         child: Container(
           decoration: BoxDecoration(
             color: barColor,
-            borderRadius: BorderRadius.circular(10),
+            borderRadius: BorderRadius.circular(16),
           ),
         ),
       ),
