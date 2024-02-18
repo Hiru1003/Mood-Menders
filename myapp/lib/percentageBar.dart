@@ -15,7 +15,7 @@ class PercentageBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 20,
+      height: 2,
       decoration: BoxDecoration(
         color: backgroundColor,
         borderRadius: BorderRadius.circular(10),
@@ -37,7 +37,12 @@ void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
-        body: PercentageBar(percentage: 100),
+        body: Center(
+          child: Container(
+            width: 200, // adjust the width as needed
+            child: PercentageBar(percentage: 0.5), // 50% of the total width
+          ),
+        ),
       ),
     ),
   );
