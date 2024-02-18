@@ -32,7 +32,7 @@ class _mindfulnessstep9_pageState extends State<mindfulnessstep9_page> {
                       fontWeight: FontWeight.w500),
                 ),
                 Image.asset(
-                  'lib/images/bg.png',
+                  'lib/images/leaf.png',
                   height: 72,
                 )
               ],
