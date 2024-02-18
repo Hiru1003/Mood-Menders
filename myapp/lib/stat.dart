@@ -182,13 +182,24 @@ class _StatState extends State<Stat> {
               
             ),
       ),
-      Text(
-          'Your new text here',
-          style: TextStyle(
-            fontSize: 16,
-            color: Colors.black,
-          ),
-        ),
+      DropdownButton<String>(
+  value: DateFormat('MMMM').format(now),
+  items: <String>[
+    'January', 'February', 'March', 'April', 'May', 'June', 'July',
+    'August', 'September', 'October', 'November', 'December'
+  ].map<DropdownMenuItem<String>>((String value) {
+    return DropdownMenuItem<String>(
+      value: value,
+      child: Text(value),
+    );
+  }).toList(),
+  onChanged: (String? newValue) {
+    setState(() {
+      now = DateTime(now.year, DateFormat('MMMM').parse(newValue!).month);
+      startOfWeek = DateTime(now.year, now.month, 1);
+    });
+  },
+)
     ],),      
     );
 
