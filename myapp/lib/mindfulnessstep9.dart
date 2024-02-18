@@ -77,6 +77,9 @@ class _mindfulnessstep9_pageState extends State<mindfulnessstep9_page> {
           const SizedBox(
             height: 5,
           ),
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+          ),
         ])));
   }
 }
