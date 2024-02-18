@@ -156,7 +156,7 @@ class _StatState extends State<Stat> {
        defaultRenderer: charts.LineRendererConfig(
     includeArea: true,
     stacked: true,
-    radiusPixel: 15,
+    radiusPxFn: (_, __) => 15,
     symbolRenderer: ImageSymbolRenderer(image),
   ),
       primaryMeasureAxis: charts.NumericAxisSpec(
@@ -323,4 +323,24 @@ class ImageSymbolRenderer extends charts.CircleSymbolRenderer {
         strokeWidthPx: strokeWidthPx);
     canvas.drawImage(image, Point(bounds.left - image.width / 2, bounds.top - image.height / 2));
   }
+}
+
+ui.Image image;
+void initState() {
+  super.initState();
+  startOfWeek = now.subtract(Duration(days: now.weekday - 1));
+  loadImage('assets/images/your_image.png').then((img) {
+    setState(() {
+      image = img;
+    });
+  });
+}
+
+Future<ui.Image> loadImage(String assetPath) async {
+  final data = await rootBundle.load(assetPath);
+  final completer = Completer<ui.Image>();
+  ui.decodeImageFromList(data.buffer.asUint8List(), (ui.Image img) {
+    return completer.complete(img);
+  });
+  return completer.future;
 }
