@@ -100,7 +100,8 @@ class _StatState extends State<Stat> {
           backgroundColor: const Color.fromARGB(255, 134, 208, 203),
         ),
         backgroundColor: const Color.fromARGB(251, 241, 255, 252),
-        body: Column(
+        body: SingleChildScrollView(
+        child: Column(
           children: <Widget>[
             Container(
               width: double.infinity,
@@ -208,7 +209,7 @@ TableCalendar(
   focusedDay: DateTime.now(),
 ),
     ],),
-    
+        ),
     );
 
   }
