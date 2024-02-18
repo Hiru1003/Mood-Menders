@@ -4,7 +4,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import 'package:table_calendar/table_calendar.dart';
 
-
 class Stat extends StatefulWidget {
   const Stat({Key? key}) : super(key: key);
 
@@ -209,7 +208,7 @@ Align(
         'lib/images/loveearth (1).png',
         width: 50,
       ),
-      Percentagebar(percentage: 80),
+      
     ],
   ),
 ),
