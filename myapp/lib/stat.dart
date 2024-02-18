@@ -175,7 +175,15 @@ class _StatState extends State<Stat> {
 ),
     ),
   ),
+  
               ],
+              Text(
+            'Your new text here',
+            style: TextStyle(
+              fontSize: 16,
+              color: Colors.black,
+            ),
+          ),
             ),
       ),
       
