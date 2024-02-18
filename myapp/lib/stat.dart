@@ -1,10 +1,8 @@
 import 'dart:math';
-import 'dart:ui';
+import 'dart:ui' as ui;
 
 import 'package:charts_flutter/flutter.dart' as charts;
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import 'package:table_calendar/table_calendar.dart';
@@ -301,6 +299,7 @@ class LinearMood {
 }
 
 class ImageSymbolRenderer extends charts.CircleSymbolRenderer {
+
   final ui.Image image;
 
   ImageSymbolRenderer(this.image);
