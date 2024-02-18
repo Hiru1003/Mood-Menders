@@ -43,117 +43,117 @@ class _StatState extends State<Stat> {
   @override
   void initState() {
     super.initState();
-    startOfWeek = now.subtract(Duration(days: now.weekday - 1));
-  }
+      startOfWeek = now.subtract(Duration(days: now.weekday - 1));
+    }
 
-  @override
-  Widget build(BuildContext context) {
-    String formattedStartOfWeek = DateFormat('MMM d').format(startOfWeek);
-    String formattedToday = DateFormat('MMM d').format(now);
+    @override
+    Widget build(BuildContext context) {
+      String formattedStartOfWeek = DateFormat('MMM d').format(startOfWeek);
+      String formattedToday = DateFormat('MMM d').format(now);
 
-    return Scaffold(
-      appBar: AppBar(
-        title: Padding(
-          padding: const EdgeInsets.only(
-            left: 10,
-          ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Column(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(left: 5.0, top:20.0), 
-                    child: Text(
-                      'TRACK \nYOUR MOODS',
-                      style: GoogleFonts.poppins(
-                        textStyle: Theme.of(context).textTheme.headlineMedium,
-                        color: const Color.fromARGB(255, 70, 66, 68),
-                        fontSize: 24,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              Image.asset(
-                'lib/images/statMainpic.png',
-                fit: BoxFit.cover,
-              ),
-            ],
-          ),
-        ),
-        titleSpacing: 4.0,
-        toolbarHeight: 130,
-        toolbarOpacity: 0.9,
-        shape: const RoundedRectangleBorder(
-          borderRadius: BorderRadius.only(
-              bottomRight: Radius.circular(18),
-              bottomLeft: Radius.circular(18)),
-        ),
-        iconTheme: const IconThemeData(
-          color: Colors.black,
-        ),
-        elevation: 0.00,
-        backgroundColor: const Color.fromARGB(255, 134, 208, 203),
-      ),
-      backgroundColor: const Color.fromARGB(251, 241, 255, 252),
-      body: Column(
-        children: <Widget>[
-          Container(
-            width: double.infinity,
-            height: 250,
-            padding: const EdgeInsets.all(15),
-            margin: const EdgeInsets.all(15),
-            decoration: BoxDecoration(
-              color: const Color.fromARGB(255, 204, 248, 245),
-              borderRadius: BorderRadius.circular(10),
+      return Scaffold(
+        appBar: AppBar(
+          title: Padding(
+            padding: const EdgeInsets.only(
+              left: 10,
             ),
-            child: Column(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Align(
-                  alignment: Alignment.topCenter,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      GestureDetector(
-                        onTap: () {
-                          setState(() {
-                            now = now.subtract(Duration(days: 7));
-                            startOfWeek = startOfWeek.subtract(Duration(days: 7));
-                          });
-                        },
-                        child: Icon(Icons.arrow_left),
-                      ),
-                      Text(
-                        '$formattedStartOfWeek - $formattedToday',
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: Colors.black,
+                Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 5.0, top:20.0), 
+                      child: Text(
+                        'TRACK \nYOUR MOODS',
+                        style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.headlineMedium,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 24,
+                          fontWeight: FontWeight.w600,
                         ),
                       ),
-                      GestureDetector(
-                        onTap: () {
-                          setState(() {
-                            now = now.add(Duration(days: 7));
-                            startOfWeek = startOfWeek.add(Duration(days: 7));
-                          });
-                        },
-                        child: Icon(Icons.arrow_right),
-                      ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
-                Expanded(
-  child: charts.LineChart(
-    seriesList as List<charts.Series<dynamic, num>>,
-    defaultRenderer: new charts.LineRendererConfig(includeArea: true, stacked: true),
-    primaryMeasureAxis: new charts.NumericAxisSpec(
-      renderSpec: new charts.NoneRenderSpec(),
-    ),
-    domainAxis: new charts.NumericAxisSpec(
-  tickProviderSpec: new charts.StaticNumericTickProviderSpec(
+                Image.asset(
+                  'lib/images/statMainpic.png',
+                  fit: BoxFit.cover,
+                ),
+              ],
+            ),
+          ),
+          titleSpacing: 4.0,
+          toolbarHeight: 130,
+          toolbarOpacity: 0.9,
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+                bottomRight: Radius.circular(18),
+                bottomLeft: Radius.circular(18)),
+          ),
+          iconTheme: const IconThemeData(
+            color: Colors.black,
+          ),
+          elevation: 0.00,
+          backgroundColor: const Color.fromARGB(255, 134, 208, 203),
+        ),
+        backgroundColor: const Color.fromARGB(251, 241, 255, 252),
+        body: Column(
+          children: <Widget>[
+            Container(
+              width: double.infinity,
+              height: 250,
+              padding: const EdgeInsets.all(15),
+              margin: const EdgeInsets.all(15),
+              decoration: BoxDecoration(
+                color: const Color.fromARGB(255, 204, 248, 245),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Column(
+                children: <Widget>[
+                  Align(
+                    alignment: Alignment.topCenter,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              now = now.subtract(Duration(days: 7));
+                              startOfWeek = startOfWeek.subtract(Duration(days: 7));
+                            });
+                          },
+                          child: Icon(Icons.arrow_left),
+                        ),
+                        Text(
+                          '$formattedStartOfWeek - $formattedToday',
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: Colors.black,
+                          ),
+                        ),
+                        GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              now = now.add(Duration(days: 7));
+                              startOfWeek = startOfWeek.add(Duration(days: 7));
+                            });
+                          },
+                          child: Icon(Icons.arrow_right),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Expanded(
+    child: charts.LineChart(
+      seriesList as List<charts.Series<dynamic, num>>,
+      defaultRenderer: charts.LineRendererConfig(includeArea: true, stacked: true),
+      primaryMeasureAxis: charts.NumericAxisSpec(
+        renderSpec: charts.NoneRenderSpec(),
+      ),
+      domainAxis: charts.NumericAxisSpec(
+    tickProviderSpec: charts.StaticNumericTickProviderSpec(
     List.generate(7, (index) {
       return new charts.TickSpec(
         index,
@@ -182,10 +182,9 @@ class _StatState extends State<Stat> {
               
             ),
       ),
-      
-    ),
-    )),
-    ;
+    ],),      
+    );
+
   }
 }
 
