@@ -1,4 +1,3 @@
-import 'package:app/percentageBar.dart';
 import 'package:charts_flutter/flutter.dart' as charts;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -195,11 +194,7 @@ class _StatState extends State<Stat> {
     focusedDay: DateTime.now(),
   ),
 ),
-const Padding(
-  padding: EdgeInsets.all(8.0),
-  child: PercentageBar(percentage: 0.3),
-)
-        ],),
+     ],),
 
     ],),
         ),
