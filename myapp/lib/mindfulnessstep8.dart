@@ -99,22 +99,33 @@ class _mindfulnessstep8_pageState extends State<mindfulnessstep8_page> {
               ),
             ),
           ),
-          const SizedBox(height: 20,),
-              //para
-               Padding(
-                padding: const EdgeInsets.only(left: 10, right: 10),
-                child: Container(
-                  child: Padding(
-                    padding: const EdgeInsets.all(1.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                      /
-                      ],
+          const SizedBox(
+            height: 20,
+          ),
+          //para
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Container(
+              child: Padding(
+                padding: const EdgeInsets.all(1.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    //message
+                    Text(
+                      'Consider reflecting on your meditation experience \nin a journal. Write down any insights, observations, \nor feelings that arose during your practice.',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 13,
+                          fontWeight: FontWeight.w400),
                     ),
-                  ),
+                  ],
                 ),
               ),
+            ),
+          ),
         ])));
   }
 }
