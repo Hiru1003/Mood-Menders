@@ -11,7 +11,7 @@ class Stat extends StatefulWidget {
 
 class _StatState extends State<Stat> {
   DateTime now = DateTime.now();
-  DateTime startOfWeek;
+  late DateTime startOfWeek;
 
   @override
   void initState() {
