@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(debugShowCheckedModeBanner: false, 
         //home: loading_page()
-        home: PercentageBar(percentage: 0.1,),
+        home: PercentageBar(percentage: 0.5,),
         );
   }
 }
