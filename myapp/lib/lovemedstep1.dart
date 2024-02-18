@@ -55,7 +55,16 @@ class _lovemedstep1_pageState extends State<lovemedstep1_page> {
         backgroundColor: const Color.fromARGB(251, 241, 255, 252),
         body: SingleChildScrollView(
             child: Column(
-          children: [],
+          children: [
+            //image
+            const SizedBox(
+              height: 20,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 10, right: 10),
+              child: Container(),
+            ),
+          ],
         )));
   }
 }
