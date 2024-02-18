@@ -66,7 +66,7 @@ class Stat extends StatelessWidget {
             child: Align(
               alignment: Alignment.topCenter,
               child: Text(
-                'Your text here',
+                'Weekly',
                 style: TextStyle(
                   fontSize: 16,
                   color: Colors.black,
