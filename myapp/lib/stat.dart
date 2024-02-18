@@ -151,27 +151,7 @@ class _StatState extends State<Stat> {
                     ),
                   ),
                   Expanded(
-    child:
-    ui.Image image;
-void initState() {
-  super.initState();
-  startOfWeek = now.subtract(Duration(days: now.weekday - 1));
-  loadImage('assets/images/your_image.png').then((img) {
-    setState(() {
-      image = img;
-    });
-  });
-}
-
-Future<ui.Image> loadImage(String assetPath) async {
-  final data = await rootBundle.load(assetPath);
-  final completer = Completer<ui.Image>();
-  ui.decodeImageFromList(data.buffer.asUint8List(), (ui.Image img) {
-    return completer.complete(img);
-  });
-  return completer.future;
-} 
-    charts.LineChart(
+    child: charts.LineChart(
       seriesList as List<charts.Series<dynamic, num>>,
       defaultRenderer: charts.LineRendererConfig(includeArea: true, stacked: true),
       primaryMeasureAxis: charts.NumericAxisSpec(
