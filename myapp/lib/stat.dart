@@ -299,7 +299,6 @@ class LinearMood {
 }
 
 class ImageSymbolRenderer extends charts.CircleSymbolRenderer {
-
   final ui.Image image;
 
   ImageSymbolRenderer(this.image);
@@ -317,10 +316,6 @@ class ImageSymbolRenderer extends charts.CircleSymbolRenderer {
         fillPattern: fillPattern,
         strokeColor: strokeColor,
         strokeWidthPx: strokeWidthPx);
-    canvas.drawRect(
-      Rectangle(bounds.left - image.width / 2, bounds.top - image.height / 2, image.width, image.height),
-      // Removed the extra argument
-      fillColor: charts.Color.fromHex(code: '#FFFFFF'),
-    );
+    canvas.drawImage(image, Point(bounds.left - image.width / 2, bounds.top - image.height / 2));
   }
 }
