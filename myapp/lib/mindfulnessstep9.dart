@@ -111,6 +111,18 @@ class _mindfulnessstep9_pageState extends State<mindfulnessstep9_page> {
                 padding: const EdgeInsets.all(1.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    //message
+                    Text(
+                      'Remember, mindfulness meditation is a skill that \ntakes time to develop. Encourage users to \nbe patient with themselves and to approach the \npractice with an open and non-judgmental \nattitude. Regular practice can lead to increased \nmindfulness and a greater sense of well-being.',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 13,
+                          fontWeight: FontWeight.w400),
+                    ),
+                  ],
                 ),
               ),
             ),
