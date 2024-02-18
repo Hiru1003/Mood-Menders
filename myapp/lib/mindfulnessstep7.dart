@@ -67,12 +67,15 @@ class _mindfulnessstep7_pageState extends State<mindfulnessstep7_page> {
                 children: [
                   //image
                   Image.asset(
-                    'lib/images/step3.png',
+                    'lib/images/step13.png',
                     height: 240,
                   )
                 ],
               ),
             ),
+          ),
+          const SizedBox(
+            height: 20,
           ),
         ])));
   }
