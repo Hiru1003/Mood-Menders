@@ -145,27 +145,27 @@ class _StatState extends State<Stat> {
     seriesList as List<charts.Series<dynamic, num>>,
     defaultRenderer: new charts.LineRendererConfig(includeArea: true, stacked: true),
     primaryMeasureAxis: new charts.NumericAxisSpec(
-      renderSpec: new charts.NoneRenderSpec(),
+      renderSpec: new charts.NoneRenderSpec(), // this will hide Y axis values
     ),
     domainAxis: new charts.NumericAxisSpec(
-    tickProviderSpec: new charts.StaticNumericTickProviderSpec(
-      [
-        new charts.TickSpec(0, label: 'S'),
-        new charts.TickSpec(1, label: 'M'),
-        new charts.TickSpec(2, label: 'T'),
-        new charts.TickSpec(3, label: 'W'),
-        new charts.TickSpec(4, label: 'T'),
-        new charts.TickSpec(5, label: 'F'),
-        new charts.TickSpec(6, label: 'S'),
-      ],
-    ),
+      tickProviderSpec: new charts.StaticNumericTickProviderSpec(
+        [
+          new charts.TickSpec(0, label: 'S'),
+          new charts.TickSpec(1, label: 'M'),
+          new charts.TickSpec(2, label: 'T'),
+          new charts.TickSpec(3, label: 'W'),
+          new charts.TickSpec(4, label: 'T'),
+          new charts.TickSpec(5, label: 'F'),
+          new charts.TickSpec(6, label: 'S'),
+        ],
+      ),
       renderSpec: charts.GridlineRendererSpec(
         labelStyle: charts.TextStyleSpec(
-          fontSize: 0,
-          color: charts.MaterialPalette.transparent, 
+          fontSize: 0, // size of text
+          color: charts.MaterialPalette.transparent, // color of text
         ),
         lineStyle: charts.LineStyleSpec(
-          color: charts.MaterialPalette.transparent, 
+          color: charts.MaterialPalette.transparent, // color of line
         ),
       ),
     ),
