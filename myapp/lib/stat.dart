@@ -195,12 +195,15 @@ class _StatState extends State<Stat> {
   ),
 ),
 Padding(
-      padding: EdgeInsets.all(8.0),
-      child: Image.asset(
-    'lib/images/loveearth (1).png',
-    width: 50,
-  ),
+  padding: EdgeInsets.all(8.0),
+  child: Align(
+    alignment: Alignment.centerLeft,
+    child: Image.asset(
+      'lib/images/loveearth (1).png',
+      width: 50,
     ),
+  ),
+),
      ],),
 
     ],),
