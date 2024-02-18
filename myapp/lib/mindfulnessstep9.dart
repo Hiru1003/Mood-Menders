@@ -49,6 +49,8 @@ class _mindfulnessstep9_pageState extends State<mindfulnessstep9_page> {
         iconTheme: const IconThemeData(
           color: Colors.black, //change your color here
         ),
+        elevation: 0.00,
+        backgroundColor: Color.fromARGB(255, 134, 208, 203),
       ),
     );
   }
