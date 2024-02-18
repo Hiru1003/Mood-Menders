@@ -609,7 +609,7 @@ class _guidedvis_pageState extends State<guidedvis_page> {
           ),
 
           const SizedBox(
-            height: 15,
+            height: 25,
           ),
         ])));
   }
