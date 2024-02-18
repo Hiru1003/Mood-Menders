@@ -134,6 +134,18 @@ class _mindfulnessstep8_pageState extends State<mindfulnessstep8_page> {
           //continue button
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
+            child: MyButton(
+              buttontext: 'Next Step',
+              onTap: () {
+                {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => (const mindfulnessstep8_page())),
+                  );
+                }
+              },
+            ),
           ),
         ])));
   }
