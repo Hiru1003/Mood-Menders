@@ -214,6 +214,13 @@ Padding(
     width: 50,
   ),
 ),
+Padding(
+  padding: EdgeInsets.only(top: 10.0, bottom: 10.0),
+  child: Image.asset(
+    'lib/images/loveearth (3).png',
+    width: 50,
+  ),
+),
       ],
     ),
   ),
