@@ -99,7 +99,9 @@ class _StatState extends State<Stat> {
         backgroundColor: const Color.fromARGB(255, 134, 208, 203),
       ),
       backgroundColor: const Color.fromARGB(251, 241, 255, 252),
-      body: Container(
+      body: Column(
+        children: <Widget>[
+          Container(
             width: double.infinity,
             height: 250,
             padding: const EdgeInsets.all(15),
@@ -181,7 +183,9 @@ class _StatState extends State<Stat> {
             ),
       ),
       
-    );
+    ),
+    )),
+    ;
   }
 }
 
