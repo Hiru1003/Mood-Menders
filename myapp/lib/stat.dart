@@ -16,22 +16,22 @@ class _StatState extends State<Stat> {
 
   final List<charts.Series> seriesList = _createSampleData();
 
-  static List<charts.Series<LinearSales, int>> _createSampleData() {
+  static List<charts.Series<LinearMood, int>> _createSampleData() {
     final data = [
-      new LinearSales(0, 5),
-      new LinearSales(1, 25),
-      new LinearSales(2, 100),
-      new LinearSales(3, 75),
+      new LinearMood(0, 5),
+      new LinearMood(1, 25),
+      new LinearMood(2, 100),
+      new LinearMood(3, 75),
     ];
 
     return [
-      new charts.Series<LinearSales, int>(
-        id: 'Sales',
+      new charts.Series<LinearMood, int>(
+        id: 'Mood',
         colorFn: (_, __) => charts.MaterialPalette.blue.shadeDefault,
         areaColorFn: (_, __) =>
             charts.MaterialPalette.blue.shadeDefault.lighter,
-        domainFn: (LinearSales sales, _) => sales.year,
-        measureFn: (LinearSales sales, _) => sales.sales,
+        domainFn: (LinearMood Mood, _) => Mood.year,
+        measureFn: (LinearMood Mood, _) => Mood.Mood,
         data: data,
       )
     ];
@@ -153,9 +153,9 @@ class _StatState extends State<Stat> {
   }
 }
 
-class LinearSales {
+class LinearMood {
   final int year;
-  final int sales;
+  final int Mood;
 
-  LinearSales(this.year, this.sales);
+  LinearMood(this.year, this.Mood);
 }
