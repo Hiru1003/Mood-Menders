@@ -129,6 +129,9 @@ class _lovemedstep1_pageState extends State<lovemedstep1_page> {
                 ),
               ),
             ),
+            const SizedBox(
+              height: 15,
+            ),
           ],
         )));
   }
