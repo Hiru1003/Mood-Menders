@@ -41,7 +41,7 @@ void main() {
           alignment: Alignment.centerLeft,
           child: Container(
             width: 200, // adjust the width as needed
-            height: 20, // adjust the height as needed
+            height: 30, // adjust the height as needed
             child: PercentageBar(percentage: 0.5), // 50% of the total width
           ),
         ),
