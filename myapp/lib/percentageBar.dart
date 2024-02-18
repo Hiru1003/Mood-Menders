@@ -37,7 +37,7 @@ void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
-        body: PercentageBar(percentage: 0.5),
+        body: PercentageBar(percentage: 100),
       ),
     ),
   );
