@@ -3,6 +3,7 @@ import 'dart:ui';
 
 import 'package:charts_flutter/flutter.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class ImageSymbolRenderer extends charts.CircleSymbolRenderer {
   final ui.Image image;
