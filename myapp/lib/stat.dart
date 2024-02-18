@@ -210,7 +210,7 @@ Align(
 Padding(
   padding: EdgeInsets.only(top: 10.0, bottom: 10.0),
   child: Image.asset(
-    'lib/images/loveearth (1).png',
+    'lib/images/loveearth (2).png',
     width: 50,
   ),
 ),
