@@ -197,7 +197,7 @@ class _StatState extends State<Stat> {
 Align(
   alignment: Alignment.centerLeft,
   child: Padding(
-    padding: EdgeInsets.all(8.0),
+    padding: EdgeInsets.only(left: 15.0, top: 15.0),
     child: Image.asset(
       'lib/images/loveearth (1).png',
       width: 50,
