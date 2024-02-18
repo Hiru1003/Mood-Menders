@@ -108,6 +108,9 @@ class _mindfulnessstep7_pageState extends State<mindfulnessstep7_page> {
             child: Container(
               child: Padding(
                 padding: const EdgeInsets.all(1.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                ),
               ),
             ),
           ),
