@@ -64,7 +64,13 @@ class _mindfulnessstep7_pageState extends State<mindfulnessstep7_page> {
               padding: const EdgeInsets.all(1.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [],
+                children: [
+                  //image
+                  Image.asset(
+                    'lib/images/step3.png',
+                    height: 240,
+                  )
+                ],
               ),
             ),
           ),
