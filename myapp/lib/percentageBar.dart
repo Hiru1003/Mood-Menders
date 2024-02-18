@@ -32,3 +32,13 @@ class PercentageBar extends StatelessWidget {
     );
   }
 }
+
+void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        body: PercentageBar(percentage: 0.5),
+      ),
+    ),
+  );
+}
