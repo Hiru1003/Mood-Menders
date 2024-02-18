@@ -31,7 +31,7 @@ class _mindfulnessstep7_pageState extends State<mindfulnessstep7_page> {
                       textStyle: Theme.of(context).textTheme.displayLarge,
                       color: const Color.fromARGB(255, 70, 66, 68),
                       fontSize: 18,
-                      fontWeight: FontWeight.w400),
+                      fontWeight: FontWeight.w500),
                 ),
                 Image.asset(
                   'lib/images/leaf.png',
