@@ -37,7 +37,8 @@ void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
-        body: Center(
+        body: Align(
+          alignment: Alignment.centerLeft,
           child: Container(
             width: 200, // adjust the width as needed
             height: 20, // adjust the height as needed
