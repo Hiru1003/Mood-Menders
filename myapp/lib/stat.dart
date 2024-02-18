@@ -141,8 +141,8 @@ class _StatState extends State<Stat> {
                   ),
                 ),
                 Expanded(
-                  child: new charts.LineChart(
-                    seriesList,
+                  child: charts.LineChart(
+                    seriesList as List<charts.Series<dynamic, num>>,
                     defaultRenderer: new charts.LineRendererConfig(includeArea: true, stacked: true),
                   ),
                 ),
