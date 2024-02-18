@@ -197,8 +197,8 @@ class _StatState extends State<Stat> {
 Padding(
       padding: EdgeInsets.all(8.0),
       child: Image.asset(
-    'lib/images/loveearth (1).png', // replace with your image path
-    fit: BoxFit.cover,
+    'lib/images/loveearth (1).png',
+    width: 50,
   ),
     ),
      ],),
