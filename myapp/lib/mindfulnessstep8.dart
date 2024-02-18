@@ -46,6 +46,11 @@ class _mindfulnessstep8_pageState extends State<mindfulnessstep8_page> {
               bottomRight: Radius.circular(18),
               bottomLeft: Radius.circular(18)),
         ),
+        iconTheme: const IconThemeData(
+          color: Colors.black, //change your color here
+        ),
+        elevation: 0.00,
+        backgroundColor: Color.fromARGB(255, 134, 208, 203),
       ),
     );
   }
