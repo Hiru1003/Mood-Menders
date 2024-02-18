@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:intl/intl.dart';
 
 class Stat extends StatelessWidget {
   const Stat({Key? key});
 
   @override
   Widget build(BuildContext context) {
+    DateTime now = DateTime.now();
+    DateTime startOfWeek = now.subtract(Duration(days: now.weekday - 1));
+    String formattedStartOfWeek = DateFormat('MMM d').format(startOfWeek);
+    String formattedToday = DateFormat('MMM d').format(now);
+
     return Scaffold(
       appBar: AppBar(
         title: Padding(
@@ -70,7 +76,7 @@ class Stat extends StatelessWidget {
                 children: <Widget>[
                   Icon(Icons.arrow_left),
                   Text(
-                    'text',
+                    '$formattedStartOfWeek - $formattedToday',
                     style: TextStyle(
                       fontSize: 16,
                       color: Colors.black,
