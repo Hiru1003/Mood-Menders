@@ -22,4 +22,3 @@ class PercentageBar extends StatelessWidget {
     );
   }
 }
-```
