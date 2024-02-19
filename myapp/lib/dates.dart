@@ -7,7 +7,7 @@ class DatesWidget extends StatelessWidget {
     final controller = ScrollController(initialScrollOffset: 3 * 60.0);
 
     return Container(
-      height: 100,
+      height: 60,
       child: ListView.builder(
         controller: controller,
         scrollDirection: Axis.horizontal,
