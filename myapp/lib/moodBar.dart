@@ -14,5 +14,23 @@ class MoodImages extends StatelessWidget {
     );
   }
   
-  buildRow(String imagePath, double percentage) {}
+  buildRow(String imagePath, double percentage) {
+    return Padding(
+      padding: const EdgeInsets.only(top: 10.0, bottom: 10.0),
+      child: Row(
+        children: [
+          Image.asset(
+            imagePath,
+            width: 50,
+          ),
+          Padding(
+            padding: EdgeInsets.only(left: 20.0),
+            child: Expanded( // Add this line
+              child: PercentageBar(percentage: percentage),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
 }
