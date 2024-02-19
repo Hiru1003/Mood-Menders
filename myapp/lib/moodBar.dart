@@ -1,3 +1,4 @@
+import 'package:app/percentageBar.dart';
 import 'package:flutter/material.dart';
 
 class MoodImages extends StatelessWidget {
