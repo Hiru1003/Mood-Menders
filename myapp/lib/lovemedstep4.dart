@@ -27,7 +27,10 @@ class _lovemedstep4_pageState extends State<lovemedstep4_page> {
           fontSize: 18,
           fontWeight: FontWeight.w400
           ), ),
-         
+          Image.asset('lib/images/bg.png',
+          height: 72,)
+          ],
+      
       ),
     );
   }
