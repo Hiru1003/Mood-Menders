@@ -23,7 +23,15 @@ class _lovemedstep3_pageState extends State<lovemedstep3_page> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
-            
+                Text(
+                  'LOVING-KINDNESS \nMEDITATION',
+                  style: GoogleFonts.poppins(
+                      textStyle: Theme.of(context).textTheme.displayLarge,
+                      color: const Color.fromARGB(255, 70, 66, 68),
+                      fontSize: 18,
+                      fontWeight: FontWeight.w500),
+                ),
+               
         ),
     );
   }
