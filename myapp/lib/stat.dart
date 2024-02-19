@@ -244,9 +244,12 @@ Padding(
         'lib/images/loveearth (4).png',
         width: 50,
       ),
-      Text(
-        'Your text here', // replace with your text
-        style: TextStyle(fontSize: 16),
+      Padding(
+        padding: EdgeInsets.only(left: 20.0),
+        child: Text(
+          'Your text here', // replace with your text
+          style: TextStyle(fontSize: 16),
+        ),
       ),
     ],
   ),
