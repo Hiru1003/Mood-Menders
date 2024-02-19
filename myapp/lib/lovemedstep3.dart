@@ -106,7 +106,26 @@ class _lovemedstep3_pageState extends State<lovemedstep3_page> {
           //para
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
-            child: Container(),
+            child: Container(
+              child: Padding(
+                padding: const EdgeInsets.all(1.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    //message
+                    Text(
+                      'Gradually extend your loving-kindness to a wider \ncircle of people. This can include acquaintances, \ncolleagues, neutral individuals, and even people \nyou may have difficulties with. Use similar \nphrases for each person.',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 13,
+                          fontWeight: FontWeight.w400),
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ),
         ])));
   }
