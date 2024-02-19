@@ -1,19 +1,18 @@
 import 'package:app/button.dart';
-import 'package:app/lovemedstep8.dart';
-import 'package:app/loving-kindnessmed.dart';
+import 'package:app/lovemedstep9.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class lovemedstep7_page extends StatefulWidget {
-  const lovemedstep7_page({
+class lovemedstep8_page extends StatefulWidget {
+  const lovemedstep8_page({
     super.key,
   });
 
   @override
-  State<lovemedstep7_page> createState() => _lovemedstep7_pageState();
+  State<lovemedstep8_page> createState() => _lovemedstep8_pageState();
 }
 
-class _lovemedstep7_pageState extends State<lovemedstep7_page> {
+class _lovemedstep8_pageState extends State<lovemedstep8_page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -71,13 +70,14 @@ class _lovemedstep7_pageState extends State<lovemedstep7_page> {
                 children: [
                   //image
                   Image.asset(
-                    'lib/images/step2.png',
+                    'lib/images/step15.png',
                     height: 240,
                   )
                 ],
               ),
             ),
           ),
+
           const SizedBox(
             height: 25,
           ),
@@ -91,7 +91,7 @@ class _lovemedstep7_pageState extends State<lovemedstep7_page> {
                   children: [
                     //message
                     Text(
-                      'Step 07',
+                      'Step 08',
                       style: GoogleFonts.poppins(
                           textStyle: Theme.of(context).textTheme.displayLarge,
                           color: const Color.fromARGB(255, 70, 66, 68),
@@ -117,7 +117,7 @@ class _lovemedstep7_pageState extends State<lovemedstep7_page> {
                   children: [
                     //message
                     Text(
-                      'Go at a pace that feels comfortable for you. Take \nyour time with each person or group you bring \nto mind.',
+                      'When you are ready to conclude, bring your focus \nback to your own breath. Take a few moments \nto simply breathe and be present.',
                       textAlign: TextAlign.center,
                       style: GoogleFonts.poppins(
                           textStyle: Theme.of(context).textTheme.displayLarge,
@@ -133,7 +133,7 @@ class _lovemedstep7_pageState extends State<lovemedstep7_page> {
             ),
           ),
           const SizedBox(
-            height: 35,
+            height: 25,
           ),
           //continue button
           Padding(
@@ -145,7 +145,7 @@ class _lovemedstep7_pageState extends State<lovemedstep7_page> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => (const lovemedstep8_page())),
+                        builder: (context) => (const lovemedstep9_page())),
                   );
                 }
               },
