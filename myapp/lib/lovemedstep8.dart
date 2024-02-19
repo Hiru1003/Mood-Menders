@@ -1,18 +1,18 @@
 import 'package:app/button.dart';
-import 'package:app/mindfulnessstep8.dart';
+import 'package:app/lovemedstep9.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class mindfulnessstep7_page extends StatefulWidget {
-  const mindfulnessstep7_page({
+class lovemedstep8_page extends StatefulWidget {
+  const lovemedstep8_page({
     super.key,
   });
 
   @override
-  State<mindfulnessstep7_page> createState() => _mindfulnessstep7_pageState();
+  State<lovemedstep8_page> createState() => _lovemedstep8_pageState();
 }
 
-class _mindfulnessstep7_pageState extends State<mindfulnessstep7_page> {
+class _lovemedstep8_pageState extends State<lovemedstep8_page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +26,7 @@ class _mindfulnessstep7_pageState extends State<mindfulnessstep7_page> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 Text(
-                  'MINDFULLNESS \nMEDITATION',
+                  'LOVING-KINDNESS \nMEDITATION',
                   style: GoogleFonts.poppins(
                       textStyle: Theme.of(context).textTheme.displayLarge,
                       color: const Color.fromARGB(255, 70, 66, 68),
@@ -57,6 +57,7 @@ class _mindfulnessstep7_pageState extends State<mindfulnessstep7_page> {
         backgroundColor: const Color.fromARGB(251, 241, 255, 252),
         body: SingleChildScrollView(
             child: Column(children: [
+          //image
           const SizedBox(
             height: 20,
           ),
@@ -69,15 +70,16 @@ class _mindfulnessstep7_pageState extends State<mindfulnessstep7_page> {
                 children: [
                   //image
                   Image.asset(
-                    'lib/images/step13.png',
+                    'lib/images/step15.png',
                     height: 240,
                   )
                 ],
               ),
             ),
           ),
+
           const SizedBox(
-            height: 20,
+            height: 25,
           ),
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
@@ -89,7 +91,7 @@ class _mindfulnessstep7_pageState extends State<mindfulnessstep7_page> {
                   children: [
                     //message
                     Text(
-                      'Step 07',
+                      'Step 08',
                       style: GoogleFonts.poppins(
                           textStyle: Theme.of(context).textTheme.displayLarge,
                           color: const Color.fromARGB(255, 70, 66, 68),
@@ -102,7 +104,7 @@ class _mindfulnessstep7_pageState extends State<mindfulnessstep7_page> {
             ),
           ),
           const SizedBox(
-            height: 20,
+            height: 5,
           ),
           //para
           Padding(
@@ -115,7 +117,7 @@ class _mindfulnessstep7_pageState extends State<mindfulnessstep7_page> {
                   children: [
                     //message
                     Text(
-                      'When you are ready to end your meditation, \nslowly bring your awareness back to the room. \nGently open your eyes and take a moment to \ntransition.',
+                      'When you are ready to conclude, bring your focus \nback to your own breath. Take a few moments \nto simply breathe and be present.',
                       textAlign: TextAlign.center,
                       style: GoogleFonts.poppins(
                           textStyle: Theme.of(context).textTheme.displayLarge,
@@ -143,7 +145,7 @@ class _mindfulnessstep7_pageState extends State<mindfulnessstep7_page> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => (const mindfulnessstep8_page())),
+                        builder: (context) => (const lovemedstep9_page())),
                   );
                 }
               },
