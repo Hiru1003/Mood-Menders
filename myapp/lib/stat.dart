@@ -1,4 +1,4 @@
-import 'package:app/areachart.dart';
+import 'package:app/areachart.dart'; // Ensure this path is correct
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
@@ -7,10 +7,10 @@ class Stat extends StatefulWidget {
   const Stat({Key? key}) : super(key: key);
 
   @override
-  _StatState createState() => _StatState();
+  StatState createState() => StatState(); // Changed from _StatState to StatState
 }
 
-class _StatState extends State<Stat> {
+class StatState extends State<Stat> { // Changed from _StatState to StatState
   DateTime now = DateTime.now();
   late DateTime startOfWeek;
 
@@ -52,7 +52,7 @@ class _StatState extends State<Stat> {
                 ],
               ),
               Image.asset(
-                'lib/images/statMainpic.png',
+                'lib/images/statMainpic.png', // Ensure this image file exists in the specified path
                 fit: BoxFit.cover,
               ),
             ],
