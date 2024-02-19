@@ -13,4 +13,6 @@ class MoodImages extends StatelessWidget {
       ],
     );
   }
+  
+  buildRow(String s, double d) {}
 }
