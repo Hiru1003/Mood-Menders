@@ -44,7 +44,7 @@ void main(){
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     home: Scaffold(
-      body: Center(
+      body: Align(
         child: PercentageBar(percentage: 0.5),
       ),
     ),
