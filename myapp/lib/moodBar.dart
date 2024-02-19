@@ -49,10 +49,7 @@ class MoodImages extends StatelessWidget {
                 ),
                 const Padding(
                   padding: EdgeInsets.only(left: 20.0),
-                  child: Text(
-                    'Your text here',
-                    style: TextStyle(fontSize: 16),
-                  ),
+                  child: PercentageBar(percentage: 0.3),
                 ),
               ],
             ),
