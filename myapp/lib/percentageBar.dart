@@ -47,7 +47,8 @@ void main(){
       body: Align(
         alignment: Alignment.centerLeft,
         child: SizedBox(
-          width: 200,
+          width: 100, // Update the width to your desired value
+          height: 20, // Update the height to your desired value
           child: PercentageBar(percentage: 0.7),
         ),
       ),
