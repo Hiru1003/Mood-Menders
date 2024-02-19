@@ -17,7 +17,9 @@ class PercentageBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        
+        Expanded(
+          flex: (percentage * 100).toInt(),
+        )
       ],
     );
   }
