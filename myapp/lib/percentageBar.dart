@@ -12,5 +12,14 @@ class PercentageBar extends StatelessWidget {
     this.barColor = Colors.green,
     this.backgroundColor = Colors.grey,
   }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        
+      ],
+    );
+  }
 }
 ```
