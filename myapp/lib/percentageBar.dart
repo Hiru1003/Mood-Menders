@@ -6,28 +6,11 @@ class PercentageBar extends StatelessWidget {
   final Color barColor;
   final Color backgroundColor;
 
-  PercentageBar({this.percentage});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      height: 10,
-      width: 200,
-      decoration: BoxDecoration(
-        color: Colors.grey[300],
-        borderRadius: BorderRadius.circular(5),
-      ),
-      child: FractionallySizedBox(
-        alignment: Alignment.centerLeft,
-        widthFactor: percentage,
-        child: Container(
-          decoration: BoxDecoration(
-            color: Colors.green,
-            borderRadius: BorderRadius.circular(5),
-          ),
-        ),
-      ),
-    );
-  }
+  const PercentageBar({
+    Key? key,
+    required this.percentage,
+    this.barColor = Colors.green,
+    this.backgroundColor = Colors.grey,
+  }) : super(key: key);
 }
 ```
