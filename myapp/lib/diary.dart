@@ -85,7 +85,7 @@ class Diary extends StatelessWidget {
               children: [
                 Padding(
                   padding: EdgeInsets.only(left: 20.0),
-                  //child: TodayDateWidget(), 
+                  child: TodayDateWidget(), 
                 ),
                 Padding(
                   padding: EdgeInsets.only(right: 20.0),
