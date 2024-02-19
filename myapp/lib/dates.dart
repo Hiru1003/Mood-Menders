@@ -11,7 +11,7 @@ class DatesWidget extends StatelessWidget {
       child: ListView.builder(
         controller: controller,
         scrollDirection: Axis.horizontal,
-        itemCount: 7, // Only show the current week
+        itemCount: 20, // Only show the current week
         itemBuilder: (context, index) {
           DateTime date = today.add(Duration(days: index - 3)); // Adjust the date to start from the beginning of the week
           bool isToday = date.day == today.day && date.month == today.month && date.year == today.year;
