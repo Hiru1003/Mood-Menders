@@ -22,7 +22,7 @@ class PercentageBar extends StatelessWidget {
           child: Container(
             decoration: BoxDecoration(
               color: barColor,
-              borderRadius: BorderRadius.circular(5),
+              borderRadius: BorderRadius.circular(16),
             ),
           ),
         ),
@@ -31,7 +31,7 @@ class PercentageBar extends StatelessWidget {
           child: Container(
             decoration: BoxDecoration(
               color: backgroundColor,
-              borderRadius: BorderRadius.circular(5),
+              borderRadius: BorderRadius.circular(16),
             ),
           ),
         )
