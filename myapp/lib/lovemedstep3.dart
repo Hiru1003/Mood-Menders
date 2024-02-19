@@ -103,6 +103,10 @@ class _lovemedstep3_pageState extends State<lovemedstep3_page> {
           const SizedBox(
             height: 5,
           ),
+          //para
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+          ),
         ])));
   }
 }
