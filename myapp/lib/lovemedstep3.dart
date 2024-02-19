@@ -31,7 +31,11 @@ class _lovemedstep3_pageState extends State<lovemedstep3_page> {
                       fontSize: 18,
                       fontWeight: FontWeight.w500),
                 ),
-               
+                Image.asset(
+                  'lib/images/leaf.png',
+                  height: 72,
+                )
+           
         ),
     );
   }
