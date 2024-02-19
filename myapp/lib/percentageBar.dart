@@ -26,6 +26,9 @@ class PercentageBar extends StatelessWidget {
             ),
           ),
         ),
+        Expanded(
+          flex: ((11 - percentage) * 100).toInt(),
+        )
       ],
     );
   }
