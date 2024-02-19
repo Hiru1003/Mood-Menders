@@ -29,8 +29,8 @@ class DatesWidget extends StatelessWidget {
               ),
             ),
           );
-        },,
-      ),
-    )
+        },
+      )
+    );
   }
 }
