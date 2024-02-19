@@ -132,6 +132,22 @@ class _lovemedstep2_pageState extends State<lovemedstep2_page> {
           const SizedBox(
             height: 15,
           ),
+          //continue button
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: MyButton(
+              buttontext: 'Next Step',
+              onTap: () {
+                {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => (const lovemedstep3_page())),
+                  );
+                }
+              },
+            ),
+          ),
         ])));
   }
 }
