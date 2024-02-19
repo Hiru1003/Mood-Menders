@@ -46,7 +46,7 @@ void main(){
     home: Scaffold(
       body: Align(
         alignment: Alignment.centerLeft,
-        child: Container(
+        child: SizedBox(
           width: 200,
           child: PercentageBar(percentage: 0.7),
         ),
