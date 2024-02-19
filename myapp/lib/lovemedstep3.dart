@@ -65,7 +65,13 @@ class _lovemedstep3_pageState extends State<lovemedstep3_page> {
               padding: const EdgeInsets.all(1.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [],
+                children: [
+                  //image
+                  Image.asset(
+                    'lib/images/step20.png',
+                    height: 240,
+                  )
+                ],
               ),
             ),
           ),
