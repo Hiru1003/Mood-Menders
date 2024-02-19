@@ -162,7 +162,7 @@ class _StatState extends State<Stat> {
                             return charts.TickSpec(
                               index,
                               label: ['S', 'M', 'T', 'W', 'T', 'F', 'S'][index],
-                              style: charts.TextStyleSpec(
+                              style: const charts.TextStyleSpec(
                                 fontSize: 13,
                                 color: charts.MaterialPalette.black,
                               ),
