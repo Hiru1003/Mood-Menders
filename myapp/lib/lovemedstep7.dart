@@ -1,18 +1,18 @@
 import 'package:app/button.dart';
-import 'package:app/lovemedstep5.dart';
+import 'package:app/loving-kindnessmed.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class lovemedstep4_page extends StatefulWidget {
-  const lovemedstep4_page({
+class lovemedstep7_page extends StatefulWidget {
+  const lovemedstep7_page({
     super.key,
   });
 
   @override
-  State<lovemedstep4_page> createState() => _lovemedstep4_pageState();
+  State<lovemedstep7_page> createState() => _lovemedstep7_pageState();
 }
 
-class _lovemedstep4_pageState extends State<lovemedstep4_page> {
+class _lovemedstep7_pageState extends State<lovemedstep7_page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -59,7 +59,7 @@ class _lovemedstep4_pageState extends State<lovemedstep4_page> {
             child: Column(children: [
           //image
           const SizedBox(
-            height: 25,
+            height: 20,
           ),
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
@@ -70,7 +70,7 @@ class _lovemedstep4_pageState extends State<lovemedstep4_page> {
                 children: [
                   //image
                   Image.asset(
-                    'lib/images/step15.png',
+                    'lib/images/step2.png',
                     height: 240,
                   )
                 ],
@@ -90,7 +90,7 @@ class _lovemedstep4_pageState extends State<lovemedstep4_page> {
                   children: [
                     //message
                     Text(
-                      'Step 04',
+                      'Step 07',
                       style: GoogleFonts.poppins(
                           textStyle: Theme.of(context).textTheme.displayLarge,
                           color: const Color.fromARGB(255, 70, 66, 68),
@@ -116,14 +116,14 @@ class _lovemedstep4_pageState extends State<lovemedstep4_page> {
                   children: [
                     //message
                     Text(
-                      'Continue to bring other people into your thoughts, \nincluding acquaintances, colleagues, and even \nthose you may have conflicts with. Offer \nthe same loving-kindness wishes for them.',
+                      'Go at a pace that feels comfortable for you. Take \nyour time with each person or group you bring \nto mind.',
                       textAlign: TextAlign.center,
                       style: GoogleFonts.poppins(
                           textStyle: Theme.of(context).textTheme.displayLarge,
                           color: const Color.fromARGB(255, 70, 66, 68),
                           fontSize: 13,
                           height: 1.2,
-                          wordSpacing: 1.7,
+                          wordSpacing: 1.8,
                           fontWeight: FontWeight.w400),
                     ),
                   ],
@@ -132,7 +132,7 @@ class _lovemedstep4_pageState extends State<lovemedstep4_page> {
             ),
           ),
           const SizedBox(
-            height: 25,
+            height: 35,
           ),
           //continue button
           Padding(
@@ -144,7 +144,7 @@ class _lovemedstep4_pageState extends State<lovemedstep4_page> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => (const lovemedstep5_page())),
+                        builder: (context) => (const lovekindmed_page())),
                   );
                 }
               },
