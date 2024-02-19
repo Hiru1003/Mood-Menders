@@ -1,3 +1,4 @@
+import 'package:app/areachart.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
@@ -118,6 +119,7 @@ class _StatState extends State<Stat> {
                           },
                           child: const Icon(Icons.arrow_right),
                         ),
+                        MoodChart(),
                       ],
                     ),
                   ),
