@@ -1,3 +1,4 @@
+import 'package:app/loving-kindnessmed.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -127,6 +128,25 @@ class _lovemedstep4_pageState extends State<lovemedstep4_page> {
                   ],
                 ),
               ),
+            ),
+          ),
+          const SizedBox(
+            height: 25,
+          ),
+          //continue button
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: MyButton(
+              buttontext: 'Next Step',
+              onTap: () {
+                {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => (const lovekindmed_page())),
+                  );
+                }
+              },
             ),
           ),
         ])));
