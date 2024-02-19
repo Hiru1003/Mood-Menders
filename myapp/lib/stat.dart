@@ -1,3 +1,4 @@
+import 'package:app/percentageBar.dart';
 import 'package:charts_flutter/flutter.dart' as charts;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -210,10 +211,7 @@ Align(
       ),
       const Padding(
         padding: EdgeInsets.only(left: 20.0),
-        child: Text(
-          'Your text here',
-          style: TextStyle(fontSize: 16),
-        ),
+        child: PercentageBar(percentage: 0.2)
       ),
     ],
   ),
