@@ -1,4 +1,4 @@
-import 'package:app/diary.dart';
+import 'package:app/loading_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,9 +10,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(debugShowCheckedModeBanner: false, 
-        //home: loading_page()
-        home: Diary(),
+    return const MaterialApp(
+        debugShowCheckedModeBanner: false, home: loading_page()
+        //home: Diary(),
         );
   }
 }
