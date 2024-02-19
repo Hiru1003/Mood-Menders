@@ -1,18 +1,18 @@
 import 'package:app/button.dart';
-import 'package:app/mindfulnessstep6.dart';
+import 'package:app/lovemedstep6.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class mindfulnessstep5_page extends StatefulWidget {
-  const mindfulnessstep5_page({
+class lovemedstep5_page extends StatefulWidget {
+  const lovemedstep5_page({
     super.key,
   });
 
   @override
-  State<mindfulnessstep5_page> createState() => _mindfulnessstep5_pageState();
+  State<lovemedstep5_page> createState() => _lovemedstep5_pageState();
 }
 
-class _mindfulnessstep5_pageState extends State<mindfulnessstep5_page> {
+class _lovemedstep5_pageState extends State<lovemedstep5_page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +26,7 @@ class _mindfulnessstep5_pageState extends State<mindfulnessstep5_page> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 Text(
-                  'MINDFULLNESS \nMEDITATION',
+                  'LOVING-KINDNESS \nMEDITATION',
                   style: GoogleFonts.poppins(
                       textStyle: Theme.of(context).textTheme.displayLarge,
                       color: const Color.fromARGB(255, 70, 66, 68),
@@ -57,6 +57,7 @@ class _mindfulnessstep5_pageState extends State<mindfulnessstep5_page> {
         backgroundColor: const Color.fromARGB(251, 241, 255, 252),
         body: SingleChildScrollView(
             child: Column(children: [
+          //image
           const SizedBox(
             height: 20,
           ),
@@ -69,7 +70,7 @@ class _mindfulnessstep5_pageState extends State<mindfulnessstep5_page> {
                 children: [
                   //image
                   Image.asset(
-                    'lib/images/step5.png',
+                    'lib/images/step19.png',
                     height: 240,
                   )
                 ],
@@ -77,7 +78,7 @@ class _mindfulnessstep5_pageState extends State<mindfulnessstep5_page> {
             ),
           ),
           const SizedBox(
-            height: 20,
+            height: 25,
           ),
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
@@ -102,7 +103,7 @@ class _mindfulnessstep5_pageState extends State<mindfulnessstep5_page> {
             ),
           ),
           const SizedBox(
-            height: 20,
+            height: 5,
           ),
           //para
           Padding(
@@ -115,14 +116,12 @@ class _mindfulnessstep5_pageState extends State<mindfulnessstep5_page> {
                   children: [
                     //message
                     Text(
-                      'After a few minutes, start to expand your \nawareness beyond your breath. Notice the \nsounds around you, the sensation of your \nbody against the chair or floor, and any \nother sensory experiences.',
+                      'Extend your loving-kindness to all living beings, \nwithout exception. This can encompass humans, \nanimals, and even the environment.',
                       textAlign: TextAlign.center,
                       style: GoogleFonts.poppins(
                           textStyle: Theme.of(context).textTheme.displayLarge,
                           color: const Color.fromARGB(255, 70, 66, 68),
                           fontSize: 13,
-                          height: 1.2,
-                          wordSpacing: 1.8,
                           fontWeight: FontWeight.w400),
                     ),
                   ],
@@ -131,7 +130,7 @@ class _mindfulnessstep5_pageState extends State<mindfulnessstep5_page> {
             ),
           ),
           const SizedBox(
-            height: 15,
+            height: 25,
           ),
           //continue button
           Padding(
@@ -143,7 +142,7 @@ class _mindfulnessstep5_pageState extends State<mindfulnessstep5_page> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => (const mindfulnessstep6_page())),
+                        builder: (context) => (const lovemedstep6_page())),
                   );
                 }
               },

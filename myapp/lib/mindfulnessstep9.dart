@@ -1,18 +1,18 @@
 import 'package:app/button.dart';
-import 'package:app/mindfulnessstep6.dart';
+import 'package:app/meditaionmethods.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class mindfulnessstep5_page extends StatefulWidget {
-  const mindfulnessstep5_page({
+class mindfulnessstep9_page extends StatefulWidget {
+  const mindfulnessstep9_page({
     super.key,
   });
 
   @override
-  State<mindfulnessstep5_page> createState() => _mindfulnessstep5_pageState();
+  State<mindfulnessstep9_page> createState() => _mindfulnessstep9_pageState();
 }
 
-class _mindfulnessstep5_pageState extends State<mindfulnessstep5_page> {
+class _mindfulnessstep9_pageState extends State<mindfulnessstep9_page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -69,15 +69,15 @@ class _mindfulnessstep5_pageState extends State<mindfulnessstep5_page> {
                 children: [
                   //image
                   Image.asset(
-                    'lib/images/step5.png',
-                    height: 240,
+                    'lib/images/step10.png',
+                    height: 210,
                   )
                 ],
               ),
             ),
           ),
           const SizedBox(
-            height: 20,
+            height: 5,
           ),
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
@@ -89,11 +89,12 @@ class _mindfulnessstep5_pageState extends State<mindfulnessstep5_page> {
                   children: [
                     //message
                     Text(
-                      'Step 05',
+                      'You  are successfully completed \nmindfullness meditation',
+                      textAlign: TextAlign.center,
                       style: GoogleFonts.poppins(
                           textStyle: Theme.of(context).textTheme.displayLarge,
                           color: const Color.fromARGB(255, 70, 66, 68),
-                          fontSize: 18,
+                          fontSize: 16,
                           fontWeight: FontWeight.w600),
                     ),
                   ],
@@ -102,7 +103,7 @@ class _mindfulnessstep5_pageState extends State<mindfulnessstep5_page> {
             ),
           ),
           const SizedBox(
-            height: 20,
+            height: 5,
           ),
           //para
           Padding(
@@ -115,7 +116,7 @@ class _mindfulnessstep5_pageState extends State<mindfulnessstep5_page> {
                   children: [
                     //message
                     Text(
-                      'After a few minutes, start to expand your \nawareness beyond your breath. Notice the \nsounds around you, the sensation of your \nbody against the chair or floor, and any \nother sensory experiences.',
+                      'Remember, mindfulness meditation is a skill that \ntakes time to develop. Encourage users to \nbe patient with themselves and to approach the \npractice with an open and non-judgmental \nattitude. Regular practice can lead to increased \nmindfulness and a greater sense of well-being.',
                       textAlign: TextAlign.center,
                       style: GoogleFonts.poppins(
                           textStyle: Theme.of(context).textTheme.displayLarge,
@@ -131,19 +132,19 @@ class _mindfulnessstep5_pageState extends State<mindfulnessstep5_page> {
             ),
           ),
           const SizedBox(
-            height: 15,
+            height: 25,
           ),
           //continue button
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
             child: MyButton(
-              buttontext: 'Next Step',
+              buttontext: 'Back to Home Page',
               onTap: () {
                 {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => (const mindfulnessstep6_page())),
+                        builder: (context) => (meditaionmethods_page())),
                   );
                 }
               },

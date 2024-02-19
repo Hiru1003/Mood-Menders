@@ -1,5 +1,5 @@
 import 'package:app/button.dart';
-import 'package:app/meditaionmethods.dart';
+import 'package:app/lovemedstep1.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -412,8 +412,7 @@ class _lovekindmed_pageState extends State<lovekindmed_page> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) =>
-                              (const meditaionmethods_page())),
+                          builder: (context) => (const lovemedstep1_page())),
                     );
                   }
                 },
