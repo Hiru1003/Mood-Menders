@@ -4,32 +4,30 @@ class DatesWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     DateTime today = DateTime.now();
-    List<Widget> dateWidgets = [];
 
-    for (int i = -3; i <= 3; i++) {
-      DateTime date = today.add(Duration(days: i));
-      dateWidgets.add(
-        Padding(
+    return ListView.builder(
+      scrollDirection: Axis.horizontal,
+      itemCount: 1000,
+      itemBuilder: (context, index) {
+        DateTime date = today.add(Duration(days: index - 500)); 
+        bool isToday = date.day == today.day && date.month == today.month && date.year == today.year;
+
+        return Padding(
           padding: const EdgeInsets.all(8.0),
           child: CircleAvatar(
-            radius: i == 0 ? 25 : 20, 
+            radius: isToday ? 25 : 20,
             backgroundColor: const Color.fromARGB(255, 154, 191, 188),
             child: Text(
               date.day.toString(),
               style: TextStyle(
                 color: const Color.fromARGB(255, 14, 3, 3),
-                fontWeight: i == 0 ? FontWeight.bold : FontWeight.normal, 
-                fontSize: i == 0 ? 18 : 14, 
+                fontWeight: isToday ? FontWeight.bold : FontWeight.normal,
+                fontSize: isToday ? 18 : 14,
               ),
             ),
           ),
-        ),
-      );
-    }
-
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: dateWidgets,
+        );
+      },
     );
   }
 }

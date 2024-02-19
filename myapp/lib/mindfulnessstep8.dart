@@ -1,18 +1,18 @@
 import 'package:app/button.dart';
-import 'package:app/mindfulnessstep8.dart';
+import 'package:app/mindfulnessstep9.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class mindfulnessstep7_page extends StatefulWidget {
-  const mindfulnessstep7_page({
+class mindfulnessstep8_page extends StatefulWidget {
+  const mindfulnessstep8_page({
     super.key,
   });
 
   @override
-  State<mindfulnessstep7_page> createState() => _mindfulnessstep7_pageState();
+  State<mindfulnessstep8_page> createState() => _mindfulnessstep8_pageState();
 }
 
-class _mindfulnessstep7_pageState extends State<mindfulnessstep7_page> {
+class _mindfulnessstep8_pageState extends State<mindfulnessstep8_page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -69,7 +69,7 @@ class _mindfulnessstep7_pageState extends State<mindfulnessstep7_page> {
                 children: [
                   //image
                   Image.asset(
-                    'lib/images/step13.png',
+                    'lib/images/step8 .png',
                     height: 240,
                   )
                 ],
@@ -89,7 +89,7 @@ class _mindfulnessstep7_pageState extends State<mindfulnessstep7_page> {
                   children: [
                     //message
                     Text(
-                      'Step 07',
+                      'Step 08',
                       style: GoogleFonts.poppins(
                           textStyle: Theme.of(context).textTheme.displayLarge,
                           color: const Color.fromARGB(255, 70, 66, 68),
@@ -115,7 +115,7 @@ class _mindfulnessstep7_pageState extends State<mindfulnessstep7_page> {
                   children: [
                     //message
                     Text(
-                      'When you are ready to end your meditation, \nslowly bring your awareness back to the room. \nGently open your eyes and take a moment to \ntransition.',
+                      'Consider reflecting on your meditation experience \nin a journal. Write down any insights, observations, \nor feelings that arose during your practice.',
                       textAlign: TextAlign.center,
                       style: GoogleFonts.poppins(
                           textStyle: Theme.of(context).textTheme.displayLarge,
@@ -143,7 +143,7 @@ class _mindfulnessstep7_pageState extends State<mindfulnessstep7_page> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => (const mindfulnessstep8_page())),
+                        builder: (context) => (const mindfulnessstep9_page())),
                   );
                 }
               },
