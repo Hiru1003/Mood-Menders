@@ -19,6 +19,10 @@ class _lovemedstep3_pageState extends State<lovemedstep3_page> {
             padding: const EdgeInsets.only(
               left: 10,
             ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
             
         ),
     );
