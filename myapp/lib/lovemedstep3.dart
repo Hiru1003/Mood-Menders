@@ -120,6 +120,8 @@ class _lovemedstep3_pageState extends State<lovemedstep3_page> {
                           textStyle: Theme.of(context).textTheme.displayLarge,
                           color: const Color.fromARGB(255, 70, 66, 68),
                           fontSize: 13,
+                          height: 1.2,
+                          wordSpacing: 1.8,
                           fontWeight: FontWeight.w400),
                     ),
                   ],
