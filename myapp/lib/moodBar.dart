@@ -14,5 +14,5 @@ class MoodImages extends StatelessWidget {
     );
   }
   
-  buildRow(String imagePath, double d) {}
+  buildRow(String imagePath, double percentage) {}
 }
