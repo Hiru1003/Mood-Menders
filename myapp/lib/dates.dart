@@ -25,7 +25,7 @@ class DatesWidget extends StatelessWidget {
                 date.day.toString(),
                 style: TextStyle(
                   color: const Color.fromARGB(255, 14, 3, 3),
-                  fontWeight: isToday ? FontWeight.bold : FontWeight.normal,
+                  fontWeight: isToday ? FontWeight.w400 : FontWeight.normal,
                   fontSize: isToday ? 24 : 14,
                 ),
               ),
