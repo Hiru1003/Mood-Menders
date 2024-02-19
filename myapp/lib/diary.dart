@@ -5,8 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 
-import 'dates.dart';
-import 'todaysdate.dart'; 
+//import 'todaysdate.dart';
 
 class Diary extends StatelessWidget {
   const Diary({Key? key});
@@ -26,7 +25,7 @@ class Diary extends StatelessWidget {
             Column(
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(left: 5.0, top:20.0), 
+                  padding: const EdgeInsets.only(left: 5.0, top:20.0),
                   child: Text(
                     'SECRET DIARY',
                     style: GoogleFonts.poppins(
@@ -85,7 +84,7 @@ class Diary extends StatelessWidget {
               children: [
                 Padding(
                   padding: EdgeInsets.only(left: 20.0),
-                  child: TodayDateWidget(), 
+                  //child: TodayDateWidget(), 
                 ),
                 Padding(
                   padding: EdgeInsets.only(right: 20.0),
@@ -99,7 +98,7 @@ class Diary extends StatelessWidget {
                 ),
               ],
             ),
-            DatesWidget(),
+            // DatesWidget(),
             Container(
               margin: const EdgeInsets.symmetric(vertical: 10),
               width: 300,
