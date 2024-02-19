@@ -11,7 +11,7 @@ class DatesWidget extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemCount: 1000,
         itemBuilder: (context, index) {
-          DateTime date = today.add(Duration(days: index - 500)); 
+          DateTime date = today.add(Duration(days: index - 500));
           bool isToday = date.day == today.day && date.month == today.month && date.year == today.year;
 
           return Padding(
