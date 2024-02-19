@@ -211,7 +211,7 @@ Align(
       Padding(
         padding: EdgeInsets.only(left: 20.0),
         child: Text(
-          'Your text here', // replace with your text
+          'Your text here',
           style: TextStyle(fontSize: 16),
         ),
       ),
@@ -229,7 +229,7 @@ Padding(
       Padding(
         padding: EdgeInsets.only(left: 20.0),
         child: Text(
-          'Your text here', // replace with your text
+          'Your text here',
           style: TextStyle(fontSize: 16),
         ),
       ),
@@ -247,7 +247,7 @@ Padding(
       Padding(
         padding: EdgeInsets.only(left: 20.0),
         child: Text(
-          'Your text here', // replace with your text
+          'Your text here',
           style: TextStyle(fontSize: 16),
         ),
       ),
@@ -265,7 +265,7 @@ Padding(
       Padding(
         padding: EdgeInsets.only(left: 20.0),
         child: Text(
-          'Your text here', // replace with your text
+          'Your text here',
           style: TextStyle(fontSize: 16),
         ),
       ),
@@ -283,7 +283,7 @@ Padding(
       Padding(
         padding: EdgeInsets.only(left: 20.0),
         child: Text(
-          'Your text here', // replace with your text
+          'Your text here',
           style: TextStyle(fontSize: 16),
         ),
       ),
