@@ -28,6 +28,12 @@ class PercentageBar extends StatelessWidget {
         ),
         Expanded(
           flex: ((11 - percentage) * 100).toInt(),
+          child: Container(
+            decoration: BoxDecoration(
+              color: backgroundColor,
+              borderRadius: BorderRadius.circular(5),
+            ),
+          ),
         )
       ],
     );
