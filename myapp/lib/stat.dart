@@ -122,15 +122,15 @@ class _StatState extends State<Stat> {
                         GestureDetector(
                           onTap: () {
                             setState(() {
-                              now = now.subtract(Duration(days: 7));
-                              startOfWeek = startOfWeek.subtract(Duration(days: 7));
+                              now = now.subtract(const Duration(days: 7));
+                              startOfWeek = startOfWeek.subtract(const Duration(days: 7));
                             });
                           },
-                          child: Icon(Icons.arrow_left),
+                          child: const Icon(Icons.arrow_left),
                         ),
                         Text(
                           '$formattedStartOfWeek - $formattedToday',
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 16,
                             color: Colors.black,
                           ),
@@ -138,11 +138,11 @@ class _StatState extends State<Stat> {
                         GestureDetector(
                           onTap: () {
                             setState(() {
-                              now = now.add(Duration(days: 7));
-                              startOfWeek = startOfWeek.add(Duration(days: 7));
+                              now = now.add(const Duration(days: 7));
+                              startOfWeek = startOfWeek.add(const Duration(days: 7));
                             });
                           },
-                          child: Icon(Icons.arrow_right),
+                          child: const Icon(Icons.arrow_right),
                         ),
                       ],
                     ),
@@ -151,7 +151,7 @@ class _StatState extends State<Stat> {
     child: charts.LineChart(
       seriesList as List<charts.Series<dynamic, num>>,
       defaultRenderer: charts.LineRendererConfig(includeArea: true, stacked: true),
-      primaryMeasureAxis: charts.NumericAxisSpec(
+      primaryMeasureAxis: const charts.NumericAxisSpec(
         renderSpec: charts.NoneRenderSpec(),
       ),
       domainAxis: charts.NumericAxisSpec(
@@ -167,7 +167,7 @@ class _StatState extends State<Stat> {
       );
     }),
   ),
-  renderSpec: charts.GridlineRendererSpec(
+  renderSpec: const charts.GridlineRendererSpec(
     labelStyle: charts.TextStyleSpec(
       fontSize: 0,
       color: charts.MaterialPalette.transparent, 
@@ -197,18 +197,18 @@ class _StatState extends State<Stat> {
 Align(
   alignment: Alignment.centerLeft,
   child: Padding(
-    padding: EdgeInsets.only(left: 30.0, top: 15.0, bottom: 15.0),
+    padding: const EdgeInsets.only(left: 30.0, top: 15.0, bottom: 15.0),
     child: Column(
       children: [
         Padding(
-  padding: EdgeInsets.only(top: 10.0, bottom: 10.0),
+  padding: const EdgeInsets.only(top: 10.0, bottom: 10.0),
   child: Row(
     children: [
       Image.asset(
         'lib/images/loveearth (1).png',
         width: 50,
       ),
-      Padding(
+      const Padding(
         padding: EdgeInsets.only(left: 20.0),
         child: Text(
           'Your text here',
@@ -219,14 +219,14 @@ Align(
   ),
 ),
 Padding(
-  padding: EdgeInsets.only(top: 10.0, bottom: 10.0),
+  padding: const EdgeInsets.only(top: 10.0, bottom: 10.0),
   child: Row(
     children: [
       Image.asset(
         'lib/images/loveearth (2).png',
         width: 50,
       ),
-      Padding(
+      const Padding(
         padding: EdgeInsets.only(left: 20.0),
         child: Text(
           'Your text here',
@@ -237,14 +237,14 @@ Padding(
   ),
 ),
 Padding(
-  padding: EdgeInsets.only(top: 10.0, bottom: 10.0),
+  padding: const EdgeInsets.only(top: 10.0, bottom: 10.0),
   child: Row(
     children: [
       Image.asset(
         'lib/images/loveearth (3).png',
         width: 50,
       ),
-      Padding(
+      const Padding(
         padding: EdgeInsets.only(left: 20.0),
         child: Text(
           'Your text here',
@@ -255,14 +255,14 @@ Padding(
   ),
 ),
 Padding(
-  padding: EdgeInsets.only(top: 10.0, bottom: 10.0),
+  padding: const EdgeInsets.only(top: 10.0, bottom: 10.0),
   child: Row(
     children: [
       Image.asset(
         'lib/images/loveearth (4).png',
         width: 50,
       ),
-      Padding(
+      const Padding(
         padding: EdgeInsets.only(left: 20.0),
         child: Text(
           'Your text here',
@@ -273,14 +273,14 @@ Padding(
   ),
 ),
 Padding(
-  padding: EdgeInsets.only(top: 10.0, bottom: 10.0),
+  padding: const EdgeInsets.only(top: 10.0, bottom: 10.0),
   child: Row(
     children: [
       Image.asset(
         'lib/images/loveearth (5).png',
         width: 50,
       ),
-      Padding(
+      const Padding(
         padding: EdgeInsets.only(left: 20.0),
         child: Text(
           'Your text here',
