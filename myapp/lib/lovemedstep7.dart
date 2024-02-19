@@ -1,4 +1,5 @@
 import 'package:app/button.dart';
+import 'package:app/lovemedstep8.dart';
 import 'package:app/loving-kindnessmed.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -144,7 +145,7 @@ class _lovemedstep7_pageState extends State<lovemedstep7_page> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => (const lovekindmed_page())),
+                        builder: (context) => (const lovemedstep8_page())),
                   );
                 }
               },
