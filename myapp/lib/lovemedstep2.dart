@@ -46,6 +46,9 @@ class _lovemedstep2_pageState extends State<lovemedstep2_page> {
               bottomRight: Radius.circular(18),
               bottomLeft: Radius.circular(18)),
         ),
+        iconTheme: const IconThemeData(
+          color: Colors.black, //change your color here
+        ),
       ),
     );
   }
