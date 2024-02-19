@@ -16,7 +16,7 @@ class PercentageBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) => Container(
-        height: 2,
+        //height: 2,
         decoration: BoxDecoration(
           color: backgroundColor,
           borderRadius: BorderRadius.circular(16),
@@ -46,7 +46,7 @@ void main() {
           alignment: Alignment.centerLeft,
           child: Container(
             width: 200,
-            height: 40,
+           // height: 40,
             child: PercentageBar(percentage: 1),
           ),
         ),

@@ -1,97 +1,9 @@
-import 'package:app/percentageBar.dart';
 import 'package:flutter/material.dart';
 
 class MoodImages extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-        children: [
-          Padding(
-          padding: const EdgeInsets.only(top: 10.0, bottom: 10.0),
-          child: Row(
-            children: [
-              Image.asset(
-                'lib/images/loveearth (1).png',
-                width: 50,
-              ),
-              const Padding(
-                padding: EdgeInsets.only(left: 20.0),
-                child: PercentageBar(percentage: 0.2)
-              ),
-            ],
-          ),
-        ),
-        Padding(
-          padding: const EdgeInsets.only(top: 10.0, bottom: 10.0),
-          child: Row(
-            children: [
-              Image.asset(
-                'lib/images/loveearth (2).png',
-                width: 50,
-              ),
-              const Padding(
-                padding: EdgeInsets.only(left: 20.0),
-                child: PercentageBar(percentage: 0.4),
-              
-              ),
-            ],
-          ),
-        ),
-        Align(
-          alignment: Alignment.center,
-          child: Padding(
-            padding: const EdgeInsets.only(top: 10.0, bottom: 10.0),
-            child: Row(
-              children: [
-                Image.asset(
-                  'lib/images/loveearth (3).png',
-                  width: 50,
-                ),
-                const Padding(
-                  padding: EdgeInsets.only(left: 20.0),
-                  child: PercentageBar(percentage: 0.3),
-                ),
-              ],
-            ),
-          ),
-        ),
-        Align(
-          alignment: Alignment.center,
-          child: Padding(
-            padding: const EdgeInsets.only(top: 10.0, bottom: 10.0),
-            child: Row(
-              children: [
-                Image.asset(
-                  'lib/images/loveearth (4).png',
-                  width: 50,
-                ),
-                const Padding(
-                  padding: EdgeInsets.only(left: 20.0),
-                  child: PercentageBar(percentage: 0.6),
-                ),
-              ],
-            ),
-          ),
-        ),
-        Align(
-          alignment: Alignment.center,
-          child: Padding(
-            padding: const EdgeInsets.only(top: 10.0, bottom: 10.0),
-            child: Row(
-              children: [
-                Image.asset(
-                  'lib/images/loveearth (5).png',
-                  width: 50,
-                ),
-                const Padding(
-                  padding: EdgeInsets.only(left: 20.0),
-                  child: PercentageBar(percentage: 0.8),
-                ),
-              ],
-            ),
-          ),
-        ),
-        ],
-      );
+    );
   }
 }
