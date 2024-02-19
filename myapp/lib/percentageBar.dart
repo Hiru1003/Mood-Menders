@@ -45,7 +45,7 @@ void main(){
     debugShowCheckedModeBanner: false,
     home: Scaffold(
       body: Align(
-        child: PercentageBar(percentage: 0.5),
+        alignment: Alignment.centerLeft,
       ),
     ),
   ));
