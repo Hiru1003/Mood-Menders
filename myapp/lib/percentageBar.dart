@@ -14,20 +14,22 @@ class PercentageBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 2,
-      width: double.infinity, // Add this line
-      decoration: BoxDecoration(
-        color: backgroundColor,
-        borderRadius: BorderRadius.circular(16),
-      ),
-      child: FractionallySizedBox(
-        alignment: Alignment.centerLeft, // Add this line
-        widthFactor: percentage,
-        child: Container(
-          decoration: BoxDecoration(
-            color: barColor,
-            borderRadius: BorderRadius.circular(16),
+    return LayoutBuilder(
+      builder: (context, constraints) => Container(
+        height: 2,
+        decoration: BoxDecoration(
+          color: backgroundColor,
+          borderRadius: BorderRadius.circular(16),
+        ),
+        child: FractionallySizedBox(
+          alignment: Alignment.centerLeft,
+          widthFactor: percentage,
+          child: Container(
+            width: constraints.maxWidth * percentage, // Add this line
+            decoration: BoxDecoration(
+              color: barColor,
+              borderRadius: BorderRadius.circular(16),
+            ),
           ),
         ),
       ),
