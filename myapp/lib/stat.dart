@@ -241,6 +241,24 @@ Padding(
   child: Row(
     children: [
       Image.asset(
+        'lib/images/loveearth (3).png',
+        width: 50,
+      ),
+      Padding(
+        padding: EdgeInsets.only(left: 20.0),
+        child: Text(
+          'Your text here', // replace with your text
+          style: TextStyle(fontSize: 16),
+        ),
+      ),
+    ],
+  ),
+),
+Padding(
+  padding: EdgeInsets.only(top: 10.0, bottom: 10.0),
+  child: Row(
+    children: [
+      Image.asset(
         'lib/images/loveearth (4).png',
         width: 50,
       ),
@@ -260,24 +278,6 @@ Padding(
     children: [
       Image.asset(
         'lib/images/loveearth (5).png',
-        width: 50,
-      ),
-      Padding(
-        padding: EdgeInsets.only(left: 20.0),
-        child: Text(
-          'Your text here', // replace with your text
-          style: TextStyle(fontSize: 16),
-        ),
-      ),
-    ],
-  ),
-),
-Padding(
-  padding: EdgeInsets.only(top: 10.0, bottom: 10.0),
-  child: Row(
-    children: [
-      Image.asset(
-        'lib/images/loveearth (1).png',
         width: 50,
       ),
       Padding(
