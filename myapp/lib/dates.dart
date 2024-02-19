@@ -4,16 +4,16 @@ class DatesWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     DateTime today = DateTime.now();
-    final controller = ScrollController(initialScrollOffset: 500 * 60.0); // 60.0 is the approximate width of each item
+    final controller = ScrollController(initialScrollOffset: 3 * 60.0); // Scroll to the middle of the week
 
     return Container(
       height: 100, // Increase the height to accommodate the bigger current day
       child: ListView.builder(
         controller: controller,
         scrollDirection: Axis.horizontal,
-        itemCount: 1000,
+        itemCount: 7, // Only show the current week
         itemBuilder: (context, index) {
-          DateTime date = today.add(Duration(days: index - 500));
+          DateTime date = today.add(Duration(days: index - 3)); // Adjust the date to start from the beginning of the week
           bool isToday = date.day == today.day && date.month == today.month && date.year == today.year;
 
           return Padding(
