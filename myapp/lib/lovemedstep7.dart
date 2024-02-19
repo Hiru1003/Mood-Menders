@@ -132,7 +132,7 @@ class _lovemedstep7_pageState extends State<lovemedstep7_page> {
             ),
           ),
           const SizedBox(
-            height: 25,
+            height: 35,
           ),
           //continue button
           Padding(
