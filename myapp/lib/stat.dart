@@ -236,60 +236,65 @@ Padding(
     ],
   ),
 ),
-Padding(
-  padding: const EdgeInsets.only(top: 10.0, bottom: 10.0),
-  child: Row(
-    children: [
-      Image.asset(
-        'lib/images/loveearth (3).png',
-        width: 50,
-      ),
-      const Padding(
-        padding: EdgeInsets.only(left: 20.0),
-        child: Text(
-          'Your text here',
-          style: TextStyle(fontSize: 16),
+Align(
+  alignment: Alignment.center,
+  child: Padding(
+    padding: const EdgeInsets.only(top: 10.0, bottom: 10.0),
+    child: Row(
+      children: [
+        Image.asset(
+          'lib/images/loveearth (3).png',
+          width: 50,
         ),
-      ),
-    ],
+        const Padding(
+          padding: EdgeInsets.only(left: 20.0),
+          child: Text(
+            'Your text here',
+            style: TextStyle(fontSize: 16),
+          ),
+        ),
+      ],
+    ),
   ),
 ),
-Padding(
-  padding: const EdgeInsets.only(top: 10.0, bottom: 10.0),
-  child: Row(
-    children: [
-      Image.asset(
-        'lib/images/loveearth (4).png',
-        width: 50,
-      ),
-      const Padding(
-        padding: EdgeInsets.only(left: 20.0),
-        child: Text(
-          'Your text here',
-          style: TextStyle(fontSize: 16),
+Align(
+  alignment: Alignment.center,
+  child: Padding(
+    padding: const EdgeInsets.only(top: 10.0, bottom: 10.0),
+    child: Row(
+      children: [
+        Image.asset(
+          'lib/images/loveearth (4).png',
+          width: 50,
         ),
-      ),
-    ],
+        const Padding(
+          padding: EdgeInsets.only(left: 20.0),
+          child: Text(
+            'Your text here',
+            style: TextStyle(fontSize: 16),
+          ),
+        ),
+      ],
+    ),
   ),
 ),
-Padding(
-  padding: const EdgeInsets.only(top: 10.0, bottom: 10.0),
-  child: Row(
-    children: [
-      Image.asset(
-        'lib/images/loveearth (5).png',
-        width: 50,
-      ),
-      const Padding(
-        padding: EdgeInsets.only(left: 20.0),
-        child: Text(
-          'Your text here',
-          style: TextStyle(fontSize: 16),
+Align(
+  alignment: Alignment.center,
+  child: Padding(
+    padding: const EdgeInsets.only(top: 10.0, bottom: 10.0),
+    child: Row(
+      children: [
+        Image.asset(
+          'lib/images/loveearth (5).png',
+          width: 50,
         ),
-      ),
-    ],
-  ),
-),
+        const Padding(
+          padding: EdgeInsets.only(left: 20.0),
+          child: Text(
+            'Your text here',
+            style: TextStyle(fontSize: 16),
+          ),
+        ),
       ],
     ),
   ),
