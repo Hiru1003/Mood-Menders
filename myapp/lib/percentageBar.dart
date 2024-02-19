@@ -16,11 +16,13 @@ class PercentageBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 2,
+      width: double.infinity, // Add this line
       decoration: BoxDecoration(
         color: backgroundColor,
         borderRadius: BorderRadius.circular(16),
       ),
       child: FractionallySizedBox(
+        alignment: Alignment.centerLeft, // Add this line
         widthFactor: percentage,
         child: Container(
           decoration: BoxDecoration(
