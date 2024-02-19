@@ -1,9 +1,7 @@
-import 'package:app/percentageBar.dart';
 import 'package:charts_flutter/flutter.dart' as charts;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
-import 'package:table_calendar/table_calendar.dart';
 
 class Stat extends StatefulWidget {
   const Stat({Key? key}) : super(key: key);
@@ -185,126 +183,7 @@ class _StatState extends State<Stat> {
               
             ),
       ),
-      Flexible(
-        child: Column(
-          children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.only(left: 8.0, right: 8.0, top: 15, bottom: 15), // adjust the padding as needed
-              child: TableCalendar(
-                firstDay: DateTime.utc(2010, 10, 16),
-                lastDay: DateTime.utc(2030, 3, 14),
-                focusedDay: DateTime.now(),
-              ),
-            ),
-            Align(
-              alignment: Alignment.centerLeft,
-              child: Padding(
-                padding: const EdgeInsets.only(left: 30.0, top: 15.0, bottom: 15.0),
-                child: Column(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, bottom: 10.0),
-                      child: Row(
-                        children: [
-                          Image.asset(
-                            'lib/images/loveearth (1).png',
-                            width: 50,
-                          ),
-                          const Padding(
-                            padding: EdgeInsets.only(left: 20.0),
-                            child: PercentageBar(percentage: 0.2)
-                          ),
-                        ],
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, bottom: 10.0),
-                      child: Row(
-                        children: [
-                          Image.asset(
-                            'lib/images/loveearth (2).png',
-                            width: 50,
-                          ),
-                          const Padding(
-                            padding: EdgeInsets.only(left: 20.0),
-                            child: Text(
-                              'Your text here',
-                              style: TextStyle(fontSize: 16),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Align(
-                      alignment: Alignment.center,
-                      child: Padding(
-                        padding: const EdgeInsets.only(top: 10.0, bottom: 10.0),
-                        child: Row(
-                          children: [
-                            Image.asset(
-                              'lib/images/loveearth (3).png',
-                              width: 50,
-                            ),
-                            const Padding(
-                              padding: EdgeInsets.only(left: 20.0),
-                              child: Text(
-                                'Your text here',
-                                style: TextStyle(fontSize: 16),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    Align(
-                      alignment: Alignment.center,
-                      child: Padding(
-                        padding: const EdgeInsets.only(top: 10.0, bottom: 10.0),
-                        child: Row(
-                          children: [
-                            Image.asset(
-                              'lib/images/loveearth (4).png',
-                              width: 50,
-                            ),
-                            const Padding(
-                              padding: EdgeInsets.only(left: 20.0),
-                              child: Text(
-                                'Your text here',
-                                style: TextStyle(fontSize: 16),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    Align(
-                      alignment: Alignment.center,
-                      child: Padding(
-                        padding: const EdgeInsets.only(top: 10.0, bottom: 10.0),
-                        child: Row(
-                          children: [
-                            Image.asset(
-                              'lib/images/loveearth (5).png',
-                              width: 50,
-                            ),
-                            const Padding(
-                              padding: EdgeInsets.only(left: 20.0),
-                              child: Text(
-                                'Your text here',
-                                style: TextStyle(fontSize: 16),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ],
-        ),
-      ),
+     
       ],
     ),
         ),
