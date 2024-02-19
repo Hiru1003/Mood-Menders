@@ -89,35 +89,39 @@ class StatState extends State<Stat> { // Changed from _StatState to StatState
                 children: <Widget>[
                   Align(
                     alignment: Alignment.topCenter,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
+                    child: Column(
                       children: <Widget>[
-                        GestureDetector(
-                          onTap: () {
-                            setState(() {
-                              now = now.subtract(const Duration(days: 7));
-                              startOfWeek =
-                                  startOfWeek.subtract(const Duration(days: 7));
-                            });
-                          },
-                          child: const Icon(Icons.arrow_left),
-                        ),
-                        Text(
-                          '$formattedStartOfWeek - $formattedToday',
-                          style: const TextStyle(
-                            fontSize: 16,
-                            color: Colors.black,
-                          ),
-                        ),
-                        GestureDetector(
-                          onTap: () {
-                            setState(() {
-                              now = now.add(const Duration(days: 7));
-                              startOfWeek =
-                                  startOfWeek.add(const Duration(days: 7));
-                            });
-                          },
-                          child: const Icon(Icons.arrow_right),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            GestureDetector(
+                              onTap: () {
+                                setState(() {
+                                  now = now.subtract(const Duration(days: 7));
+                                  startOfWeek =
+                                      startOfWeek.subtract(const Duration(days: 7));
+                                });
+                              },
+                              child: const Icon(Icons.arrow_left),
+                            ),
+                            Text(
+                              '$formattedStartOfWeek - $formattedToday',
+                              style: const TextStyle(
+                                fontSize: 16,
+                                color: Colors.black,
+                              ),
+                            ),
+                            GestureDetector(
+                              onTap: () {
+                                setState(() {
+                                  now = now.add(const Duration(days: 7));
+                                  startOfWeek =
+                                      startOfWeek.add(const Duration(days: 7));
+                                });
+                              },
+                              child: const Icon(Icons.arrow_right),
+                            ),
+                          ],
                         ),
                         MoodChart(),
                       ],
