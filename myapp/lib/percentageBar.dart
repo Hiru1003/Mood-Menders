@@ -41,7 +41,7 @@ class PercentageBar extends StatelessWidget {
 }
 
 void main(){
-  runApp(MaterialApp(
+  runApp(const MaterialApp(
     debugShowCheckedModeBanner: false,
     home: Scaffold(
       body: Align(
