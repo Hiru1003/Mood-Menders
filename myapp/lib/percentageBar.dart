@@ -1,4 +1,6 @@
 
+import 'package:flutter/material.dart';
+
 class PercentageBar extends StatelessWidget {
   final double percentage;
 
