@@ -185,7 +185,7 @@ class _StatState extends State<Stat> {
               
             ),
       ),
-      Expanded(
+      Flexible(
         child: Column(
           children: <Widget>[
             Padding(
