@@ -32,7 +32,7 @@ class _lovemedstep5_pageState extends State<lovemedstep5_page> {
                     fontWeight: FontWeight.w400),
               ),
               Image.asset(
-                'lib/images/bg.png',
+                'lib/images/leaf.png',
                 height: 72,
               )
             ],
