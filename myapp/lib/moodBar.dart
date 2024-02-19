@@ -32,7 +32,7 @@ class MoodImages extends StatelessWidget {
               const Padding(
                 padding: EdgeInsets.only(left: 20.0),
                 child: PercentageBar(percentage: 0.4),
-                ),
+              
               ),
             ],
           ),
