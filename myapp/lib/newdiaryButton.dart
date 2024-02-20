@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class EmotionButton extends StatefulWidget {
   final String buttonText;
 
-  EmotionButton({required this.buttonText});
+  EmotionButton(String s, {required this.buttonText});
 
   @override
   _EmotionButtonState createState() => _EmotionButtonState();
