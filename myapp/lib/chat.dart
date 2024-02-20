@@ -41,7 +41,7 @@ class Chat extends StatelessWidget {
         iconTheme: const IconThemeData(
           color: Color.fromARGB(255, 70, 66, 68),
         ),
-        elevation: 0.00,
+        elevation: 5.0, // Add this line to add a drop shadow
         backgroundColor: const Color.fromARGB(255, 134, 208, 203),
       ),
       body: Container(
