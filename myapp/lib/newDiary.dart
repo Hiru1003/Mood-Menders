@@ -9,7 +9,9 @@ class NewDiary extends StatelessWidget {
   const NewDiary({Key? key}) : super(key: key);
 
   void recordEvent(String imagePath) {
-    print('Image at $imagePath was tapped');
+    if (kDebugMode) {
+      print('Image at $imagePath was tapped');
+    }
     // Add your logic for recording the event here
   
   }
