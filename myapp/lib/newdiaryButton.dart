@@ -15,7 +15,7 @@ class _EmotionButtonState extends State<EmotionButton> {
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
           backgroundColor: _isPressed ? Color.fromARGB(255, 120, 221, 210) : null, // Change the color when button is pressed
-          foregroundColor: Colors.black, // Change the text color to black
+          foregroundColor: Color.fromARGB(255, 53, 53, 53), // Change the text color to black
         ),
         onPressed: () {
           setState(() {
