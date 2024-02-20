@@ -1,5 +1,5 @@
 import 'package:app/button.dart';
-import 'package:app/meditaionmethods.dart';
+import 'package:app/movementstep1.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -109,7 +109,7 @@ class _movementmed_pageState extends State<movementmed_page> {
                           color: const Color.fromARGB(255, 70, 66, 68),
                           fontSize: 12,
                           wordSpacing: 1.6,
-                          height: 1.3,
+                          height: 1.4,
                           fontWeight: FontWeight.w400),
                     ),
                   ],
@@ -156,7 +156,7 @@ class _movementmed_pageState extends State<movementmed_page> {
 
           //preconsiderations
           const SizedBox(
-            height: 5,
+            height: 15,
           ),
 
           Padding(
@@ -210,6 +210,8 @@ class _movementmed_pageState extends State<movementmed_page> {
                                   Theme.of(context).textTheme.displayLarge,
                               color: const Color.fromARGB(255, 70, 66, 68),
                               fontSize: 12,
+                              height: 1.2,
+                              wordSpacing: 2.5,
                               fontWeight: FontWeight.w300),
                         ),
                       ],
@@ -284,6 +286,8 @@ class _movementmed_pageState extends State<movementmed_page> {
                                   Theme.of(context).textTheme.displayLarge,
                               color: const Color.fromARGB(255, 70, 66, 68),
                               fontSize: 12,
+                              height: 1.2,
+                              wordSpacing: 2.5,
                               fontWeight: FontWeight.w300),
                         ),
                       ],
@@ -317,6 +321,8 @@ class _movementmed_pageState extends State<movementmed_page> {
                                   Theme.of(context).textTheme.displayLarge,
                               color: const Color.fromARGB(255, 70, 66, 68),
                               fontSize: 12,
+                              height: 1.2,
+                              wordSpacing: 2.5,
                               fontWeight: FontWeight.w300),
                         ),
                       ],
@@ -328,7 +334,7 @@ class _movementmed_pageState extends State<movementmed_page> {
           ),
 
           const SizedBox(
-            height: 25,
+            height: 35,
           ),
           //continue button
           Padding(
@@ -340,8 +346,7 @@ class _movementmed_pageState extends State<movementmed_page> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) =>
-                              (const meditaionmethods_page())),
+                          builder: (context) => (const movementstep1_page())),
                     );
                   }
                 },
