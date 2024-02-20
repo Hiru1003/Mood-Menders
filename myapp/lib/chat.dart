@@ -45,7 +45,7 @@ class Chat extends StatelessWidget {
         backgroundColor: const Color.fromARGB(255, 134, 208, 203),
       ),
       body: Container(
-        color:const Color.fromARGB(255, 204, 248, 245),
+        color:Color.fromARGB(255, 225, 255, 253),
       ),
     );
   }
