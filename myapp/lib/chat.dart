@@ -38,7 +38,8 @@ class Chat extends StatelessWidget {
         iconTheme: const IconThemeData(
         color: Color.fromARGB(255, 70, 66, 68),
         ),
-        
+        elevation: 0.00,
+        backgroundColor: const Color.fromARGB(255, 134, 208, 203),
       ),
 
       body: const Center(
