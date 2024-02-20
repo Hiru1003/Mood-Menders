@@ -32,7 +32,7 @@ class _movementstep5_pageState extends State<movementstep5_page> {
                     fontWeight: FontWeight.w400),
               ),
               Image.asset(
-                'lib/images/newbg.png',
+                'lib/images/leaf.png',
                 height: 72,
               )
             ],
