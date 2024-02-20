@@ -18,7 +18,7 @@ class Chat extends StatelessWidget {
         title: Padding(
           padding: const EdgeInsets.only(left: 10),
           child: Text(
-            '$name',
+            name,
             style: GoogleFonts.poppins(
               textStyle: Theme.of(context).textTheme.headlineMedium,
               color: const Color.fromARGB(255, 70, 66, 68),
