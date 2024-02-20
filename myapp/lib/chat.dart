@@ -19,7 +19,7 @@ class Chat extends StatelessWidget {
           padding: const EdgeInsets.only(left: 10),
           child: Row(children: [
             Image.asset('lib/images/loveearth (1).png', width: 40,),
-            const SizedBox(width: 10),
+            const SizedBox(width: 20),
             Text(
                 name,
                 style: GoogleFonts.poppins(
