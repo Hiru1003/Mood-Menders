@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 class EmotionButton extends StatefulWidget {
+  final String buttonText;
+
+  EmotionButton({required this.buttonText});
+
   @override
   _EmotionButtonState createState() => _EmotionButtonState();
 }
@@ -22,7 +26,7 @@ class _EmotionButtonState extends State<EmotionButton> {
             _isPressed = !_isPressed;
           });
         },
-        child: const Text('Excited'),
+        child: Text(widget.buttonText),
       ),
     );
   }
