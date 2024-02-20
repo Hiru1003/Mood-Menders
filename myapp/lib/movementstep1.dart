@@ -78,6 +78,9 @@ class _movementstep1_pageState extends State<movementstep1_page> {
           const SizedBox(
             height: 5,
           ),
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+          ),
         ])));
   }
 }
