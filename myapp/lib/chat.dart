@@ -12,7 +12,7 @@ class Chat extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          icon: 
+          icon: Image.asset('lib/images/loveearth (1).png'), // replace 'assets/images/your_image.png' with the path to your image
           onPressed: () => Navigator.of(context).pop(),
         ),
         title: Padding(
