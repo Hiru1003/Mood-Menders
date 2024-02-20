@@ -1,3 +1,5 @@
+import 'package:app/button.dart';
+import 'package:app/movementstep9.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -128,6 +130,25 @@ class _movementstep8_pageState extends State<movementstep8_page> {
                   ],
                 ),
               ),
+            ),
+          ),
+          const SizedBox(
+            height: 25,
+          ),
+          //continue button
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: MyButton(
+              buttontext: 'Next Step',
+              onTap: () {
+                {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => (movementstep9_page())),
+                  );
+                }
+              },
             ),
           ),
         ])));
