@@ -18,6 +18,15 @@ class Chat extends StatelessWidget {
           padding: const EdgeInsets.only(left: 10),
           child: Row(children: [
             Image.asset('lib/images/loveearth (1).png', width: 40,),
+            Text(
+                name,
+                style: GoogleFonts.poppins(
+                  textStyle: Theme.of(context).textTheme.headlineMedium,
+                  color: const Color.fromARGB(255, 70, 66, 68),
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
           ],)
         ),
         titleSpacing: 4.0,
