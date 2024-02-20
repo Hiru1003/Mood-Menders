@@ -53,6 +53,28 @@ class _movementstep10_pageState extends State<movementstep10_page> {
           backgroundColor: Color.fromARGB(255, 134, 208, 203),
         ),
         backgroundColor: const Color.fromARGB(251, 241, 255, 252),
-        body: SingleChildScrollView(child: Column(children: [])));
+        body: SingleChildScrollView(
+            child: Column(children: [
+          //image
+          const SizedBox(
+            height: 20,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Container(
+              padding: const EdgeInsets.all(1.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  //image
+                  Image.asset(
+                    'lib/images/step15.png',
+                    height: 210,
+                  )
+                ],
+              ),
+            ),
+          ),
+        ])));
   }
 }
