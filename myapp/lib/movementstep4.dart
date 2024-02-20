@@ -53,6 +53,12 @@ class _movementstep4_pageState extends State<movementstep4_page> {
           backgroundColor: Color.fromARGB(255, 134, 208, 203),
         ),
         backgroundColor: const Color.fromARGB(251, 241, 255, 252),
-        body: SingleChildScrollView(child: Column(children: [])));
+        body: SingleChildScrollView(
+            child: Column(children: [
+          //image
+          const SizedBox(
+            height: 20,
+          ),
+        ])));
   }
 }
