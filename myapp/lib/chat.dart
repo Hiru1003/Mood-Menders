@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class Chat extends StatelessWidget {
   final String name;
@@ -17,15 +16,7 @@ class Chat extends StatelessWidget {
         ),
         title: Padding(
           padding: const EdgeInsets.only(left: 10),
-          child: Text(
-            name,
-            style: GoogleFonts.poppins(
-              textStyle: Theme.of(context).textTheme.headlineMedium,
-              color: const Color.fromARGB(255, 70, 66, 68),
-              fontSize: 20,
-              fontWeight: FontWeight.w600,
-            ),
-          ),
+          child: Row(children: [],)
         ),
         titleSpacing: 4.0,
         toolbarHeight: 70,
