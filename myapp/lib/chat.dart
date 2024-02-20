@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 class Chat extends StatelessWidget {
   const Chat({super.key});
 
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,7 +16,7 @@ class Chat extends StatelessWidget {
         title: Padding(
           padding: const EdgeInsets.only(left: 10),
           child: Text(
-            'SECRET DIARY',
+            '$name',
             style: GoogleFonts.poppins(
               textStyle: Theme.of(context).textTheme.headlineMedium,
               color: const Color.fromARGB(255, 70, 66, 68),
