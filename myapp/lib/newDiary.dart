@@ -1,5 +1,6 @@
 import 'package:app/appBarD.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class NewDiary extends StatefulWidget {
   const NewDiary({Key? key}) : super(key: key);
