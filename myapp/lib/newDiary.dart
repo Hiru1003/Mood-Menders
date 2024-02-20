@@ -1,5 +1,6 @@
 import 'package:app/appBarD.dart';
 import 'package:app/gradientButton.dart';
+import 'package:app/moodTodayPop.dart';
 import 'package:app/newDiary2.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -47,7 +48,7 @@ class NewDiary extends StatelessWidget {
                       ),
                     ),
                   ),
-                  
+                  Emoji(),
                   Padding(
                     padding: const EdgeInsets.only(top: 12, bottom: 15),
                     child: Text(
