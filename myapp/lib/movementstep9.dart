@@ -76,7 +76,7 @@ class _movementstep9_pageState extends State<movementstep9_page> {
             ),
           ),
           const SizedBox(
-            height: 5,
+            height: 15,
           ),
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
@@ -95,6 +95,33 @@ class _movementstep9_pageState extends State<movementstep9_page> {
                           color: const Color.fromARGB(255, 70, 66, 68),
                           fontSize: 18,
                           fontWeight: FontWeight.w600),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(
+            height: 5,
+          ),
+          //para
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Container(
+              child: Padding(
+                padding: const EdgeInsets.all(1.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    //message
+                    Text(
+                      'Gently open your eyes if they were closed. Bring \nyour hands to your heart center (if standing) \nor rest them on your lap (if sitting). Take \na final moment of gratitude for your practice.',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 13,
+                          fontWeight: FontWeight.w400),
                     ),
                   ],
                 ),
