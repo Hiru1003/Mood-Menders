@@ -26,7 +26,7 @@ class Chat extends StatelessWidget {
           ),
         ),
         titleSpacing: 4.0,
-        toolbarHeight: 70, 
+        toolbarHeight: 70,
         toolbarOpacity: 0.9,
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.only(
