@@ -215,7 +215,7 @@ class NewDiary extends StatelessWidget {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => NewDiary2()),
+                        MaterialPageRoute(builder: (context) => const NewDiary2()),
                       );
                     },
                   ),
