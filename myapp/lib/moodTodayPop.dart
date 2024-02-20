@@ -9,8 +9,7 @@ class _NewDiaryState extends State<NewDiary> {
   bool imageTapped = false;
 
   void recordEvent(String imagePath) {
-    // Your existing code here...
-
+    
     setState(() {
       imageTapped = true;
     });
@@ -41,7 +40,6 @@ class _NewDiaryState extends State<NewDiary> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // Your existing code here...
 
       floatingActionButton: FloatingActionButton(
         onPressed: checkImageTapped,
