@@ -14,7 +14,7 @@ class _ExcitedButtonState extends State<ExcitedButton> {
       padding: const EdgeInsets.all(3.0),
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-          backgroundColor: _isPressed ? Color.teal(400) : null, // Change the color when button is pressed
+          backgroundColor: _isPressed ? Colors.teal : null, // Change the color when button is pressed
         ),
         onPressed: () {
           setState(() {
