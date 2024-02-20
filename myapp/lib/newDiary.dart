@@ -107,11 +107,8 @@ class NewDiary extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Padding(
-                        padding: const EdgeInsets.all(3),
-                        child: ElevatedButton(
-                          onPressed: () {},
-                          child: const Text('Happy'),
-                        ),
+                        padding: const EdgeInsets.all(3.0),
+                        child: EmotionButton('Happy', buttonText: 'Happy'),
                       ),
                       Padding(
                         padding: const EdgeInsets.all(3),
