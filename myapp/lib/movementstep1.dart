@@ -121,6 +121,8 @@ class _movementstep1_pageState extends State<movementstep1_page> {
                           textStyle: Theme.of(context).textTheme.displayLarge,
                           color: const Color.fromARGB(255, 70, 66, 68),
                           fontSize: 13,
+                          wordSpacing: 1.6,
+                          height: 1.3,
                           fontWeight: FontWeight.w400),
                     ),
                   ],
