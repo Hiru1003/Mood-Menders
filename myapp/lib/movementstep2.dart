@@ -107,7 +107,26 @@ class _movementstep2_pageState extends State<movementstep2_page> {
           //para
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
-            child: Container(),
+            child: Container(
+              child: Padding(
+                padding: const EdgeInsets.all(1.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    //message
+                    Text(
+                      'Bring your attention to your breath. Notice the \nsensation of inhaling and exhaling. Allow \nyour breath to flow naturally without \ntrying to control it.',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 13,
+                          fontWeight: FontWeight.w400),
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ),
         ])));
   }
