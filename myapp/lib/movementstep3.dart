@@ -93,7 +93,7 @@ class _movementstep3_pageState extends State<movementstep3_page> {
                       style: GoogleFonts.poppins(
                           textStyle: Theme.of(context).textTheme.displayLarge,
                           color: const Color.fromARGB(255, 70, 66, 68),
-                          fontSize: 18,
+                          fontSize: 17,
                           fontWeight: FontWeight.w600),
                     ),
                   ],
