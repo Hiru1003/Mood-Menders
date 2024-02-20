@@ -12,7 +12,7 @@ class Chat extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back, color: Colors.black),
+          icon: 
           onPressed: () => Navigator.of(context).pop(),
         ),
         title: Padding(
