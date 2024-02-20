@@ -310,7 +310,7 @@ class _meditaionmethods_pageState extends State<meditaionmethods_page> {
                         children: [
                           //image
                           Image.asset(
-                            'lib/images/med3.png',
+                            'lib/images/med5.png',
                             height: 90,
                           ),
                           const SizedBox(
