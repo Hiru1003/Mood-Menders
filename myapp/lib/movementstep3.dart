@@ -104,6 +104,10 @@ class _movementstep3_pageState extends State<movementstep3_page> {
           const SizedBox(
             height: 5,
           ),
+          //para
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+          ),
         ])));
   }
 }
