@@ -60,7 +60,7 @@ class Chat extends StatelessWidget {
                   fontWeight: FontWeight.w600,),
                 ),
               ),
-              Text('Lorem ipsum dollar')
+              const Text('Lorem ipsum dollar')
             ],
           ),
         ),
