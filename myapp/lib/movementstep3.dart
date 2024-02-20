@@ -107,6 +107,7 @@ class _movementstep3_pageState extends State<movementstep3_page> {
           //para
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Container(),
           ),
         ])));
   }
