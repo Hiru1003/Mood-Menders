@@ -25,7 +25,7 @@ class _NewDiaryState extends State<NewDiary> {
             title: Text('Alert'),
             content: Text('You have not selected any image.'),
             actions: <Widget>[
-              FlatButton(
+              TextButton(
                 child: Text('OK'),
                 onPressed: () {
                   Navigator.of(context).pop();
