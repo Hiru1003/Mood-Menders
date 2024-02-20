@@ -48,7 +48,7 @@ class NewDiary extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Emoji(),
+                  EmojiDisplay(recordEvent: recordEvent),
                   Padding(
                     padding: const EdgeInsets.only(top: 12, bottom: 15),
                     child: Text(
