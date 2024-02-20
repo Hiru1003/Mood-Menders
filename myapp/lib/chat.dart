@@ -12,6 +12,16 @@ class Chat extends StatelessWidget {
           onPressed: () => Navigator.of(context).pop(),
           ),
       ),
+      title: Padding(
+        padding: const EdgeInsets.only(left: 10),
+        child: Text(
+          'SECRET DIARY',
+          style: GoogleFonts.poppins(
+            textStyle: Theme.of(context).textTheme.headlineMedium,
+            color: const Color.fromARGB(255, 70, 66, 68),
+            fontSize: 20,
+            fontWeight: FontWeight.w600,
+          ),)),
       body: const Center(
         child: Text('Chat Page'),
       ),
