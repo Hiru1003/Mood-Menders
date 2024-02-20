@@ -1,4 +1,5 @@
 import 'package:app/button.dart';
+import 'package:app/movementstep2.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -103,7 +104,7 @@ class _movementstep1_pageState extends State<movementstep1_page> {
             ),
           ),
           const SizedBox(
-            height: 5,
+            height: 15,
           ),
           //para
           Padding(
