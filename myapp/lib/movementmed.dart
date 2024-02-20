@@ -156,7 +156,7 @@ class _movementmed_pageState extends State<movementmed_page> {
 
           //preconsiderations
           const SizedBox(
-            height: 5,
+            height: 15,
           ),
 
           Padding(
