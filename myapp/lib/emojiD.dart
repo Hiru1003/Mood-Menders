@@ -10,7 +10,7 @@ class _EmojiState extends State<Emoji> {
 
   void recordEvent(String imagePath) {
   
-    String selectedImagePath = imagePath;
+    //String selectedImagePath = imagePath;
 
     setState(() {
       imageTapped = false;
