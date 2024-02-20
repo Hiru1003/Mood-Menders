@@ -46,6 +46,12 @@ class Chat extends StatelessWidget {
       ),
       body: Container(
         color:Color.fromARGB(255, 225, 255, 253),
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [],
+          ),
+        ),
       ),
     );
   }
