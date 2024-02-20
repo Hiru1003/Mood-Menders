@@ -130,6 +130,9 @@ class _movementstep2_pageState extends State<movementstep2_page> {
               ),
             ),
           ),
+          const SizedBox(
+            height: 25,
+          ),
         ])));
   }
 }
