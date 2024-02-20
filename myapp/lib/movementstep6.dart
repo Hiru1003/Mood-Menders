@@ -112,7 +112,18 @@ class _movementstep6_pageState extends State<movementstep6_page> {
                 padding: const EdgeInsets.all(1.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [],
+                  children: [
+                    //message
+                    Text(
+                      'If your practice involves transitioning between \nmovements or poses, do so with awareness and \ngrace. Pay attention to the sensations and \nalignment of your body.',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 13,
+                          fontWeight: FontWeight.w400),
+                    ),
+                  ],
                 ),
               ),
             ),
