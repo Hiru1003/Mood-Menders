@@ -104,7 +104,7 @@ class _movementstep5_pageState extends State<movementstep5_page> {
             ),
           ),
           const SizedBox(
-            height: 5,
+            height: 25,
           ),
           //para
           Padding(
