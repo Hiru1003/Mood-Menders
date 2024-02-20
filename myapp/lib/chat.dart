@@ -52,7 +52,7 @@ class Chat extends StatelessWidget {
             children: [
               Image.asset('lib/images/loveearth (1).png', width: 80,),
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.only(top :10.0),
                 child: Text(name, style: GoogleFonts.poppins(
                   textStyle: Theme.of(context).textTheme.headlineMedium,
                   color: const Color.fromARGB(255, 70, 66, 68),
