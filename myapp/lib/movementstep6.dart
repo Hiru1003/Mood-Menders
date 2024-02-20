@@ -76,7 +76,7 @@ class _movementstep6_pageState extends State<movementstep6_page> {
             ),
           ),
           const SizedBox(
-            height: 5,
+            height: 15,
           ),
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
@@ -85,7 +85,18 @@ class _movementstep6_pageState extends State<movementstep6_page> {
                 padding: const EdgeInsets.all(8.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [],
+                  children: [
+                    //message
+                    Text(
+                      'Step 06',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 18,
+                          fontWeight: FontWeight.w600),
+                    ),
+                  ],
                 ),
               ),
             ),
