@@ -16,7 +16,9 @@ class Chat extends StatelessWidget {
         ),
         title: Padding(
           padding: const EdgeInsets.only(left: 10),
-          child: Row(children: [],)
+          child: Row(children: [
+            Image.asset('lib/images/loveearth (1).png'),
+          ],)
         ),
         titleSpacing: 4.0,
         toolbarHeight: 70,
