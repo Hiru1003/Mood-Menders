@@ -1,3 +1,5 @@
+import 'package:app/button.dart';
+import 'package:app/movementstep10.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -121,11 +123,32 @@ class _movementstep9_pageState extends State<movementstep9_page> {
                           textStyle: Theme.of(context).textTheme.displayLarge,
                           color: const Color.fromARGB(255, 70, 66, 68),
                           fontSize: 13,
+                          height: 1.2,
+                          wordSpacing: 1.8,
                           fontWeight: FontWeight.w400),
                     ),
                   ],
                 ),
               ),
+            ),
+          ),
+          const SizedBox(
+            height: 25,
+          ),
+          //continue button
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: MyButton(
+              buttontext: 'Next Step',
+              onTap: () {
+                {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => (movementstep10_page())),
+                  );
+                }
+              },
             ),
           ),
         ])));
