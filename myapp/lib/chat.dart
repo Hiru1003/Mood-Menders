@@ -51,6 +51,7 @@ class Chat extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset('lib/images/loveearth (1).png', width: 80,),
+              Text(name,)
             ],
           ),
         ),
