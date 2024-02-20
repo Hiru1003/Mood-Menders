@@ -279,3 +279,7 @@ class NewDiary extends StatelessWidget {
             ),
           ),
         ),
+      ],
+    );
+  }
+}
