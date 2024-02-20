@@ -41,7 +41,7 @@ class Chat extends StatelessWidget {
         iconTheme: const IconThemeData(
           color: Color.fromARGB(255, 70, 66, 68),
         ),
-        elevation: 5.0, // Add this line to add a drop shadow
+        elevation: 5.0,
         backgroundColor: const Color.fromARGB(255, 134, 208, 203),
       ),
       body: Container(
@@ -50,7 +50,7 @@ class Chat extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset('lib/images/loveearth (1).png', width: 80,),
+              Image.asset('lib/images/sloveearth (1).png', width: 80,),
               Padding(
                 padding: const EdgeInsets.only(top :10.0),
                 child: Text(name, style: GoogleFonts.poppins(
