@@ -64,7 +64,6 @@ class ImageDisplay extends StatelessWidget {
             ),
           ),
         ),
-        // ... Repeat for other images ...
       ],
     );
   }
