@@ -35,6 +35,10 @@ class Chat extends StatelessWidget {
               bottomRight: Radius.circular(18),
               bottomLeft: Radius.circular(18)),
         ),
+        iconTheme: const IconThemeData(
+        color: Color.fromARGB(255, 70, 66, 68),
+        ),
+        
       ),
 
       body: const Center(
