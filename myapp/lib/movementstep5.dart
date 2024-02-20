@@ -133,7 +133,7 @@ class _movementstep5_pageState extends State<movementstep5_page> {
             ),
           ),
           const SizedBox(
-            height: 25,
+            height: 35,
           ),
           //continue button
           Padding(
