@@ -107,7 +107,26 @@ class _movementstep3_pageState extends State<movementstep3_page> {
           //para
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
-            child: Container(),
+            child: Container(
+              child: Padding(
+                padding: const EdgeInsets.all(1.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    //message
+                    Text(
+                      'Engage in your chosen movement practice (yoga, \ntai chi, qigong). Pay close attention to the \nsensations in your body as you move. Focus \non the rhythm of your movements, the stretch of \nyour muscles, and the coordination of your breath.',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 13,
+                          fontWeight: FontWeight.w400),
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ),
         ])));
   }
