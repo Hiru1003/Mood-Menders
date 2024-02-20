@@ -36,11 +36,11 @@ class _EmojiState extends State<Emoji> {
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
-            title: Text('Alert'),
-            content: Text('You have not selected any image.'),
+            title: const Text('Alert'),
+            content: const Text('You have not selected any image.'),
             actions: <Widget>[
               TextButton(
-                child: Text('OK'),
+                child: const Text('OK'),
                 onPressed: () {
                   Navigator.of(context).pop();
                 },
@@ -56,12 +56,12 @@ class _EmojiState extends State<Emoji> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('New Diary'),
+        title: const Text('New Diary'),
       ),
       body: EmojiDisplay(recordEvent: recordEvent),
       floatingActionButton: FloatingActionButton(
         onPressed: checkImageTapped,
-        child: Icon(Icons.check),
+        child: const Icon(Icons.check),
       ),
     );
   }
