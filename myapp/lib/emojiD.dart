@@ -9,8 +9,18 @@ class _EmojiState extends State<Emoji> {
   bool imageTapped = false;
 
   void recordEvent(String imagePath) {
-    // Your existing code here...
+  // Save the image path to a variable
+    String selectedImagePath = imagePath;
 
+    // Perform some action based on the image path
+    if (imagePath == 'lib/images/loveearth (1).png') {
+      print('The first image was tapped');
+    } else if (imagePath == 'lib/images/loveearth (2).png') {
+      print('The second image was tapped');
+    }
+    // ... and so on for the other images
+
+    // Update the state to reflect that an image was tapped
     setState(() {
       imageTapped = true;
     });
