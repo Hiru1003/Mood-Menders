@@ -51,7 +51,12 @@ class Chat extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset('lib/images/loveearth (1).png', width: 80,),
-              Text(name,)
+              Text(name, style: GoogleFonts.poppins(
+                textStyle: Theme.of(context).textTheme.headlineMedium,
+                color: const Color.fromARGB(255, 70, 66, 68),
+                fontSize: 20,
+                fontWeight: FontWeight.w600,),
+              ),
             ],
           ),
         ),
