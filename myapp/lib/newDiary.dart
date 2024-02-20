@@ -1,4 +1,5 @@
 import 'package:app/appBarD.dart';
+import 'package:app/emojiD.dart';
 import 'package:app/gradientButton.dart';
 import 'package:app/newDiary2.dart';
 import 'package:flutter/material.dart';
@@ -47,7 +48,7 @@ class NewDiary extends StatelessWidget {
                       ),
                     ),
                   ),
-                  
+                  EmojiDisplay(recordEvent: recordEvent),
                   Padding(
                     padding: const EdgeInsets.only(top: 12, bottom: 15),
                     child: Text(
