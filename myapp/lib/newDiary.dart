@@ -1,3 +1,4 @@
+import 'package:app/appBarD.dart';
 import 'package:flutter/material.dart';
 
 class NewDiary extends StatefulWidget {
