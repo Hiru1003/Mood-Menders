@@ -130,6 +130,25 @@ class _movementstep6_pageState extends State<movementstep6_page> {
               ),
             ),
           ),
+          const SizedBox(
+            height: 25,
+          ),
+          //continue button
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: MyButton(
+              buttontext: 'Next Step',
+              onTap: () {
+                {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => (movementstep7_page())),
+                  );
+                }
+              },
+            ),
+          ),
         ])));
   }
 }
