@@ -1,6 +1,5 @@
 import 'package:app/appBarD.dart';
 import 'package:app/gradientButton.dart';
-import 'package:app/moodTodayPop.dart';
 import 'package:app/newDiary2.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -48,7 +47,65 @@ class NewDiary extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Emoji(),
+                  Row(
+                    children: <Widget>[
+                      Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: GestureDetector(
+                            onTap: () {
+                              recordEvent('lib/images/loveearth (1).png');
+                            },
+                            child: Image.asset('lib/images/loveearth (1).png', fit: BoxFit.scaleDown),
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: GestureDetector(
+                            onTap: () {
+                              recordEvent('lib/images/loveearth (2).png');
+                            },
+                            child: Image.asset('lib/images/loveearth (2).png', fit: BoxFit.scaleDown),
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: GestureDetector(
+                            onTap: () {
+                              recordEvent('lib/images/loveearth (3).png');
+                            },
+                            child: Image.asset('lib/images/loveearth (3).png', fit: BoxFit.scaleDown),
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: GestureDetector(
+                            onTap: () {
+                              recordEvent('lib/images/loveearth (4).png');
+                            },
+                            child: Image.asset('lib/images/loveearth (4).png', fit: BoxFit.scaleDown),
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: GestureDetector(
+                            onTap: () {
+                              recordEvent('lib/images/loveearth (5).png');
+                            },
+                            child: Image.asset('lib/images/loveearth (5).png', fit: BoxFit.scaleDown),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                   Padding(
                     padding: const EdgeInsets.only(top: 12, bottom: 15),
                     child: Text(
