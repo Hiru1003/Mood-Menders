@@ -25,7 +25,16 @@ class Chat extends StatelessWidget {
             ),
           ),
         ),
+        titleSpacing: 4.0,
+        toolbarHeight: 70, 
+        toolbarOpacity: 0.9,
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.only(
+              bottomRight: Radius.circular(18),
+              bottomLeft: Radius.circular(18)),
+        ),
       ),
+
       body: const Center(
         child: Text('Chat Page'),
       ),
