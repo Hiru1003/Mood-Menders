@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 
 class PercentageBar extends StatelessWidget {
@@ -8,45 +9,48 @@ class PercentageBar extends StatelessWidget {
   const PercentageBar({
     Key? key,
     required this.percentage,
-    this.barColor = Colors.blue,
+    this.barColor = Colors.green,
     this.backgroundColor = Colors.grey,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 2,
-      decoration: BoxDecoration(
-        color: backgroundColor,
-        borderRadius: BorderRadius.circular(16),
-      ),
-      child: FractionallySizedBox(
-        widthFactor: percentage,
-        child: Container(
-          decoration: BoxDecoration(
-            color: barColor,
-            borderRadius: BorderRadius.circular(16),
+    return Row(
+      children: [
+        Expanded(
+          flex: (percentage * 100).toInt(),
+          child: Container(
+            decoration: BoxDecoration(
+              color: barColor,
+              borderRadius: BorderRadius.circular(16),
+            ),
           ),
         ),
-      ),
+        Expanded(
+          flex: ((11 - percentage) * 100).toInt(),
+          child: Container(
+            decoration: BoxDecoration(
+              color: backgroundColor,
+              borderRadius: BorderRadius.circular(16),
+            ),
+          ),
+        )
+      ],
     );
   }
 }
 
-void main() {
-  runApp(
-    MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Align(
-          alignment: Alignment.centerLeft,
-          child: Container(
-            width: 200,
-            height: 40,
-            child: PercentageBar(percentage: 1),
-          ),
-        ),
+void main(){
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: Scaffold(
+      body: Align(
+        alignment: Alignment.centerLeft,
+        child: Container(
+          width: 200,
+          child: PercentageBar(percentage: 0.7),
+        )
       ),
     ),
-  );
+  ));
 }
