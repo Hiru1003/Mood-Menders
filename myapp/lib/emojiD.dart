@@ -53,6 +53,17 @@ class ImageDisplay extends StatelessWidget {
             ),
           ),
         ),
+        Expanded(
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: GestureDetector(
+              onTap: () {
+                recordEvent('lib/images/loveearth (5).png');
+              },
+              child: Image.asset('lib/images/loveearth (5).png', fit: BoxFit.scaleDown),
+            ),
+          ),
+        ),
         // ... Repeat for other images ...
       ],
     );
