@@ -1,23 +1,26 @@
-import 'package:app/appBarD.dart';
-import 'package:app/emojiD.dart';
-import 'package:app/gradientButton.dart';
-import 'package:app/newDiary2.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
-class NewDiary extends StatelessWidget {
+class NewDiary extends StatefulWidget {
   const NewDiary({Key? key}) : super(key: key);
+
+  @override
+  _NewDiaryState createState() => _NewDiaryState();
+}
+
+class _NewDiaryState extends State<NewDiary> {
+  String selectedButton = '';
 
   void recordEvent(String imagePath) {
     print('Image at $imagePath was tapped');
     // Add your logic for recording the event here
-  
   }
 
-   void handleButtonPress(String buttonText) {
+  void handleButtonPress(String buttonText) {
+    setState(() {
+      selectedButton = buttonText;
+    });
     print('Button $buttonText was pressed');
     // Add your logic for handling button presses here
-
   }
 
   @override
@@ -66,6 +69,108 @@ class NewDiary extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
+                      Padding(
+                        padding: const EdgeInsets.all(3.0),
+                        child: ElevatedButton(
+                          onPressed: () => handleButtonPress('Proud'),
+                          style: ElevatedButton.styleFrom(
+                            primary: selectedButton == 'Proud'
+                                ? Colors.green // Change the color for the selected button
+                                : null,
+                          ),
+                          child: const Text('Proud'),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(3.0),
+                        child: ElevatedButton(
+                          onPressed: () => handleButtonPress('Lonely'),
+                          style: ElevatedButton.styleFrom(
+                            primary: selectedButton == 'Lonely'
+                                ? Colors.green // Change the color for the selected button
+                                : null,
+                          ),
+                          child: const Text('Lonely'),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Padding(
+                        padding: const EdgeInsets.all(3),
+                        child: ElevatedButton(
+                          onPressed: () => handleButtonPress('Stressed'),
+                          style: ElevatedButton.styleFrom(
+                            primary: selectedButton == 'Stressed'
+                                ? Colors.green // Change the color for the selected button
+                                : null,
+                          ),
+                          child: const Text('Stressed'),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(3),
+                        child: ElevatedButton(
+                          onPressed: () => handleButtonPress('Tired'),
+                          style: ElevatedButton.styleFrom(
+                            primary: selectedButton == 'Tired'
+                                ? Colors.green // Change the color for the selected button
+                                : null,
+                          ),
+                          child: const Text('Tired'),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(3.0),
+                    child: ElevatedButton(
+                      onPressed: () => handleButtonPress('Excited'),
+                      style: ElevatedButton.styleFrom(
+                        primary: selectedButton == 'Excited'
+                            ? Colors.green // Change the color for the selected button
+                            : null,
+                      ),
+                      child: const Text('Excited'),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
+  const CustomAppBar({Key? key}) : super(key: key);
+
+  @override
+  Size get preferredSize => const Size.fromHeight(56);
+
+  @override
+  Widget build(BuildContext context) {
+    return AppBar(
+      title: const Text('My App'),
+    );
+  }
+}
+
+class EmojiDisplay extends StatelessWidget {
+  final Function(String) recordEvent;
+
+  const EmojiDisplay({Key? key, required this.recordEvent}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    // Implement your EmojiDisplay widget here
+    return Container();
+  }
+}
                       Padding(
                         padding: const EdgeInsets.all(3.0),
                         child: ElevatedButton(
