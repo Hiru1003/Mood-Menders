@@ -12,19 +12,6 @@ class _EmojiState extends State<Emoji> {
   
     String selectedImagePath = imagePath;
 
-    
-    if (imagePath == 'lib/images/loveearth (1).png') {
-      print('The first image was tapped');
-    } else if (imagePath == 'lib/images/loveearth (2).png') {
-      print('The second image was tapped');
-    } else if (imagePath == 'lib/images/loveearth (3).png') {
-      print('The third image was tapped');
-    } else if (imagePath == 'lib/images/loveearth (4).png') {
-      print('The fourth image was tapped');
-    } else {
-      print('The fifth image was tapped');
-    };
-
     setState(() {
       imageTapped = true;
     });
