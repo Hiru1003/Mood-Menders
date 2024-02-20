@@ -98,11 +98,8 @@ class NewDiary extends StatelessWidget {
                         child: EmotionButton('Joyful', buttonText: 'Joyful'),
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(3),
-                        child: ElevatedButton(
-                          onPressed: () {},
-                          child: const Text('Annoyed'),
-                        ),
+                        padding: const EdgeInsets.all(3.0),
+                        child: EmotionButton('Annoyed', buttonText: 'Annoyed'),
                       ),
                     ],
                   ),
