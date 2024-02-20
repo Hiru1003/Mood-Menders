@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class ImageDisplay extends StatelessWidget {
+class EmojiDisplay extends StatelessWidget {
   final Function recordEvent;
 
-  ImageDisplay({required this.recordEvent});
+  EmojiDisplay({required this.recordEvent});
 
   @override
   Widget build(BuildContext context) {
