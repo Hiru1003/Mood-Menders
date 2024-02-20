@@ -6,13 +6,14 @@ class Emoji extends StatefulWidget {
 }
 
 class _EmojiState extends State<Emoji> {
-  String selectedImagePath = '';
   bool imageTapped = false;
 
   void recordEvent(String imagePath) {
+  
+    String selectedImagePath = imagePath;
+
     setState(() {
-      selectedImagePath = imagePath;
-      imageTapped = true;
+      imageTapped = false;
     });
   }
 
@@ -44,7 +45,7 @@ class _EmojiState extends State<Emoji> {
       appBar: AppBar(
         title: const Text('New Diary'),
       ),
-      body: EmojiDisplay(recordEvent: recordEvent, selectedImagePath: selectedImagePath),
+      body: EmojiDisplay(recordEvent: recordEvent),
       floatingActionButton: FloatingActionButton(
         onPressed: checkImageTapped,
         child: const Icon(Icons.check),
@@ -55,35 +56,69 @@ class _EmojiState extends State<Emoji> {
 
 class EmojiDisplay extends StatelessWidget {
   final Function recordEvent;
-  final String selectedImagePath;
 
-  EmojiDisplay({required this.recordEvent, required this.selectedImagePath});
+  EmojiDisplay({required this.recordEvent});
 
   @override
   Widget build(BuildContext context) {
     return Row(
       children: <Widget>[
-        buildImage('lib/images/loveearth (1).png'),
-        buildImage('lib/images/loveearth (2).png'),
-        buildImage('lib/images/loveearth (3).png'),
-        buildImage('lib/images/loveearth (4).png'),
-        buildImage('lib/images/loveearth (5).png'),
-      ],
-    );
-  }
-
-  Widget buildImage(String imagePath) {
-    bool isSelected = imagePath == selectedImagePath;
-    double size = isSelected ? 100 : 50;
-
-    return Expanded(
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: GestureDetector(
-          onTap: () => recordEvent(imagePath),
-          child: Image.asset(imagePath, width: size, height: size),
+        Expanded(
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: GestureDetector(
+              onTap: () {
+                recordEvent('lib/images/loveearth (1).png');
+              },
+              child: Image.asset('lib/images/loveearth (1).png', fit: BoxFit.scaleDown),
+            ),
+          ),
         ),
-      ),
+        Expanded(
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: GestureDetector(
+              onTap: () {
+                recordEvent('lib/images/loveearth (2).png');
+              },
+              child: Image.asset('lib/images/loveearth (2).png', fit: BoxFit.scaleDown),
+            ),
+          ),
+        ),
+        Expanded(
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: GestureDetector(
+              onTap: () {
+                recordEvent('lib/images/loveearth (3).png');
+              },
+              child: Image.asset('lib/images/loveearth (3).png', fit: BoxFit.scaleDown),
+            ),
+          ),
+        ),
+        Expanded(
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: GestureDetector(
+              onTap: () {
+                recordEvent('lib/images/loveearth (4).png');
+              },
+              child: Image.asset('lib/images/loveearth (4).png', fit: BoxFit.scaleDown),
+            ),
+          ),
+        ),
+        Expanded(
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: GestureDetector(
+              onTap: () {
+                recordEvent('lib/images/loveearth (5).png');
+              },
+              child: Image.asset('lib/images/loveearth (5).png', fit: BoxFit.scaleDown),
+            ),
+          ),
+        ),
+      ],
     );
   }
 }
