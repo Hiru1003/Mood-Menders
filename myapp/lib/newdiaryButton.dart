@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class ExcitedButton extends StatefulWidget {
+class EmotionButton extends StatefulWidget {
   @override
-  _ExcitedButtonState createState() => _ExcitedButtonState();
+  _EmotionButtonState createState() => _EmotionButtonState();
 }
 
-class _ExcitedButtonState extends State<ExcitedButton> {
+class _EmotionButtonState extends State<EmotionButton> {
   bool _isPressed = false;
 
   @override
