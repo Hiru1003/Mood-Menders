@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Chat extends StatelessWidget {
-  const Chat({super.key});
+  final String name;
+
+  const Chat({Key? key, required this.name}) : super(key : key);
 
 
   @override
