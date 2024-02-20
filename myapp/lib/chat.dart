@@ -50,8 +50,7 @@ class Chat extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset('lib/images/loveearth (1).png'),
-              
+              Image.asset('lib/images/loveearth (1).png', width: 80,),
             ],
           ),
         ),
