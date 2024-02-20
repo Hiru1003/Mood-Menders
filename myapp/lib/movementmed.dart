@@ -109,7 +109,7 @@ class _movementmed_pageState extends State<movementmed_page> {
                           color: const Color.fromARGB(255, 70, 66, 68),
                           fontSize: 12,
                           wordSpacing: 1.6,
-                          height: 1.3,
+                          height: 1.4,
                           fontWeight: FontWeight.w400),
                     ),
                   ],
