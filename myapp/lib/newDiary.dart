@@ -69,7 +69,18 @@ class NewDiary extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.all(3.0),
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                          Padding(
+                            padding: const EdgeInsets.all(3.0),
+                            child: ElevatedButton(
+                              onPressed: () {},
+                              style: ElevatedButton.styleFrom(
+                                primary: Colors.blue, // Change the button color here
+                              ),
+                              child: const Text('Excited'),
+                            ),
+                          ),
+                          },
                           child: const Text('Excited'),
                         ),
                       ),
