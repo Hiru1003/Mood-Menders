@@ -49,10 +49,6 @@ class NewDiary extends StatelessWidget {
                     ),
                   ),
                   EmojiDisplay(recordEvent: recordEvent),
-                  //   floatingActionButton: FloatingActionButton(
-                  //     onPressed: checkImageTapped,
-                  //     child: Icon(Icons.check),
-                  // ),
                   Padding(
                     padding: const EdgeInsets.only(top: 12, bottom: 15),
                     child: Text(
