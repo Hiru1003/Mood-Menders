@@ -44,7 +44,7 @@ class _EmojiState extends State<Emoji> {
       appBar: AppBar(
         title: Text('New Diary'),
       ),
-      body: ImageDisplay(recordEvent: recordEvent),
+      body: EmojiDisplay(recordEvent: recordEvent),
       floatingActionButton: FloatingActionButton(
         onPressed: checkImageTapped,
         child: Icon(Icons.check),
