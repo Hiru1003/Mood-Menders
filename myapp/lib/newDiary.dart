@@ -75,7 +75,8 @@ class NewDiary extends StatelessWidget {
                         padding: const EdgeInsets.all(3.0),
                         child: ElevatedButton(
                           onPressed: () {
-                            
+                            handleButtonPress('Excited');
+                            StrutStyle(fontSize: 200.0,);
                           },
                           child: const Text('Excited'),
                         ),
