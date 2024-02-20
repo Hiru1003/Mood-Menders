@@ -11,11 +11,13 @@ class NewDiary extends StatelessWidget {
   void recordEvent(String imagePath) {
     print('Image at $imagePath was tapped');
     // Add your logic for recording the event here
+  
   }
 
    void handleButtonPress(String buttonText) {
     print('Button $buttonText was pressed');
     // Add your logic for handling button presses here
+
   }
 
   @override
