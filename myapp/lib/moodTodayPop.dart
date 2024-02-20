@@ -9,7 +9,8 @@ class _NewDiaryState extends State<NewDiary> {
   bool imageTapped = false;
 
   void recordEvent(String imagePath) {
-    
+    // Your existing code here...
+
     setState(() {
       imageTapped = true;
     });
@@ -24,7 +25,7 @@ class _NewDiaryState extends State<NewDiary> {
             title: Text('Alert'),
             content: Text('You have not selected any image.'),
             actions: <Widget>[
-              TextButton(
+              FlatButton(
                 child: Text('OK'),
                 onPressed: () {
                   Navigator.of(context).pop();
@@ -40,7 +41,68 @@ class _NewDiaryState extends State<NewDiary> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      appBar: AppBar(
+        title: Text('New Diary'),
+      ),
+      body: Row(
+        children: <Widget>[
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: GestureDetector(
+                onTap: () {
+                  recordEvent('lib/images/loveearth (1).png');
+                },
+                child: Image.asset('lib/images/loveearth (1).png', fit: BoxFit.scaleDown),
+              ),
+            ),
+          ),
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: GestureDetector(
+                onTap: () {
+                  recordEvent('lib/images/loveearth (2).png');
+                },
+                child: Image.asset('lib/images/loveearth (2).png', fit: BoxFit.scaleDown),
+              ),
+            ),
+          ),
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: GestureDetector(
+                onTap: () {
+                  recordEvent('lib/images/loveearth (3).png');
+                },
+                child: Image.asset('lib/images/loveearth (3).png', fit: BoxFit.scaleDown),
+              ),
+            ),
+          ),
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: GestureDetector(
+                onTap: () {
+                  recordEvent('lib/images/loveearth (4).png');
+                },
+                child: Image.asset('lib/images/loveearth (4).png', fit: BoxFit.scaleDown),
+              ),
+            ),
+          ),
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: GestureDetector(
+                onTap: () {
+                  recordEvent('lib/images/loveearth (5).png');
+                },
+                child: Image.asset('lib/images/loveearth (5).png', fit: BoxFit.scaleDown),
+              ),
+            ),
+          ),
+        ],
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: checkImageTapped,
         child: Icon(Icons.check),
