@@ -141,7 +141,7 @@ class NewDiary extends StatelessWidget {
                         padding: const EdgeInsets.all(3),
                         child: ElevatedButton(
                           onPressed: () {},
-                          child: const Text('Joyful'),
+                          child: const Text('Tired'),
                         ),
                       ),
                     ],
