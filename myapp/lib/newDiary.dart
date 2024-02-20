@@ -68,9 +68,27 @@ class NewDiary extends StatelessWidget {
                     children: <Widget>[
                       Padding(
                         padding: const EdgeInsets.all(3.0),
-                        child: ElevatedButton(
-                          onPressed: () {},
-                          child: const Text('Excited'),
+                        child: InkWell(
+                          onTap: () {},
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            style: ButtonStyle(
+                              backgroundColor: MaterialStateProperty.resolveWith<Color>(
+                                (Set<MaterialState> states) {
+                                  if (states.contains(MaterialState.pressed)) {
+                                    return Colors.blue; // Change the color when pressed
+                                  }
+                                  return Colors.transparent; // Reset the color when not pressed
+                                },
+                              ),
+                            ),
+                            child: const Text(
+                              'Excited',
+                              style: TextStyle(
+                                color: Colors.white, // Set the text color
+                              ),
+                            ),
+                          ),
                         ),
                       ),
                       Padding(
