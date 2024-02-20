@@ -2,6 +2,7 @@ import 'package:app/appBarD.dart';
 import 'package:app/emojiD.dart';
 import 'package:app/gradientButton.dart';
 import 'package:app/newDiary2.dart';
+import 'package:app/newdiaryButton.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -73,10 +74,7 @@ class NewDiary extends StatelessWidget {
                     children: <Widget>[
                       Padding(
                         padding: const EdgeInsets.all(3.0),
-                        child: ElevatedButton(
-                          onPressed: () {                          },
-                          child: const Text('Excited'),
-                        ),
+                        child: EmotionButton()
                       ),
                       Padding(
                         padding: const EdgeInsets.all(3.0),
