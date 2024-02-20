@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class NewDiary extends StatefulWidget {
+class Emoji extends StatefulWidget {
   @override
-  _NewDiaryState createState() => _NewDiaryState();
+  _EmojiState createState() => _EmojiState();
 }
 
-class _NewDiaryState extends State<NewDiary> {
+class _EmojiState extends State<Emoji> {
   bool imageTapped = false;
 
   void recordEvent(String imagePath) {
