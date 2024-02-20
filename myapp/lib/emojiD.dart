@@ -21,6 +21,8 @@ class _EmojiState extends State<Emoji> {
       print('The third image was tapped');
     } else if (imagePath == 'lib/images/loveearth (4).png') {
       print('The fourth image was tapped');
+    } else (imagePath == 'lib/images/loveearth (5).png') {
+      print('The fifth image was tapped');
     }
 
     setState(() {
