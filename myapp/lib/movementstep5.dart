@@ -112,7 +112,18 @@ class _movementstep5_pageState extends State<movementstep5_page> {
                 padding: const EdgeInsets.all(1.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [],
+                  children: [
+                    //message
+                    Text(
+                      'While moving, cultivate feelings of gratitude and \npositivity. Appreciate the ability to move \nand be present in this practice.',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 13,
+                          fontWeight: FontWeight.w400),
+                    ),
+                  ],
                 ),
               ),
             ),
