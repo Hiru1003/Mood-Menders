@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(debugShowCheckedModeBanner: false,
         //home: loading_page()
-        home: Chat(),
+        home: Chat('Risini'),
         );
   }
 }
