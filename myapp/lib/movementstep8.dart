@@ -101,6 +101,33 @@ class _movementstep8_pageState extends State<movementstep8_page> {
               ),
             ),
           ),
+          const SizedBox(
+            height: 5,
+          ),
+          //para
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Container(
+              child: Padding(
+                padding: const EdgeInsets.all(1.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    //message
+                    Text(
+                      'Take a moment to reflect on your practice. Notice \nhow you feel both physically and mentally. \nAppreciate the time you dedicated to your \nwell-being.',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 13,
+                          fontWeight: FontWeight.w400),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
         ])));
   }
 }
