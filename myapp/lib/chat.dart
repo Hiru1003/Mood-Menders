@@ -4,8 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 class Chat extends StatelessWidget {
   final String name;
 
-  const Chat({Key? key, required this.name}) : super(key : key);
-
+  const Chat({Key? key, required this.name}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -21,14 +20,14 @@ class Chat extends StatelessWidget {
             Image.asset('lib/images/loveearth (1).png', width: 40,),
             const SizedBox(width: 20),
             Text(
-                name,
-                style: GoogleFonts.poppins(
-                  textStyle: Theme.of(context).textTheme.headlineMedium,
-                  color: const Color.fromARGB(255, 70, 66, 68),
-                  fontSize: 20,
-                  fontWeight: FontWeight.w600,
-                ),
+              name,
+              style: GoogleFonts.poppins(
+                textStyle: Theme.of(context).textTheme.headlineMedium,
+                color: const Color.fromARGB(255, 70, 66, 68),
+                fontSize: 20,
+                fontWeight: FontWeight.w600,
               ),
+            ),
           ],)
         ),
         titleSpacing: 4.0,
@@ -40,14 +39,13 @@ class Chat extends StatelessWidget {
               bottomLeft: Radius.circular(18)),
         ),
         iconTheme: const IconThemeData(
-        color: Color.fromARGB(255, 70, 66, 68),
+          color: Color.fromARGB(255, 70, 66, 68),
         ),
         elevation: 0.00,
         backgroundColor: const Color.fromARGB(255, 134, 208, 203),
       ),
-
-      body:  
-      
+      body: Container(
+        color: Colors.blue, // replace 'Colors.blue' with your desired color
       ),
     );
   }
