@@ -14,7 +14,6 @@ class NewDiary extends StatelessWidget {
     if (kDebugMode) {
       print('Image at $imagePath was tapped');
     }
-    // Add your logic for recording the event here
   
   }
 
