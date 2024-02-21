@@ -101,6 +101,10 @@ class _walkingstep1_pageState extends State<walkingstep1_page> {
               ),
             ),
           ),
+
+          const SizedBox(
+            height: 5,
+          ),
         ])));
   }
 }
