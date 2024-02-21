@@ -2,7 +2,7 @@ import 'package:app/diary/dates.dart';
 import 'package:app/diary/diaryPage.dart';
 import 'package:app/diary/myButton.dart';
 import 'package:app/diary/newDiary.dart';
-import 'package:app/todaysdate.dart';
+import 'package:app/diary/todaysdate.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
