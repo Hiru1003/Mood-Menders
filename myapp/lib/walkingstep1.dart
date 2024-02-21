@@ -21,6 +21,17 @@ class _walkingstep1_pageState extends State<walkingstep1_page> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
+          Text('WALKING MEDITATION',style: GoogleFonts.poppins(
+          textStyle: Theme.of(context).textTheme.displayLarge,
+          color: const Color.fromARGB(255, 70, 66, 68),
+          fontSize: 18,
+          fontWeight: FontWeight.w400
+          ), ),
+          Image.asset('lib/images/newbg.png',
+          height: 72,)
+          ],
+          ),
+      ),
     );
   }
 }
