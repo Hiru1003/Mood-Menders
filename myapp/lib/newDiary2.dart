@@ -1,4 +1,4 @@
-import 'package:app/appBarD.dart';
+import 'package:app/diary/appBarD.dart';
 import 'package:app/diary/diary.dart';
 import 'package:app/gradientButton.dart';
 import 'package:flutter/material.dart';
