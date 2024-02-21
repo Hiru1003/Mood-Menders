@@ -27,7 +27,7 @@ class NewDiary2 extends StatelessWidget {
                 children: <Widget>[
                   Container(
                     padding: const EdgeInsets.only(top: 12, bottom: 8),
-                    alignment: Alignment.center, // Aligns the text to the center
+                    alignment: Alignment.center,
                     child: Text(
                       'Add a note',
                       style: GoogleFonts.poppins(
@@ -39,9 +39,9 @@ class NewDiary2 extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    alignment: Alignment.centerLeft, // Aligns the text to the left
+                    alignment: Alignment.centerLeft,
                     child: Padding(
-                      padding: const EdgeInsets.only(left: 8, top: 15), // Add padding to the left
+                      padding: const EdgeInsets.only(left: 8, top: 15),
                       child: Text(
                         'Title',
                         style: GoogleFonts.poppins(
