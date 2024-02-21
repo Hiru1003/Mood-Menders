@@ -20,7 +20,12 @@ class _walkingstep2_pageState extends State<walkingstep2_page> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.center,
-        children: <Widget>[
+        children: <Widget>[Text('WALKING MEDITATION',style: GoogleFonts.poppins(
+          textStyle: Theme.of(context).textTheme.displayLarge,
+          color: const Color.fromARGB(255, 70, 66, 68),
+          fontSize: 18,
+          fontWeight: FontWeight.w400
+          ), ),
     );
   }
 }
