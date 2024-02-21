@@ -1,6 +1,9 @@
 import 'package:app/appBarD.dart';
+import 'package:app/emojiD.dart';
 import 'package:app/gradientButton.dart';
 import 'package:app/newDiary2.dart';
+import 'package:app/newdiaryButton.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -8,13 +11,19 @@ class NewDiary extends StatelessWidget {
   const NewDiary({Key? key}) : super(key: key);
 
   void recordEvent(String imagePath) {
-    print('Image at $imagePath was tapped');
+    if (kDebugMode) {
+      print('Image at $imagePath was tapped');
+    }
     // Add your logic for recording the event here
+  
   }
 
    void handleButtonPress(String buttonText) {
-    print('Button $buttonText was pressed');
+    if (kDebugMode) {
+      print('Button $buttonText was pressed');
+    }
     // Add your logic for handling button presses here
+
   }
 
   @override
@@ -36,253 +45,164 @@ class NewDiary extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   Padding(
-                padding: const EdgeInsets.only(top: 12, bottom: 8),
-                child: Text(
-                  'What is your mood today?',
-                  style: GoogleFonts.poppins(
-                    textStyle: Theme.of(context).textTheme.headlineMedium,
-                    color: const Color.fromARGB(255, 70, 66, 68),
-                    fontSize: 24,
-                    fontWeight: FontWeight.w400,
-                  ),
-                ),
-              ),
-              Row(
-                children: <Widget>[
-                  Expanded(
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: GestureDetector(
-                    onTap: () {
-                      recordEvent('lib/images/loveearth (1).png');
-                    },
-                    child: Image.asset('lib/images/loveearth (1).png', fit: BoxFit.scaleDown),
-                  ),
-      ),
-    ),
-                 Expanded(
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: GestureDetector(
-                    onTap: () {
-                      recordEvent('lib/images/loveearth (2).png');
-                    },
-                    child: Image.asset('lib/images/loveearth (2).png', fit: BoxFit.scaleDown),
-                  ),
-      ),
-    ),
-                  Expanded(
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: GestureDetector(
-                    onTap: () {
-                      recordEvent('lib/images/loveearth (3).png');
-                    },
-                    child: Image.asset('lib/images/loveearth (3).png', fit: BoxFit.scaleDown),
-                  ),
-      ),
-    ),
-                 Expanded(
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: GestureDetector(
-                    onTap: () {
-                      recordEvent('lib/images/loveearth (4).png');
-                    },
-                    child: Image.asset('lib/images/loveearth (4).png', fit: BoxFit.scaleDown),
-                  ),
-      ),
-    ),
-                 Expanded(
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: GestureDetector(
-                    onTap: () {
-                      recordEvent('lib/images/loveearth (5).png');
-                    },
-                    child: Image.asset('lib/images/loveearth (5).png', fit: BoxFit.scaleDown),
-                  ),
-      ),
-    ),
-                ],
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 12, bottom: 15),
-                child: Text(
-                  'Emotions',
-                  style: GoogleFonts.poppins(
-                    textStyle: Theme.of(context).textTheme.headlineMedium,
-                    color: const Color.fromARGB(255, 70, 66, 68),
-                    fontSize: 24,
-                    fontWeight: FontWeight.w400,
-                  ),
-                ),
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Padding(
-                    padding: const EdgeInsets.all(3.0),
-                    child: ElevatedButton(
-                      onPressed: () {},
-                      child: const Text('Excited'),
+                    padding: const EdgeInsets.only(top: 12, bottom: 8),
+                    child: Text(
+                      'What is your mood today?',
+                      style: GoogleFonts.poppins(
+                        textStyle: Theme.of(context).textTheme.headlineMedium,
+                        color: const Color.fromARGB(255, 70, 66, 68),
+                        fontSize: 24,
+                        fontWeight: FontWeight.w400,
+                      ),
                     ),
+                  ),
+                  EmojiDisplay(recordEvent: recordEvent),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 12, bottom: 15),
+                    child: Text(
+                      'Emotions',
+                      style: GoogleFonts.poppins(
+                        textStyle: Theme.of(context).textTheme.headlineMedium,
+                        color: const Color.fromARGB(255, 70, 66, 68),
+                        fontSize: 24,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    ),
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Padding(
+                        padding: const EdgeInsets.all(3.0),
+                        child: EmotionButton('Excited', buttonText: 'Excited'),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(3.0),
+                        child: EmotionButton('Proud', buttonText: 'Proud'),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(3.0),
+                        child: EmotionButton('Lonely', buttonText: 'Lonely'),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Padding(
+                        padding: const EdgeInsets.all(3.0),
+                        child: EmotionButton('Stressed', buttonText: 'Stressed'),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(3.0),
+                        child: EmotionButton('Joyful', buttonText: 'Joyful'),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(3.0),
+                        child: EmotionButton('Annoyed', buttonText: 'Annoyed'),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Padding(
+                        padding: const EdgeInsets.all(3.0),
+                        child: EmotionButton('Happy', buttonText: 'Happy'),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(3.0),
+                        child: EmotionButton('Angry', buttonText: 'Angry'),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(3.0),
+                        child: EmotionButton('Tired', buttonText: 'Tired'),
+                      ),
+                    ],
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(3.0),
-                    child: ElevatedButton(
-                      onPressed: () {},
-                      child: const Text('Proud'),
+                    padding: const EdgeInsets.only(top: 15,),
+                    child: Text(
+                      'Sphere of life',
+                      style: GoogleFonts.poppins(
+                        textStyle: Theme.of(context).textTheme.headlineMedium,
+                        color: const Color.fromARGB(255, 70, 66, 68),
+                        fontSize: 24,
+                        fontWeight: FontWeight.w400,
+                      ),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(3.0),
-                    child: ElevatedButton(
-                      onPressed: () {},
-                      child: const Text('Lonely'),
-                    ),
+                  Row(
+                    children: <Widget>[
+                      Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.only(right: 26.0, left: 26.0),
+                          child: Image.asset('lib/images/edu.png', fit: BoxFit.scaleDown),
+                        ),
+                      ),
+                      Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.all(26.0),
+                          child: Image.asset('lib/images/love.png', fit: BoxFit.scaleDown),
+                        ),
+                      ),
+                      Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.all(26.0),
+                          child: Image.asset('lib/images/famliy.png', fit: BoxFit.scaleDown),
+                        ),
+                      ),
+                      Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.all(26.0),
+                          child: Image.asset('lib/images/health.png', fit: BoxFit.scaleDown),
+                        ),
+                      ),
+                    ],
                   ),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Padding(
-                    padding: const EdgeInsets.all(3),
-                    child: ElevatedButton(
-                      onPressed: () {},
-                      child: const Text('Stressed'),
-                    ),
+                  Row(
+                    children: <Widget>[
+                      Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.all(26.0),
+                          child: Image.asset('lib/images/personal.png', fit: BoxFit.scaleDown),
+                        ),
+                      ),
+                      Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.all(26.0),
+                          child: Image.asset('lib/images/finance.png', fit: BoxFit.scaleDown),
+                        ),
+                      ),
+                      Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.all(26.0),
+                          child: Image.asset('lib/images/friends.png', fit: BoxFit.scaleDown),
+                        ),
+                      ),
+                      Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.all(26.0),
+                          child: Image.asset('lib/images/leisure.png', fit: BoxFit.scaleDown),
+                        ),
+                      ),
+                    ],
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(3),
-                    child: ElevatedButton(
-                      onPressed: () {},
-                      child: const Text('Tired'),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(3),
-                    child: ElevatedButton(
-                      onPressed: () {},
-                      child: const Text('Annoyed'),
-                    ),
-                  ),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Padding(
-                    padding: const EdgeInsets.all(3),
-                    child: ElevatedButton(
-                      onPressed: () {},
-                      child: const Text('Happy'),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(3),
-                    child: ElevatedButton(
-                      onPressed: () {},
-                      child: const Text('Angry'),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(3),
-                    child: ElevatedButton(
-                      onPressed: () {},
-                      child: const Text('Joyful'),
-                    ),
-                  ),
-                ],
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 15,),
-                child: Text(
-                  'Sphere of life',
-                  style: GoogleFonts.poppins(
-                    textStyle: Theme.of(context).textTheme.headlineMedium,
-                    color: const Color.fromARGB(255, 70, 66, 68),
-                    fontSize: 24,
-                    fontWeight: FontWeight.w400,
-                  ),
-                ),
-              ),
-              Row(
-                children: <Widget>[
-                  Expanded(
-                    child: Padding(
-                      padding: const EdgeInsets.only(right: 26.0, left: 26.0),
-                      child: Image.asset('lib/images/edu.png', fit: BoxFit.scaleDown),
-                    ),
-                  ),
-                  Expanded(
-                    child: Padding(
-                      padding: const EdgeInsets.all(26.0),
-                      child: Image.asset('lib/images/love.png', fit: BoxFit.scaleDown),
-                    ),
-                  ),
-                  Expanded(
-                    child: Padding(
-                      padding: const EdgeInsets.all(26.0),
-                      child: Image.asset('lib/images/famliy.png', fit: BoxFit.scaleDown),
-                    ),
-                  ),
-                  Expanded(
-                    child: Padding(
-                      padding: const EdgeInsets.all(26.0),
-                      child: Image.asset('lib/images/health.png', fit: BoxFit.scaleDown),
-                    ),
-                  ),
-                ],
-              ),
-              Row(
-                children: <Widget>[
-                  Expanded(
-                    child: Padding(
-                      padding: const EdgeInsets.all(26.0),
-                      child: Image.asset('lib/images/personal.png', fit: BoxFit.scaleDown),
-                    ),
-                  ),
-                  Expanded(
-                    child: Padding(
-                      padding: const EdgeInsets.all(26.0),
-                      child: Image.asset('lib/images/finance.png', fit: BoxFit.scaleDown),
-                    ),
-                  ),
-                  Expanded(
-                    child: Padding(
-                      padding: const EdgeInsets.all(26.0),
-                      child: Image.asset('lib/images/friends.png', fit: BoxFit.scaleDown),
-                    ),
-                  ),
-                  Expanded(
-                    child: Padding(
-                      padding: const EdgeInsets.all(26.0),
-                      child: Image.asset('lib/images/leisure.png', fit: BoxFit.scaleDown),
-                    ),
-                  ),
-                ],
-              ),
                   GradientButton(
                     buttonText: 'Continue',
                     enableIcon: true,
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => NewDiary2()),
+                        MaterialPageRoute(builder: (context) => const NewDiary2()),
                       );
                     },
                   ),
-                  
                 ],
               ),
-              
             ),
-            
           ),
         ),
-        
       ],
     );
   }
