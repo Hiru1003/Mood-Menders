@@ -63,9 +63,9 @@ class NewDiary2 extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    alignment: Alignment.centerLeft, // Aligns the text to the left
+                    alignment: Alignment.centerLeft,
                     child: Padding(
-                      padding: const EdgeInsets.only(left: 8, top: 15), // Add padding to the left
+                      padding: const EdgeInsets.only(left: 8, top: 15),
                       child: Text(
                         'Description',
                         style: GoogleFonts.poppins(
@@ -80,9 +80,9 @@ class NewDiary2 extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 8, top: 15, bottom: 15),
                     child: Container(
                       color: Colors.white,
-                      height: 150, // Set the height of the TextField
+                      height: 150,
                       child: const TextField(
-                        maxLines: null, // Allows the TextField to grow vertically as the user types
+                        maxLines: null,
                         decoration: InputDecoration(
                           border: InputBorder.none,
                           filled: true,
