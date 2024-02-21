@@ -18,8 +18,8 @@ class _EmotionButtonState extends State<EmotionButton> {
       padding: const EdgeInsets.all(3.0),
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-          backgroundColor: _isPressed ? Color.fromARGB(255, 120, 221, 210) : null, // Change the color when button is pressed
-          foregroundColor: Color.fromARGB(255, 53, 53, 53), // Change the text color to black
+          backgroundColor: _isPressed ? const Color.fromARGB(255, 120, 221, 210) : null, // Change the color when button is pressed
+          foregroundColor: const Color.fromARGB(255, 61, 61, 61), // Change the text color to black
         ),
         onPressed: () {
           setState(() {
