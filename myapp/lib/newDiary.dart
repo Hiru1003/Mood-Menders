@@ -1,4 +1,4 @@
-import 'package:app/appBarD.dart';
+import 'package:app/diary/appBarD.dart';
 import 'package:app/emojiD.dart';
 import 'package:app/gradientButton.dart';
 import 'package:app/newDiary2.dart';
