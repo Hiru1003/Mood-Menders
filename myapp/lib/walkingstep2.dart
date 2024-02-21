@@ -130,6 +130,9 @@ class _walkingstep2_pageState extends State<walkingstep2_page> {
               ),
             ),
           ),
+          const SizedBox(
+            height: 25,
+          ),
         ])));
   }
 }
