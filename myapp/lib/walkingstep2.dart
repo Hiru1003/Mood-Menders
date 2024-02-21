@@ -112,7 +112,18 @@ class _walkingstep2_pageState extends State<walkingstep2_page> {
                 padding: const EdgeInsets.all(1.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [],
+                  children: [
+                    //message
+                    Text(
+                      'Take a moment to set an intention for your \nwalking meditation. This could be to cultivate \nmindfulness, find calmness, or simply enjoy \nthe act of walking.',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 13,
+                          fontWeight: FontWeight.w400),
+                    ),
+                  ],
                 ),
               ),
             ),
