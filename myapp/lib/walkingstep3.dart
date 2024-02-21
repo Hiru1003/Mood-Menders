@@ -101,22 +101,33 @@ class _walkingstep3_pageState extends State<walkingstep3_page> {
               ),
             ),
           ),
-          const SizedBox(height: 5,),
-              //para
-               Padding(
-                padding: const EdgeInsets.only(left: 10, right: 10),
-                child: Container(
-                  child: Padding(
-                    padding: const EdgeInsets.all(1.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      
-                      ],
+          const SizedBox(
+            height: 5,
+          ),
+          //para
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Container(
+              child: Padding(
+                padding: const EdgeInsets.all(1.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    //message
+                    Text(
+                      'Start walking at a slower pace than your usual \nstride.Pay attention to the sensation of each step - \nthe lifting of the foot, the movement through the \nair, and the placement back on the ground.',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 13,
+                          fontWeight: FontWeight.w400),
                     ),
-                  ),
+                  ],
                 ),
               ),
-
+            ),
+          ),
         ])));
   }
 }
