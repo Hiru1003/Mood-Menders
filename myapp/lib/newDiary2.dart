@@ -1,6 +1,6 @@
 import 'package:app/diary/appBarD.dart';
 import 'package:app/diary/diary.dart';
-import 'package:app/gradientButton.dart';
+import 'package:app/diary/gradientButton.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
