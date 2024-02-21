@@ -13,6 +13,14 @@ class walkingstep2_page extends StatefulWidget {
 class _walkingstep2_pageState extends State<walkingstep2_page> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+      title: Padding(
+        padding: const EdgeInsets.only(left: 10,),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.center,
+        children: <Widget>[
+    );
   }
 }
