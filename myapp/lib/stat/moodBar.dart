@@ -2,6 +2,8 @@ import 'package:app/stat/percentageBar.dart';
 import 'package:flutter/material.dart';
 
 class MoodImages extends StatelessWidget {
+  const MoodImages({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
