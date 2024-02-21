@@ -100,7 +100,7 @@ class Diary extends StatelessWidget {
                 ),
               ],
             ),
-            DatesWidget(),
+            const DatesWidget(),
             Container(
               margin: const EdgeInsets.symmetric(vertical: 10),
               width: 300,
