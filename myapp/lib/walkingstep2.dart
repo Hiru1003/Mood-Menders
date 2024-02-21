@@ -26,6 +26,11 @@ class _walkingstep2_pageState extends State<walkingstep2_page> {
           fontSize: 18,
           fontWeight: FontWeight.w400
           ), ),
+          Image.asset('lib/images/newbg.png',
+          height: 72,)
+          ],
+          ),
+      ),
     );
   }
 }
