@@ -17,11 +17,11 @@ class NewDiary extends StatelessWidget {
   
   }
 
-   void handleButtonPress(String buttonText) {
+  void handleButtonPress(String buttonText) {
     if (kDebugMode) {
       print('Button $buttonText was pressed');
     }
-    
+
   }
 
   @override
