@@ -21,8 +21,7 @@ class NewDiary extends StatelessWidget {
     if (kDebugMode) {
       print('Button $buttonText was pressed');
     }
-    // Add your logic for handling button presses here
-
+    
   }
 
   @override
