@@ -78,7 +78,7 @@ class _walkingstep2_pageState extends State<walkingstep2_page> {
             ),
           ),
           const SizedBox(
-            height: 5,
+            height: 25,
           ),
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
