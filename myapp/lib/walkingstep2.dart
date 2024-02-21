@@ -67,6 +67,10 @@ class _walkingstep2_pageState extends State<walkingstep2_page> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   //image
+                  Image.asset(
+                    'lib/images/step19.png',
+                    height: 210,
+                  )
                 ],
               ),
             ),
