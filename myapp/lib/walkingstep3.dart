@@ -75,6 +75,9 @@ class _walkingstep3_pageState extends State<walkingstep3_page> {
               ),
             ),
           ),
+          const SizedBox(
+            height: 15,
+          ),
         ])));
   }
 }
