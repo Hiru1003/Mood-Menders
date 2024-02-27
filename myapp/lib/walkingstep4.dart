@@ -1,7 +1,7 @@
+import 'package:app/button.dart';
+import 'package:app/walkingstep5.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:moodmenders/Components/button.dart';
-import 'package:moodmenders/pages/walkingstep5.dart';
 
 class walkingstep4_page extends StatefulWidget {
   const walkingstep4_page({
@@ -71,7 +71,7 @@ class _walkingstep4_pageState extends State<walkingstep4_page> {
                   children: [
                     //image
                     Image.asset(
-                      'lib/images/step11.png',
+                      'lib/images/step10.png',
                       height: 210,
                     )
                   ],
@@ -80,7 +80,7 @@ class _walkingstep4_pageState extends State<walkingstep4_page> {
             ),
 
             const SizedBox(
-              height: 5,
+              height: 15,
             ),
             Padding(
               padding: const EdgeInsets.only(left: 10, right: 10),
