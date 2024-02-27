@@ -1,3 +1,4 @@
+import 'package:app/button.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -155,4 +156,6 @@ class _walkingstep11_pageState extends State<walkingstep11_page> {
       ),
     );
   }
+
+  navpage() {}
 }
