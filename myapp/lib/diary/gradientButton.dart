@@ -5,9 +5,9 @@ class GradientButton extends StatelessWidget {
   final bool enableIcon;
   final VoidCallback onPressed;
 
-  GradientButton({
-    required this.buttonText, 
-    this.enableIcon = true, 
+  const GradientButton({
+    required this.buttonText,
+    this.enableIcon = true,
     required this.onPressed,
   });
 

@@ -48,7 +48,7 @@ void main(){
         alignment: Alignment.centerLeft,
         child: Container(
           width: 200,
-          child: PercentageBar(percentage: 0.7),
+          child: const PercentageBar(percentage: 0.7),
         )
       ),
     ),
