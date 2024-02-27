@@ -1,7 +1,7 @@
+import 'package:app/button.dart';
+import 'package:app/walkingstep11.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:moodmenders/Components/button.dart';
-import 'package:moodmenders/pages/walkingstep11.dart';
 
 class walkingstep10_page extends StatefulWidget {
   const walkingstep10_page({
