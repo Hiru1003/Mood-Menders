@@ -1,5 +1,6 @@
 import 'package:app/button.dart';
 import 'package:app/meditaionmethods.dart';
+import 'package:app/walkingstep1.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -340,8 +341,7 @@ class _walkingmed_pageState extends State<walkingmed_page> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) =>
-                              (const meditaionmethods_page())),
+                          builder: (context) => (const walkingstep1_page())),
                     );
                   }
                 },
