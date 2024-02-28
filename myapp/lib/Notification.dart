@@ -98,3 +98,39 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
       ),
     );
   }
+
+  Widget _buildNotificationSetting(
+      String label, TextEditingController controller) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Text(label),
+        Switch(
+          value: controller.text.toLowerCase() == 'true',
+          onChanged: (value) {
+            setState(() {
+              controller.text = value.toString();
+            });
+          },
+          activeColor: Color.fromRGBO(179, 223, 170, 1),
+          inactiveThumbColor: Color.fromRGBO(244, 178, 154, 1),
+        ),
+      ],
+    );
+  }
+
+  void _saveNotificationPreferences() {
+    // Implement logic to save notification preferences
+    // For example, you can save these values to a database or perform other actions
+    String messageNotification = messageController.text;
+    String pushNotification = pushNotificationController.text;
+    String reminderNotification = ReminderController.text;
+    String emailNotification = emailController.text;
+
+    // Print or use the values as needed
+    print('Message Notification: $messageController');
+    print('In-app Notification: $pushNotification');
+    print('Daily Reminder Notification: $reminderNotification');
+    print('Email Notification: $emailNotification');
+  }
+}
