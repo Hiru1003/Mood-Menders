@@ -55,10 +55,11 @@ class _Aromatherapy_pageState extends State<Aromatherapy_page> {
         backgroundColor: const Color.fromARGB(251, 241, 255, 252),
         body: SingleChildScrollView(
             child: Column(children: [
-          //story 01
           const SizedBox(
             height: 30,
           ),
+
+          //container 01
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
             child: Container(
@@ -164,6 +165,8 @@ class _Aromatherapy_pageState extends State<Aromatherapy_page> {
           const SizedBox(
             height: 30,
           ),
+
+          //container 02
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
             child: Container(
@@ -270,6 +273,8 @@ class _Aromatherapy_pageState extends State<Aromatherapy_page> {
           const SizedBox(
             height: 30,
           ),
+
+          //container 03
           Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
             child: Container(
@@ -328,6 +333,117 @@ class _Aromatherapy_pageState extends State<Aromatherapy_page> {
                           textStyle: Theme.of(context).textTheme.displayLarge,
                           color: const Color.fromARGB(255, 70, 66, 68),
                           fontSize: 12,
+                          height: 1.2,
+                          wordSpacing: 1.8,
+                          fontWeight: FontWeight.w400),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Container(
+              decoration: const BoxDecoration(
+                color: Color.fromARGB(255, 217, 235, 237),
+                borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(16),
+                    bottomRight: Radius.circular(16)),
+                boxShadow: [
+                  BoxShadow(
+                    color: Color.fromARGB(255, 194, 207, 190),
+                    blurRadius: 4,
+                    offset: Offset(0, 6), // Shadow position
+                  ),
+                ],
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(1.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    //message
+                    Text(
+                      '',
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 14,
+                          fontWeight: FontWeight.w400),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+
+          const SizedBox(
+            height: 30,
+          ),
+
+          //container 04
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Container(
+              decoration: const BoxDecoration(
+                  color: Color.fromARGB(255, 217, 235, 237),
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(16),
+                      topRight: Radius.circular(16))),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 10, right: 10, top: 7),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    //message
+                    Text(
+                      'Rose Oil ',
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 14,
+                          fontWeight: FontWeight.w600),
+                    ),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          Image.asset(
+                            'lib/images/aroma1.png',
+                            height: 40,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Container(
+              decoration: const BoxDecoration(
+                color: Color.fromARGB(255, 217, 235, 237),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 10, right: 10, top: 9),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    //message
+                    Text(
+                      'Rose oil has a rich, floral scent that is known for its \nmood-lifting and calming effects. It can help \nreduce feelings of anxiety and help to promote \nemotional balance.',
+                      textAlign: TextAlign.justify,
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 12,
+                          height: 1.2,
+                          wordSpacing: 1.8,
                           fontWeight: FontWeight.w400),
                     ),
                   ],
