@@ -1,5 +1,6 @@
 import 'package:app/button.dart';
 import 'package:app/walkingstep5.dart';
+import 'package:app/walkingstep7.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -71,7 +72,7 @@ class _walkingstep6_pageState extends State<walkingstep6_page> {
                   children: [
                     //image
                     Image.asset(
-                      'lib/images/step13 .png',
+                      'lib/images/step5.png',
                       height: 210,
                     )
                   ],
@@ -147,7 +148,7 @@ class _walkingstep6_pageState extends State<walkingstep6_page> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => (walkingstep5_page())),
+                          builder: (context) => (walkingstep7_page())),
                     );
                   }
                 },

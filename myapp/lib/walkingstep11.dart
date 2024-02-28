@@ -70,7 +70,7 @@ class _walkingstep11_pageState extends State<walkingstep11_page> {
                   children: [
                     //image
                     Image.asset(
-                      'lib/images/step13 .png',
+                      'lib/images/step13.png',
                       height: 210,
                     )
                   ],
