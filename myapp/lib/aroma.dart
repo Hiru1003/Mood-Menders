@@ -763,7 +763,7 @@ class _Aromatherapy_pageState extends State<Aromatherapy_page> {
                   children: [
                     //message
                     Text(
-                      'Lotus oil is commonly used in aromatherapy to \npromote relaxation and reduce mental tension. \nThe sweet and delicate aroma of lotus oil can \nuplift the mood and promote a sense of positivity. It may help create a positive mental space.',
+                      'Lotus oil is commonly used in aromatherapy to \npromote relaxation and reduce mental tension. \nThe sweet and delicate aroma of lotus oil can \nuplift the mood and promote a sense of positivity. \nIt may help create a positive mental space.',
                       textAlign: TextAlign.justify,
                       style: GoogleFonts.poppins(
                           textStyle: Theme.of(context).textTheme.displayLarge,
