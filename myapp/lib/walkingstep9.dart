@@ -120,12 +120,14 @@ class _walkingstep9_pageState extends State<walkingstep9_page> {
                     children: [
                       //message
                       Text(
-                        'As you come to the end of your walking meditation, \ntake a moment to reflect on the experience. Notice \nhow you feel both physically and mentally. Come \nto a complete stop and stand still. Take a few \ndeep breaths to center yourself once more.',
+                        'As you come to the end of your walking meditation,\ntake a moment to reflect on the experience. Notice \nhow you feel both physically and mentally. Come \nto a complete stop and stand still. Take a few \ndeep breaths to center yourself once more.',
                         textAlign: TextAlign.center,
                         style: GoogleFonts.poppins(
                             textStyle: Theme.of(context).textTheme.displayLarge,
                             color: const Color.fromARGB(255, 70, 66, 68),
                             fontSize: 13,
+                            height: 1.2,
+                            wordSpacing: 1.7,
                             fontWeight: FontWeight.w400),
                       ),
                     ],
