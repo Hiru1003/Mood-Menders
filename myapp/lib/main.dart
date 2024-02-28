@@ -1,3 +1,4 @@
+import 'package:app/Notification.dart';
 import 'package:app/aroma.dart';
 import 'package:app/stat/stat.dart';
 import 'package:app/stressreducetips.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       //home: loading_page()
       //home: Stat(),
-      home: stressreducetips_page(),
+      home: NotificationSettingsPage(),
     );
   }
 }
