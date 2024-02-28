@@ -1,5 +1,6 @@
 import 'package:app/aroma.dart';
 import 'package:app/stat/stat.dart';
+import 'package:app/stressreducetips.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       //home: loading_page()
       //home: Stat(),
-      home: Aromatherapy_page(),
+      home: stressreducetips_page(),
     );
   }
 }
