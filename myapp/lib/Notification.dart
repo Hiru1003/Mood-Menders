@@ -61,5 +61,40 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
         elevation: 0.00,
         backgroundColor: const Color.fromARGB(255, 134, 208, 203),
       ),
+      backgroundColor: const Color.fromRGBO(255, 252, 245, 1),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const SizedBox(height: 15),
+            _buildNotificationSetting(
+              'Pop up Messages',
+              messageController,
+            ),
+            const SizedBox(height: 5),
+            _buildNotificationSetting(
+              'In-app Notifications',
+              pushNotificationController,
+            ),
+            const SizedBox(height: 5),
+            _buildNotificationSetting(
+              'Daily Reminder',
+              ReminderController,
+            ),
+            const SizedBox(height: 5),
+            _buildNotificationSetting(
+              'Email Controller',
+              emailController,
+            ),
+            const SizedBox(height: 20),
+            MyButton(
+                buttontext: 'Save Preferances',
+                onTap: () {
+                  _saveNotificationPreferences();
+                })
+          ],
+        ),
+      ),
+    );
   }
-}
