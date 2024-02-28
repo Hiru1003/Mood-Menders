@@ -56,12 +56,12 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
               bottomLeft: Radius.circular(18)),
         ),
         iconTheme: const IconThemeData(
-          color: Colors.black, //change your color here
+          color: Colors.black,
         ),
         elevation: 0.00,
         backgroundColor: const Color.fromARGB(255, 134, 208, 203),
       ),
-      backgroundColor: const Color.fromRGBO(255, 252, 245, 1),
+      backgroundColor: const Color.fromARGB(251, 241, 255, 252),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -87,7 +87,7 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
               'Email Controller',
               emailController,
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 30),
             MyButton(
                 buttontext: 'Save Preferances',
                 onTap: () {
@@ -113,21 +113,19 @@ class _NotificationSettingsPageState extends State<NotificationSettingsPage> {
             });
           },
           activeColor: Color.fromRGBO(179, 223, 170, 1),
-          inactiveThumbColor: Color.fromRGBO(244, 178, 154, 1),
+          inactiveThumbColor: Color.fromRGBO(242, 144, 109, 1),
+          inactiveTrackColor: Color.fromRGBO(243, 212, 201, 1),
         ),
       ],
     );
   }
 
   void _saveNotificationPreferences() {
-    // Implement logic to save notification preferences
-    // For example, you can save these values to a database or perform other actions
     String messageNotification = messageController.text;
     String pushNotification = pushNotificationController.text;
     String reminderNotification = ReminderController.text;
     String emailNotification = emailController.text;
 
-    // Print or use the values as needed
     print('Message Notification: $messageController');
     print('In-app Notification: $pushNotification');
     print('Daily Reminder Notification: $reminderNotification');
