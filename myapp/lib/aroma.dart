@@ -596,6 +596,228 @@ class _Aromatherapy_pageState extends State<Aromatherapy_page> {
               ),
             ),
           ),
+
+          const SizedBox(
+            height: 30,
+          ),
+
+          //container 6
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Container(
+              decoration: const BoxDecoration(
+                  color: Color.fromARGB(255, 217, 235, 237),
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(16),
+                      topRight: Radius.circular(16))),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 10, right: 10, top: 7),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    //message
+                    Text(
+                      'Lemongrass Oil',
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 14,
+                          fontWeight: FontWeight.w600),
+                    ),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          Image.asset(
+                            'lib/images/aroma5.png',
+                            height: 50,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Container(
+              decoration: const BoxDecoration(
+                color: Color.fromARGB(255, 217, 235, 237),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 10, right: 10, top: 7),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    //message
+                    Text(
+                      'Lemongrass oil is invigorating and uplifting. It can \nhelp boost energy levels, improve focus, and \nalleviate feelings of mental fatigue. It is also known \nfor its mood-lifting properties.',
+                      textAlign: TextAlign.justify,
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 12,
+                          height: 1.2,
+                          wordSpacing: 1.8,
+                          fontWeight: FontWeight.w400),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Container(
+              decoration: const BoxDecoration(
+                color: Color.fromARGB(255, 217, 235, 237),
+                borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(16),
+                    bottomRight: Radius.circular(16)),
+                boxShadow: [
+                  BoxShadow(
+                    color: Color.fromARGB(255, 194, 207, 190),
+                    blurRadius: 4,
+                    offset: Offset(0, 6), // Shadow position
+                  ),
+                ],
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(1.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    //message
+                    Text(
+                      '',
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 14,
+                          fontWeight: FontWeight.w400),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+
+          const SizedBox(
+            height: 30,
+          ),
+
+          //container 7
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Container(
+              decoration: const BoxDecoration(
+                  color: Color.fromARGB(255, 217, 235, 237),
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(16),
+                      topRight: Radius.circular(16))),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 10, right: 10, top: 7),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    //message
+                    Text(
+                      'Lotus Oil',
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 14,
+                          fontWeight: FontWeight.w600),
+                    ),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          Image.asset(
+                            'lib/images/aroma7.png',
+                            height: 50,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Container(
+              decoration: const BoxDecoration(
+                color: Color.fromARGB(255, 217, 235, 237),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 10, right: 10, top: 7),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    //message
+                    Text(
+                      'Lotus oil is commonly used in aromatherapy to \npromote relaxation and reduce mental tension. \nThe sweet and delicate aroma of lotus oil can \nuplift the mood and promote a sense of positivity. It may help create a positive mental space.',
+                      textAlign: TextAlign.justify,
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 12,
+                          height: 1.2,
+                          wordSpacing: 1.8,
+                          fontWeight: FontWeight.w400),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Container(
+              decoration: const BoxDecoration(
+                color: Color.fromARGB(255, 217, 235, 237),
+                borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(16),
+                    bottomRight: Radius.circular(16)),
+                boxShadow: [
+                  BoxShadow(
+                    color: Color.fromARGB(255, 194, 207, 190),
+                    blurRadius: 4,
+                    offset: Offset(0, 6), // Shadow position
+                  ),
+                ],
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(1.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    //message
+                    Text(
+                      '',
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 14,
+                          fontWeight: FontWeight.w400),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+
+          const SizedBox(
+            height: 30,
+          ),
         ])));
   }
 }
