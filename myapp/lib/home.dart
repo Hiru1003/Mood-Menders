@@ -162,6 +162,34 @@ class _home_pageState extends State<home_page> {
               ),
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Container(
+              decoration: const BoxDecoration(
+                color: Color.fromARGB(255, 204, 248, 245),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const SizedBox(
+                    height: 50,
+                  ),
+                  //message
+                  Text(
+                    'Start journalling with us?',
+                    style: GoogleFonts.poppins(
+                        textStyle: Theme.of(context).textTheme.displayLarge,
+                        color: const Color.fromARGB(255, 70, 66, 68),
+                        fontSize: 14,
+                        fontWeight: FontWeight.w400),
+                  ),
+                  const SizedBox(
+                    height: 50,
+                  ),
+                ],
+              ),
+            ),
+          ),
         ])));
   }
 }
