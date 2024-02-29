@@ -1,18 +1,18 @@
 import 'package:app/button.dart';
-import 'package:app/walkingstep5.dart';
+import 'package:app/meditaionmethods.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class walkingstep4_page extends StatefulWidget {
-  const walkingstep4_page({
+class walkingstep11_page extends StatefulWidget {
+  const walkingstep11_page({
     super.key,
   });
 
   @override
-  State<walkingstep4_page> createState() => _walkingstep4_pageState();
+  State<walkingstep11_page> createState() => _walkingstep11_pageState();
 }
 
-class _walkingstep4_pageState extends State<walkingstep4_page> {
+class _walkingstep11_pageState extends State<walkingstep11_page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -71,7 +71,7 @@ class _walkingstep4_pageState extends State<walkingstep4_page> {
                   children: [
                     //image
                     Image.asset(
-                      'lib/images/step10.png',
+                      'lib/images/step13.png',
                       height: 210,
                     )
                   ],
@@ -80,7 +80,7 @@ class _walkingstep4_pageState extends State<walkingstep4_page> {
             ),
 
             const SizedBox(
-              height: 15,
+              height: 5,
             ),
             Padding(
               padding: const EdgeInsets.only(left: 10, right: 10),
@@ -92,12 +92,14 @@ class _walkingstep4_pageState extends State<walkingstep4_page> {
                     children: [
                       //message
                       Text(
-                        'Step 04',
+                        'You have successfully completed \nWalking meditation',
                         textAlign: TextAlign.center,
                         style: GoogleFonts.poppins(
                             textStyle: Theme.of(context).textTheme.displayLarge,
                             color: const Color.fromARGB(255, 70, 66, 68),
                             fontSize: 18,
+                            height: 1.2,
+                            wordSpacing: 1.8,
                             fontWeight: FontWeight.w600),
                       ),
                     ],
@@ -120,14 +122,14 @@ class _walkingstep4_pageState extends State<walkingstep4_page> {
                     children: [
                       //message
                       Text(
-                        'Coordinate your breath with your steps. For \nexample, you might take one step for each inhale \nand one step for each exhale. Find a rhythm that \nfeels natural to you.',
+                        'Remember, walking meditation is a flexible \npractice. You can adapt it to suit your preferences.\nIt is about being present and mindful in the act of\nwalking, no matter the pace or location. With \nregular practice, walking meditation is become\na valuable tool for grounding, relaxation,\nmindfulness.',
                         textAlign: TextAlign.center,
                         style: GoogleFonts.poppins(
                             textStyle: Theme.of(context).textTheme.displayLarge,
                             color: const Color.fromARGB(255, 70, 66, 68),
                             fontSize: 13,
                             height: 1.2,
-                            wordSpacing: 1.7,
+                            wordSpacing: 1.8,
                             fontWeight: FontWeight.w400),
                       ),
                     ],
@@ -143,13 +145,13 @@ class _walkingstep4_pageState extends State<walkingstep4_page> {
             Padding(
               padding: const EdgeInsets.only(left: 10, right: 10),
               child: MyButton(
-                buttontext: 'Next Step',
+                buttontext: 'Back to home page',
                 onTap: () {
                   {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => (walkingstep5_page())),
+                          builder: (context) => (meditaionmethods_page())),
                     );
                   }
                 },

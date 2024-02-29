@@ -1,8 +1,8 @@
-import 'package:app/appBarD.dart';
-import 'package:app/emojiD.dart';
-import 'package:app/gradientButton.dart';
-import 'package:app/newDiary2.dart';
-import 'package:app/newdiaryButton.dart';
+import 'package:app/diary/appBarD.dart';
+import 'package:app/diary/emojiD.dart';
+import 'package:app/diary/gradientButton.dart';
+import 'package:app/diary/newDiary2.dart';
+import 'package:app/diary/newdiaryButton.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -14,15 +14,13 @@ class NewDiary extends StatelessWidget {
     if (kDebugMode) {
       print('Image at $imagePath was tapped');
     }
-    // Add your logic for recording the event here
   
   }
 
-   void handleButtonPress(String buttonText) {
+  void handleButtonPress(String buttonText) {
     if (kDebugMode) {
       print('Button $buttonText was pressed');
     }
-    // Add your logic for handling button presses here
 
   }
 

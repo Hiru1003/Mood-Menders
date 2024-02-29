@@ -1,4 +1,4 @@
-import 'package:app/newDiary.dart';
+import 'package:app/diary/newDiary.dart';
 import 'package:flutter/material.dart';
 
 class SButton extends StatefulWidget {

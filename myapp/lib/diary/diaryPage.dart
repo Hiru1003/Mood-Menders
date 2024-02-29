@@ -10,7 +10,7 @@ class DiaryPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
       leading: IconButton(
-        icon: Icon(Icons.arrow_back, color: Colors.black),
+        icon: const Icon(Icons.arrow_back, color: Colors.black),
         onPressed: () => Navigator.of(context).pop(),
       ),
       title: Padding(
@@ -26,7 +26,7 @@ class DiaryPage extends StatelessWidget {
         ),
       ),
       titleSpacing: 4.0,
-      toolbarHeight: 70, // Adjust this value to reduce the height of the AppBar
+      toolbarHeight: 70,
       toolbarOpacity: 0.9,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.only(

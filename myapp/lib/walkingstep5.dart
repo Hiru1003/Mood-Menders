@@ -1,18 +1,18 @@
 import 'package:app/button.dart';
-import 'package:app/walkingstep5.dart';
+import 'package:app/walkingstep6.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class walkingstep4_page extends StatefulWidget {
-  const walkingstep4_page({
+class walkingstep5_page extends StatefulWidget {
+  const walkingstep5_page({
     super.key,
   });
 
   @override
-  State<walkingstep4_page> createState() => _walkingstep4_pageState();
+  State<walkingstep5_page> createState() => _walkingstep5_pageState();
 }
 
-class _walkingstep4_pageState extends State<walkingstep4_page> {
+class _walkingstep5_pageState extends State<walkingstep5_page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -71,7 +71,7 @@ class _walkingstep4_pageState extends State<walkingstep4_page> {
                   children: [
                     //image
                     Image.asset(
-                      'lib/images/step10.png',
+                      'lib/images/step14.png',
                       height: 210,
                     )
                   ],
@@ -92,7 +92,7 @@ class _walkingstep4_pageState extends State<walkingstep4_page> {
                     children: [
                       //message
                       Text(
-                        'Step 04',
+                        'Step 05',
                         textAlign: TextAlign.center,
                         style: GoogleFonts.poppins(
                             textStyle: Theme.of(context).textTheme.displayLarge,
@@ -120,7 +120,7 @@ class _walkingstep4_pageState extends State<walkingstep4_page> {
                     children: [
                       //message
                       Text(
-                        'Coordinate your breath with your steps. For \nexample, you might take one step for each inhale \nand one step for each exhale. Find a rhythm that \nfeels natural to you.',
+                        'Keep your gaze soft and slightly lowered, about \na few feet in front of you. This helps \nmaintain a sense of presence without getting \nlost in distractions.',
                         textAlign: TextAlign.center,
                         style: GoogleFonts.poppins(
                             textStyle: Theme.of(context).textTheme.displayLarge,
@@ -149,7 +149,7 @@ class _walkingstep4_pageState extends State<walkingstep4_page> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => (walkingstep5_page())),
+                          builder: (context) => (walkingstep6_page())),
                     );
                   }
                 },

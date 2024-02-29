@@ -1,18 +1,19 @@
 import 'package:app/button.dart';
 import 'package:app/walkingstep5.dart';
+import 'package:app/walkingstep7.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class walkingstep4_page extends StatefulWidget {
-  const walkingstep4_page({
+class walkingstep6_page extends StatefulWidget {
+  const walkingstep6_page({
     super.key,
   });
 
   @override
-  State<walkingstep4_page> createState() => _walkingstep4_pageState();
+  State<walkingstep6_page> createState() => _walkingstep6_pageState();
 }
 
-class _walkingstep4_pageState extends State<walkingstep4_page> {
+class _walkingstep6_pageState extends State<walkingstep6_page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -71,7 +72,7 @@ class _walkingstep4_pageState extends State<walkingstep4_page> {
                   children: [
                     //image
                     Image.asset(
-                      'lib/images/step10.png',
+                      'lib/images/step5.png',
                       height: 210,
                     )
                   ],
@@ -80,7 +81,7 @@ class _walkingstep4_pageState extends State<walkingstep4_page> {
             ),
 
             const SizedBox(
-              height: 15,
+              height: 5,
             ),
             Padding(
               padding: const EdgeInsets.only(left: 10, right: 10),
@@ -92,7 +93,7 @@ class _walkingstep4_pageState extends State<walkingstep4_page> {
                     children: [
                       //message
                       Text(
-                        'Step 04',
+                        'Step 06',
                         textAlign: TextAlign.center,
                         style: GoogleFonts.poppins(
                             textStyle: Theme.of(context).textTheme.displayLarge,
@@ -120,14 +121,14 @@ class _walkingstep4_pageState extends State<walkingstep4_page> {
                     children: [
                       //message
                       Text(
-                        'Coordinate your breath with your steps. For \nexample, you might take one step for each inhale \nand one step for each exhale. Find a rhythm that \nfeels natural to you.',
+                        'Be fully present with each step. If your mind starts \nto wander or get lost in thoughts, gently bring \nyour focus back to the act of walking.',
                         textAlign: TextAlign.center,
                         style: GoogleFonts.poppins(
                             textStyle: Theme.of(context).textTheme.displayLarge,
                             color: const Color.fromARGB(255, 70, 66, 68),
                             fontSize: 13,
                             height: 1.2,
-                            wordSpacing: 1.7,
+                            wordSpacing: 1.8,
                             fontWeight: FontWeight.w400),
                       ),
                     ],
@@ -149,7 +150,7 @@ class _walkingstep4_pageState extends State<walkingstep4_page> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => (walkingstep5_page())),
+                          builder: (context) => (walkingstep7_page())),
                     );
                   }
                 },

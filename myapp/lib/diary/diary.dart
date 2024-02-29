@@ -1,8 +1,8 @@
-import 'package:app/dates.dart';
-import 'package:app/diaryPage.dart';
-import 'package:app/myButton.dart';
-import 'package:app/newDiary.dart';
-import 'package:app/todaysdate.dart';
+import 'package:app/diary/dates.dart';
+import 'package:app/diary/diaryPage.dart';
+import 'package:app/diary/myButton.dart';
+import 'package:app/diary/newDiary.dart';
+import 'package:app/diary/todaysdate.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
@@ -100,7 +100,7 @@ class Diary extends StatelessWidget {
                 ),
               ],
             ),
-            DatesWidget(),
+            const DatesWidget(),
             Container(
               margin: const EdgeInsets.symmetric(vertical: 10),
               width: 300,
