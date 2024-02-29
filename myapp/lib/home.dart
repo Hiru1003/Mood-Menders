@@ -115,6 +115,53 @@ class _home_pageState extends State<home_page> {
               ),
             ),
           ),
+
+          //emojis
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Container(
+              decoration: const BoxDecoration(
+                color: Color.fromARGB(255, 204, 248, 245),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Image.asset(
+                    'lib/images/1.png',
+                    height: 50,
+                  ),
+                  const SizedBox(
+                    width: 18,
+                  ),
+                  Image.asset(
+                    'lib/images/2.png',
+                    height: 50,
+                  ),
+                  const SizedBox(
+                    width: 18,
+                  ),
+                  Image.asset(
+                    'lib/images/3.png',
+                    height: 50,
+                  ),
+                  const SizedBox(
+                    width: 18,
+                  ),
+                  Image.asset(
+                    'lib/images/4.png',
+                    height: 50,
+                  ),
+                  const SizedBox(
+                    width: 18,
+                  ),
+                  Image.asset(
+                    'lib/images/5.png',
+                    height: 50,
+                  ),
+                ],
+              ),
+            ),
+          ),
         ])));
   }
 }
