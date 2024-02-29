@@ -37,7 +37,7 @@ class _home_pageState extends State<home_page> {
                     width: 16,
                   ),
                   Text(
-                    'Welcome Back\n....... !',
+                    'Welcome Back\n............. !',
                     style: GoogleFonts.poppins(
                         textStyle: Theme.of(context).textTheme.displayLarge,
                         color: const Color.fromARGB(255, 70, 66, 68),
@@ -79,7 +79,7 @@ class _home_pageState extends State<home_page> {
                   children: [
                     //message
                     Text(
-                      'Keep mending your \nfeelings with us...',
+                      'Keep mending your feelings \nwith us...',
                       style: GoogleFonts.poppins(
                           textStyle: Theme.of(context).textTheme.displayLarge,
                           color: const Color.fromARGB(255, 70, 66, 68),
@@ -373,7 +373,7 @@ class _home_pageState extends State<home_page> {
                           color: const Color.fromARGB(251, 241, 255, 252),
                           border: Border.all(
                             color: Color.fromARGB(255, 204, 248, 245),
-                            width: 3,
+                            width: 5,
                           ),
                           borderRadius: BorderRadius.circular(12)),
                       child: Padding(
@@ -487,6 +487,9 @@ class _home_pageState extends State<home_page> {
                   ],
                 ),
               ),
+            ),
+            const SizedBox(
+              height: 30,
             ),
           ],
         ),
