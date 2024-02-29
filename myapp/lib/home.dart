@@ -241,7 +241,7 @@ class _home_pageState extends State<home_page> {
                   style: GoogleFonts.poppins(
                       textStyle: Theme.of(context).textTheme.displayLarge,
                       color: const Color.fromARGB(255, 70, 66, 68),
-                      fontSize: 20,
+                      fontSize: 16,
                       fontWeight: FontWeight.w400),
                 ),
               ],
@@ -251,7 +251,6 @@ class _home_pageState extends State<home_page> {
           const SizedBox(
             height: 10,
           ),
-
           GestureDetector(
             onTap: () {
               Navigator.push(
@@ -263,25 +262,43 @@ class _home_pageState extends State<home_page> {
             child: Padding(
               padding: const EdgeInsets.only(left: 10, right: 10),
               child: Container(
+                width: 350,
                 decoration: const BoxDecoration(
                   color: Color.fromARGB(255, 204, 248, 245),
-                  borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(16),
-                      topRight: Radius.circular(16)),
+                  borderRadius: BorderRadius.all(Radius.circular(16)),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Color.fromARGB(255, 194, 207, 190),
+                      blurRadius: 4,
+                      offset: Offset(0, 6), // Shadow position
+                    ),
+                  ],
                 ),
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
-                  child: Row(
+                  child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      //message
+                      // First message
                       Text(
-                        '"Good things takes time"',
+                        '"Good things take time"',
                         style: GoogleFonts.poppins(
-                            textStyle: Theme.of(context).textTheme.displayLarge,
-                            color: const Color.fromARGB(255, 70, 66, 68),
-                            fontSize: 16,
-                            fontWeight: FontWeight.w400),
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 14,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      // Second text
+                      Text(
+                        'Tap for more motivational quotes like this',
+                        style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 14,
+                          fontWeight: FontWeight.w200,
+                        ),
                       ),
                     ],
                   ),
@@ -290,40 +307,8 @@ class _home_pageState extends State<home_page> {
             ),
           ),
 
-          Padding(
-            padding: const EdgeInsets.only(left: 10, right: 10),
-            child: Container(
-              decoration: const BoxDecoration(
-                color: Color.fromARGB(255, 204, 248, 245),
-                borderRadius: BorderRadius.only(
-                    bottomLeft: Radius.circular(16),
-                    bottomRight: Radius.circular(16)),
-                boxShadow: [
-                  BoxShadow(
-                    color: Color.fromARGB(255, 194, 207, 190),
-                    blurRadius: 4,
-                    offset: Offset(0, 6), // Shadow position
-                  ),
-                ],
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    //message
-                    Text(
-                      'Tap for more motivational quotes like this',
-                      style: GoogleFonts.poppins(
-                          textStyle: Theme.of(context).textTheme.displayLarge,
-                          color: const Color.fromARGB(255, 70, 66, 68),
-                          fontSize: 14,
-                          fontWeight: FontWeight.w200),
-                    ),
-                  ],
-                ),
-              ),
-            ),
+          const SizedBox(
+            height: 30,
           ),
         ])));
   }
