@@ -33,7 +33,7 @@ class _home_pageState extends State<home_page> {
                   style: GoogleFonts.poppins(
                       textStyle: Theme.of(context).textTheme.displayLarge,
                       color: const Color.fromARGB(255, 70, 66, 68),
-                      fontSize: 22,
+                      fontSize: 20,
                       fontWeight: FontWeight.w500),
                 ),
                 Expanded(
@@ -48,6 +48,40 @@ class _home_pageState extends State<home_page> {
                   ),
                 ),
               ],
+            ),
+          ),
+          Container(
+            decoration: const BoxDecoration(
+              color: Color.fromARGB(255, 134, 208, 203),
+              borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(16),
+                  bottomRight: Radius.circular(16)),
+              boxShadow: [
+                BoxShadow(
+                  color: Color.fromARGB(255, 194, 207, 190),
+                  blurRadius: 4,
+                  offset: Offset(0, 6), // Shadow position
+                ),
+              ],
+            ),
+            child: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  //message
+                  Text(
+                    'Keep mending your \nfeelings with us...',
+                    style: GoogleFonts.poppins(
+                        textStyle: Theme.of(context).textTheme.displayLarge,
+                        color: const Color.fromARGB(255, 70, 66, 68),
+                        fontSize: 15,
+                        height: 1.2,
+                        wordSpacing: 1.8,
+                        fontWeight: FontWeight.w400),
+                  ),
+                ],
+              ),
             ),
           ),
         ])));
