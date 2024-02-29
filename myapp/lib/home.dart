@@ -1,3 +1,5 @@
+import 'package:app/continuebutton.dart';
+import 'package:app/diary/diary.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -188,6 +190,37 @@ class _home_pageState extends State<home_page> {
                   ),
                 ],
               ),
+            ),
+          ),
+
+          //continue button
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Container(
+              decoration: const BoxDecoration(
+                color: Color.fromARGB(255, 204, 248, 245),
+                borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(16),
+                    bottomRight: Radius.circular(16)),
+                boxShadow: [
+                  BoxShadow(
+                    color: Color.fromARGB(255, 194, 207, 190),
+                    blurRadius: 4,
+                    offset: Offset(0, 6), // Shadow position
+                  ),
+                ],
+              ),
+              child: MyConButton(
+                  buttontext: 'Continue',
+                  onTap: () {
+                    {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => (const Diary())),
+                      );
+                    }
+                  }),
             ),
           ),
         ])));
