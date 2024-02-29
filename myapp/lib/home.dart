@@ -1,5 +1,6 @@
 import 'package:app/continuebutton.dart';
 import 'package:app/diary/diary.dart';
+import 'package:app/meditaionmethods.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -244,6 +245,48 @@ class _home_pageState extends State<home_page> {
                       fontWeight: FontWeight.w400),
                 ),
               ],
+            ),
+          ),
+
+          const SizedBox(
+            height: 10,
+          ),
+
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const meditaionmethods_page()),
+              );
+            },
+            child: Padding(
+              padding: const EdgeInsets.only(left: 10, right: 10),
+              child: Container(
+                decoration: const BoxDecoration(
+                  color: Color.fromARGB(255, 204, 248, 245),
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(16),
+                      topRight: Radius.circular(16)),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      //message
+                      Text(
+                        '"Good things takes time"',
+                        style: GoogleFonts.poppins(
+                            textStyle: Theme.of(context).textTheme.displayLarge,
+                            color: const Color.fromARGB(255, 70, 66, 68),
+                            fontSize: 16,
+                            fontWeight: FontWeight.w400),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ),
           ),
         ])));
