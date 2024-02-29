@@ -223,6 +223,29 @@ class _home_pageState extends State<home_page> {
                   }),
             ),
           ),
+
+          //inspiration
+          const SizedBox(
+            height: 20,
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                //message
+                Text(
+                  'Inspirations',
+                  style: GoogleFonts.poppins(
+                      textStyle: Theme.of(context).textTheme.displayLarge,
+                      color: const Color.fromARGB(255, 70, 66, 68),
+                      fontSize: 20,
+                      fontWeight: FontWeight.w400),
+                ),
+              ],
+            ),
+          ),
         ])));
   }
 }
