@@ -316,10 +316,9 @@ class _home_pageState extends State<home_page> {
             ),
             //two containers
             Padding(
-              padding: const EdgeInsets.only(left: 10, right: 10),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
+                padding: const EdgeInsets.only(left: 10, right: 10),
+                child:
+                    Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                   GestureDetector(
                     onTap: () {
                       Navigator.push(
@@ -373,7 +372,7 @@ class _home_pageState extends State<home_page> {
                           color: const Color.fromARGB(251, 241, 255, 252),
                           border: Border.all(
                             color: Color.fromARGB(255, 204, 248, 245),
-                            width: 5,
+                            width: 3,
                           ),
                           borderRadius: BorderRadius.circular(12)),
                       child: Padding(
@@ -396,42 +395,7 @@ class _home_pageState extends State<home_page> {
                       ),
                     ),
                   ),
-
-                  //relaxation box
-                  const SizedBox(
-                    height: 30,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 10, right: 10),
-                    child: Container(
-                      decoration: const BoxDecoration(
-                          color: Color.fromARGB(255, 204, 248, 245),
-                          borderRadius: BorderRadius.only(
-                              topLeft: Radius.circular(16),
-                              topRight: Radius.circular(16))),
-                      child: Padding(
-                        padding: const EdgeInsets.all(16.0),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            //message
-                            Text(
-                              'Relaxation',
-                              style: GoogleFonts.poppins(
-                                  textStyle:
-                                      Theme.of(context).textTheme.displayLarge,
-                                  color: const Color.fromARGB(255, 70, 66, 68),
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.w400),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
+                ])),
 
             //relaxation box
             const SizedBox(
