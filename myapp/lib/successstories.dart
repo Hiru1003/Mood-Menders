@@ -52,7 +52,114 @@ class _successstories_pageState extends State<successstories_page> {
           elevation: 0.00,
           backgroundColor: const Color.fromARGB(255, 134, 208, 203),
         ),
-      
+        backgroundColor: const Color.fromARGB(251, 241, 255, 252),
+        body: SingleChildScrollView(
+            child: Column(children: [
+          //story 01
+          const SizedBox(
+            height: 30,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Container(
+              decoration: const BoxDecoration(
+                color: Color.fromARGB(255, 217, 235, 237),
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(16),
+                  topRight: Radius.circular(16),
+                  bottomLeft: Radius.circular(16),
+                  bottomRight: Radius.circular(16),
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    color: Color.fromARGB(255, 194, 207, 190),
+                    blurRadius: 4,
+                    offset: Offset(0, 6), // Shadow position
+                  ),
+                ],
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  // Section 1 - Title and Image
+                  Padding(
+                    padding: const EdgeInsets.all(14.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        // Title
+                        Expanded(
+                          child: Text(
+                            'The Triumph of Resilience: \nThe Journey of Alex Hernandez',
+                            style: GoogleFonts.poppins(
+                              textStyle:
+                                  Theme.of(context).textTheme.displayLarge,
+                              color: const Color.fromARGB(255, 70, 66, 68),
+                              fontSize: 14,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ),
+                        // Image
+                        Image.asset(
+                          'lib/images/6.png',
+                          height: 40,
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  // Section 2 - Paragraph
+                  Padding(
+                    padding: const EdgeInsets.all(14.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        // Paragraph
+                        Text(
+                          'Alex Hernandez battled severe depression and \nanxiety for years. Through therapy, a supportive \ncommunity, and a commitment to self-care, \nhe learned to manage his mental health. Today, \nAlex is a mental health advocate, using his \nexperience to inspire others and break the stigma \nsurrounding mental illness.',
+                          textAlign: TextAlign.justify,
+                          style: GoogleFonts.poppins(
+                            textStyle: Theme.of(context).textTheme.displayLarge,
+                            color: const Color.fromARGB(255, 70, 66, 68),
+                            fontSize: 12,
+                            height: 1.2,
+                            wordSpacing: 2.0,
+                            fontWeight: FontWeight.w400,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  // Section 3 - Empty Row (Can be removed if not needed)
+                  Padding(
+                    padding: const EdgeInsets.all(1.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        // Empty Text
+                        Text(
+                          '',
+                          style: GoogleFonts.poppins(
+                            textStyle: Theme.of(context).textTheme.displayLarge,
+                            color: const Color.fromARGB(255, 70, 66, 68),
+                            fontSize: 14,
+                            fontWeight: FontWeight.w400,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+
+                ],
+              ),
+            ),
+          ),
         ])));
   }
 }
