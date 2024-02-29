@@ -163,6 +163,110 @@ class _personalgrowthtips_pageState extends State<personalgrowthtips_page> {
               ),
             ),
           ),
+
+          const SizedBox(
+            height: 30,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Container(
+              decoration: const BoxDecoration(
+                  color: Color.fromARGB(255, 217, 235, 237),
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(16),
+                      topRight: Radius.circular(16))),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 10, right: 10, top: 7),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    //message
+                    Text(
+                      'Embrace Change',
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 14,
+                          fontWeight: FontWeight.w600),
+                    ),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          Image.asset(
+                            'lib/images/10.png',
+                            height: 55,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Container(
+              decoration: const BoxDecoration(
+                color: Color.fromARGB(255, 217, 235, 237),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 10, right: 10, top: 7),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    //message
+                    Text(
+                      'Remind users that change is a natural part of \nlife and can lead to personal growth. Encourage \nthem to adapt and learn from new experiences.',
+                      textAlign: TextAlign.justify,
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 12,
+                          fontWeight: FontWeight.w400),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Container(
+              decoration: const BoxDecoration(
+                color: Color.fromARGB(255, 217, 235, 237),
+                borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(16),
+                    bottomRight: Radius.circular(16)),
+                boxShadow: [
+                  BoxShadow(
+                    color: Color.fromARGB(255, 194, 207, 190),
+                    blurRadius: 4,
+                    offset: Offset(0, 6), // Shadow position
+                  ),
+                ],
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(1.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    //message
+                    Text(
+                      '',
+                      style: GoogleFonts.poppins(
+                          textStyle: Theme.of(context).textTheme.displayLarge,
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 14,
+                          fontWeight: FontWeight.w400),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
         ])));
   }
 }
