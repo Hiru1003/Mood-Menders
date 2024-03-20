@@ -118,17 +118,18 @@ class _walkingstep5_pageState extends State<walkingstep5_page> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      //message
-                      Text(
-                        'Keep your gaze soft and slightly lowered, about \na few feet in front of you. This helps \nmaintain a sense of presence without getting \nlost in distractions.',
-                        textAlign: TextAlign.center,
-                        style: GoogleFonts.poppins(
-                            textStyle: Theme.of(context).textTheme.displayLarge,
-                            color: const Color.fromARGB(255, 70, 66, 68),
-                            fontSize: 13,
-                            height: 1.2,
-                            wordSpacing: 1.7,
-                            fontWeight: FontWeight.w400),
+                      Container(
+                        width: MediaQuery.of(context).size.width * 0.9,
+                        child: Text(
+                          'Keep your gaze soft and slightly lowered, about a few feet in front of you. This helps maintain a sense of presence without getting lost in distractions.',
+                          textAlign: TextAlign.center,
+                          style: GoogleFonts.poppins(
+                              color: const Color.fromARGB(255, 70, 66, 68),
+                              fontSize: 13,
+                              height: 1.2,
+                              wordSpacing: 2.5,
+                              fontWeight: FontWeight.w400),
+                        ),
                       ),
                     ],
                   ),

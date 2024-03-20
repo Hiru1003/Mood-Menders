@@ -115,17 +115,18 @@ class _movementstep1_pageState extends State<movementstep1_page> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    //message
-                    Text(
-                      'Stand with your feet shoulder-width apart (if \ndoing a standing practice) or sit comfortably with \na straight back (if doing a seated practice). Close \nyour eyes and take a few deep breaths to \ncenter yourself.',
-                      textAlign: TextAlign.center,
-                      style: GoogleFonts.poppins(
-                          textStyle: Theme.of(context).textTheme.displayLarge,
-                          color: const Color.fromARGB(255, 70, 66, 68),
-                          fontSize: 13,
-                          height: 1.2,
-                          wordSpacing: 1.8,
-                          fontWeight: FontWeight.w400),
+                    Container(
+                      width: MediaQuery.of(context).size.width * 0.9,
+                      child: Text(
+                        'Stand with your feet shoulder-width apart (if doing a standing practice) or sit comfortably with a straight back (if doing a seated practice). Close your eyes and take a few deep breaths to center yourself.',
+                        textAlign: TextAlign.center,
+                        style: GoogleFonts.poppins(
+                            color: const Color.fromARGB(255, 70, 66, 68),
+                            fontSize: 13,
+                            height: 1.2,
+                            wordSpacing: 2.5,
+                            fontWeight: FontWeight.w400),
+                      ),
                     ),
                   ],
                 ),

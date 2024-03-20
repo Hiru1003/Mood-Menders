@@ -90,17 +90,18 @@ class _walkingstep11_pageState extends State<walkingstep11_page> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      //message
-                      Text(
-                        'You have successfully completed \nWalking meditation',
-                        textAlign: TextAlign.center,
-                        style: GoogleFonts.poppins(
-                            textStyle: Theme.of(context).textTheme.displayLarge,
-                            color: const Color.fromARGB(255, 70, 66, 68),
-                            fontSize: 18,
-                            height: 1.2,
-                            wordSpacing: 1.8,
-                            fontWeight: FontWeight.w600),
+                      Container(
+                        width: MediaQuery.of(context).size.width * 0.9,
+                        child: Text(
+                          'You have successfully completed Walking meditation',
+                          textAlign: TextAlign.center,
+                          style: GoogleFonts.poppins(
+                              color: const Color.fromARGB(255, 70, 66, 68),
+                              fontSize: 16,
+                              height: 1.2,
+                              wordSpacing: 2.5,
+                              fontWeight: FontWeight.w600),
+                        ),
                       ),
                     ],
                   ),
@@ -120,17 +121,18 @@ class _walkingstep11_pageState extends State<walkingstep11_page> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      //message
-                      Text(
-                        'Remember, walking meditation is a flexible \npractice. You can adapt it to suit your preferences.\nIt is about being present and mindful in the act of\nwalking, no matter the pace or location. With \nregular practice, walking meditation is become\na valuable tool for grounding, relaxation,\nmindfulness.',
-                        textAlign: TextAlign.center,
-                        style: GoogleFonts.poppins(
-                            textStyle: Theme.of(context).textTheme.displayLarge,
-                            color: const Color.fromARGB(255, 70, 66, 68),
-                            fontSize: 13,
-                            height: 1.2,
-                            wordSpacing: 1.8,
-                            fontWeight: FontWeight.w400),
+                      Container(
+                        width: MediaQuery.of(context).size.width * 0.9,
+                        child: Text(
+                          'Remember, walking meditation is a flexible practice. You can adapt it to suit your preferences. It is about being present and mindful in the act of walking, no matter the pace or location. With regular practice, walking meditation is become a valuable tool for grounding, relaxation, mindfulness.',
+                          textAlign: TextAlign.center,
+                          style: GoogleFonts.poppins(
+                              color: const Color.fromARGB(255, 70, 66, 68),
+                              fontSize: 13,
+                              height: 1.2,
+                              wordSpacing: 2.5,
+                              fontWeight: FontWeight.w400),
+                        ),
                       ),
                     ],
                   ),

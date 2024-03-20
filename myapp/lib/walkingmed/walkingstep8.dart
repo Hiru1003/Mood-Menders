@@ -118,17 +118,18 @@ class _walkingstep8_pageState extends State<walkingstep8_page> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      //message
-                      Text(
-                        'As you walk, cultivate feelings of gratitude for \nthe opportunity to move and be present in this \nmoment.nIf your path has a turning point, \napproach it mindfully. Slow down as you approach \nthe turn, pivot mindfully, and continue walking in \nthe new direction.',
-                        textAlign: TextAlign.center,
-                        style: GoogleFonts.poppins(
-                            textStyle: Theme.of(context).textTheme.displayLarge,
-                            color: const Color.fromARGB(255, 70, 66, 68),
-                            fontSize: 13,
-                            height: 1.2,
-                            wordSpacing: 1.8,
-                            fontWeight: FontWeight.w400),
+                      Container(
+                        width: MediaQuery.of(context).size.width * 0.9,
+                        child: Text(
+                          'As you walk, cultivate feelings of gratitude for the opportunity to move and be present in this moment.nIf your path has a turning point, approach it mindfully. Slow down as you approach the turn, pivot mindfully, and continue walking in the new direction.',
+                          textAlign: TextAlign.center,
+                          style: GoogleFonts.poppins(
+                              color: const Color.fromARGB(255, 70, 66, 68),
+                              fontSize: 13,
+                              height: 1.2,
+                              wordSpacing: 2.5,
+                              fontWeight: FontWeight.w400),
+                        ),
                       ),
                     ],
                   ),

@@ -88,15 +88,18 @@ class _movementstep10_pageState extends State<movementstep10_page> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    //message
-                    Text(
-                      'You have successfully completed \nMovement-based meditation',
-                      textAlign: TextAlign.center,
-                      style: GoogleFonts.poppins(
-                          textStyle: Theme.of(context).textTheme.displayLarge,
-                          color: const Color.fromARGB(255, 70, 66, 68),
-                          fontSize: 16,
-                          fontWeight: FontWeight.w600),
+                    Container(
+                      width: MediaQuery.of(context).size.width * 0.9,
+                      child: Text(
+                        'You have successfully completed Movement-based meditation',
+                        textAlign: TextAlign.center,
+                        style: GoogleFonts.poppins(
+                            color: const Color.fromARGB(255, 70, 66, 68),
+                            fontSize: 16,
+                            height: 1.2,
+                            wordSpacing: 2.5,
+                            fontWeight: FontWeight.w600),
+                      ),
                     ),
                   ],
                 ),
@@ -115,17 +118,18 @@ class _movementstep10_pageState extends State<movementstep10_page> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    //message
-                    Text(
-                      'Remember that movement-based meditation is a \npersonal practice, and there is no one-size-fits-all \napproach. It is important to listen to your body and \nadjust the practice to suit your needs and comfort \nlevel. With regular practice, you may find that \nmovement-based meditation can be a powerful \ntool for relaxation,mindfulness,and well-being.',
-                      textAlign: TextAlign.center,
-                      style: GoogleFonts.poppins(
-                          textStyle: Theme.of(context).textTheme.displayLarge,
-                          color: const Color.fromARGB(255, 70, 66, 68),
-                          fontSize: 13,
-                          height: 1.2,
-                          wordSpacing: 1.8,
-                          fontWeight: FontWeight.w400),
+                    Container(
+                      width: MediaQuery.of(context).size.width * 0.9,
+                      child: Text(
+                        'Remember that movement-based meditation is a personal practice, and there is no one-size-fits-all approach. It is important to listen to your body and adjust the practice to suit your needs and comfort level. With regular practice, you may find that movement-based meditation can be a powerful tool for relaxation,mindfulness,and well-being.',
+                        textAlign: TextAlign.center,
+                        style: GoogleFonts.poppins(
+                            color: const Color.fromARGB(255, 70, 66, 68),
+                            fontSize: 13,
+                            height: 1.2,
+                            wordSpacing: 2.5,
+                            fontWeight: FontWeight.w400),
+                      ),
                     ),
                   ],
                 ),

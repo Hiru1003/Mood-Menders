@@ -101,17 +101,17 @@ class _breathawarenessmed_pageState extends State<breathawarenessmed_page> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    //message
-                    Text(
-                      'Mindfulness meditation is a practice that involves \nintentionally focusing on the present moment, \nwithout judgment or attachment to specific \noutcomes. It cultivates a state of heightened \nawareness and acceptance of one is thoughts, \nfeelings, bodily sensations, and surroundings.',
-                      textAlign: TextAlign.center,
-                      style: GoogleFonts.poppins(
-                        textStyle: Theme.of(context).textTheme.displayLarge,
-                        color: const Color.fromARGB(255, 70, 66, 68),
-                        fontSize: 12,
-                        fontWeight: FontWeight.w400,
-                        height: 1.5,
-                        wordSpacing: 2.0,
+                    Container(
+                      width: MediaQuery.of(context).size.width * 0.9,
+                      child: Text(
+                        'Mindfulness meditation is a practice that involves intentionally focusing on the present moment, without judgment or attachment to specific outcomes. It cultivates a state of heightened awareness and acceptance of one is thoughts, feelings, bodily sensations, and surroundings.',
+                        textAlign: TextAlign.center,
+                        style: GoogleFonts.poppins(
+                            color: const Color.fromARGB(255, 70, 66, 68),
+                            fontSize: 13,
+                            height: 1.2,
+                            wordSpacing: 2.5,
+                            fontWeight: FontWeight.w400),
                       ),
                     ),
                   ],

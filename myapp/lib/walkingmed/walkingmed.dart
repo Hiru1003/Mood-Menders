@@ -101,17 +101,18 @@ class _walkingmed_pageState extends State<walkingmed_page> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    //message
-                    Text(
-                      'Walking meditation is a mindfulness practice \nthat involves bringing your attention to \nthe act of walking. It can be a calming and \ngrounding way to cultivate mindfulness in motion.',
-                      textAlign: TextAlign.center,
-                      style: GoogleFonts.poppins(
-                          textStyle: Theme.of(context).textTheme.displayLarge,
-                          color: const Color.fromARGB(255, 70, 66, 68),
-                          fontSize: 12,
-                          wordSpacing: 1.6,
-                          height: 1.3,
-                          fontWeight: FontWeight.w400),
+                    Container(
+                      width: MediaQuery.of(context).size.width * 0.9,
+                      child: Text(
+                        'Walking meditation is a mindfulness practice that involves bringing your attention to the act of walking. It can be a calming and grounding way to cultivate mindfulness in motion.',
+                        textAlign: TextAlign.center,
+                        style: GoogleFonts.poppins(
+                            color: const Color.fromARGB(255, 70, 66, 68),
+                            fontSize: 13,
+                            height: 1.2,
+                            wordSpacing: 2.5,
+                            fontWeight: FontWeight.w400),
+                      ),
                     ),
                   ],
                 ),

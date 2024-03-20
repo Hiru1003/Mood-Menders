@@ -117,17 +117,17 @@ class _breathawarenessstep3_pageState extends State<breathawarenessstep3_page> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    //message
-                    Text(
-                      'Allow your breath to return to its natural rhythm. \nBegin to focus your attention on the sensation \nof your breath. Notice the rise and fall of your \nchest or the gentle movement of your abdomen.',
-                      textAlign: TextAlign.center,
-                      style: GoogleFonts.poppins(
-                        textStyle: Theme.of(context).textTheme.displayLarge,
-                        color: const Color.fromARGB(255, 70, 66, 68),
-                        fontSize: 13,
-                        fontWeight: FontWeight.w400,
-                        height: 1.2,
-                        wordSpacing: 1.8,
+                    Container(
+                      width: MediaQuery.of(context).size.width * 0.9,
+                      child: Text(
+                        'Allow your breath to return to its natural rhythm. Begin to focus your attention on the sensation of your breath. Notice the rise and fall of your chest or the gentle movement of your abdomen.',
+                        textAlign: TextAlign.center,
+                        style: GoogleFonts.poppins(
+                            color: const Color.fromARGB(255, 70, 66, 68),
+                            fontSize: 13,
+                            height: 1.2,
+                            wordSpacing: 2.5,
+                            fontWeight: FontWeight.w400),
                       ),
                     ),
                   ],

@@ -114,17 +114,18 @@ class _lovemedstep3_pageState extends State<lovemedstep3_page> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    //message
-                    Text(
-                      'Gradually extend your loving-kindness to a wider \ncircle of people. This can include acquaintances, \ncolleagues, neutral individuals, and even people \nyou may have difficulties with. Use similar \nphrases for each person.',
-                      textAlign: TextAlign.center,
-                      style: GoogleFonts.poppins(
-                          textStyle: Theme.of(context).textTheme.displayLarge,
-                          color: const Color.fromARGB(255, 70, 66, 68),
-                          fontSize: 13,
-                          height: 1.2,
-                          wordSpacing: 1.8,
-                          fontWeight: FontWeight.w400),
+                    Container(
+                      width: MediaQuery.of(context).size.width * 0.9,
+                      child: Text(
+                        'Gradually extend your loving-kindness to a wider circle of people. This can include acquaintances, colleagues, neutral individuals, and even people you may have difficulties with. Use similar phrases for each person.',
+                        textAlign: TextAlign.center,
+                        style: GoogleFonts.poppins(
+                            color: const Color.fromARGB(255, 70, 66, 68),
+                            fontSize: 13,
+                            height: 1.2,
+                            wordSpacing: 2.5,
+                            fontWeight: FontWeight.w400),
+                      ),
                     ),
                   ],
                 ),

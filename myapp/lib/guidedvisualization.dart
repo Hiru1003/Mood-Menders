@@ -98,17 +98,18 @@ class _guidedvis_pageState extends State<guidedvis_page> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    //message
-                    Text(
-                      'Guided visualization is a powerful technique that \ninvolves imagining a specific scenario or \nexperience in vivid detail. It can be used for \nrelaxation, stress reduction, \ngoal-setting, and personal growth. ',
-                      textAlign: TextAlign.center,
-                      style: GoogleFonts.poppins(
-                          textStyle: Theme.of(context).textTheme.displayLarge,
-                          color: const Color.fromARGB(255, 70, 66, 68),
-                          fontSize: 12,
-                          height: 1.2,
-                          wordSpacing: 1.8,
-                          fontWeight: FontWeight.w400),
+                    Container(
+                      width: MediaQuery.of(context).size.width * 0.9,
+                      child: Text(
+                        'Guided visualization is a powerful technique that involves imagining a specific scenario or experience in vivid detail. It can be used for relaxation, stress reduction, goal-setting, and personal growth. ',
+                        textAlign: TextAlign.center,
+                        style: GoogleFonts.poppins(
+                            color: const Color.fromARGB(255, 70, 66, 68),
+                            fontSize: 13,
+                            height: 1.2,
+                            wordSpacing: 2.5,
+                            fontWeight: FontWeight.w400),
+                      ),
                     ),
                   ],
                 ),
@@ -230,17 +231,18 @@ class _guidedvis_pageState extends State<guidedvis_page> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    //message
-                    Text(
-                      'Ensure that the space is quiet, comfortable, and free \nfrom distractions. Dim lighting and soft furnishings \ncan help create a calming atmosphere.',
-                      textAlign: TextAlign.justify,
-                      style: GoogleFonts.poppins(
-                          textStyle: Theme.of(context).textTheme.displayLarge,
-                          color: const Color.fromARGB(255, 70, 66, 68),
-                          fontSize: 12,
-                          height: 1.2,
-                          wordSpacing: 1.8,
-                          fontWeight: FontWeight.w400),
+                    Container(
+                      width: MediaQuery.of(context).size.width * 0.8,
+                      child: Text(
+                        'Ensure that the space is quiet, comfortable, and free from distractions. Dim lighting and soft furnishings can help create a calming atmosphere.',
+                        textAlign: TextAlign.start,
+                        style: GoogleFonts.poppins(
+                            color: const Color.fromARGB(255, 70, 66, 68),
+                            fontSize: 12,
+                            height: 1.2,
+                            wordSpacing: 2.5,
+                            fontWeight: FontWeight.w400),
+                      ),
                     ),
                   ],
                 ),
@@ -338,17 +340,18 @@ class _guidedvis_pageState extends State<guidedvis_page> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    //message
-                    Text(
-                      'Clearly explain what guided visualization entails \nand obtain consent from participants. Let them \nknow that they have the option to stop or opt out \nat any time.',
-                      textAlign: TextAlign.justify,
-                      style: GoogleFonts.poppins(
-                          textStyle: Theme.of(context).textTheme.displayLarge,
-                          color: const Color.fromARGB(255, 70, 66, 68),
-                          fontSize: 12,
-                          height: 1.2,
-                          wordSpacing: 1.8,
-                          fontWeight: FontWeight.w400),
+                    Container(
+                      width: MediaQuery.of(context).size.width * 0.8,
+                      child: Text(
+                        'Clearly explain what guided visualization entails and obtain consent from participants. Let them know that they have the option to stop or opt out at any time.',
+                        textAlign: TextAlign.start,
+                        style: GoogleFonts.poppins(
+                            color: const Color.fromARGB(255, 70, 66, 68),
+                            fontSize: 12,
+                            height: 1.2,
+                            wordSpacing: 2.5,
+                            fontWeight: FontWeight.w400),
+                      ),
                     ),
                   ],
                 ),
@@ -446,17 +449,18 @@ class _guidedvis_pageState extends State<guidedvis_page> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    //message
-                    Text(
-                      'Ask participants if they have any specific triggers, \nsensitivities, or phobias that should be avoided \nduring the visualization. Adapt the scenario \naccordingly.',
-                      textAlign: TextAlign.justify,
-                      style: GoogleFonts.poppins(
-                          textStyle: Theme.of(context).textTheme.displayLarge,
-                          color: const Color.fromARGB(255, 70, 66, 68),
-                          fontSize: 12,
-                          height: 1.2,
-                          wordSpacing: 1.8,
-                          fontWeight: FontWeight.w400),
+                    Container(
+                      width: MediaQuery.of(context).size.width * 0.8,
+                      child: Text(
+                        'Ask participants if they have any specific triggers, sensitivities, or phobias that should be avoided during the visualization. Adapt the scenario accordingly.',
+                        textAlign: TextAlign.start,
+                        style: GoogleFonts.poppins(
+                            color: const Color.fromARGB(255, 70, 66, 68),
+                            fontSize: 12,
+                            height: 1.2,
+                            wordSpacing: 2.5,
+                            fontWeight: FontWeight.w400),
+                      ),
                     ),
                   ],
                 ),
@@ -554,17 +558,18 @@ class _guidedvis_pageState extends State<guidedvis_page> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    //message
-                    Text(
-                      'Select a visualization scenario that aligns with the \npurpose of the session and is likely to resonate with \nthe participants. For example, a beach scene may \nbe calming, while a forest setting might evoke \nfeelings of grounding and serenity.',
-                      textAlign: TextAlign.justify,
-                      style: GoogleFonts.poppins(
-                          textStyle: Theme.of(context).textTheme.displayLarge,
-                          color: const Color.fromARGB(255, 70, 66, 68),
-                          fontSize: 12,
-                          height: 1.2,
-                          wordSpacing: 1.8,
-                          fontWeight: FontWeight.w400),
+                    Container(
+                      width: MediaQuery.of(context).size.width * 0.8,
+                      child: Text(
+                        'Select a visualization scenario that aligns with the purpose of the session and is likely to resonate with the participants. For example, a beach scene may be calming, while a forest setting might evoke feelings of grounding and serenity.',
+                        textAlign: TextAlign.start,
+                        style: GoogleFonts.poppins(
+                            color: const Color.fromARGB(255, 70, 66, 68),
+                            fontSize: 12,
+                            height: 1.2,
+                            wordSpacing: 2.5,
+                            fontWeight: FontWeight.w400),
+                      ),
                     ),
                   ],
                 ),

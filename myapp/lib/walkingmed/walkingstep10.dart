@@ -118,17 +118,18 @@ class _walkingstep10_pageState extends State<walkingstep10_page> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      //message
-                      Text(
-                        'Acknowledge the practice and express gratitude \nfor the opportunity to engage in this mindful \nactivity. You can bring your hands to your heart or \nsimply nod in acknowledgment.',
-                        textAlign: TextAlign.center,
-                        style: GoogleFonts.poppins(
-                            textStyle: Theme.of(context).textTheme.displayLarge,
-                            color: const Color.fromARGB(255, 70, 66, 68),
-                            fontSize: 13,
-                            height: 1.2,
-                            wordSpacing: 1.8,
-                            fontWeight: FontWeight.w400),
+                      Container(
+                        width: MediaQuery.of(context).size.width * 0.9,
+                        child: Text(
+                          'Acknowledge the practice and express gratitude for the opportunity to engage in this mindful activity. You can bring your hands to your heart or simply nod in acknowledgment.',
+                          textAlign: TextAlign.center,
+                          style: GoogleFonts.poppins(
+                              color: const Color.fromARGB(255, 70, 66, 68),
+                              fontSize: 13,
+                              height: 1.2,
+                              wordSpacing: 2.5,
+                              fontWeight: FontWeight.w400),
+                        ),
                       ),
                     ],
                   ),

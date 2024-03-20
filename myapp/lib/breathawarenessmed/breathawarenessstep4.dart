@@ -116,17 +116,17 @@ class _breathawarenessstep4_pageState extends State<breathawarenessstep4_page> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    //message
-                    Text(
-                      'Simply observe your breath without trying \nto change it. Be present with each inhale and \nexhale. If your mind starts to wander, gently \nbring it back to your breath.',
-                      textAlign: TextAlign.center,
-                      style: GoogleFonts.poppins(
-                        textStyle: Theme.of(context).textTheme.displayLarge,
-                        color: const Color.fromARGB(255, 70, 66, 68),
-                        fontSize: 13,
-                        fontWeight: FontWeight.w400,
-                        height: 1.2,
-                        wordSpacing: 1.8,
+                    Container(
+                      width: MediaQuery.of(context).size.width * 0.9,
+                      child: Text(
+                        'Simply observe your breath without trying to change it. Be present with each inhale and exhale. If your mind starts to wander, gently bring it back to your breath.',
+                        textAlign: TextAlign.center,
+                        style: GoogleFonts.poppins(
+                            color: const Color.fromARGB(255, 70, 66, 68),
+                            fontSize: 13,
+                            height: 1.2,
+                            wordSpacing: 2.5,
+                            fontWeight: FontWeight.w400),
                       ),
                     ),
                   ],

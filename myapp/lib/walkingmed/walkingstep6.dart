@@ -119,17 +119,18 @@ class _walkingstep6_pageState extends State<walkingstep6_page> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      //message
-                      Text(
-                        'Be fully present with each step. If your mind starts \nto wander or get lost in thoughts, gently bring \nyour focus back to the act of walking.',
-                        textAlign: TextAlign.center,
-                        style: GoogleFonts.poppins(
-                            textStyle: Theme.of(context).textTheme.displayLarge,
-                            color: const Color.fromARGB(255, 70, 66, 68),
-                            fontSize: 13,
-                            height: 1.2,
-                            wordSpacing: 1.8,
-                            fontWeight: FontWeight.w400),
+                      Container(
+                        width: MediaQuery.of(context).size.width * 0.9,
+                        child: Text(
+                          'Be fully present with each step. If your mind starts to wander or get lost in thoughts, gently bring your focus back to the act of walking.',
+                          textAlign: TextAlign.center,
+                          style: GoogleFonts.poppins(
+                              color: const Color.fromARGB(255, 70, 66, 68),
+                              fontSize: 13,
+                              height: 1.2,
+                              wordSpacing: 2.5,
+                              fontWeight: FontWeight.w400),
+                        ),
                       ),
                     ],
                   ),

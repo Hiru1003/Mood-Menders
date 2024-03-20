@@ -100,17 +100,18 @@ class _movementmed_pageState extends State<movementmed_page> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    //message
-                    Text(
-                      'Movement-based meditation is a practice that \ncombines mindfulness with physical movements, \noften derived from practices like yoga, tai chi, \nqigong, or other similar disciplines. ',
-                      textAlign: TextAlign.center,
-                      style: GoogleFonts.poppins(
-                          textStyle: Theme.of(context).textTheme.displayLarge,
-                          color: const Color.fromARGB(255, 70, 66, 68),
-                          fontSize: 12,
-                          wordSpacing: 1.6,
-                          height: 1.4,
-                          fontWeight: FontWeight.w400),
+                    Container(
+                      width: MediaQuery.of(context).size.width * 0.9,
+                      child: Text(
+                        'Movement-based meditation is a practice that combines mindfulness with physical movements, often derived from practices like yoga, tai chi, qigong, or other similar disciplines. ',
+                        textAlign: TextAlign.center,
+                        style: GoogleFonts.poppins(
+                            color: const Color.fromARGB(255, 70, 66, 68),
+                            fontSize: 13,
+                            height: 1.2,
+                            wordSpacing: 2.5,
+                            fontWeight: FontWeight.w400),
+                      ),
                     ),
                   ],
                 ),

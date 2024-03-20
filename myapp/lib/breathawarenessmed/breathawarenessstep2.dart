@@ -119,17 +119,17 @@ class _breathawarenessstep2_pageState extends State<breathawarenessstep2_page> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      //message
-                      Text(
-                        'Start by taking a few slow, deep breaths. Inhale \ndeeply through your nose, allowing your lungs \nto fill with air. Exhale slowly through your \nmouth, releasing any tension.',
-                        textAlign: TextAlign.center,
-                        style: GoogleFonts.poppins(
-                          textStyle: Theme.of(context).textTheme.displayLarge,
-                          color: const Color.fromARGB(255, 70, 66, 68),
-                          fontSize: 13,
-                          fontWeight: FontWeight.w400,
-                          height: 1.2,
-                          wordSpacing: 1.8,
+                      Container(
+                        width: MediaQuery.of(context).size.width * 0.9,
+                        child: Text(
+                          'Start by taking a few slow, deep breaths. Inhale deeply through your nose, allowing your lungs to fill with air. Exhale slowly through your mouth, releasing any tension.',
+                          textAlign: TextAlign.center,
+                          style: GoogleFonts.poppins(
+                              color: const Color.fromARGB(255, 70, 66, 68),
+                              fontSize: 13,
+                              height: 1.2,
+                              wordSpacing: 2.5,
+                              fontWeight: FontWeight.w400),
                         ),
                       ),
                     ],

@@ -115,17 +115,18 @@ class _movementstep3_pageState extends State<movementstep3_page> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    //message
-                    Text(
-                      'Engage in your chosen movement practice (yoga, \ntai chi, qigong). Pay close attention to the \nsensations in your body as you move. Focus \non the rhythm of your movements, the stretch of \nyour muscles, and the coordination of your breath.',
-                      textAlign: TextAlign.center,
-                      style: GoogleFonts.poppins(
-                          textStyle: Theme.of(context).textTheme.displayLarge,
-                          color: const Color.fromARGB(255, 70, 66, 68),
-                          fontSize: 13,
-                          height: 1.2,
-                          wordSpacing: 1.8,
-                          fontWeight: FontWeight.w400),
+                    Container(
+                      width: MediaQuery.of(context).size.width * 0.9,
+                      child: Text(
+                        'Engage in your chosen movement practice (yoga, tai chi, qigong). Pay close attention to the sensations in your body as you move. Focus on the rhythm of your movements, the stretch of your muscles, and the coordination of your breath.',
+                        textAlign: TextAlign.center,
+                        style: GoogleFonts.poppins(
+                            color: const Color.fromARGB(255, 70, 66, 68),
+                            fontSize: 13,
+                            height: 1.2,
+                            wordSpacing: 2.5,
+                            fontWeight: FontWeight.w400),
+                      ),
                     ),
                   ],
                 ),
