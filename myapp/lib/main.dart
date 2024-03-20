@@ -1,8 +1,6 @@
 import 'package:app/Notification.dart';
 import 'package:app/aroma.dart';
 import 'package:app/home.dart';
-import 'package:app/stat/stat.dart';
-import 'package:app/stressreducetips.dart';
 import 'package:flutter/material.dart';
 
 void main() {
