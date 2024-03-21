@@ -3,6 +3,7 @@ import 'package:app/components/button.dart';
 import 'package:app/helper_functions.dart';
 import 'package:app/loginpage.dart';
 import 'package:app/name_page.dart';
+import 'package:app/navpage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -263,7 +264,7 @@ class _signup_pageState extends State<signup_page> {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const name_page()),
+                    MaterialPageRoute(builder: (context) => const navpage()),
                   );
                 },
                 child: Row(

@@ -1,6 +1,7 @@
 import 'package:app/components/MyTextField.dart';
 import 'package:app/components/button.dart';
 import 'package:app/helper_functions.dart';
+import 'package:app/name_page.dart';
 import 'package:app/privacypage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -48,7 +49,7 @@ class _login_pageState extends State<login_page> {
       // Navigate to privacy page
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => Privacypage()),
+        MaterialPageRoute(builder: (context) => name_page()),
       );
     } on FirebaseAuthException catch (e) {
       // Dismiss loading circle
