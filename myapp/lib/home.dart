@@ -1,4 +1,4 @@
-import 'package:app/continuebutton.dart';
+import 'package:app/components/continuebutton.dart';
 import 'package:app/diary/diary.dart';
 import 'package:app/meditaionmethods.dart';
 import 'package:app/motivationalquotes.dart';
@@ -478,7 +478,8 @@ class _home_pageState extends State<home_page> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => const relaxation_page(),
+                              builder: (context) =>
+                                  const meditaionmethods_page(),
                             ),
                           );
                         },
