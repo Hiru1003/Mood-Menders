@@ -80,7 +80,7 @@ class _welcome_pageState extends State<welcome_page> {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => navpage()),
+                    MaterialPageRoute(builder: (context) => Navbar()),
                   );
                 },
                 child: Container(

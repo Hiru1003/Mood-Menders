@@ -264,7 +264,7 @@ class _signup_pageState extends State<signup_page> {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const navpage()),
+                    MaterialPageRoute(builder: (context) => Navbar()),
                   );
                 },
                 child: Row(
