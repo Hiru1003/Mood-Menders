@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:app/button.dart';
+import 'package:app/components/button.dart';
 import 'package:app/welcomepage.dart';
 
 class Namepage extends StatefulWidget {

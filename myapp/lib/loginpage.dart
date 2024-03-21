@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:app/homepage.dart';
-import 'package:app/continuebutton.dart';
+import 'package:app/components/continuebutton.dart';
 import 'package:app/signuppage.dart'; // Import the sign-up page
 
 class Loginpage extends StatefulWidget {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:app/button.dart';
+import 'package:app/components/button.dart';
 import 'package:app/homepage.dart';
 
 class Welcomepage extends StatefulWidget {
