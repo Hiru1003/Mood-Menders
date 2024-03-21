@@ -108,8 +108,7 @@ class Diary extends StatelessWidget {
               height: 0.5,
               color: const Color.fromARGB(255, 70, 66, 68),
             ),
-            EmotionList(),
-            DiaryList(),
+            DiaryList()
           ],
         ),
       ),
@@ -117,11 +116,14 @@ class Diary extends StatelessWidget {
   }
 }
 
-class EmotionList extends StatelessWidget {
+class DiaryList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return StreamBuilder<QuerySnapshot>(
-      stream: FirebaseFirestore.instance.collection('emotions').snapshots(),
+      stream: FirebaseFirestore.instance
+          .collection('diary')
+          .orderBy('timestamp', descending: false)
+          .snapshots(),
       builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
         if (snapshot.hasError) {
           return Text('Error: ${snapshot.error}');
@@ -130,14 +132,23 @@ class EmotionList extends StatelessWidget {
         if (snapshot.connectionState == ConnectionState.waiting) {
           return CircularProgressIndicator();
         }
+
         return Padding(
           padding: const EdgeInsets.only(bottom: 10.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+          child: ListView(
+            reverse: true, // Display newest entries at the top
+            shrinkWrap: true,
+            physics: NeverScrollableScrollPhysics(),
             children: snapshot.data!.docs.map((DocumentSnapshot document) {
               final data = document.data() as Map<String, dynamic>;
-              final emotion = data['emotion'] ?? '';
-              final timestamp = data['timestamp'] ?? '';
+              final title = data['title'] ?? '';
+              final description = data['description'] ?? '';
+              final timestamp = (data['timestamp'] as Timestamp).toDate();
+
+              final dateFormatted =
+                  DateFormat.yMMMMd().format(timestamp); // Format date
+              final timeFormatted =
+                  DateFormat.jm().format(timestamp); // Format time
 
               return Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 9.0),
@@ -157,29 +168,24 @@ class EmotionList extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
                             Image.asset(
-                              'lib/images/loveearth (1).png',
+                              'lib/images/6.png',
                               width: 55,
                               height: 55,
                             ),
                             const SizedBox(width: 10),
-                            Padding(
-                              padding: const EdgeInsets.only(top: 10),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: <Widget>[
-                                  Text(
-                                    emotion,
-                                    style: TextStyle(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w700),
-                                  ),
-                                  Text(
-                                    timestamp
-                                        .toString(), // Assuming timestamp is a DateTime
-                                    style: const TextStyle(fontSize: 13),
-                                  ),
-                                ],
-                              ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                const SizedBox(height: 5),
+                                Text(
+                                  'Date: $dateFormatted', // Display formatted date
+                                  style: const TextStyle(fontSize: 13),
+                                ),
+                                Text(
+                                  'Time: $timeFormatted', // Display formatted time
+                                  style: const TextStyle(fontSize: 13),
+                                ),
+                              ],
                             ),
                           ],
                         ),
@@ -192,58 +198,9 @@ class EmotionList extends StatelessWidget {
                             height: 30,
                           ),
                         ),
-                      ],
-                    ),
-                  ),
-                ),
-              );
-            }).toList(),
-          ),
-        );
-      },
-    );
-  }
-}
-
-class DiaryList extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return StreamBuilder<QuerySnapshot>(
-      stream: FirebaseFirestore.instance.collection('diary').snapshots(),
-      builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
-        if (snapshot.hasError) {
-          return Text('Error: ${snapshot.error}');
-        }
-
-        if (snapshot.connectionState == ConnectionState.waiting) {
-          return CircularProgressIndicator();
-        }
-        return Padding(
-          padding: const EdgeInsets.only(bottom: 10.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: snapshot.data!.docs.map((DocumentSnapshot document) {
-              final data = document.data() as Map<String, dynamic>;
-              final title = data['title'] ?? '';
-              final description = data['description'] ?? '';
-
-              return Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 9.0),
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Container(
-                    padding: const EdgeInsets.all(10),
-                    decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 194, 227,
-                          224), // Set the background color to blue
-                      borderRadius: BorderRadius.circular(
-                          10), // Add border radius if needed
-                    ),
-                    child: Stack(
-                      children: <Widget>[
                         Padding(
                           padding: const EdgeInsets.only(
-                            top: 5,
+                            top: 65,
                             left: 5,
                           ),
                           child: Align(
