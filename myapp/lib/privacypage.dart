@@ -1,3 +1,4 @@
+import 'package:app/name_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:app/components/button.dart';
@@ -107,7 +108,7 @@ class _PrivacypageState extends State<Privacypage> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Signuppage()),
+                                builder: (context) => name_page()),
                           );
                         }
                       : null,

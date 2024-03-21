@@ -108,10 +108,99 @@ class Diary extends StatelessWidget {
               height: 0.5,
               color: const Color.fromARGB(255, 70, 66, 68),
             ),
+            EmotionList(),
             DiaryList(),
           ],
         ),
       ),
+    );
+  }
+}
+
+class EmotionList extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return StreamBuilder<QuerySnapshot>(
+      stream: FirebaseFirestore.instance.collection('emotions').snapshots(),
+      builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
+        if (snapshot.hasError) {
+          return Text('Error: ${snapshot.error}');
+        }
+
+        if (snapshot.connectionState == ConnectionState.waiting) {
+          return CircularProgressIndicator();
+        }
+        return Padding(
+          padding: const EdgeInsets.only(bottom: 10.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: snapshot.data!.docs.map((DocumentSnapshot document) {
+              final data = document.data() as Map<String, dynamic>;
+              final emotion = data['emotion'] ?? '';
+              final timestamp = data['timestamp'] ?? '';
+
+              return Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 9.0),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    padding: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 194, 227,
+                          224), // Set the background color to blue
+                      borderRadius: BorderRadius.circular(
+                          10), // Add border radius if needed
+                    ),
+                    child: Stack(
+                      children: <Widget>[
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Image.asset(
+                              'lib/images/loveearth (1).png',
+                              width: 55,
+                              height: 55,
+                            ),
+                            const SizedBox(width: 10),
+                            Padding(
+                              padding: const EdgeInsets.only(top: 10),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Text(
+                                    emotion,
+                                    style: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w700),
+                                  ),
+                                  Text(
+                                    timestamp
+                                        .toString(), // Assuming timestamp is a DateTime
+                                    style: const TextStyle(fontSize: 13),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                        Positioned(
+                          top: 0,
+                          right: 0,
+                          child: Image.asset(
+                            'lib/images/love 1.png',
+                            width: 30,
+                            height: 30,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              );
+            }).toList(),
+          ),
+        );
+      },
     );
   }
 }
@@ -152,46 +241,9 @@ class DiaryList extends StatelessWidget {
                     ),
                     child: Stack(
                       children: <Widget>[
-                        Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
-                            Image.asset(
-                              'lib/images/loveearth (1).png',
-                              width: 55,
-                              height: 55,
-                            ),
-                            const SizedBox(width: 10),
-                            Padding(
-                              padding: const EdgeInsets.only(top: 10),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: <Widget>[
-                                  const Text(
-                                    'Happy',
-                                    style: TextStyle(fontSize: 16),
-                                  ),
-                                  Text(
-                                    DateFormat('d MMMM yyyy, h:mm a')
-                                        .format(DateTime.now()),
-                                    style: const TextStyle(fontSize: 13),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                        Positioned(
-                          top: 0,
-                          right: 0,
-                          child: Image.asset(
-                            'lib/images/love 1.png',
-                            width: 30,
-                            height: 30,
-                          ),
-                        ),
                         Padding(
                           padding: const EdgeInsets.only(
-                            top: 65,
+                            top: 5,
                             left: 5,
                           ),
                           child: Align(
