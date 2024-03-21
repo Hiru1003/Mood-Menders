@@ -67,7 +67,7 @@ class HomeWidget extends State<Navbar> {
               IconButton(
                 iconSize: 30,
                 icon: Icon(
-                  _selectedTab == 1 ? Icons.category : Icons.category_outlined,
+                  _selectedTab == 1 ? Icons.book : Icons.book_outlined,
                   color: _selectedTab == 1
                       ? Colors.white
                       : null, // Set icon color to white if selected
@@ -81,7 +81,7 @@ class HomeWidget extends State<Navbar> {
               IconButton(
                 iconSize: 30,
                 icon: Icon(
-                  _selectedTab == 2 ? Icons.search : Icons.search_outlined,
+                  _selectedTab == 2 ? Icons.chat : Icons.chat_outlined,
                   color: _selectedTab == 2
                       ? Colors.white
                       : null, // Set icon color to white if selected
@@ -96,8 +96,8 @@ class HomeWidget extends State<Navbar> {
                 iconSize: 30,
                 icon: Icon(
                   _selectedTab == 3
-                      ? Icons.shopping_cart
-                      : Icons.shopping_cart_outlined,
+                      ? Icons.bar_chart
+                      : Icons.bar_chart_outlined,
                   color: _selectedTab == 3
                       ? Colors.white
                       : null, // Set icon color to white if selected
