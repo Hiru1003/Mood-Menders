@@ -1,7 +1,7 @@
 import 'package:app/chat/chat.dart';
 import 'package:app/homepage.dart';
 import 'package:flutter/material.dart';
-import 'package:app/home.dart' as fourthTab;
+import 'package:app/stat/stat.dart' as fourthTab;
 import 'package:app/diary/diary.dart' as secondTab;
 import 'package:app/home.dart' as firstTab;
 import 'package:app/home.dart' as fifthTab;
@@ -30,22 +30,20 @@ class HomeWidget extends State<Navbar> {
             _selectedTab = index;
           });
         },
-        children: <Widget>[
+        children: const <Widget>[
           firstTab.home_page(),
           secondTab.Diary(),
           thirdTab.home_page(),
-          fourthTab.home_page(),
+          fourthTab.Stat(),
           fifthTab.home_page(),
         ],
       ),
       bottomNavigationBar: BottomAppBar(
         elevation: 0,
         shape: const CircularNotchedRectangle(),
-        color: Color.fromARGB(
-            255, 134, 208, 203), // Set the background color to black
+        color: const Color.fromARGB(255, 134, 208, 203),
         child: Container(
-          color: Color.fromARGB(
-              255, 134, 208, 203), // Set the background color to black
+          color: const Color.fromARGB(255, 134, 208, 203),
           child: Row(
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -68,9 +66,7 @@ class HomeWidget extends State<Navbar> {
                 iconSize: 30,
                 icon: Icon(
                   _selectedTab == 1 ? Icons.book : Icons.book_outlined,
-                  color: _selectedTab == 1
-                      ? Colors.white
-                      : null, // Set icon color to white if selected
+                  color: _selectedTab == 1 ? Colors.white : null,
                 ),
                 onPressed: () {
                   setState(() {
@@ -82,9 +78,7 @@ class HomeWidget extends State<Navbar> {
                 iconSize: 30,
                 icon: Icon(
                   _selectedTab == 2 ? Icons.chat : Icons.chat_outlined,
-                  color: _selectedTab == 2
-                      ? Colors.white
-                      : null, // Set icon color to white if selected
+                  color: _selectedTab == 2 ? Colors.white : null,
                 ),
                 onPressed: () {
                   setState(() {
@@ -98,9 +92,7 @@ class HomeWidget extends State<Navbar> {
                   _selectedTab == 3
                       ? Icons.bar_chart
                       : Icons.bar_chart_outlined,
-                  color: _selectedTab == 3
-                      ? Colors.white
-                      : null, // Set icon color to white if selected
+                  color: _selectedTab == 3 ? Colors.white : null,
                 ),
                 onPressed: () {
                   setState(() {
@@ -112,9 +104,7 @@ class HomeWidget extends State<Navbar> {
                 iconSize: 30,
                 icon: Icon(
                   _selectedTab == 4 ? Icons.person : Icons.person_outline,
-                  color: _selectedTab == 4
-                      ? Colors.white
-                      : null, // Set icon color to white if selected
+                  color: _selectedTab == 4 ? Colors.white : null,
                 ),
                 onPressed: () {
                   setState(() {
