@@ -1,5 +1,5 @@
 import 'package:app/Notification.dart';
-import 'package:app/aroma.dart';
+import 'package:app/relaxation/aroma.dart';
 import 'package:app/diary/diary.dart';
 import 'package:app/home.dart';
 import 'package:app/loading_page.dart';

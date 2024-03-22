@@ -1,17 +1,64 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class motivationalquotes_page extends StatefulWidget {
-  const motivationalquotes_page({
-    super.key,
-  });
-
   @override
-  State<motivationalquotes_page> createState() =>
+  _motivationalquotes_pageState createState() =>
       _motivationalquotes_pageState();
 }
 
 class _motivationalquotes_pageState extends State<motivationalquotes_page> {
+  final PageController _pageController = PageController();
+  final List<Map<String, dynamic>> _pages = [
+    {
+      'image': 'lib/images/todo1.png',
+    },
+    {
+      'image': 'lib/images/todo2.png',
+    },
+    {
+      'image': 'lib/images/todo3.png',
+    },
+    {
+      'image': 'lib/images/todo5.png',
+    },
+  ];
+  int _currentPage = 0;
+  Timer? _timer;
+
+  @override
+  void initState() {
+    super.initState();
+    _startTimer();
+  }
+
+  @override
+  void dispose() {
+    _pageController.dispose();
+    _timer?.cancel();
+    super.dispose();
+  }
+
+  void _startTimer() {
+    _timer = Timer.periodic(Duration(seconds: 3), (timer) {
+      if (_currentPage < _pages.length - 1) {
+        _currentPage++;
+      } else {
+        _currentPage = 0;
+      }
+      _pageController.animateToPage(
+        _currentPage,
+        duration: Duration(milliseconds: 300),
+        curve: Curves.easeInOut,
+      );
+    });
+  }
+
+  void _cancelTimer() {
+    _timer?.cancel();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

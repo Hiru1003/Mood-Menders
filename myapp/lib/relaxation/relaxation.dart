@@ -1,7 +1,7 @@
-import 'package:app/aroma.dart';
+import 'package:app/relaxation/aroma.dart';
 import 'package:app/meditaionmethods.dart';
-import 'package:app/quickrelaxation.dart';
-import 'package:app/relaxingactivities.dart';
+import 'package:app/relaxation/quickrelaxation.dart';
+import 'package:app/relaxation/relaxingactivities.dart';
 import 'package:app/stressreducetips.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
