@@ -9,7 +9,6 @@ class _EmojiState extends State<Emoji> {
   bool imageTapped = false;
 
   void recordEvent(String imagePath) {
-  
     //String selectedImagePath = imagePath;
 
     setState(() {
@@ -70,7 +69,8 @@ class EmojiDisplay extends StatelessWidget {
               onTap: () {
                 recordEvent('lib/images/loveearth (1).png');
               },
-              child: Image.asset('lib/images/loveearth (1).png', fit: BoxFit.scaleDown),
+              child: Image.asset('lib/images/loveearth (1).png',
+                  fit: BoxFit.scaleDown),
             ),
           ),
         ),
@@ -81,7 +81,8 @@ class EmojiDisplay extends StatelessWidget {
               onTap: () {
                 recordEvent('lib/images/loveearth (2).png');
               },
-              child: Image.asset('lib/images/loveearth (2).png', fit: BoxFit.scaleDown),
+              child: Image.asset('lib/images/loveearth (2).png',
+                  fit: BoxFit.scaleDown),
             ),
           ),
         ),
@@ -92,7 +93,8 @@ class EmojiDisplay extends StatelessWidget {
               onTap: () {
                 recordEvent('lib/images/loveearth (3).png');
               },
-              child: Image.asset('lib/images/loveearth (3).png', fit: BoxFit.scaleDown),
+              child: Image.asset('lib/images/loveearth (3).png',
+                  fit: BoxFit.scaleDown),
             ),
           ),
         ),
@@ -103,7 +105,8 @@ class EmojiDisplay extends StatelessWidget {
               onTap: () {
                 recordEvent('lib/images/loveearth (4).png');
               },
-              child: Image.asset('lib/images/loveearth (4).png', fit: BoxFit.scaleDown),
+              child: Image.asset('lib/images/loveearth (4).png',
+                  fit: BoxFit.scaleDown),
             ),
           ),
         ),
@@ -114,7 +117,8 @@ class EmojiDisplay extends StatelessWidget {
               onTap: () {
                 recordEvent('lib/images/loveearth (5).png');
               },
-              child: Image.asset('lib/images/loveearth (5).png', fit: BoxFit.scaleDown),
+              child: Image.asset('lib/images/loveearth (5).png',
+                  fit: BoxFit.scaleDown),
             ),
           ),
         ),

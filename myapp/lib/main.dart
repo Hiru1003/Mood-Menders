@@ -1,6 +1,4 @@
-import 'package:app/Notification.dart';
-import 'package:app/aroma.dart';
-import 'package:app/home.dart';
+import 'package:app/loading_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +14,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       //home: loading_page()
       //home: Stat(),
-      home: home_page(),
+      home: loading_page(),
     );
   }
 }

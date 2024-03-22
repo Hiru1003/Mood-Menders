@@ -3,7 +3,6 @@ import 'package:app/diary/diary.dart';
 import 'package:app/meditaionmethods.dart';
 import 'package:app/motivationalquotes.dart';
 import 'package:app/personalgrowthtips.dart';
-import 'package:app/relaxation.dart';
 import 'package:app/successstories.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
