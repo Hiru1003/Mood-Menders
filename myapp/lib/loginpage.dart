@@ -1,190 +1,225 @@
+import 'package:app/components/MyTextField.dart';
+import 'package:app/components/button.dart';
+import 'package:app/helper_functions.dart';
+import 'package:app/name_page.dart';
+import 'package:app/privacypage.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:app/homepage.dart';
-import 'package:app/components/continuebutton.dart';
-import 'package:app/signuppage.dart'; // Import the sign-up page
+import 'package:google_fonts/google_fonts.dart';
 
-class Loginpage extends StatefulWidget {
-  const Loginpage({Key? key}) : super(key: key);
+class login_page extends StatefulWidget {
+  final void Function()? onTap;
+  const login_page({Key? key, required this.onTap});
+
   @override
-  State<Loginpage> createState() => _LoginpageState();
+  State<login_page> createState() => _login_pageState();
 }
 
-class _LoginpageState extends State<Loginpage> {
+class _login_pageState extends State<login_page> {
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
+
+  late FirebaseAuth _auth;
+
+  @override
+  void initState() {
+    super.initState();
+    _auth = FirebaseAuth.instance;
+  }
+
+//sign in user
+  void signIn() async {
+    // Show loading circle
+    showDialog(
+      context: context,
+      builder: (context) => const Center(
+        child: CircularProgressIndicator(),
+      ),
+    );
+
+    try {
+      await _auth.signInWithEmailAndPassword(
+        email: emailController.text,
+        password: passwordController.text,
+      );
+
+      // Dismiss loading circle
+      Navigator.pop(context);
+
+      // Navigate to privacy page
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => name_page()),
+      );
+    } on FirebaseAuthException catch (e) {
+      // Dismiss loading circle
+      Navigator.pop(context);
+
+      // Show error message
+      displayMessageToUser(e.code, context);
+    } catch (e) {
+      // Dismiss loading circle
+      Navigator.pop(context);
+
+      // Show generic error message
+      displayMessageToUser("An error occurred", context);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromARGB(251, 241, 255, 252),
-      appBar: AppBar(
-        backgroundColor: Colors.transparent, // app bar transparent
-        elevation: 0, // Remove app bar shadow
-        title: Text(
-          'Log In',
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 25,
-            color: const Color.fromARGB(255, 70, 66, 68),
-          ),
-        ),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 10.0),
-            child: Image.asset(
-              'lib/images/leaf.png',
-              height: 75, // Adjust height as needed
-            ),
-          ),
-        ],
-      ),
-      body: SafeArea(
-        child: SingleChildScrollView(
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 25),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(height: 20),
-              //email
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Email',
-                      style: TextStyle(
-                        fontWeight: FontWeight.normal,
-                        fontSize: 20,
-                      ),
-                    ),
-                    SizedBox(height: 10),
-                    Container(
-                      decoration: BoxDecoration(
-                        color: const Color.fromARGB(251, 241, 255, 252),
-                        border: Border.all(color: Colors.black),
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.only(left: 20.0),
-                        child: TextField(
-                          decoration: InputDecoration(
-                            border: InputBorder.none,
-                            hintText: 'example: students.nsbm.ac.lk',
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(height: 20),
-              //password
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Password',
-                      style: TextStyle(
-                        fontWeight: FontWeight.normal,
-                        fontSize: 20,
-                      ),
-                    ),
-                    SizedBox(height: 10),
-                    Container(
-                      decoration: BoxDecoration(
-                        color: const Color.fromARGB(251, 241, 255, 252),
-                        border: Border.all(color: Colors.black),
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.only(left: 20.0),
-                        child: TextField(
-                          obscureText: true,
-                          decoration: InputDecoration(
-                            border: InputBorder.none,
-                            hintText: '********',
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(height: 20),
-              //forgot password
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    Text(
-                      'Forgot Password?',
-                      style: TextStyle(
-                        fontWeight: FontWeight.normal,
-                        fontSize: 15,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(height: 20),
-              //log in
-              Padding(
-                padding: const EdgeInsets.only(left: 10, right: 10),
-                child: Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.only(
-                      bottomLeft: Radius.circular(16),
-                      bottomRight: Radius.circular(16),
-                    ),
-                  ),
-                  child: MyConButton(
-                    buttontext: 'Log in',
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const homepage(),
-                        ),
-                      );
-                    },
-                  ),
-                ),
-              ),
-              //comment
-              SizedBox(height: 20),
+              const SizedBox(height: 15),
               Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
-                    'Don\'t have an account?',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                    ),
+                  //logo
+                  const SizedBox(
+                    height: 90,
                   ),
-                  SizedBox(width: 5),
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) =>
-                              Signuppage(), // Navigate to the sign-up page
-                        ),
-                      );
-                    },
-                    child: Text(
-                      'Sign up',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                        decoration:
-                            TextDecoration.underline, // Underline the text
+                  Image.asset(
+                    'lib/images/leaf.png',
+                    height: 70,
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 1,
+              ),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  //welcome back
+                  Text(
+                    'Log in',
+                    style: GoogleFonts.poppins(
+                      textStyle: TextStyle(
+                        color: const Color.fromARGB(255, 70, 66, 68),
+                        fontSize: 35,
+                        fontWeight: FontWeight.w400,
                       ),
                     ),
                   ),
                 ],
               ),
-              SizedBox(height: 20), // Additional space at the bottom
+              const SizedBox(
+                height: 10,
+              ),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  //email
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    'Email',
+                    style: GoogleFonts.poppins(
+                      textStyle: TextStyle(
+                        color: const Color.fromARGB(255, 70, 66, 68),
+                        fontSize: 18,
+                        fontWeight: FontWeight.w300,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+
+              const SizedBox(
+                height: 6,
+              ),
+              MyTextField(
+                controller: emailController,
+                hintText: 'Email',
+                obscureText: false,
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  //password
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    'Password',
+                    style: GoogleFonts.poppins(
+                      textStyle: TextStyle(
+                        color: const Color.fromARGB(255, 70, 66, 68),
+                        fontSize: 18,
+                        fontWeight: FontWeight.w300,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 8),
+              MyTextField(
+                controller: passwordController,
+                hintText: 'Password',
+                obscureText: true,
+              ),
+
+              const SizedBox(
+                height: 18,
+              ),
+
+              //button
+              MyButton(
+                buttontext: 'Log In',
+                onTap: signIn,
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  //register now
+                  Text(
+                    'Dont you have an account?',
+                    style: GoogleFonts.poppins(
+                      textStyle: TextStyle(
+                        color: const Color.fromARGB(255, 70, 66, 68),
+                        fontSize: 14,
+                        fontWeight: FontWeight.w200,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 15,
+                  ),
+                  GestureDetector(
+                    onTap: widget.onTap,
+                    child: Text(
+                      'Sign Up',
+                      style: GoogleFonts.poppins(
+                        textStyle: TextStyle(
+                          color: const Color.fromARGB(255, 70, 66, 68),
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ],
           ),
         ),
