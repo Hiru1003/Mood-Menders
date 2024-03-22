@@ -1,7 +1,7 @@
-import 'package:cny_det/components/my_drawer.dart';
-import 'package:cny_det/model/playlist_provider.dart';
-import 'package:cny_det/model/song.dart';
-import 'package:cny_det/pages/song_page.dart';
+import 'package:app/component2/my_drawer.dart';
+import 'package:app/model/playlist_provider.dart';
+import 'package:app/model/song.dart';
+import 'package:app/pages2/song_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -11,7 +11,6 @@ class MusicPage extends StatefulWidget {
 }
 
 class _MusicPageState extends State<MusicPage> {
-
   late final dynamic playlistProvider;
 
   @override
@@ -21,42 +20,38 @@ class _MusicPageState extends State<MusicPage> {
     playlistProvider = Provider.of<PlaylistProvider>(context, listen: false);
   }
 
-  void goToSong(int songIndex){
+  void goToSong(int songIndex) {
     playlistProvider.currentSongIndex = songIndex;
 
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => SongPage(),),
+      MaterialPageRoute(
+        builder: (context) => SongPage(),
+      ),
     );
   }
-  
-  
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('P L A Y L I S T'),  
+        title: Text('P L A Y L I S T'),
       ),
       drawer: MyDrawer(),
-      body: Consumer<PlaylistProvider>(
-       builder: (context, value, child){
-         final List<Song> playlist = value.playlist;
-         return ListView.builder(
-           itemCount: playlist.length,
-           itemBuilder: (context, index) { 
-             final Song song = playlist[index];
-             return ListTile(
-               title: Text(song.songName),
-               subtitle: Text(song.artistName),
-               leading: Image.asset(song.albumArtImagePath),
-               onTap: () => goToSong(index),
-             );
-           }
-         );
-       }
-    ),
-  
+      body: Consumer<PlaylistProvider>(builder: (context, value, child) {
+        final List<Song> playlist = value.playlist;
+        return ListView.builder(
+            itemCount: playlist.length,
+            itemBuilder: (context, index) {
+              final Song song = playlist[index];
+              return ListTile(
+                title: Text(song.songName),
+                subtitle: Text(song.artistName),
+                leading: Image.asset(song.albumArtImagePath),
+                onTap: () => goToSong(index),
+              );
+            });
+      }),
     );
   }
 }
