@@ -1,4 +1,3 @@
-import 'package:app/pages2/music.dart';
 import 'package:app/relaxation/aroma.dart';
 import 'package:app/meditaionmethods.dart';
 import 'package:app/relaxation/quickrelaxation.dart';
@@ -180,7 +179,8 @@ class _relaxation_pageState extends State<relaxation_page> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => MusicPage()),
+                      MaterialPageRoute(
+                          builder: (context) => meditaionmethods_page()),
                     );
                   },
                   child: Container(

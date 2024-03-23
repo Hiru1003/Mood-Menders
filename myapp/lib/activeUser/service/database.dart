@@ -4,14 +4,14 @@ class DatabaseMethods {
   Future addEmployeeDetails(
     Map<String, dynamic> employeeInfoMap, String id) async {
       return await FirebaseFirestore.instance
-      .collection("Employee")
+      .collection("Active Users")
       .doc(id)
       .set(employeeInfoMap);
     }
     Future<Stream<QuerySnapshot>> getEmployeeDetails()async{
-      return await FirebaseFirestore.instance.collection("Employee").snapshots();
+      return await FirebaseFirestore.instance.collection("Active Users").snapshots();
     }
     Future updateEmployeeDetails(String id, Map<String, dynamic> updateInfo)async{
-      return await FirebaseFirestore.instance.collection("Employee").doc(id).update(updateInfo);
+      return await FirebaseFirestore.instance.collection("Active Users").doc(id).update(updateInfo);
     }
 }
