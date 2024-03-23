@@ -1,5 +1,4 @@
 import 'package:app/components/button.dart';
-import 'package:app/meditaionmethods.dart';
 import 'package:app/walkingmed/walkingstep1.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';

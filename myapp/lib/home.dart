@@ -2,7 +2,10 @@ import 'package:app/components/continuebutton.dart';
 import 'package:app/diary/diary.dart';
 import 'package:app/motivationalquotes.dart';
 import 'package:app/personalgrowthtips.dart';
+<<<<<<< HEAD
+=======
 import 'package:app/relaxation/relaxation.dart';
+>>>>>>> 587cfa39932f78a0219a71670e5c7df2619fc3e7
 import 'package:app/successstories.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';

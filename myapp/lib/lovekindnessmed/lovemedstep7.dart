@@ -1,6 +1,5 @@
 import 'package:app/components/button.dart';
 import 'package:app/lovekindnessmed/lovemedstep8.dart';
-import 'package:app/lovekindnessmed/loving-kindnessmed.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 

@@ -1,4 +1,3 @@
-import 'package:app/home/home.dart';
 import 'package:app/relaxation/aroma.dart';
 import 'package:app/diary/diary.dart';
 import 'package:app/home.dart';
@@ -17,10 +16,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false, //home: Home()
-      //home: Stat(),
-      home: loading_page(),
-    );
+    return MaterialApp(debugShowCheckedModeBanner: false, home: loading_page()
+        //home: Stat(),
+        //home: home_page(),
+        );
   }
 }
