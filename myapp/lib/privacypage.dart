@@ -2,7 +2,6 @@ import 'package:app/name_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:app/components/button.dart';
-import 'package:app/signuppage.dart';
 
 class Privacypage extends StatefulWidget {
   const Privacypage({

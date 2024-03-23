@@ -1,6 +1,5 @@
-//import 'package:app/BreathAwareness/breathawarenessmed.dart';
-import 'package:app/Auth.dart';
-import 'package:app/meditaionmethods.dart';
+import 'package:app/auth_gate.dart';
+import 'package:app/diary/diary.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -15,8 +14,7 @@ class loading_page2 extends StatelessWidget {
         onTap: () {
           Navigator.push(
             context,
-            MaterialPageRoute(
-                builder: (context) => const meditaionmethods_page()),
+            MaterialPageRoute(builder: (context) => const Diary()),
           );
         },
         child: Scaffold(
@@ -67,7 +65,7 @@ class loading_page2 extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const AuthPage()),
+                    MaterialPageRoute(builder: (context) => AuthGate()),
                   );
                 },
               )

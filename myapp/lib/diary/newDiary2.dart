@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class NewDiary2 extends StatelessWidget {
   const NewDiary2({Key? key}) : super(key: key);
 
-  void saveDiary(String title, String description) async {
+  void saveDiary(String title, String description, String userId) async {
     try {
       await FirebaseFirestore.instance.collection('diary').add({
         'title': title,
         'description': description,
         'timestamp': DateTime.now(),
+        'userId': userId, // Include the user's UID in the diary entry
       });
       print('Data written to Firestore successfully');
     } catch (e) {
@@ -115,11 +117,25 @@ class NewDiary2 extends StatelessWidget {
                     ),
                   ),
                   ElevatedButton(
-                    onPressed: () {
-                      // Save the entered title and description to Firestore
-                      saveDiary(title, description);
-                      // Navigate back to the previous screen
-                      Navigator.pop(context);
+                    onPressed: () async {
+                      // Get the current user
+                      User? user = FirebaseAuth.instance.currentUser;
+
+                      // Check if the user is authenticated
+                      if (user != null) {
+                        // Get the user's UID
+                        String userId = user.uid;
+
+                        // Save the entered title, description, and user ID to Firestore
+                        saveDiary(title, description, userId);
+
+                        // Navigate back to the previous screen
+                        Navigator.pop(context);
+                      } else {
+                        // Handle the case where the user is not authenticated
+                        // For example, show an error message or prompt the user to sign in
+                        print('User is not authenticated.');
+                      }
                     },
                     child: Text('Save'),
                   ),
